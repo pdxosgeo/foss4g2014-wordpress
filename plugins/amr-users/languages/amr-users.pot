@@ -1,0 +1,464 @@
+# Translation of the WordPress plugin AmR users 1.4.5 by Anna-marie Redpath.
+# Copyright (C) 2009 Anna-marie Redpath
+# This file is distributed under the same license as the AmR users package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AmR users 1.4.5\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/amr-users\n"
+"POT-Creation-Date: 2009-12-26 00:57+0000\n"
+"PO-Revision-Date: 2009-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ameta-admin.php:20
+msgid "copy"
+msgstr ""
+
+#: ameta-admin.php:29
+msgid "Number of Lists must be greater than 0 and less than 40"
+msgstr ""
+
+#: ameta-admin.php:43
+msgid "Unexpected Problem reading names of lists - no array"
+msgstr ""
+
+#: ameta-admin.php:129 ameta-admin.php:139 ameta-admin.php:147
+msgid "Update"
+msgstr ""
+
+#: ameta-admin.php:130
+msgid "Uninstall"
+msgstr ""
+
+#: ameta-admin.php:131
+msgid "Reset all options"
+msgstr ""
+
+#: ameta-admin.php:149
+msgid "Clean Up Nice Names"
+msgstr ""
+
+#: ameta-admin.php:158
+msgid "Nicer names for list headings"
+msgstr ""
+
+#: ameta-admin.php:178 ameta-admin.php:314
+msgid "Options Updated"
+msgstr ""
+
+#: ameta-admin.php:180
+msgid "Validation failed"
+msgstr ""
+
+#: ameta-admin.php:187
+msgid "Removed nice name no longer in use:"
+msgstr ""
+
+#: ameta-admin.php:191
+msgid "Options Cleaned Up"
+msgstr ""
+
+#: ameta-admin.php:287
+msgid ""
+"At least some display order must be specified for the list to be meaningful"
+msgstr ""
+
+#: ameta-admin.php:303
+#, php-format
+msgid "Must be numeric  %s <= %s"
+msgstr ""
+
+#: ameta-admin.php:306
+#, php-format
+msgid "%s Must be  <= %s"
+msgstr ""
+
+#: ameta-admin.php:316
+msgid "List Fields Validation failed"
+msgstr ""
+
+#: ameta-admin.php:364
+#, php-format
+msgid "Configure list %s: %s"
+msgstr ""
+
+#: ameta-admin.php:366
+msgid "View (please update first)"
+msgstr ""
+
+#: ameta-admin.php:370
+msgid "Field name"
+msgstr ""
+
+#: ameta-admin.php:371
+msgid ""
+"Blank to hide, Enter a integer to select and specify column order.  Eg: 1 2 "
+"6 8"
+msgstr ""
+
+#: ameta-admin.php:371
+msgid "Display order"
+msgstr ""
+
+#: ameta-admin.php:372 ameta-admin.php:374
+msgid "Eg: value1,value2"
+msgstr ""
+
+#: ameta-admin.php:372
+msgid "Include:"
+msgstr ""
+
+#: ameta-admin.php:373
+msgid "Tick to include a user ONLY if there is no value"
+msgstr ""
+
+#: ameta-admin.php:373
+msgid "Include ONLY if Blank:"
+msgstr ""
+
+#: ameta-admin.php:374
+msgid "But Exclude:"
+msgstr ""
+
+#: ameta-admin.php:375
+msgid "Tick to exclude a user if there is no value"
+msgstr ""
+
+#: ameta-admin.php:375
+msgid "Exclude if Blank:"
+msgstr ""
+
+#: ameta-admin.php:378
+msgid "Enter integers, need not be contiguous"
+msgstr ""
+
+#: ameta-admin.php:378
+msgid "Sort Order:"
+msgstr ""
+
+#: ameta-admin.php:379
+msgid "For sort order.  Default is ascending"
+msgstr ""
+
+#: ameta-admin.php:379
+msgid "Sort Descending:"
+msgstr ""
+
+#: ameta-admin.php:463
+msgid "Deleting number of lists and names in database"
+msgstr ""
+
+#: ameta-admin.php:465
+msgid "Deleting all lists settings in database"
+msgstr ""
+
+#: ameta-admin.php:467
+msgid "Deleting all nice name settings in database"
+msgstr ""
+
+#: ameta-admin.php:473
+msgid "Click to return to defaults settings"
+msgstr ""
+
+#: ameta-admin.php:486
+msgid "Number of User Lists:"
+msgstr ""
+
+#: ameta-admin.php:491
+msgid "Name of List "
+msgstr ""
+
+#: ameta-admin.php:494
+msgid "Configure"
+msgstr ""
+
+#: ameta-admin.php:495
+msgid "View"
+msgstr ""
+
+#: ameta-admin.php:503
+msgid "AmR User List News"
+msgstr ""
+
+#: ameta-admin.php:504
+msgid "Other Anmari News"
+msgstr ""
+
+#: ameta-admin.php:512
+msgid "Support at Author&#39;s website"
+msgstr ""
+
+#: ameta-admin.php:513
+msgid "Support at wordpress"
+msgstr ""
+
+#: ameta-admin.php:515
+msgid "Donate"
+msgstr ""
+
+#: ameta-admin.php:517
+msgid "Rss feed"
+msgstr ""
+
+#: ameta-admin.php:528
+msgid "Configure User Lists:"
+msgstr ""
+
+#: ameta-admin.php:530
+msgid "Home: Number and names of User Lists"
+msgstr ""
+
+#: ameta-admin.php:532
+msgid "Nice Names for User Fields"
+msgstr ""
+
+#: ameta-admin.php:545
+msgid "Instructions"
+msgstr ""
+
+#: ameta-admin.php:550
+msgid "Configure each list as you wish"
+msgstr ""
+
+#: ameta-admin.php:552
+msgid "To add a list, increase the number of lists and press update."
+msgstr ""
+
+#: ameta-admin.php:553
+msgid "Then update the list details and configure it"
+msgstr ""
+
+#: ameta-admin.php:554
+msgid ""
+"Each new list is copied from the last configured list.  This may be useful "
+"if configuring a range of similar lists - add the lists one by one - slowly "
+"incrementing the number of lists."
+msgstr ""
+
+#: ameta-admin.php:559
+msgid ""
+"Almost all possible user fields that have data in this wordpress install are "
+"listed below.  If you have not yet created data for another plugin used in "
+"your main site, then there may be no related data here.  Yes this is a "
+"looooong list, and if you have a sophisticated membership system, it may be "
+"even longer than others.  The fields that you are working with will be "
+"sorted to the top."
+msgstr ""
+
+#: ameta-admin.php:562
+msgid ""
+"Configure a list in the suggested sequence below. <b>Update</b> after each "
+"step, then click <b>view</b> (top right) to see the result.  Click Configure "
+"or back to return."
+msgstr ""
+
+#: ameta-admin.php:563
+msgid "Note: Exclude and Include blank override any values."
+msgstr ""
+
+#: ameta-admin.php:567
+msgid ""
+"Enter a number in the display order column to select a field for display and "
+"to define the display order."
+msgstr ""
+
+#: ameta-admin.php:570
+msgid "Enter a number (1-2) to define the sort order for your list"
+msgstr ""
+
+#: ameta-admin.php:573
+msgid ""
+"If a sort order should be descending, such as counts or dates, click \"sort "
+"descending\" for that field."
+msgstr ""
+
+#: ameta-admin.php:576
+msgid ""
+"From the view list, you will see the data values.  If you wish to include or "
+"exclude a record by a value, note the value, then enter that value in the "
+"Include or Exclude Column.  Separate the values with a comma, but NO spaces."
+msgstr ""
+
+#: ameta-admin.php:651
+msgid "Settings"
+msgstr ""
+
+#: ameta-admin.php:683
+msgid "User lists"
+msgstr ""
+
+#: ameta-includes.php:25
+msgid "User name"
+msgstr ""
+
+#: ameta-includes.php:26
+msgid "Nice name"
+msgstr ""
+
+#: ameta-includes.php:27
+msgid "Email"
+msgstr ""
+
+#: ameta-includes.php:28
+msgid "Url"
+msgstr ""
+
+#: ameta-includes.php:29
+msgid "Registration date"
+msgstr ""
+
+#: ameta-includes.php:150
+msgid "Users: Details"
+msgstr ""
+
+#: ameta-includes.php:151
+msgid "Users: Member status and dates"
+msgstr ""
+
+#: ameta-includes.php:152
+msgid "Users: Post and Comment Counts"
+msgstr ""
+
+#: ameta-list.php:18
+msgid "Jump to CSV Export"
+msgstr ""
+
+#: ameta-list.php:20
+msgid "Configure all lists"
+msgstr ""
+
+#: ameta-list.php:22
+msgid "Configure this list"
+msgstr ""
+
+#: ameta-list.php:84
+msgid "Excluding where:"
+msgstr ""
+
+#: ameta-list.php:86 ameta-list.php:129
+msgid " or "
+msgstr ""
+
+#: ameta-list.php:100
+msgid "Exclude if blank:"
+msgstr ""
+
+#: ameta-list.php:114
+msgid "Include only if blank:"
+msgstr ""
+
+#: ameta-list.php:127
+msgid "Including where:"
+msgstr ""
+
+#: ameta-list.php:142
+msgid " Sorting by: "
+msgstr ""
+
+#: ameta-list.php:156
+#, php-format
+msgid "%1s Users selected from total of %2s"
+msgstr ""
+
+#: ameta-list.php:226
+msgid "Export to CSV"
+msgstr ""
+
+#: ameta-list.php:230
+#, php-format
+msgid "No users found for list %s"
+msgstr ""
+
+#: ameta-list.php:233
+#, php-format
+msgid "No fields chosen for display in settings for list %s"
+msgstr ""
+
+#: ameta-list.php:235
+msgid "No users in database! - que pasar?"
+msgstr ""
+
+#: ameta-list.php:258
+msgid "No lists Defined"
+msgstr ""
+
+#: amr-functions.php:35
+msgid "No items"
+msgstr ""
+
+#: amr-users-uninstall.php:6
+msgid "AmR user Options deleted from Database"
+msgstr ""
+
+#: amr-users-uninstall.php:23
+msgid "Uninstall AmR user Options"
+msgstr ""
+
+#: amr-users-uninstall.php:24
+msgid ""
+"Note this function removes the options from the database.  To completely "
+"uninstall, one should continue on to use the standard wordpress functions to "
+"deactivate the plugin and delete the files.  It is not necessary to run this "
+"separately as the uninstall will also run as part of the wordpress delete "
+"plug-in files."
+msgstr ""
+
+#: amr-users-uninstall.php:25
+msgid ""
+"The function is provided here as an aid to someone who has perhaps got their "
+"wordpress install in a knot and wishes to temporarily remove the options "
+"from the database as part of their debugging or cleanup.  Consider also the "
+"use of the RESET."
+msgstr ""
+
+#: amr-users-uninstall.php:33
+msgid ""
+"Note: Navigating to \"User List Settings\" will RELOAD default options - "
+"negating the uninstall."
+msgstr ""
+
+#: amr-users-uninstall.php:35
+msgid "Continue to Plugin list to delete files as well"
+msgstr ""
+
+#: amr-users-uninstall.php:46
+msgid "Cancel"
+msgstr ""
+
+#: amr-users-uninstall.php:47
+msgid "Really Uninstall Options?"
+msgstr ""
+
+#. Plugin Name of an extension
+msgid "AmR users"
+msgstr ""
+
+#. Plugin URI of an extension
+msgid "http://webdesign.anmari.com/plugins/users/"
+msgstr ""
+
+#. Description of an extension
+msgid ""
+"Configurable users listings by meta keys and values, comment count and post "
+"count. Includes  display, inclusion, exclusion, sorting configuration and an "
+"option to export to CSV. <a href=\"options-general.php?page=ameta-admin.php"
+"\">Manage Settings</a>  or <a href=\"users.php?page=ameta-list.php\">Go to "
+"Users Lists</a>.     If you found this useful, please <a href=\"https://www."
+"paypal.com/cgi-bin/webscr?cmd=_donations&business=anmari%40anmari%"
+"2ecom&item_name=AmRUsersPlugin\">Donate</a>, <a href=\"http://wordpress.org/"
+"extend/plugins/amr-users/\">  or rate it</a>, or write a post."
+msgstr ""
+
+#. Author of an extension
+msgid "Anna-marie Redpath"
+msgstr ""
+
+#. Author URI of an extension
+msgid "http://webdesign.anmari.com"
+msgstr ""

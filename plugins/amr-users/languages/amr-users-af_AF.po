@@ -1,0 +1,2674 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: amr users v3.5.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2012-12-12 04:09:15+0000\n"
+"Last-Translator: admin <jmar@anmari.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Afrikaans\n"
+"X-Poedit-Country: SOUTH AFRICA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: includes/ameta-admin-nice-names.php:62
+#: includes/ameta-admin.php:172
+#: includes/ameta-admin.php:181
+#@ amr-users
+msgid "Update"
+msgstr ""
+
+#: includes/ameta-admin.php:173
+#@ amr-users
+msgid "Reset all options"
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:77
+#@ amr-users
+msgid "Nicer names for list headings"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:188
+#: includes/ameta-admin-nice-names.php:32
+#: includes/ameta-admin-overview.php:202
+#@ amr-users
+msgid "Options Updated"
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:376
+#@ amr-users
+msgid "Validation failed"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:184
+#@ amr-users
+msgid "At least some display order must be specified for the list to be meaningful"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:709
+#@ amr-users
+msgid "List Fields Validation failed"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:266
+#@ amr-users
+msgid "Field name"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:267
+#@ amr-users
+msgid "Display order"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:272
+#@ amr-users
+msgid "Eg: value1,value2"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:272
+#@ amr-users
+msgid "Include:"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:273
+#@ amr-users
+msgid "Tick to include a user ONLY if there is no value"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:273
+#@ amr-users
+msgid "Include ONLY if Blank:"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:276
+#@ amr-users
+msgid "But Exclude:"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:277
+#@ amr-users
+msgid "Tick to exclude a user if there is no value"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:277
+#@ amr-users
+msgid "Exclude if Blank:"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:280
+#@ amr-users
+msgid "Enter integers, need not be contiguous"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:283
+#@ amr-users
+msgid "Sort Order:"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:284
+#@ amr-users
+msgid "For sort order.  Default is ascending"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:284
+#@ amr-users
+msgid "Sort Descending:"
+msgstr ""
+
+#: includes/ameta-admin-general.php:110
+#: uninstall.php:29
+#@ amr-users
+msgid "Deleting number of lists and names in database"
+msgstr ""
+
+#: uninstall.php:30
+#@ amr-users
+msgid "Deleting all lists settings in database"
+msgstr ""
+
+#: includes/ameta-admin-general.php:116
+#: uninstall.php:31
+#@ amr-users
+msgid "Deleting all nice name settings in database"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:602
+#: includes/ameta-admin-overview.php:332
+#@ amr-users
+msgid "Configure"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:340
+#: includes/ameta-admin.php:237
+#@ amr-users
+msgid "View"
+msgstr ""
+
+#: includes/ameta-admin.php:375
+#@ amr-users
+msgid "Rss feed"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:564
+#@ amr-users
+msgid "Enter a number in the display order column to select a field for display and to define the display order."
+msgstr ""
+
+#: includes/ameta-admin-configure.php:566
+#@ amr-users
+msgid "Enter a number (1-2) to define the sort order for your list"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:570
+#@ amr-users
+msgid "If a sort order should be descending, such as counts or dates, click \"sort descending\" for that field."
+msgstr ""
+
+#: includes/ameta-admin-configure.php:572
+#@ amr-users
+msgid "From the view list, you will see the data values.  If you wish to include or exclude a record by a value, note the value, then enter that value in the Include or Exclude Column.  Separate the values with a comma, but NO spaces."
+msgstr ""
+
+#: amr-users.php:206
+#@ amr-users
+msgid "Settings"
+msgstr ""
+
+#: includes/ameta-admin.php:75
+#@ amr-users
+msgid "User lists"
+msgstr ""
+
+#: includes/ameta-options.php:66
+#@ amr-users
+msgid "User name"
+msgstr ""
+
+#: includes/ameta-options.php:67
+#@ amr-users
+msgid "Nice name"
+msgstr ""
+
+#: includes/ameta-options.php:68
+#@ amr-users
+msgid "Email"
+msgstr ""
+
+#: includes/ameta-options.php:69
+#@ amr-users
+msgid "Url"
+msgstr ""
+
+#: includes/ameta-options.php:70
+#@ amr-users
+msgid "Registration date"
+msgstr ""
+
+#: includes/ameta-options.php:217
+#@ amr-users
+msgid "Users: Details"
+msgstr ""
+
+#: includes/amr-users-headings-forms.php:29
+#@ amr-users
+msgid "Configure this list"
+msgstr ""
+
+#: includes/ameta-building.php:450
+#@ amr-users
+msgid "Excluding where:"
+msgstr ""
+
+#: includes/ameta-building.php:453
+#: includes/ameta-building.php:511
+#@ amr-users
+msgid " or "
+msgstr ""
+
+#: includes/ameta-building.php:477
+#@ amr-users
+msgid "Exclude if blank:"
+msgstr ""
+
+#: includes/ameta-building.php:494
+#@ amr-users
+msgid "Include only if blank:"
+msgstr ""
+
+#: includes/ameta-building.php:508
+#@ amr-users
+msgid "Including where:"
+msgstr ""
+
+#: includes/amr-users-csv.php:94
+#@ amr-users
+msgid "Export to CSV"
+msgstr ""
+
+#: includes/ameta-building.php:701
+#, php-format
+#@ amr-users
+msgid "No users found for list %s"
+msgstr ""
+
+#: includes/ameta-building.php:704
+#, php-format
+#@ amr-users
+msgid "No fields chosen for display in settings for list %s"
+msgstr ""
+
+#: includes/ameta-building.php:706
+#@ amr-users
+msgid "No users in database! - que pasar?"
+msgstr ""
+
+#: includes/ameta-list.php:253
+#@ amr-users
+msgid "No lists Defined"
+msgstr ""
+
+#: includes/ameta-admin.php:187
+#@ amr-users
+msgid "Rebuild cache in background"
+msgstr ""
+
+#: includes/ameta-admin-cache-status.php:16
+#@ amr-users
+msgid "Does not delete report cache, only the status records."
+msgstr ""
+
+#: includes/ameta-admin-cache-status.php:16
+#@ amr-users
+msgid "Delete all cache status records"
+msgstr ""
+
+#: includes/ameta-admin.php:194
+#@ amr-users
+msgid "If you choose realtime, keep the page open after clicking the button."
+msgstr ""
+
+#: includes/ameta-admin.php:197
+#@ amr-users
+msgid "Rebuild in realtime"
+msgstr ""
+
+#: includes/ameta-admin.php:198
+#@ amr-users
+msgid "Rebuild in background"
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:383
+#@ amr-users
+msgid "Rebuild Complete."
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:128
+#@ amr-users
+msgid "List of possible fields not yet built."
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:144
+#@ amr-users
+msgid "Automatically rebuilding list of possible fields now."
+msgstr ""
+
+#: amr-users.php:264
+#: includes/ameta-admin.php:208
+#, php-format
+#@ amr-users
+msgid "Cache of %s already in progress"
+msgstr ""
+
+#: includes/ameta-admin.php:232
+#: includes/amr-users-headings-forms.php:56
+#@ amr-users
+msgid "Rebuild cache now"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:268
+#@ amr-users
+msgid "Html to appear before if there is a value"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:268
+#@ amr-users
+msgid "Before:"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:269
+#@ amr-users
+msgid "Html to appear after if there is a value"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:269
+#@ amr-users
+msgid "After:"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:291
+#: includes/amr-users-headings-forms.php:129
+#@ amr-users
+msgid "Explanation of comment total functionality"
+msgstr ""
+
+#: includes/ameta-admin.php:262
+#, php-format
+#@ amr-users
+msgid "Configure List %u: %s"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:541
+#@ amr-users
+msgid "Rebuild list in realtime - could be slow!"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:550
+#@ amr-users
+msgid "Build Cache in Background"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:551
+#@ amr-users
+msgid "Build Cache for all"
+msgstr ""
+
+#: includes/ameta-admin.php:312
+#@ amr-users
+msgid "Log of cache requests"
+msgstr ""
+
+#: includes/ameta-admin.php:312
+#@ amr-users
+msgid "Cache Log"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:85
+#: includes/ameta-admin.php:318
+#@ amr-users
+msgid "Cache Status"
+msgstr ""
+
+#: includes/ameta-admin-general.php:121
+#: uninstall.php:32
+#@ amr-users
+msgid "Deleting cache status in database"
+msgstr ""
+
+#: includes/ameta-admin-general.php:135
+#@ amr-users
+msgid "All cached listings cleared."
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:137
+#@ amr-users
+msgid "Hourly"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:138
+#@ amr-users
+msgid "Twice daily"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:139
+#@ amr-users
+msgid "Daily"
+msgstr ""
+
+#: includes/ameta-admin-general.php:205
+#@ amr-users
+msgid "Do not use css provided, my theme css is good enough"
+msgstr ""
+
+#: includes/ameta-admin-general.php:259
+#@ amr-users
+msgid "Default rows per page:"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:226
+#@ amr-users
+msgid "Public"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:275
+#@ amr-users
+msgid "Sortable"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:277
+#@ amr-users
+msgid "Offer sorting of the cached list by clicking on the columns."
+msgstr ""
+
+#: includes/ameta-admin-overview.php:221
+#@ amr-users
+msgid "Name of List"
+msgstr ""
+
+#: includes/amr-users-headings-forms.php:18
+#@ amr-users
+msgid "CSV Export"
+msgstr ""
+
+#: includes/amr-users-headings-forms.php:23
+#@ amr-users
+msgid "Txt Export"
+msgstr ""
+
+#: includes/amr-users-headings-forms.php:25
+#@ amr-users
+msgid "- a .txt file, with CR/LF filtered out, html stripped, tab delimiters, no quotes "
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:149
+#@ amr-users
+msgid "Activate regular cache rebuild ? "
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:158
+#@ amr-users
+msgid "The cache log will tell you the last few times that the cache was rebuilt and why. "
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:161
+#@ amr-users
+msgid "A cron plugin may also be useful."
+msgstr ""
+
+#: includes/ameta-admin.php:368
+#@ amr-users
+msgid "Support"
+msgstr ""
+
+#: includes/ameta-admin.php:408
+#@ amr-users
+msgid "Overview"
+msgstr "Oorsig"
+
+#: includes/ameta-admin.php:411
+#@ amr-users
+msgid "Nice Names"
+msgstr ""
+
+#: includes/ameta-admin.php:416
+#@ amr-users
+msgid "Rebuild Cache in Background"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:562
+#@ amr-users
+msgid "After a configuration change, the cached listing must be rebuilt for the view to reflect the change."
+msgstr ""
+
+#: includes/ameta-admin-configure.php:568
+#@ amr-users
+msgid "Use decimals to define ordered fields in same column (eg: first name, last name)"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:573
+#@ amr-users
+msgid "Note: Exclude and Include blank override any other value selection."
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:162
+#@ amr-users
+msgid "If you add another user related plugin that adds meta data, first add some data to at least one user.  Then you may need to rebuild the list of fields below and/or reconfigure your reports if you want to see the new data."
+msgstr ""
+
+#: includes/ameta-admin.php:447
+#@ amr-users
+msgid "Defaults lists are provided as examples only.  Please configure them to your requirements."
+msgstr ""
+
+#: includes/ameta-admin.php:449
+#@ amr-users
+msgid "Update any new list details and configure the list."
+msgstr ""
+
+#: includes/ameta-admin.php:450
+#@ amr-users
+msgid "Each new list is copied from the last configured list.  This may be useful if configuring a range of similar lists - add the lists one by one - slowly incrementing the number of lists."
+msgstr ""
+
+#: includes/ameta-admin-cache-status.php:23
+#@ amr-users
+msgid "Cache status records deleted, try building cache again"
+msgstr ""
+
+#: includes/ameta-admin-cache-status.php:25
+#: includes/ameta-cache.php:278
+#: includes/ameta-cache.php:339
+#@ amr-users
+msgid "Return"
+msgstr ""
+
+#: includes/ameta-admin.php:391
+#@ amr-users
+msgid "You do not have sufficient permissions to update list settings."
+msgstr ""
+
+#: includes/ameta-admin.php:460
+#, php-format
+#@ amr-users
+msgid "Cache rebuilt for %s "
+msgstr ""
+
+#: includes/ameta-admin.php:461
+#@ amr-users
+msgid "View Report"
+msgstr ""
+
+#: includes/ameta-admin.php:461
+#@ amr-users
+msgid "View the recently cached report"
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:183
+#, php-format
+#@ amr-users
+msgid "You have %s main user table fields"
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:191
+#@ amr-users
+msgid "Added to report DB:"
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:338
+#, php-format
+#@ amr-users
+msgid "Created name %s for %s"
+msgstr ""
+
+#: includes/ameta-options.php:64
+#@ amr-users
+msgid "Id"
+msgstr ""
+
+#: includes/ameta-options.php:71
+#@ amr-users
+msgid "User status"
+msgstr ""
+
+#: includes/ameta-options.php:72
+#@ amr-users
+msgid "Display Name"
+msgstr ""
+
+#: includes/ameta-options.php:73
+#@ amr-users
+msgid "First name"
+msgstr ""
+
+#: includes/ameta-options.php:74
+#@ amr-users
+msgid "Last name"
+msgstr ""
+
+#: includes/ameta-options.php:75
+#@ amr-users
+msgid "Nick Name"
+msgstr ""
+
+#: includes/ameta-options.php:76
+#@ amr-users
+msgid "Post Count"
+msgstr ""
+
+#: includes/ameta-options.php:77
+#@ amr-users
+msgid "Comment Count"
+msgstr ""
+
+#: includes/ameta-options.php:78
+#@ amr-users
+msgid "First Role"
+msgstr ""
+
+#: includes/ausers-pluggable.php:983
+#, php-format
+#@ default
+msgid "Displaying %s&#8211;%s of %s"
+msgstr ""
+
+#: includes/ameta-cache.php:21
+#@ amr-users
+msgid "Number of Lists must be between 1 and 40."
+msgstr ""
+
+#: includes/ameta-cache.php:22
+#@ amr-users
+msgid "Rows per page must be between 1 and 999."
+msgstr ""
+
+#: includes/ameta-cache.php:23
+#@ amr-users
+msgid "Unexpected Problem reading names of lists - no array"
+msgstr ""
+
+#: includes/ameta-cache.php:25
+#@ amr-users
+msgid "No cache exists for any reports."
+msgstr ""
+
+#: includes/ameta-cache.php:26
+#@ amr-users
+msgid "Cache update in progress.  Please wait a few seconds then refresh."
+msgstr ""
+
+#: includes/ameta-cache.php:90
+#, php-format
+#@ amr-users
+msgid "Report %s started %s ago"
+msgstr ""
+
+#: includes/ameta-cache.php:91
+#@ amr-users
+msgid "Something may be wrong - delete cache status, try again, check server logs and/or memory limit"
+msgstr ""
+
+#: includes/ameta-cache.php:94
+#: includes/ameta-cache.php:569
+#@ amr-users
+msgid "Houston, we have a problem"
+msgstr ""
+
+#: includes/ameta-cache.php:244
+#: includes/ameta-cache.php:264
+#@ amr-users
+msgid "Error inserting - maybe clashing with a background run?"
+msgstr ""
+
+#: includes/ameta-cache.php:163
+#: includes/ameta-cache.php:184
+#: includes/ameta-cache.php:245
+#: includes/ameta-cache.php:265
+#@ amr-users
+msgid "Killing myself.. please check log and status and try again later."
+msgstr ""
+
+#: includes/ameta-cache.php:502
+#@ amr-users
+msgid "Taking too long, may have been aborted... delete cache status, try again, check server logs and/or memory limit"
+msgstr ""
+
+#: includes/ameta-cache.php:505
+#, php-format
+#@ amr-users
+msgid "Started %s"
+msgstr ""
+
+#: includes/ameta-cache.php:507
+#: includes/ameta-cache.php:508
+#: includes/ameta-cache.php:509
+#@ amr-users
+msgid "?"
+msgstr ""
+
+#: includes/ameta-cache.php:535
+#@ amr-users
+msgid "Report Id"
+msgstr ""
+
+#: includes/ameta-cache.php:536
+#@ amr-users
+msgid "Name"
+msgstr ""
+
+#: includes/ameta-cache.php:537
+#@ amr-users
+msgid "Lines"
+msgstr ""
+
+#: includes/ameta-cache.php:538
+#@ amr-users
+msgid "Ended?"
+msgstr ""
+
+#: includes/ameta-cache.php:539
+#@ amr-users
+msgid "How long ago?"
+msgstr ""
+
+#: includes/ameta-cache.php:540
+#@ amr-users
+msgid "Seconds taken"
+msgstr ""
+
+#: includes/ameta-cache.php:541
+#@ amr-users
+msgid "Peak Memory"
+msgstr ""
+
+#: includes/ameta-cache.php:542
+#@ amr-users
+msgid "Details"
+msgstr ""
+
+#: includes/ameta-cache.php:569
+#@ amr-users
+msgid "Link to audio file of the astronauts of Apollo 13 reporting a problem."
+msgstr ""
+
+#: includes/ameta-cache.php:570
+#@ amr-users
+msgid "The background job's may be having problems."
+msgstr ""
+
+#: includes/ameta-cache.php:571
+#@ amr-users
+msgid "Delete all the cache records and try again"
+msgstr ""
+
+#: includes/ameta-cache.php:572
+#@ amr-users
+msgid "Check the server logs and your php wordpress memory limit."
+msgstr ""
+
+#: includes/ameta-cache.php:573
+#@ amr-users
+msgid "The TPC memory usage plugin may be useful to assess whether the problem is memory."
+msgstr ""
+
+#: includes/ameta-cache.php:597
+#@ amr-users
+msgid "Unknown error."
+msgstr ""
+
+#: includes/ameta-includes.php:422
+#@ amr-users
+msgid "Click to toggle"
+msgstr ""
+
+#: includes/ameta-includes.php:506
+#@ amr-users
+msgid "No items"
+msgstr ""
+
+#: includes/ameta-building.php:540
+#@ amr-users
+msgid " Cache sorted by: "
+msgstr ""
+
+#: includes/ameta-building.php:717
+#, php-format
+#@ amr-users
+msgid "Completed %s in %s microseconds"
+msgstr ""
+
+#: includes/ameta-list.php:659
+#@ amr-users
+msgid "Sorted by:"
+msgstr ""
+
+#: includes/amr-users-headings-forms.php:181
+#@ amr-users
+msgid "Click to sort.  Click again to change direction."
+msgstr ""
+
+#: includes/amr-users-csv.php:64
+#, php-format
+#@ amr-users
+msgid "%s lines found, 1 heading line, the rest data."
+msgstr ""
+
+#: includes/amr-users-widget.php:12
+#: includes/amr-users-widget.php:72
+#@ amr-users
+msgid "Users"
+msgstr ""
+
+#: includes/amr-users-widget.php:13
+#@ amr-users
+msgid "users"
+msgstr ""
+
+#: includes/amr-users-widget.php:91
+#@ amr-users
+msgid "Title"
+msgstr ""
+
+#: includes/amr-users-widget.php:95
+#@ amr-users
+msgid "User List"
+msgstr ""
+
+#: amr-users.php:217
+#, php-format
+#@ amr-users
+msgid "Update of User %s - user reporting cache update requested"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:17
+#@ amr-users
+msgid "Activated regular cacheing of lists: "
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:19
+#@ amr-users
+msgid "Next cache run on user change or soon after: "
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:34
+#@ amr-users
+msgid "Deactivated any existing regular cacheing of lists"
+msgstr ""
+
+#: amr-users.php:239
+#@ amr-users
+msgid "Report Cache has been scheduled."
+msgstr ""
+
+#: amr-users.php:240
+#@ amr-users
+msgid "If you have a lot of records, it may take a while."
+msgstr ""
+
+#: amr-users.php:241
+#@ amr-users
+msgid "Please check the cache log - refresh for updates and do not reschedule until all the reports have completed. "
+msgstr ""
+
+#: amr-users.php:242
+#@ amr-users
+msgid "If you think it is taking too long, problems may be occuring in the background job, such as running out of memory.  Check server logs and/or Increase wordpress\\s php memory limit"
+msgstr ""
+
+#: amr-users.php:243
+#@ amr-users
+msgid "The cache status or the TPC Memory Usage plugin may be useful to assess this."
+msgstr ""
+
+#: amr-users.php:275
+#: amr-users.php:311
+#, php-format
+#@ amr-users
+msgid "Schedule background cacheing of report: %s"
+msgstr ""
+
+#: amr-users.php:285
+#@ amr-users
+msgid "Error: No stored options found."
+msgstr ""
+
+#: amr-users.php:291
+#, php-format
+#@ amr-users
+msgid "Received background cache request for %s reports"
+msgstr ""
+
+#: uninstall.php:39
+#@ amr-users
+msgid "Removed scheduled action"
+msgstr ""
+
+#: uninstall.php:33
+#@ amr-users
+msgid "Deleting cached lists info in database"
+msgstr ""
+
+#: uninstall.php:42
+#@ amr-users
+msgid "Deleted cache table"
+msgstr ""
+
+#: uninstall.php:43
+#@ amr-users
+msgid "Deleted cache log table"
+msgstr ""
+
+#: includes/ameta-admin-cache-status.php:4
+#@ amr-users
+msgid "Delete the cache log records"
+msgstr ""
+
+#: includes/ameta-admin-cache-status.php:10
+#@ amr-users
+msgid "Delete the actual cache records."
+msgstr ""
+
+#: includes/ameta-admin-cache-status.php:10
+#@ amr-users
+msgid "Delete all cache entries"
+msgstr ""
+
+#: amr-users.php:269
+#: includes/ameta-admin.php:216
+#@ amr-users
+msgid "Report "
+msgstr ""
+
+#: includes/ameta-admin.php:545
+#@ amr-users
+msgid "amr wpusersplugin news"
+msgstr ""
+
+#: includes/ameta-admin.php:546
+#@ amr-users
+msgid "other anmari news"
+msgstr ""
+
+#: includes/ameta-cache.php:114
+#, php-format
+#@ amr-users
+msgid "Cache already scheduled for %s, in %s time"
+msgstr ""
+
+#: includes/ameta-cache.php:275
+#@ amr-users
+msgid "Logs deleted"
+msgstr ""
+
+#: amr-users.php:302
+#@ amr-users
+msgid "All reports: "
+msgstr ""
+
+#: amr-users.php:185
+#@ amr-users
+msgid "Not logged in or no permission for non public user list"
+msgstr ""
+
+#: amr-users.php:227
+#, php-format
+#@ amr-users
+msgid "Update of user meta record %s - user reporting cache update requested"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:83
+#: includes/ameta-admin.php:61
+#@ amr-users
+msgid "Cache Settings"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:84
+#@ amr-users
+msgid "Cache Logs"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:112
+#: includes/ameta-admin-cache-status.php:43
+#@ amr-users
+msgid "Background cache request received"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:135
+#@ amr-users
+msgid "No scheduled auto cacheing"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:152
+#@ amr-users
+msgid "This cacheing grabs all the raw data it can find and does some preprocessing. "
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:155
+#@ amr-users
+msgid "The data is stored in a flat db table for later formatting and reporting. "
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:159
+#@ amr-users
+msgid "Go to cache log"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:164
+#@ amr-users
+msgid "More information"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:180
+#@ amr-users
+msgid "Do NOT re-cache on user update"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:188
+#@ amr-users
+msgid "Do re-cache on user update"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:193
+#@ amr-users
+msgid "If you have very frequent user updates consider only cacheing at regular intervals"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:195
+#@ amr-users
+msgid "This will help prevent excessive database activity"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:197
+#@ amr-users
+msgid "EG: Are you tracking every page ? every login.. you do not want it recaching all the time?!"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:198
+#@ amr-users
+msgid "Rather cache hourly only.  A refresh can be requested."
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:200
+#@ amr-users
+msgid "Wordpress transients are also used to cache the html in public lists and front end"
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:203
+#@ amr-users
+msgid "To switch off all auto cacheing, select \"Do not..\" above AND \"No...\" below."
+msgstr ""
+
+#: includes/ameta-admin-cache-settings.php:205
+#@ amr-users
+msgid "Lists will then be re-generated on manual refresh request only."
+msgstr ""
+
+#: includes/ameta-admin-configure.php:10
+#@ amr-users
+msgid "Update Column Headings"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:12
+#@ amr-users
+msgid "Reset Column Headings"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:91
+#@ amr-users
+msgid "No fields selected for display"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:237
+#@ amr-users
+msgid "Update overview settings"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:241
+#: includes/amr-users-widget.php:126
+#@ amr-users
+msgid "Go to overview of all lists"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:242
+#: includes/amr-users-widget.php:127
+#@ amr-users
+msgid "Manage lists"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:246
+#@ amr-users
+msgid "Find Fields (must have sample data in them)"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:247
+#@ amr-users
+msgid "Find Fields"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:258
+#@ amr-users
+msgid "Update field settings"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:267
+#@ amr-users
+msgid "Blank to hide, Enter a number to select and specify column order.  Eg: 1 2 6 8"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:271
+#@ amr-users
+msgid "Type of link to be generated on the field value"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:271
+#@ amr-users
+msgid "Link Type:"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:274
+#@ amr-users
+msgid "Eg: value1,value2."
+msgstr ""
+
+#: includes/ameta-admin-configure.php:275
+#@ amr-users
+msgid "Display the field to set up the exclusion, then you can undisplay it afterwards."
+msgstr ""
+
+#: includes/ameta-admin-configure.php:282
+#@ amr-users
+msgid "Maximum 2 sort level. Can switch off display."
+msgstr ""
+
+#: includes/ameta-admin-configure.php:417
+#@ amr-users
+msgid "Activate or acquire amr-user-plus-grouping addon for listing users in a group by any field"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:419
+#: includes/ameta-admin-configure.php:441
+#@ amr-users
+msgid "Edit grouping"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:427
+#@ amr-users
+msgid "Exit grouping"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:440
+#, php-format
+#@ amr-users
+msgid "Grouping %u: %s"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:450
+#@ amr-users
+msgid "Activate or acquire amr-user-plus addon for custom (eg: alphabetical) navigation"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:452
+#: includes/ameta-admin-configure.php:474
+#@ amr-users
+msgid "Edit navigation"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:460
+#@ amr-users
+msgid "Exit navigation"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:473
+#, php-format
+#@ amr-users
+msgid "Custom navigation %u: %s"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:484
+#@ amr-users
+msgid "Activate or acquire amr-user-plus addon for real time filtering"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:485
+#: includes/ameta-admin-configure.php:495
+#@ amr-users
+msgid "Edit filtering"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:490
+#@ amr-users
+msgid "Exit filtering"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:494
+#, php-format
+#@ amr-users
+msgid "Realtime filtering %u: %s"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:508
+#@ amr-users
+msgid "Exit headings"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:513
+#, php-format
+#@ amr-users
+msgid "Edit the column headings %u: %s"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:514
+#@ amr-users
+msgid "Edit headings"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:528
+#@ amr-users
+msgid "Rebuild list"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:560
+#@ amr-users
+msgid "Almost all possible user fields that have data are listed in field list (nice names).  If you have not yet created data for another plugin used in your main site, then there may be no related data here.  Yes this is a looooong list, and if you have a sophisticated membership system, it may be even longer than others.  The fields that you are working with will be sorted to the top, once you have defined their display order."
+msgstr ""
+
+#: includes/ameta-admin-configure.php:607
+#: includes/ameta-admin-overview.php:512
+#@ amr-users
+msgid "Add new"
+msgstr ""
+
+#: includes/ameta-admin-configure.php:623
+#@ default
+msgid "New list copy of "
+msgstr ""
+
+#: includes/ameta-admin-configure.php:692
+#@ amr-users
+msgid "Grouping Function not active"
+msgstr ""
+
+#: includes/ameta-admin-general.php:37
+#@ amr-users
+msgid "Invalid avatar size"
+msgstr ""
+
+#: includes/ameta-admin-general.php:113
+#@ amr-users
+msgid "Deleting all main settings in database"
+msgstr ""
+
+#: includes/ameta-admin-general.php:118
+#@ amr-users
+msgid "Deleting all nice name exclusion settings in database"
+msgstr ""
+
+#: includes/ameta-admin-general.php:123
+#@ amr-users
+msgid "Deleting original keys mapping in database"
+msgstr ""
+
+#: includes/ameta-admin-general.php:126
+#@ amr-users
+msgid "Deleting custom-headings in database"
+msgstr ""
+
+#: includes/ameta-admin-general.php:128
+#@ amr-users
+msgid "Deleting amr-users-filtering in database"
+msgstr ""
+
+#: includes/ameta-admin-general.php:130
+#@ amr-users
+msgid "Deleting amr-users-prefixes-in-use in database"
+msgstr ""
+
+#: includes/ameta-admin-general.php:141
+#@ amr-users
+msgid "Click to find your user fields again."
+msgstr ""
+
+#: includes/ameta-admin-general.php:154
+#: includes/ameta-options.php:209
+#: includes/ameta-upgrades.php:36
+#@ amr-users
+#@ default
+msgid "Csv"
+msgstr ""
+
+#: includes/ameta-admin-general.php:157
+#: includes/ameta-options.php:210
+#: includes/ameta-upgrades.php:40
+#@ amr-users
+msgid "Refresh user list cache"
+msgstr ""
+
+#: includes/ameta-admin-general.php:159
+#: includes/ameta-options.php:211
+#@ amr-users
+msgid "You do not have access to this list, or are not logged in."
+msgstr ""
+
+#: includes/ameta-admin-general.php:177
+#@ default
+msgid "How to fetch data?"
+msgstr ""
+
+#: includes/ameta-admin-general.php:181
+#@ amr-users
+msgid "Fetch user data with wp_query? &nbsp; "
+msgstr ""
+
+#: includes/ameta-admin-general.php:182
+#@ amr-users
+msgid "WordPress does some extra work which requires more memory"
+msgstr ""
+
+#: includes/ameta-admin-general.php:190
+#@ amr-users
+msgid "Fetch user data directly? &nbsp; "
+msgstr ""
+
+#: includes/ameta-admin-general.php:191
+#@ amr-users
+msgid "This seems to use less memory, better for very large databases."
+msgstr ""
+
+#: includes/ameta-admin-general.php:195
+#@ amr-users
+msgid "General & Styling"
+msgstr ""
+
+#: includes/ameta-admin-general.php:197
+#@ amr-users
+msgid "No css "
+msgstr ""
+
+#: includes/ameta-admin-general.php:215
+#@ amr-users
+msgid "Use css on these pages only "
+msgstr ""
+
+#: includes/ameta-admin-general.php:217
+#@ amr-users
+msgid "(Else all if using css)"
+msgstr ""
+
+#: includes/ameta-admin-general.php:218
+#@ amr-users
+msgid "(comma separated integers)"
+msgstr ""
+
+#: includes/ameta-admin-general.php:229
+#@ amr-users
+msgid "Text for csv link"
+msgstr ""
+
+#: includes/ameta-admin-general.php:231
+#@ amr-users
+msgid "(May be plain text or an icon link)"
+msgstr ""
+
+#: includes/ameta-admin-general.php:237
+#: includes/ameta-admin-general.php:247
+#@ amr-users
+msgid "Preview:"
+msgstr ""
+
+#: includes/ameta-admin-general.php:238
+#: includes/ameta-admin-general.php:248
+#@ amr-users
+msgid "This will be a link"
+msgstr ""
+
+#: includes/ameta-admin-general.php:241
+#@ amr-users
+msgid "Text for cache refresh link"
+msgstr ""
+
+#: includes/ameta-admin-general.php:251
+#@ amr-users
+msgid "Message when user does not have access or not logged in."
+msgstr ""
+
+#: includes/ameta-admin-general.php:266
+#@ amr-users
+msgid "Avatar size:"
+msgstr ""
+
+#: includes/ameta-admin-general.php:268
+#@ default
+msgid "Info"
+msgstr ""
+
+#: includes/ameta-admin-general.php:290
+#: includes/ameta-admin.php:402
+#@ amr-users
+msgid "General"
+msgstr ""
+
+#: includes/ameta-admin-general.php:291
+#@ amr-users
+msgid "Fields & Nice Names"
+msgstr ""
+
+#: includes/ameta-admin-general.php:292
+#@ amr-users
+msgid "Overview &amp; tools"
+msgstr ""
+
+#: includes/ameta-admin-import-export-list.php:6
+#@ amr-users
+msgid "Import a list's settings"
+msgstr ""
+
+#: includes/ameta-admin-import-export-list.php:7
+#@ amr-users
+msgid "Imported settings must be from a compatible system."
+msgstr ""
+
+#: includes/ameta-admin-import-export-list.php:8
+#@ amr-users
+msgid "Ensure any fields used by the list are in your database and have been \"found\"."
+msgstr ""
+
+#: includes/ameta-admin-import-export-list.php:12
+#@ default
+msgid "Import"
+msgstr ""
+
+#: includes/ameta-admin-import-export-list.php:27
+#@ amr-users
+msgid "Export a list's settings"
+msgstr ""
+
+#: includes/ameta-admin-import-export-list.php:36
+#@ default
+msgid "Export"
+msgstr ""
+
+#: includes/ameta-admin-import-export-list.php:138
+#@ amr-users
+msgid "Invalid data in settings file"
+msgstr ""
+
+#: includes/ameta-admin-import-export-list.php:143
+#, php-format
+#@ amr-users
+msgid "Your plugin version is %s. Imported settings are from plugin version: %s"
+msgstr ""
+
+#: includes/ameta-admin-import-export-list.php:149
+#, php-format
+#@ amr-users
+msgid "Your plugin version is %s, BUT imported settings are from plugin version: %s"
+msgstr ""
+
+#: includes/ameta-admin-import-export-list.php:152
+#@ amr-users
+msgid "Please test thoroughly."
+msgstr ""
+
+#: includes/ameta-admin-import-export-list.php:176
+#, php-format
+#@ amr-users
+msgid "List %s will be saved with imported data"
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:54
+#: includes/ameta-admin-nice-names.php:63
+#@ amr-users
+msgid "Find any new fields."
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:64
+#@ amr-users
+msgid "Reset and make new nice names"
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:80
+#@ amr-users
+msgid "Extracts all user meta records (almost, some specifically excluded.)"
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:81
+#@ amr-users
+msgid "Sample data MUST exist!"
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:84
+#@ amr-users
+msgid "Digs deep into composite records, to extract out \"fields\" that should have been simple meta."
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:87
+#@ amr-users
+msgid "Composite user meta are usually created by plugins who do not do things the way wordpress intended."
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:90
+#@ amr-users
+msgid "If the necessary add ons have been activated, will dig deeper or look further into other tables."
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:95
+#@ amr-users
+msgid "Nice Name"
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:98
+#@ amr-users
+msgid "Exclude from Reports?"
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:134
+#@ amr-users
+msgid "You have many users. Please be patient when you rebuild."
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:149
+#@ amr-users
+msgid "List Rebuilt"
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:158
+#@ amr-users
+msgid "If you are not seeing all the fields you expect to see, then rebuild the list. "
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:161
+#@ amr-users
+msgid "Please note that what you see is dependant on the data in your system. If there is no meta data for a field you are expecting to see, it is impossible for that field to appear."
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:195
+#@ amr-users
+msgid "Excluded:"
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:218
+#@ amr-users
+msgid "Check for fields from non wp tables."
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:239
+#, php-format
+#@ amr-users
+msgid "You have %u distinct meta key / meta value records. "
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:240
+#@ amr-users
+msgid "...Deserialising and rationalising...looking for new fields."
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:268
+#@ amr-users
+msgid "Added complex meta to report DB: "
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:280
+#@ amr-users
+msgid "Added meta to report DB: "
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:292
+#@ amr-users
+msgid "Added to report DB: "
+msgstr ""
+
+#: includes/ameta-admin-nice-names.php:318
+#@ amr-users
+msgid "Try to make some nicer names."
+msgstr ""
+
+#: includes/ameta-admin-overview.php:10
+#@ amr-users
+msgid "Inadequate access"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:28
+#@ default
+msgid " - copy"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:42
+#, php-format
+#@ amr-users
+msgid "Error deleting list %S"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:64
+#@ amr-users
+msgid "List and the cache deleted."
+msgstr ""
+
+#: includes/ameta-admin-overview.php:75
+#@ default
+msgid "New list"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:156
+#@ amr-users
+msgid "Csv lists privacy check done.  Any no longer public lists deleted. "
+msgstr ""
+
+#: includes/ameta-admin-overview.php:218
+#@ amr-users
+msgid "No."
+msgstr ""
+
+#: includes/ameta-admin-overview.php:228
+#@ amr-users
+msgid "List may be viewed in public pages"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:232
+#@ amr-users
+msgid " Public Html Type"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:236
+#@ amr-users
+msgid "Rows per page"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:239
+#@ amr-users
+msgid "Avatar size"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:243
+#@ amr-users
+msgid "Search"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:245
+#@ amr-users
+msgid "If list is public, show user search form."
+msgstr ""
+
+#: includes/ameta-admin-overview.php:248
+#: includes/amr-users-headings-forms.php:96
+#@ amr-users
+#@ default
+msgid "Per page"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:250
+#@ amr-users
+msgid "If list is public, show per page option."
+msgstr ""
+
+#: includes/ameta-admin-overview.php:253
+#@ amr-users
+msgid "Pagination"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:255
+#@ amr-users
+msgid "If list is public, show pagination, else just show top n results."
+msgstr ""
+
+#: includes/ameta-admin-overview.php:258
+#@ amr-users
+msgid "Headings"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:260
+#@ amr-users
+msgid "If list is public, show column headings."
+msgstr ""
+
+#: includes/ameta-admin-overview.php:263
+#@ amr-users
+msgid "Csv link"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:265
+#@ amr-users
+msgid "If list is public, show a link to csv export file"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:268
+#@ amr-users
+msgid "Refresh"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:270
+#@ amr-users
+msgid "If list is public, show a link to refresh the cache"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:281
+#@ amr-users
+msgid "Custom navigation"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:283
+#@ amr-users
+msgid "Show custom navigation to find users. "
+msgstr ""
+
+#: includes/ameta-admin-overview.php:284
+#: includes/ameta-admin-overview.php:291
+#@ amr-users
+msgid "Requires the amr-users-plus addon."
+msgstr ""
+
+#: includes/ameta-admin-overview.php:288
+#@ amr-users
+msgid "Filtering Location"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:290
+#@ amr-users
+msgid "Show filtering. "
+msgstr ""
+
+#: includes/ameta-admin-overview.php:333
+#@ amr-users
+msgid "Copy"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:336
+#@ amr-users
+msgid "Rebuild"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:339
+#: includes/ameta-includes.php:568
+#@ amr-users
+msgid "Delete"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:343
+#@ default
+msgid "Add page"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:436
+#@ amr-users
+msgid "in table"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:437
+#@ amr-users
+msgid "above"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:438
+#: includes/ameta-options.php:43
+#@ amr-users
+msgid "none"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:481
+#@ amr-users
+msgid "Problem creating DB tables"
+msgstr ""
+
+#: includes/ameta-admin-overview.php:492
+#@ amr-users
+msgid "There is a problem - Some overview list settings got lost somehow.  Try reset options."
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:14
+#@ amr-users
+msgid "Compare the memory limits to the memory stats shown in your cache status"
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:15
+#@ amr-users
+msgid "go"
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:19
+#@ amr-users
+msgid "If the user and user meta numbers are large, you may experience problems with large lists."
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:22
+#@ amr-users
+msgid "If this happens, try: increasing php memory, clean up users (get rid of the spammy users), clean up usermeta.  You may have records from inactive plugins."
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:30
+#@ amr-users
+msgid "This is a multi-site network.  All users shown here."
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:37
+#, php-format
+#@ amr-users
+msgid "This website with blog_id=%s and prefix=%s has:"
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:42
+#, php-format
+#@ amr-users
+msgid "Plugin version: %s"
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:45
+#, php-format
+#@ amr-users
+msgid "Php version: %s "
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:48
+#, php-format
+#@ amr-users
+msgid "Wp version: %s "
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:51
+#, php-format
+#@ amr-users
+msgid "Wordpress Memory limit: %s "
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:54
+#, php-format
+#@ amr-users
+msgid "Php Memory Limit: %s "
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:57
+#, php-format
+#@ amr-users
+msgid "Charset: %s "
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:61
+#, php-format
+#@ amr-users
+msgid "Collation: %s "
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:68
+#, php-format
+#@ amr-users
+msgid "There are %s total users: "
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:220
+#, php-format
+#@ amr-users
+msgid "%s sites"
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:90
+#@ default
+msgid "These queries could be slow.  Be patient.  Wait:"
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:92
+#@ amr-users
+msgid "Get meta stats"
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:96
+#@ amr-users
+msgid "Run user test query"
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:100
+#@ amr-users
+msgid "Run user meta test query"
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:111
+#@ amr-users
+msgid "Meta stats:"
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:134
+#, php-format
+#@ amr-users
+msgid "%s different user meta keys."
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:148
+#@ amr-users
+msgid "Running some test queries:"
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:173
+#@ amr-users
+msgid "If these queries completed, the \"fetch users directly\" method should work, even if the \"wp_query\" method fails."
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:173
+#@ amr-users
+msgid "See \"How to fetch data\" in the general settings."
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:192
+#@ amr-users
+msgid "Page complete.  Please note memory and incremental runtimes."
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:226
+#@ amr-users
+msgid "About your user database"
+msgstr ""
+
+#: includes/ameta-admin.php:33
+#@ amr-users
+msgid "User Lists"
+msgstr ""
+
+#: includes/ameta-admin.php:48
+#: includes/ameta-admin.php:530
+#@ amr-users
+msgid "About"
+msgstr ""
+
+#: includes/ameta-admin.php:52
+#@ amr-users
+msgid "User List Settings"
+msgstr ""
+
+#: includes/ameta-admin.php:52
+#@ amr-users
+msgid "General Settings"
+msgstr ""
+
+#: includes/ameta-admin.php:56
+#@ amr-users
+msgid "Configure a list"
+msgstr ""
+
+#: includes/ameta-admin.php:61
+#@ amr-users
+msgid "Cacheing"
+msgstr ""
+
+#: includes/ameta-admin.php:193
+#@ amr-users
+msgid "For large databases, rebuilding in realtime can take a long time. Consider running a background cache instead."
+msgstr ""
+
+#: includes/ameta-admin.php:244
+#@ amr-users
+msgid "Members"
+msgstr ""
+
+#: includes/ameta-admin.php:246
+#@ amr-users
+msgid "Add a new page with shortcode for this list"
+msgstr ""
+
+#: includes/ameta-admin.php:275
+#, php-format
+#@ amr-users
+msgid "Delete List %u: %s"
+msgstr ""
+
+#: includes/ameta-admin.php:284
+#, php-format
+#@ amr-users
+msgid "Copy list to new %u: %s"
+msgstr ""
+
+#: includes/ameta-admin.php:324
+#@ amr-users
+msgid "Related plugins are continually being developed in response to requests. They are packaged separately so you only add what you need."
+msgstr ""
+
+#: includes/ameta-admin.php:329
+#@ amr-users
+msgid "Improve visibility and manage the cron schedules"
+msgstr ""
+
+#: includes/ameta-admin.php:333
+#@ amr-users
+msgid "Adds functionality such as complex filtering"
+msgstr ""
+
+#: includes/ameta-admin.php:337
+#@ amr-users
+msgid "Adds subscribers in the separate subscribe2 table to the user lists"
+msgstr ""
+
+#: includes/ameta-admin.php:341
+#@ amr-users
+msgid "Makes the separate \"cimy extra fields\" table look like normal user meta data"
+msgstr ""
+
+#: includes/ameta-admin.php:345
+#@ amr-users
+msgid "Adds bulk ym updates and better formatting of ym fields."
+msgstr ""
+
+#: includes/ameta-admin.php:348
+#@ amr-users
+msgid "amr users multi site"
+msgstr ""
+
+#: includes/ameta-admin.php:349
+#@ amr-users
+msgid "Makes amr users operate in the network pages across the sites."
+msgstr ""
+
+#: includes/ameta-admin.php:354
+#@ amr-users
+msgid "... there may be more."
+msgstr ""
+
+#: includes/ameta-admin.php:371
+#: includes/amr-users-credits.php:82
+#@ amr-users
+msgid "Rate it"
+msgstr ""
+
+#: includes/ameta-admin.php:378
+#@ amr-users
+msgid "Say thanks to anmari@anmari.com"
+msgstr ""
+
+#: includes/ameta-admin.php:405
+#@ amr-users
+msgid "Test your db"
+msgstr ""
+
+#: includes/ameta-admin.php:431
+#: includes/ameta-admin.php:557
+#@ amr-users
+msgid "Fields and Nice Names"
+msgstr ""
+
+#: includes/ameta-admin.php:432
+#: includes/ameta-admin.php:446
+#@ amr-users
+msgid "Lists"
+msgstr ""
+
+#: includes/ameta-admin.php:433
+#: includes/ameta-admin.php:438
+#: includes/ameta-admin.php:559
+#@ amr-users
+msgid "List Settings"
+msgstr ""
+
+#: includes/ameta-admin.php:452
+#@ amr-users
+msgid "List settings from compatible systems can be imported"
+msgstr ""
+
+#: includes/ameta-admin.php:463
+#, php-format
+#@ amr-users
+msgid "Check cache log for completion of list %s "
+msgstr ""
+
+#: includes/ameta-admin.php:509
+#@ amr-users
+msgid "Create sample users with sample data."
+msgstr ""
+
+#: includes/ameta-admin.php:512
+#@ amr-users
+msgid "There must be at least one entry for each field you want to see."
+msgstr ""
+
+#: includes/ameta-admin.php:513
+#@ amr-users
+msgid "Execute \"find the fields\"."
+msgstr ""
+
+#: includes/ameta-admin.php:514
+#@ amr-users
+msgid "Configure the lists."
+msgstr ""
+
+#: includes/ameta-admin.php:515
+#@ amr-users
+msgid "Rebuild cache."
+msgstr ""
+
+#: includes/ameta-admin.php:516
+#@ amr-users
+msgid "Add user plugins ? Add fields ? Add data ? : "
+msgstr ""
+
+#: includes/ameta-admin.php:517
+#@ amr-users
+msgid "Cache must be updated for changes to show. (duh!)"
+msgstr ""
+
+#: includes/ameta-admin.php:531
+#@ amr-users
+msgid "Your user db"
+msgstr ""
+
+#: includes/ameta-admin.php:532
+#: includes/ameta-admin.php:543
+#@ amr-users
+msgid "News"
+msgstr ""
+
+#: includes/ameta-admin.php:554
+#@ amr-users
+msgid "Shortcodes to add to pages:"
+msgstr ""
+
+#: includes/ameta-admin.php:556
+#@ amr-users
+msgid "Instructions."
+msgstr ""
+
+#: includes/ameta-building.php:574
+#, php-format
+#@ amr-users
+msgid "All %1s Users processed."
+msgstr ""
+
+#: includes/ameta-building.php:576
+#, php-format
+#@ amr-users
+msgid "%1s Users processed from total of %2s"
+msgstr ""
+
+#: includes/ameta-cache.php:20
+#@ amr-users
+msgid "No records found in this list"
+msgstr ""
+
+#: includes/ameta-cache.php:24
+#@ amr-users
+msgid "No cache exists for this report."
+msgstr ""
+
+#: includes/ameta-cache.php:162
+#: includes/ameta-cache.php:183
+#@ amr-users
+msgid "Error updating report headings."
+msgstr ""
+
+#: includes/ameta-cache.php:276
+#@ amr-users
+msgid "No logs or Error deleting Logs."
+msgstr ""
+
+#: includes/ameta-cache.php:329
+#@ amr-users
+msgid "Cache cleared. "
+msgstr ""
+
+#: includes/ameta-cache.php:331
+#@ amr-users
+msgid "Error clearing cache, or no cache to clear. "
+msgstr ""
+
+#: includes/ameta-cache.php:334
+#@ amr-users
+msgid "Cache status in db cleared"
+msgstr ""
+
+#: includes/ameta-cache.php:336
+#@ amr-users
+msgid "Error clearing cache in db, or no cache to clear"
+msgstr ""
+
+#: includes/ameta-includes.php:128
+#, php-format
+#@ amr-users
+msgid "At %s seconds,  peak mem= %s"
+msgstr ""
+
+#: includes/ameta-includes.php:386
+#@ amr-users
+msgid "Custom Column Headings Updated"
+msgstr ""
+
+#: includes/ameta-includes.php:389
+#@ amr-users
+msgid "Column headings not updated - no change or error."
+msgstr ""
+
+#: includes/ameta-includes.php:575
+#@ amr-users
+msgid "Bulk Actions"
+msgstr ""
+
+#: includes/ameta-includes.php:584
+#: includes/amr-users-headings-forms.php:99
+#@ default
+msgid "Apply"
+msgstr ""
+
+#: includes/ameta-includes.php:633
+#@ amr-users
+msgid "No users selected"
+msgstr ""
+
+#: includes/ameta-list.php:325
+#, php-format
+#@ amr-users
+msgid "No such list: %s"
+msgstr ""
+
+#: includes/ameta-list.php:340
+#@ amr-users
+msgid "Note to logged in admin only: Now using temporary saved html (transient) for frontend.  Click to refresh."
+msgstr ""
+
+#: includes/ameta-list.php:408
+#@ amr-users
+msgid "If debug only: Either refresh requested OR no cache exists.  A rebuild will be initiated .... "
+msgstr ""
+
+#: includes/ameta-list.php:423
+#@ amr-users
+msgid "No lines found."
+msgstr ""
+
+#: includes/ameta-list.php:545
+#@ amr-users
+msgid "This Message shows to admin only!"
+msgstr ""
+
+#: includes/ameta-list.php:547
+#@ amr-users
+msgid "Filter requested."
+msgstr ""
+
+#: includes/ameta-list.php:548
+#@ amr-users
+msgid "Maybe you chose \"show all\", which is OKAY... or are attempting some own html or link ? ."
+msgstr ""
+
+#: includes/ameta-list.php:550
+#@ amr-users
+msgid "No valid filter column given."
+msgstr ""
+
+#: includes/ameta-list.php:551
+#@ amr-users
+msgid "Column filter Usage is :"
+msgstr ""
+
+#: includes/ameta-list.php:557
+#@ amr-users
+msgid "Note: Hide only works if the column is currently being displayed."
+msgstr ""
+
+#: includes/ameta-list.php:558
+#@ amr-users
+msgid "For this list, expecting column_name to be one of "
+msgstr ""
+
+#: includes/ameta-options.php:44
+#@ amr-users
+msgid "edit user"
+msgstr ""
+
+#: includes/ameta-options.php:45
+#@ amr-users
+msgid "mail to"
+msgstr ""
+
+#: includes/ameta-options.php:46
+#@ amr-users
+msgid "posts by author in admin"
+msgstr ""
+
+#: includes/ameta-options.php:47
+#@ amr-users
+msgid "author archive"
+msgstr ""
+
+#: includes/ameta-options.php:48
+#@ amr-users
+msgid "comments by author (*)"
+msgstr ""
+
+#: includes/ameta-options.php:49
+#@ amr-users
+msgid "users url"
+msgstr ""
+
+#: includes/ameta-options.php:50
+#@ amr-users
+msgid "wp user list filtered by user"
+msgstr ""
+
+#: includes/ameta-options.php:51
+#@ amr-users
+msgid "bbpress user profile page"
+msgstr ""
+
+#: includes/ameta-options.php:65
+#@ amr-users
+msgid "Avatar"
+msgstr ""
+
+#: includes/ameta-options.php:218
+#@ amr-users
+msgid "Users: Directory"
+msgstr ""
+
+#: includes/ameta-upgrades.php:21
+#, php-format
+#@ amr-users
+msgid "Previous version was %s. "
+msgstr ""
+
+#: includes/ameta-upgrades.php:22
+#@ amr-users
+msgid "New version activated. "
+msgstr ""
+
+#: includes/ameta-upgrades.php:23
+#@ amr-users
+msgid "We may need to process some updates.... checking now... "
+msgstr ""
+
+#: includes/ameta-upgrades.php:32
+#: includes/ameta-upgrades.php:51
+#: includes/ameta-upgrades.php:64
+#: includes/ameta-upgrades.php:78
+#, php-format
+#@ amr-users
+msgid "Prev version less than %s"
+msgstr ""
+
+#: includes/ameta-upgrades.php:43
+#@ amr-users
+msgid "Image links updated."
+msgstr ""
+
+#: includes/ameta-upgrades.php:56
+#@ amr-users
+msgid "Problem creating amr user DB tables"
+msgstr ""
+
+#: includes/ameta-upgrades.php:58
+#@ amr-users
+msgid "Cacheing tables recreated."
+msgstr ""
+
+#: includes/ameta-upgrades.php:65
+#@ amr-users
+msgid "Minor sub option name change for avatar size"
+msgstr ""
+
+#: includes/ameta-upgrades.php:79
+#@ amr-users
+msgid "New Pagination option default to yes for all lists."
+msgstr ""
+
+#: includes/ameta-upgrades.php:92
+#@ amr-users
+msgid "Finished Update Checks"
+msgstr ""
+
+#: includes/ameta-upgrades.php:94
+#@ amr-users
+msgid "Please read the changelog"
+msgstr ""
+
+#: includes/ameta-upgrades.php:96
+#@ amr-users
+msgid "As a precaution we will now rebuild the nice names."
+msgstr ""
+
+#: includes/ameta-upgrades.php:97
+#@ amr-users
+msgid "Relax .... you won't lose anything."
+msgstr ""
+
+#: includes/amr-users-credits.php:18
+#@ amr-users
+msgid "credits"
+msgstr ""
+
+#: includes/amr-users-credits.php:26
+#@ amr-users
+msgid "wordpress searchable user directory plugin"
+msgstr ""
+
+#: includes/amr-users-credits.php:27
+#@ amr-users
+msgid "wordpress searchable member directory plugin"
+msgstr ""
+
+#: includes/amr-users-credits.php:28
+#@ amr-users
+msgid "wordpress user list plugin"
+msgstr ""
+
+#: includes/amr-users-credits.php:29
+#@ amr-users
+msgid "wordpress member list plugin"
+msgstr ""
+
+#: includes/amr-users-credits.php:30
+#@ amr-users
+msgid "wordpress users statistics plugin"
+msgstr ""
+
+#: includes/amr-users-credits.php:31
+#@ amr-users
+msgid "wordpress member statistics plugin"
+msgstr ""
+
+#: includes/amr-users-credits.php:32
+#@ amr-users
+msgid "wordpress sortable member list plugin"
+msgstr ""
+
+#: includes/amr-users-credits.php:33
+#@ amr-users
+msgid "wordpress sortable user list plugin"
+msgstr ""
+
+#: includes/amr-users-credits.php:34
+#@ amr-users
+msgid "wordpress team list plugin"
+msgstr ""
+
+#: includes/amr-users-credits.php:48
+#@ amr-users
+msgid "Acknowledgements"
+msgstr ""
+
+#: includes/amr-users-credits.php:57
+#@ amr-users
+msgid "Very discreetly, give credit"
+msgstr ""
+
+#: includes/amr-users-credits.php:65
+#@ amr-users
+msgid "Do not give credit"
+msgstr ""
+
+#: includes/amr-users-credits.php:70
+#@ amr-users
+msgid "Express thanks in other ways:"
+msgstr ""
+
+#: includes/amr-users-credits.php:72
+#@ amr-users
+msgid "Buy it"
+msgstr ""
+
+#: includes/amr-users-credits.php:76
+#@ amr-users
+msgid "Work it"
+msgstr ""
+
+#: includes/amr-users-credits.php:79
+#@ amr-users
+msgid "Plug it"
+msgstr ""
+
+#: includes/amr-users-credits.php:85
+#@ amr-users
+msgid "Watch it"
+msgstr ""
+
+#: includes/amr-users-credits.php:88
+#@ amr-users
+msgid "Press it"
+msgstr ""
+
+#: includes/amr-users-credits.php:91
+#@ amr-users
+msgid "Send it"
+msgstr ""
+
+#: includes/amr-users-credits.php:94
+#@ amr-users
+msgid "Tweet it"
+msgstr ""
+
+#: includes/amr-users-credits.php:97
+#@ amr-users
+msgid "Like it"
+msgstr ""
+
+#: includes/amr-users-csv.php:75
+#@ amr-users
+msgid "Public user list csv file: "
+msgstr ""
+
+#: includes/amr-users-csv.php:92
+#@ amr-users
+msgid "Export CSV as .txt"
+msgstr ""
+
+#: includes/amr-users-csv.php:113
+#@ amr-users
+msgid "Csv Export"
+msgstr ""
+
+#: includes/amr-users-csv.php:132
+#@ amr-users
+msgid "Refresh Cache"
+msgstr ""
+
+#: includes/amr-users-csv.php:157
+#, php-format
+#@ amr-users
+msgid "Your csv directory %s has been created"
+msgstr ""
+
+#: includes/amr-users-csv.php:162
+#, php-format
+#@ amr-users
+msgid "Error creating csv directory %s. Please check permissions"
+msgstr ""
+
+#: includes/amr-users-headings-forms.php:22
+#@ amr-users
+msgid " - Standard CSV."
+msgstr ""
+
+#: includes/amr-users-headings-forms.php:78
+#@ amr-users
+msgid "Search Users"
+msgstr ""
+
+#: includes/amr-users-headings-forms.php:146
+#, php-format
+#@ amr-users
+msgctxt "Indicates sort priority"
+msgid "Sorted 1%s"
+msgstr ""
+
+#: includes/amr-users-headings-forms.php:155
+#, php-format
+#@ amr-users
+msgctxt "Indicates sort priority"
+msgid "Sorted %s"
+msgstr ""
+
+#: includes/amr-users-widget.php:14
+#@ amr-users
+msgid "User list"
+msgstr ""
+
+#: includes/amr-users-widget.php:39
+#@ amr-users
+msgid "See more"
+msgstr ""
+
+#: includes/amr-users-widget.php:76
+#@ amr-users
+msgid "...more"
+msgstr ""
+
+#: includes/amr-users-widget.php:86
+#@ amr-users
+msgid "Does not exist yet!"
+msgstr ""
+
+#: includes/amr-users-widget.php:103
+#@ amr-users
+msgid "Show Pagination"
+msgstr ""
+
+#: includes/amr-users-widget.php:108
+#@ amr-users
+msgid "No Pagination - Top x only"
+msgstr ""
+
+#: includes/amr-users-widget.php:113
+#@ amr-users
+msgid "Member page to link to for rest of users:"
+msgstr ""
+
+#: includes/amr-users-widget.php:117
+#@ amr-users
+msgid "None"
+msgstr ""
+
+#: includes/amr-users-widget.php:120
+#@ amr-users
+msgid "More Text"
+msgstr ""
+
+#: includes/ausers-pluggable.php:174
+#: includes/ausers-pluggable.php:187
+#, php-format
+#@ amr-users
+msgctxt "indicate how long ago something happened"
+msgid "%s ago"
+msgstr ""
+
+#: includes/ausers-pluggable.php:228
+#@ amr-users
+msgid "Email the user"
+msgstr ""
+
+#: includes/ausers-pluggable.php:230
+#@ amr-users
+msgid "Edit the user"
+msgstr ""
+
+#: includes/ausers-pluggable.php:232
+#@ amr-users
+msgid "Go to author archive"
+msgstr ""
+
+#: includes/ausers-pluggable.php:234
+#@ amr-users
+msgid "Go to users website"
+msgstr ""
+
+#: includes/ausers-pluggable.php:236
+#@ amr-users
+msgid "View posts in admin"
+msgstr ""
+
+#: includes/ausers-pluggable.php:238
+#@ amr-users
+msgid "See comments by user"
+msgstr ""
+
+#: includes/ausers-pluggable.php:240
+#@ amr-users
+msgid "Go to wp userlist filtered by user "
+msgstr ""
+
+#: includes/ausers-pluggable.php:474
+#: includes/ausers-pluggable.php:771
+#, php-format
+#@ amr-users
+msgid "%s Users found."
+msgstr ""
+
+#: includes/ausers-pluggable.php:477
+#: includes/ausers-pluggable.php:774
+#, php-format
+#@ amr-users
+msgid "Searching for \"%s\" in list"
+msgstr ""
+
+#: includes/ausers-pluggable.php:503
+#: includes/ausers-pluggable.php:800
+#@ amr-users
+msgid "Selected users with: "
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:79
+#, php-format
+#@ amr-users
+msgid "%d sites"
+msgstr ""
+
+#: includes/ameta-admin-testyourdb.php:139
+#, php-format
+#@ amr-users
+msgid "%d user meta records."
+msgstr ""
+

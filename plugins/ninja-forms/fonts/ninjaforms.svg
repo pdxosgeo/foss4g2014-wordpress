@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg>
+<metadata>
+Created by FontForge 20090914 at Tue Sep  3 20:22:50 2013
+ By www-data
+</metadata>
+<defs>
+<font id="ninjaforms" horiz-adv-x="512" >
+  <font-face 
+    font-family="ninjaforms"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 6 9 0 0 0 0 0 0"
+    ascent="480"
+    descent="-32"
+    bbox="50.001 12 469.001 431"
+    underline-thickness="50"
+    underline-position="-100"
+    unicode-range="U+0061-U+0061"
+  />
+<missing-glyph 
+ />
+    <glyph glyph-name=".notdef" 
+ />
+    <glyph glyph-name=".notdef" 
+ />
+    <glyph glyph-name="a" unicode="a" 
+d="M367 114h-212c-18.667 0 -31.667 9 -39 27c-2 6 -3 11.667 -3 17c0 19.333 8.66699 32.666 26 39.999c5.33301 2.66699 10.666 4 15.999 4h212c18.667 0 31.667 -9 39 -27c2 -6 3 -11.667 3 -17c0 -19.333 -8.66699 -32.666 -26 -39.999
+c-5.33301 -2.66699 -10.666 -4 -15.999 -4zM155 333h212.001c18.667 0 31.667 -9 39 -27c2 -6 3 -11.667 3 -17c0 -19.333 -9 -32.666 -27 -39.999c-5.33301 -2 -10.333 -3 -15 -3h-212c-19.333 0 -32.333 9 -39 27c-2 5.33301 -3 10.666 -3 15.999
+c0 19.333 8.66699 33 26 41c5.33301 2 10.666 3 15.999 3zM259.001 431c-64.667 0 -117.667 -24.334 -159 -73.001c-33.333 -39.333 -50 -84.666 -50 -135.999c0 -64 24 -117 72 -159c40 -34 85.667 -51 137 -51c64 0 117 24.333 159 73c34 39.333 51 85 51 137
+c0 64 -24.333 116.667 -73 158c-39.333 34 -85 51 -137 51z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" 
+ />
+  </font>
+</defs></svg>

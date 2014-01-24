@@ -1,0 +1,462 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: amr users\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/amr-users\n"
+"POT-Creation-Date: 2009-12-26 00:57+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Anna-marie <Redpath>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Swedish\n"
+
+#: ameta-admin.php:20
+#, fuzzy
+msgid "copy"
+msgstr "Kopiera"
+
+#: ameta-admin.php:29
+msgid "Number of Lists must be greater than 0 and less than 40"
+msgstr "Antal listor måste vara större än 0 och mindre än 40."
+
+#: ameta-admin.php:43
+msgid "Unexpected Problem reading names of lists - no array"
+msgstr "Oväntad Problem med att läsa namnen på listorna - inte array"
+
+#: ameta-admin.php:129
+#: ameta-admin.php:139
+#: ameta-admin.php:147
+#, fuzzy
+msgid "Update"
+msgstr "Uppdatera"
+
+#: ameta-admin.php:130
+#, fuzzy
+msgid "Uninstall"
+msgstr "Avinstallera"
+
+#: ameta-admin.php:131
+msgid "Reset all options"
+msgstr "Återställa alla alternativ"
+
+#: ameta-admin.php:149
+msgid "Clean Up Nice Names"
+msgstr ""
+
+#: ameta-admin.php:158
+msgid "Nicer names for list headings"
+msgstr "Trevligare namn på listan rubriker"
+
+#: ameta-admin.php:178
+#: ameta-admin.php:314
+#, fuzzy
+msgid "Options Updated"
+msgstr "Val uppdaterad med standardvärden ..."
+
+#: ameta-admin.php:180
+#, fuzzy
+msgid "Validation failed"
+msgstr "Autentisering misslyckades"
+
+#: ameta-admin.php:187
+msgid "Removed nice name no longer in use:"
+msgstr "Removed fint namn som inte längre används:"
+
+#: ameta-admin.php:191
+#, fuzzy
+msgid "Options Cleaned Up"
+msgstr "Kompatibelt upp till:"
+
+#: ameta-admin.php:287
+msgid "At least some display order must be specified for the list to be meaningful"
+msgstr "Åtminstone vissa visningsordningen måste anges för att listan ska bli meningsfull"
+
+#: ameta-admin.php:303
+#, php-format
+msgid "Must be numeric  %s <= %s"
+msgstr "Måste vara numeriskt %s <= %s"
+
+#: ameta-admin.php:306
+#, php-format
+msgid "%s Must be  <= %s"
+msgstr "%s måste vara <= %s"
+
+#: ameta-admin.php:316
+msgid "List Fields Validation failed"
+msgstr "Listrutorna Validering misslyckades"
+
+#: ameta-admin.php:364
+#, fuzzy, php-format
+msgid "Configure list %s: %s"
+msgstr "Rensa lista"
+
+#: ameta-admin.php:366
+msgid "View (please update first)"
+msgstr "Visa (please update först)"
+
+#: ameta-admin.php:370
+#, fuzzy
+msgid "Field name"
+msgstr "Ankarnamn"
+
+#: ameta-admin.php:371
+msgid "Blank to hide, Enter a integer to select and specify column order.  Eg: 1 2 6 8"
+msgstr "Blank att dölja, Ange ett heltal för att välja och ange kolumn ordning. Exempel: 1 2 6 8"
+
+#: ameta-admin.php:371
+#, fuzzy
+msgid "Display order"
+msgstr "Menyordning"
+
+#: ameta-admin.php:372
+#: ameta-admin.php:374
+msgid "Eg: value1,value2"
+msgstr "T.ex.: värde1, värde2"
+
+#: ameta-admin.php:372
+#, fuzzy
+msgid "Include:"
+msgstr "Inkludera framhävnings-CSS"
+
+#: ameta-admin.php:373
+msgid "Tick to include a user ONLY if there is no value"
+msgstr "Kryssa för att inkludera en användare endast om det finns något värde"
+
+#: ameta-admin.php:373
+msgid "Include ONLY if Blank:"
+msgstr "Inkludera endast om Blank:"
+
+#: ameta-admin.php:374
+#, fuzzy
+msgid "But Exclude:"
+msgstr "Sidor som ska exkluderas"
+
+#: ameta-admin.php:375
+msgid "Tick to exclude a user if there is no value"
+msgstr "Kryssa i för att utesluta en användare om det inte finns något värde"
+
+#: ameta-admin.php:375
+#, fuzzy
+msgid "Exclude if Blank:"
+msgstr "Sidor som ska exkluderas"
+
+#: ameta-admin.php:378
+msgid "Enter integers, need not be contiguous"
+msgstr "Ange heltal, behöver inte vara sammanhängande"
+
+#: ameta-admin.php:378
+#, fuzzy
+msgid "Sort Order:"
+msgstr "Sorteringsordning:"
+
+#: ameta-admin.php:379
+msgid "For sort order.  Default is ascending"
+msgstr "För sorteringsordningen. Standard är stigande"
+
+#: ameta-admin.php:379
+#, fuzzy
+msgid "Sort Descending:"
+msgstr "Sorteringsordning:"
+
+#: ameta-admin.php:463
+msgid "Deleting number of lists and names in database"
+msgstr "Radera antal listor och namn i databasen"
+
+#: ameta-admin.php:465
+msgid "Deleting all lists settings in database"
+msgstr "Radera alla listor inställningar i databasen"
+
+#: ameta-admin.php:467
+msgid "Deleting all nice name settings in database"
+msgstr "Ta bort alla fina namn inställningar i databasen"
+
+#: ameta-admin.php:473
+msgid "Click to return to defaults settings"
+msgstr "Klicka för att återgå till standardinställningarna"
+
+#: ameta-admin.php:486
+msgid "Number of User Lists:"
+msgstr "Antal listor:"
+
+#: ameta-admin.php:491
+#, fuzzy
+msgid "Name of List "
+msgstr "Rensa lista"
+
+#: ameta-admin.php:494
+#, fuzzy
+msgid "Configure"
+msgstr "Konfigurera"
+
+#: ameta-admin.php:495
+#, fuzzy
+msgid "View"
+msgstr "Visa"
+
+#: ameta-admin.php:503
+msgid "AmR User List News"
+msgstr ""
+
+#: ameta-admin.php:504
+msgid "Other Anmari News"
+msgstr "Andra Anmari Nyheter"
+
+#: ameta-admin.php:512
+msgid "Support at Author&#39;s website"
+msgstr "Support på författarens hemsida"
+
+#: ameta-admin.php:513
+#, fuzzy
+msgid "Support at wordpress"
+msgstr "WordPress är av den senaste versionen."
+
+#: ameta-admin.php:515
+#, fuzzy
+msgid "Donate"
+msgstr "Donera"
+
+#: ameta-admin.php:517
+#, fuzzy
+msgid "Rss feed"
+msgstr "%1$s %2$s %3$s kategoriflöde"
+
+#: ameta-admin.php:528
+#, fuzzy
+msgid "Configure User Lists:"
+msgstr "Antal Ical listor:"
+
+#: ameta-admin.php:530
+msgid "Home: Number and names of User Lists"
+msgstr "Hemsida: Nummer och namn på User Lists"
+
+#: ameta-admin.php:532
+msgid "Nice Names for User Fields"
+msgstr ""
+
+#: ameta-admin.php:545
+msgid "Instructions"
+msgstr "Instruktioner"
+
+#: ameta-admin.php:550
+msgid "Configure each list as you wish"
+msgstr "Konfigurera varje lista som du vill"
+
+#: ameta-admin.php:552
+msgid "To add a list, increase the number of lists and press update."
+msgstr "Vill lägga till en lista, öka antalet förteckningar och tryck uppdatera."
+
+#: ameta-admin.php:553
+msgid "Then update the list details and configure it"
+msgstr "Sedan uppdatera listan detaljer och konfigurera den"
+
+#: ameta-admin.php:554
+msgid "Each new list is copied from the last configured list.  This may be useful if configuring a range of similar lists - add the lists one by one - slowly incrementing the number of lists."
+msgstr "Varje ny lista är kopierad från förra konfigurerad. Detta kan vara användbart om du konfigurerar en rad liknande listor - lägga förteckningarna en efter en - sakta öka antalet listor."
+
+#: ameta-admin.php:559
+msgid "Almost all possible user fields that have data in this wordpress install are listed below.  If you have not yet created data for another plugin used in your main site, then there may be no related data here.  Yes this is a looooong list, and if you have a sophisticated membership system, it may be even longer than others.  The fields that you are working with will be sorted to the top."
+msgstr "Nästan alla möjliga användarupplevelse fält som har uppgifter i denna wordpress installation är listade nedan. Om du ännu inte har skapat data för ett annat plugin som används vid din sida, så kan det finnas några data här. Ja detta är en looooong lista, och om du har ett sofistikerat medlemskap system, det kan vara ännu längre än andra. De fält som du arbetar med kommer att sorteras till toppen."
+
+#: ameta-admin.php:562
+msgid "Configure a list in the suggested sequence below. <b>Update</b> after each step, then click <b>view</b> (top right) to see the result.  Click Configure or back to return."
+msgstr "Konfigurera en lista i den föreslagna sekvensen nedan. <b> Uppdatera </ b> efter varje steg, klicka på <b> Visa </ b> (överst till höger) för att se resultatet. Klicka på Konfigurera eller back för att återgå."
+
+#: ameta-admin.php:563
+msgid "Note: Exclude and Include blank override any values."
+msgstr "Obs: Uteslut och Inkludera tomma förbigå värden."
+
+#: ameta-admin.php:567
+msgid "Enter a number in the display order column to select a field for display and to define the display order."
+msgstr "Ange ett nummer på displayen för kolumn för att markera ett fält för visning och att definiera visningsordningen."
+
+#: ameta-admin.php:570
+msgid "Enter a number (1-2) to define the sort order for your list"
+msgstr "Ange ett nummer (1-2) för att definiera sorteringsordning för listan"
+
+#: ameta-admin.php:573
+msgid "If a sort order should be descending, such as counts or dates, click \"sort descending\" for that field."
+msgstr "Om en sorteringsordning bör fallande, som räknas eller datum, klicka på \ \"sortera fallande \" för fältet."
+
+#: ameta-admin.php:576
+msgid "From the view list, you will see the data values.  If you wish to include or exclude a record by a value, note the value, then enter that value in the Include or Exclude Column.  Separate the values with a comma, but NO spaces."
+msgstr "Från visa listan, kommer du att se datavärden. Om du vill inkludera eller utesluta ett rekord med ett värde, anteckna värdet, sedan in detta värde i inkludera eller utesluta kolumn. Skilj värdena med ett kommatecken, men några mellanrum."
+
+#: ameta-admin.php:651
+#, fuzzy
+msgid "Settings"
+msgstr "Inställningar"
+
+#: ameta-admin.php:683
+#, fuzzy
+msgid "User lists"
+msgstr "%s användare raderad"
+
+#: ameta-includes.php:25
+#, fuzzy
+msgid "User name"
+msgstr "Ankarnamn"
+
+#: ameta-includes.php:26
+#, fuzzy
+msgid "Nice name"
+msgstr "Ankarnamn"
+
+#: ameta-includes.php:27
+msgid "Email"
+msgstr ""
+
+#: ameta-includes.php:28
+#, fuzzy
+msgid "Url"
+msgstr "URL"
+
+#: ameta-includes.php:29
+#, fuzzy
+msgid "Registration date"
+msgstr "Datum skapat"
+
+#: ameta-includes.php:150
+#, fuzzy
+msgid "Users: Details"
+msgstr "Radera användare"
+
+#: ameta-includes.php:151
+msgid "Users: Member status and dates"
+msgstr "Användare: Medlem status och datum"
+
+#: ameta-includes.php:152
+msgid "Users: Post and Comment Counts"
+msgstr "Användare: inlägg och kommentarer Counts"
+
+#: ameta-list.php:18
+msgid "Jump to CSV Export"
+msgstr "Hoppa till CSV Exportera"
+
+#: ameta-list.php:20
+msgid "Configure all lists"
+msgstr "Anpassa alla listor"
+
+#: ameta-list.php:22
+#, fuzzy
+msgid "Configure this list"
+msgstr "För tidigt slut på lista"
+
+#: ameta-list.php:84
+msgid "Excluding where:"
+msgstr "Exklusive där:"
+
+#: ameta-list.php:86
+#: ameta-list.php:129
+#, fuzzy
+msgid " or "
+msgstr "%s eller högre"
+
+#: ameta-list.php:100
+#, fuzzy
+msgid "Exclude if blank:"
+msgstr "Sidor som ska exkluderas"
+
+#: ameta-list.php:114
+msgid "Include only if blank:"
+msgstr "Inkludera endast om det finns tomma:"
+
+#: ameta-list.php:127
+msgid "Including where:"
+msgstr "Inklusive där"
+
+#: ameta-list.php:142
+#, fuzzy
+msgid " Sorting by: "
+msgstr "Inlägg av %s"
+
+#: ameta-list.php:156
+#, php-format
+msgid "%1s Users selected from total of %2s"
+msgstr "%1s utvalda från användare totalt %2s"
+
+#: ameta-list.php:226
+#, fuzzy
+msgid "Export to CSV"
+msgstr "&larr; Tillbaka till %s"
+
+#: ameta-list.php:230
+#, fuzzy, php-format
+msgid "No users found for list %s"
+msgstr "Hittade inga lämpliga användare!"
+
+#: ameta-list.php:233
+#, php-format
+msgid "No fields chosen for display in settings for list %s"
+msgstr "Inga områden som valts för visning i inställningarna för listan %s"
+
+#: ameta-list.php:235
+msgid "No users in database! - que pasar?"
+msgstr "Inga användare i databasen! - det hända?"
+
+#: ameta-list.php:258
+#, fuzzy
+msgid "No lists Defined"
+msgstr "Inga sidopaneler definierade"
+
+#: amr-functions.php:35
+#, fuzzy
+msgid "No items"
+msgstr "(ingen titel)"
+
+#: amr-users-uninstall.php:6
+msgid "AmR user Options deleted from Database"
+msgstr "Val utgår från databas"
+
+#: amr-users-uninstall.php:23
+msgid "Uninstall AmR user Options"
+msgstr "Avinstallera alternativ"
+
+#: amr-users-uninstall.php:24
+#, fuzzy
+msgid "Note this function removes the options from the database.  To completely uninstall, one should continue on to use the standard wordpress functions to deactivate the plugin and delete the files.  It is not necessary to run this separately as the uninstall will also run as part of the wordpress delete plug-in files."
+msgstr "Obs denna funktion tar bort alternativ från databasen. För att helt avinstallera, bör man fortsätta att använda standarden wordpress funktioner för att avaktivera plugin och ta bort filerna. Det är inte nödvändigt att köra den här separat eftersom de avinstallera kommer också att köra som en del av wordpress bort plugin-filer."
+
+#: amr-users-uninstall.php:25
+#, fuzzy
+msgid "The function is provided here as an aid to someone who has perhaps got their wordpress install in a knot and wishes to temporarily remove the options from the database as part of their debugging or cleanup.  Consider also the use of the RESET."
+msgstr "Funktionen ges här som ett stöd till någon som har kanske fått sin wordpress installera i en knut och önskar att tillfälligt ta bort alternativ från databasen som en del av felsökning eller sanering. Anser också att användningen av RESET."
+
+#: amr-users-uninstall.php:33
+msgid "Note: Navigating to \"User List Settings\" will RELOAD default options - negating the uninstall."
+msgstr "Anmärkning: Navigera till \ \"Användarlista Inställningar \" kommer RELOAD förvalda alternativ - att upphäva avinstallera."
+
+#: amr-users-uninstall.php:35
+#, fuzzy
+msgid "Continue to Plugin list to delete files as well"
+msgstr "Fortsätt att Plugin lista för att radera filer samt"
+
+#: amr-users-uninstall.php:46
+#, fuzzy
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: amr-users-uninstall.php:47
+msgid "Really Uninstall Options?"
+msgstr "Verkligen Uninstall alternativ?"
+
+#. Plugin Name of an extension
+msgid "AmR users"
+msgstr "AmR användare"
+
+#. Plugin URI of an extension
+msgid "http://webdesign.anmari.com/plugins/users/"
+msgstr ""
+
+#. Description of an extension
+msgid "Configurable users listings by meta keys and values, comment count and post count. Includes  display, inclusion, exclusion, sorting configuration and an option to export to CSV. <a href=\"options-general.php?page=ameta-admin.php\">Manage Settings</a>  or <a href=\"users.php?page=ameta-list.php\">Go to Users Lists</a>.     If you found this useful, please <a href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=anmari%40anmari%2ecom&item_name=AmRUsersPlugin\">Donate</a>, <a href=\"http://wordpress.org/extend/plugins/amr-users/\">  or rate it</a>, or write a post."
+msgstr "Konfigurerbar användare listor genom att meta nycklar och värden, kommentera och räkna antal inlägg. Inkluderar display, integration, utanförskap, sortering konfiguration och en möjlighet att exportera till CSV. <a href=\"options-general.php?page=ameta-admin.php\"> hantera inställningar </ a> eller <a href=\"users.php?page=ameta-list.php\"> Go till Användare postlistor </ a>. Om du hittade den till hjälp, du <a href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=anmari%40anmari%2ecom&item_name=AmRUsersPlugin\"> Donera </ a>, < a href = \ \"http://wordpress.org/extend/plugins/amr-users/ \"> eller rate it </ a>, eller skriva ett inlägg."
+
+#. Author of an extension
+msgid "Anna-marie Redpath"
+msgstr ""
+
+#. Author URI of an extension
+msgid "http://webdesign.anmari.com"
+msgstr ""
+

@@ -1,0 +1,1599 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Register Plus Redux v3.9.5\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/register-plus-redux\n"
+"POT-Creation-Date: 2013-01-21 09:10:25+00:00\n"
+"PO-Revision-Date: 2013-03-01 20:27-0500\n"
+"Last-Translator: Will Hinds <radiok@radiok.info>\n"
+"Language-Team: Gianni Diurno | gidibao.net <gidibao@gmail.com>\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x;_ex;_nx;esc_attr__;esc_attr_e;esc_attr_x;"
+"esc_html__;esc_html_e;esc_html_x\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: register-plus-redux.php:68
+msgid "Additional Information"
+msgstr "Informazioni aggiuntive"
+
+#: register-plus-redux.php:72 rpr-admin-menu.php:256 rpr-login.php:238
+#: rpr-signup.php:414
+msgid "Invitation Code"
+msgstr "Codice di invito"
+
+#: register-plus-redux.php:288
+msgid ""
+"<h2>%user_login% is your new username</h2>\n"
+"<p>But, before you can start using your new username, <strong>you must "
+"activate it</strong></p>\n"
+"<p>Check your inbox at <strong>%user_email%</strong> and click the link "
+"given.</p>\n"
+"<p>If you do not activate your username within two days, you will have to "
+"sign up again.</p>"
+msgstr ""
+
+#: register-plus-redux.php:289
+msgid ""
+"Please verify your account using the verification link sent to your email "
+"address."
+msgstr ""
+"Attiva il tuo account utilizzando il link di verifica che ti é stato inviato "
+"al tuo indirizzo di posta."
+
+#: register-plus-redux.php:291 rpr-login.php:451
+msgid ""
+"Your account will be reviewed by an administrator and you will be notified "
+"when it is activated."
+msgstr ""
+"Il tuo account verrà esaminato da un amministratore: riceverai via email una "
+"notifica una volta attivato."
+
+#: register-plus-redux.php:347
+msgid "Your Login Information"
+msgstr "Le tue info per il login"
+
+#: register-plus-redux.php:354
+msgid "Verify Your Account"
+msgstr "Verifica il tuo account"
+
+#: register-plus-redux.php:365
+msgid "New User Registered"
+msgstr "Nuova registrazione utente"
+
+#: rpr-admin-menu.php:19
+#, fuzzy
+msgid ""
+"Register Plus Redux requires WordPress 3.2 or greater. You are currently "
+"using WordPress %s, please upgrade WordPress or deactivate Register Plus "
+"Redux."
+msgstr ""
+"Register Plus Redux é compatibile solamente con WordPress 3.0 o superiore. "
+"Stai utilizzando WordPress %s: aggiorna oppure disattiva Register Plus Redux."
+
+#: rpr-admin-menu.php:26
+msgid ""
+"Register Plus Redux must be Network Activated by Super Admin under WordPress "
+"Multisite. You will have limited functionality while not Network Activated. "
+"Please refer to <a href=\"%s\">radiok.info</a> for help resolving this issue."
+msgstr ""
+
+#: rpr-admin-menu.php:32
+#, fuzzy
+msgid ""
+"There is another active plugin that is conflicting with Register Plus Redux. "
+"The conflicting plugin is creating its own wp_new_user_notification "
+"function, this function is used to alter the messages sent out following the "
+"creation of a new user. Please refer to <a href=\"%s\">radiok.info</a> for "
+"help resolving this issue."
+msgstr ""
+"E' presente un plugin attivo che pare sia in conflitto con Register Plus "
+"Redux. Questo plugin ha creato una propria funzione wp_new_user_notification "
+"quindi, questa funzione viene utilizzata per alterare i messaggi inviati in "
+"seguito alla creazione di un nuovo utente. Visita l'indirizzo <a "
+"href='http://radiok.info/blog/wp_new_user_notification-conflicts/'>http://"
+"radiok.info/blog/wp_new_user_notification-conflicts/</a> per maggiori "
+"informazioni."
+
+#: rpr-admin-menu.php:40 rpr-admin-menu.php:78
+msgid "Register Plus Redux Settings"
+msgstr "Impostazioni Register Plus Redux"
+
+#: rpr-admin-menu.php:47 rpr-admin-menu.php:1008
+msgid "Unverified Users"
+msgstr "Utenti non verificati"
+
+#: rpr-admin-menu.php:52
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: rpr-admin-menu.php:74
+msgid "Settings Saved"
+msgstr "Le impostazioni sono state salvate"
+
+#: rpr-admin-menu.php:84
+msgid "Custom Logo URL"
+msgstr "URL logo personalizzato"
+
+#: rpr-admin-menu.php:86
+#, fuzzy
+msgid "Upload Image"
+msgstr "Carica un nuovo logo:"
+
+#: rpr-admin-menu.php:87
+msgid ""
+"Custom Logo will be shown on Registration and Login Forms in place of the "
+"default Wordpress logo. For the best results custom logo should not exceed "
+"350px width."
+msgstr ""
+"Il logo personalizzato verrà mostrato nei moduli di registrazione e di login "
+"al posto di quello predefinito da Wordpress. La larghezza del logo non dovrà "
+"superare i 350px."
+
+#: rpr-admin-menu.php:92
+msgid "Remove Logo"
+msgstr "Rimuovi logo"
+
+#: rpr-admin-menu.php:93
+msgid "You must Save Changes to remove logo."
+msgstr "Devi salvare le modifiche per rimuovere il logo."
+
+#: rpr-admin-menu.php:98
+msgid "Email Verification"
+msgstr "Verifica email"
+
+#: rpr-admin-menu.php:100
+msgid "Verify all new users email address..."
+msgstr "Verifica indirizzo email nuovi utenti..."
+
+#: rpr-admin-menu.php:101
+msgid ""
+"A verification code will be sent to any new users email address, new users "
+"will not be able to login or reset their password until they have completed "
+"the verification process. Administrators may authorize new users from the "
+"Unverified Users Page at their own discretion."
+msgstr ""
+"Un codice di verifica sarà inviato all'indirizzo email di ogni nuovo utente. "
+"I nuovi utenti non potranno effettuare il login oppure modificare la loro "
+"password sino a quando non avranno completato il processo di verifica. Gli "
+"amministratori potranno autorizzare a propria discrezione i nuovi utenti "
+"alla pagina degli Utenti Non Verificati."
+
+#: rpr-admin-menu.php:103
+msgid ""
+"The following message will be shown to users after registering. You may "
+"include HTML in this message."
+msgstr ""
+"Il seguente messaggio verrà mostrato agli utenti in seguito alla loro "
+"registrazione (HTML disponibile)."
+
+#: rpr-admin-menu.php:110
+msgid "Admin Verification"
+msgstr "Verifica amministratore"
+
+#: rpr-admin-menu.php:112
+msgid "Moderate all new user registrations..."
+msgstr "Modera tutte le registrazioni dei nuovi utenti..."
+
+#: rpr-admin-menu.php:113
+msgid ""
+"New users will not be able to login or reset their password until they have "
+"been authorized by an administrator from the Unverified Users Page. If both "
+"verification options are enabled, users will not be able to login until an "
+"administrator authorizes them, regardless of whether they complete the email "
+"verification process."
+msgstr ""
+"I nuovi utenti non potranno effettuare il login oppure modificare la loro "
+"password sino a quando un amministratore non permetterà loro l'accesso (via "
+"pagina degli Utenti Non Verificati). Se entrambe le opzioni di verifica "
+"fossero state attivate, gli utenti non potranno effettuare il login sino a "
+"quando un amministratore non darà loro l'autorizzazione nonostante abbiano "
+"completato il processo di verifica via email."
+
+#: rpr-admin-menu.php:115
+msgid ""
+"The following message will be shown to users after registering (or verifying "
+"their email if both verification options are enabled). You may include HTML "
+"in this message."
+msgstr ""
+"Il seguente messaggio verrà mostrato agli utenti in seguito alla loro "
+"registrazione (o verifica della loro email se attive entrambe le opzioni di "
+"verifica). HTML disponibile."
+
+#: rpr-admin-menu.php:121
+msgid "Grace Period"
+msgstr "Periodo di tolleranza"
+
+#: rpr-admin-menu.php:123
+msgid "days"
+msgstr "giorni"
+
+#: rpr-admin-menu.php:124
+msgid ""
+"All unverified users will automatically be deleted after the Grace Period "
+"specified, to disable this process enter 0 to never automatically delete "
+"unverified users."
+msgstr ""
+"Tutti gli utenti non verificati saranno cancellati allo scadere del periodo "
+"di tolleranza specificato. Per disattivare questa funzione, inserire 0 per "
+"evitare la cancellazione automatica degli utenti non verificati."
+
+#: rpr-admin-menu.php:128
+#, fuzzy
+msgid "Registration Redirect"
+msgstr "Pagina registrazione"
+
+#: rpr-admin-menu.php:131
+msgid ""
+"By default, after registering, users will be sent to %s/wp-login.php?"
+"checkemail=registered, leave this value empty if you do not wish to change "
+"this behavior. You may enter another address here, however, if that address "
+"is not on the same domain, Wordpress will ignore the redirect."
+msgstr ""
+
+#: rpr-admin-menu.php:135
+#, fuzzy
+msgid "Verification Redirect"
+msgstr "Invio verifica"
+
+#: rpr-admin-menu.php:138
+msgid ""
+"By default, after verifying, users will be sent to %s/wp-login.php, leave "
+"this value empty if you do not wish to change this behavior. You may enter "
+"another address here, however, if that addresses is not on the same domain, "
+"Wordpress will ignore the redirect."
+msgstr ""
+
+#: rpr-admin-menu.php:143
+msgid "Autologin user"
+msgstr ""
+
+#: rpr-admin-menu.php:145
+#, fuzzy
+msgid "Autologin user after registration."
+msgstr "Modera le registrazioni di tutti i nuovi utenti."
+
+#: rpr-admin-menu.php:146
+msgid ""
+"Works if Email Verification and Admin Verification are turned off. By "
+"default users will be sent to %s, to change this behavior, set up "
+"Registration Redirect field above."
+msgstr ""
+
+#: rpr-admin-menu.php:152
+#, fuzzy
+msgid "Registration Form"
+msgstr "Registrazione"
+
+#: rpr-admin-menu.php:153
+#, fuzzy
+msgid ""
+"Select which fields to show on the Registration Form. Users will not be able "
+"to register without completing any fields marked required."
+msgstr ""
+"Seleziona i campi da mostrare nella pagina di registrazione. Gli utenti non "
+"potranno concludere la registrazione sino a quando non avranno compilato i "
+"campi obbligatori."
+
+#: rpr-admin-menu.php:155
+msgid "Signup Form"
+msgstr ""
+
+#: rpr-admin-menu.php:156
+#, fuzzy
+msgid ""
+"Select which fields to show on the Signup Form. Users will not be able to "
+"signup without completing any fields marked required."
+msgstr ""
+"Seleziona i campi da mostrare nella pagina di registrazione. Gli utenti non "
+"potranno concludere la registrazione sino a quando non avranno compilato i "
+"campi obbligatori."
+
+#: rpr-admin-menu.php:160
+#, fuzzy
+msgid "Use Email as Username"
+msgstr "Nome utente temporaneo"
+
+#: rpr-admin-menu.php:161
+msgid ""
+"New users will not be asked to enter a username, instead their email address "
+"will be used as their username."
+msgstr ""
+
+#: rpr-admin-menu.php:164
+msgid "Confirm Email"
+msgstr "Verifica email"
+
+#: rpr-admin-menu.php:165
+msgid "Require new users to enter e-mail address twice during registration."
+msgstr ""
+"Richiedi ai nuovi utenti di inserire due volte l'indirizzo email al momento "
+"della registrazione."
+
+#: rpr-admin-menu.php:168
+msgid "Profile Fields"
+msgstr "Campi profilo"
+
+#: rpr-admin-menu.php:173
+msgid "Show"
+msgstr "Mostra"
+
+#: rpr-admin-menu.php:174
+msgid "Require"
+msgstr "Richiesto"
+
+#: rpr-admin-menu.php:178 rpr-login.php:72 rpr-signup.php:249
+msgid "First Name"
+msgstr "Nome"
+
+#: rpr-admin-menu.php:183 rpr-login.php:81 rpr-signup.php:260
+msgid "Last Name"
+msgstr "Cognome"
+
+#: rpr-admin-menu.php:188 rpr-login.php:90 rpr-signup.php:271
+msgid "Website"
+msgstr "Sito web"
+
+#: rpr-admin-menu.php:193 rpr-login.php:99 rpr-signup.php:282
+msgid "AIM"
+msgstr "AIM"
+
+#: rpr-admin-menu.php:198 rpr-login.php:108 rpr-signup.php:293
+msgid "Yahoo IM"
+msgstr "Yahoo IM"
+
+#: rpr-admin-menu.php:203 rpr-login.php:117 rpr-signup.php:304
+msgid "Jabber / Google Talk"
+msgstr "Jabber/Google Talk:"
+
+#: rpr-admin-menu.php:208 rpr-login.php:126 rpr-signup.php:315
+msgid "About Yourself"
+msgstr "Info personali"
+
+#: rpr-admin-menu.php:217
+msgid "User Set Password"
+msgstr "Impostazione password utente"
+
+#: rpr-admin-menu.php:219
+msgid "Require new users enter a password during registration..."
+msgstr ""
+"Richiedi ai nuovi utenti l'inserimento di una password durante la "
+"registrazione..."
+
+#: rpr-admin-menu.php:221
+msgid "Minimum password length: "
+msgstr "Lunghezza minima password:"
+
+#: rpr-admin-menu.php:222
+msgid "Do not require users to confirm password."
+msgstr ""
+
+#: rpr-admin-menu.php:223
+msgid "Show password strength meter..."
+msgstr "Mostra rilevatore forza password..."
+
+#: rpr-admin-menu.php:227
+msgid "Empty"
+msgstr "Vuoto"
+
+#: rpr-admin-menu.php:231
+msgid "Short"
+msgstr "Molto debole"
+
+#: rpr-admin-menu.php:235
+msgid "Bad"
+msgstr "Debole"
+
+#: rpr-admin-menu.php:239
+msgid "Good"
+msgstr "Media"
+
+#: rpr-admin-menu.php:243
+msgid "Strong"
+msgstr "Forte"
+
+#: rpr-admin-menu.php:247
+msgid "Mismatch"
+msgstr "Discordanza"
+
+#: rpr-admin-menu.php:258
+msgid "Use invitation codes to track or authorize new user registration..."
+msgstr ""
+"Utilizza i codici di invito per tracciare o autorizzare la registrazione del "
+"nuovo utente..."
+
+#: rpr-admin-menu.php:260
+msgid ""
+"Require new user enter one of the following invitation codes to register."
+msgstr ""
+"Richiedi al nuovo utente di inserire uno tra i seguenti codici di invito al "
+"momento della registrazione."
+
+#: rpr-admin-menu.php:261
+msgid "Enforce case-sensitivity of invitation codes."
+msgstr "Imponi ai codici invito la sensibilità maiuscole/minuscole."
+
+#: rpr-admin-menu.php:262
+msgid "Each invitation code may only be used once."
+msgstr ""
+
+#: rpr-admin-menu.php:263
+msgid "Show Invitation Code Tracking widget on Dashboard."
+msgstr "Mostra nella bacheca il widget di tracciamento codice invito."
+
+#: rpr-admin-menu.php:272 rpr-admin-menu.php:676 rpr-admin-menu.php:677
+msgid "Remove Code"
+msgstr "Rimuovi codice"
+
+#: rpr-admin-menu.php:275
+#, fuzzy
+msgid "Show %d hidden invitation code"
+msgid_plural "Show %d hidden invitation codes"
+msgstr[0] "Aggiungi nuovo cidice invito"
+msgstr[1] "Aggiungi nuovo cidice invito"
+
+#: rpr-admin-menu.php:279
+msgid "Add Code"
+msgstr "Inserisci il codice"
+
+#: rpr-admin-menu.php:279
+msgid "Add a new invitation code"
+msgstr "Aggiungi nuovo cidice invito"
+
+#: rpr-admin-menu.php:284
+msgid "Disclaimer"
+msgstr "Disclaimer"
+
+#: rpr-admin-menu.php:286
+msgid "Show Disclaimer during registration..."
+msgstr ""
+"Mostra l'esclusione di responsabilità al momento della registrazione..."
+
+#: rpr-admin-menu.php:291
+msgid "Disclaimer Title"
+msgstr "Titolo disclaimer"
+
+#: rpr-admin-menu.php:299
+msgid "Disclaimer Content"
+msgstr "Contenuto disclaimer"
+
+#: rpr-admin-menu.php:305 rpr-admin-menu.php:337 rpr-admin-menu.php:369
+msgid "Require Agreement"
+msgstr "Richiedi consenso"
+
+#: rpr-admin-menu.php:316
+msgid "License Agreement"
+msgstr "Consenso condizioni"
+
+#: rpr-admin-menu.php:318
+msgid "Show License Agreement during registration..."
+msgstr "Mostra contenuto consenso condizioni durante la registrazione..."
+
+#: rpr-admin-menu.php:323
+msgid "License Agreement Title"
+msgstr "Titolo consenso condizioni"
+
+#: rpr-admin-menu.php:331
+msgid "License Agreement Content"
+msgstr "Contenuto consenso condizioni"
+
+#: rpr-admin-menu.php:348
+msgid "Privacy Policy"
+msgstr "Informativa trattamento dati"
+
+#: rpr-admin-menu.php:350
+msgid "Show Privacy Policy during registration..."
+msgstr "Mostra i termini e le condizioni durante la registrazione..."
+
+#: rpr-admin-menu.php:355
+msgid "Privacy Policy Title"
+msgstr "Titolo informativa trattamento dati"
+
+#: rpr-admin-menu.php:363
+msgid "Privacy Policy Content"
+msgstr "Contenuto informativa trattamento dati"
+
+#: rpr-admin-menu.php:380
+msgid "Use Default Style Rules"
+msgstr "Usa regole di stile predefinite"
+
+#: rpr-admin-menu.php:381
+#, fuzzy
+msgid "Apply default Wordpress styling to all fields."
+msgstr "Applica a tutti i campi lo stile predefinito di Wordpress 3.0.1."
+
+#: rpr-admin-menu.php:384
+msgid "Required Fields Style Rules"
+msgstr "Regole di stile campi obbligatori"
+
+#: rpr-admin-menu.php:388
+msgid "Required Fields Asterisk"
+msgstr "Asterisco campi obbligatori"
+
+#: rpr-admin-menu.php:389
+msgid "Add asterisk to left of all required field's name."
+msgstr ""
+"Aggiungi un asterisco alla sinistra del nome di tutti i campi obbligatori."
+
+#: rpr-admin-menu.php:393
+msgid "Starting Tabindex"
+msgstr "Tabindex di avvio"
+
+#: rpr-admin-menu.php:396
+#, fuzzy
+msgid ""
+"The first field added will have this tabindex, the tabindex will increment "
+"by 1 for each additional field. Enter 0 to remove all tabindex's."
+msgstr ""
+"Il primo dei campi aggiunti avrà questo tabindex. Il tabindex verrà "
+"incrementato di 1 per ogni nuovo campo aggiunto. Inserisci 0 per rimuovere."
+
+#: rpr-admin-menu.php:401
+msgid "Additional Fields"
+msgstr "Campi addizionali"
+
+#: rpr-admin-menu.php:402
+#, fuzzy
+msgid ""
+"Enter additional fields to show on the User Profile and/or Registration "
+"Pages. Additional fields will be shown after existing profile fields on User "
+"Profile, and after selected profile fields on Registration Page but before "
+"Password, Invitation Code, Disclaimer, License Agreement, or Privacy Policy "
+"(if any of those fields are enabled). Options must be entered for Select, "
+"Checkbox, and Radio fields. Options should be entered with commas separating "
+"each possible value. For example, a Radio field named \"Gender\" could have "
+"the following options, \"Male,Female\"."
+msgstr ""
+"Inserisci i campi addizionali da mostrare nelle pagine Profilo Utente e/o "
+"Registrazione. I campi addizionali verranno mostrati in coda ai campi "
+"profilo già esistenti nella pagina Profilo Utente nonché di seguito ai campi "
+"per il profilo selezionati nella Pagina di Registrazione ma comunque prima "
+"della Password, del Codice Invito, del Disclaimer, del Consenso condizioni, "
+"oppure della Informativa trattamento dati (qualora uno o più di questi campi "
+"fosse stato attivato). Le opzioni potranno essere inserite via campi di "
+"Selezione, Casella di Verifica e Pulsanti Radio. Le opzioni dovranno essere "
+"inserite separando con una virgola ogni valore. Ad esempio, un pulsante "
+"radio a nome \"Genere\" dovrà avere le seguenti opzioni: \"Maschio,Femmina\"."
+
+#: rpr-admin-menu.php:413
+msgid "Reorder"
+msgstr ""
+
+#: rpr-admin-menu.php:413
+msgid "Drag to Reorder"
+msgstr ""
+
+#: rpr-admin-menu.php:418
+msgid "Display"
+msgstr ""
+
+#: rpr-admin-menu.php:420
+#, fuzzy
+msgid "Textbox Field"
+msgstr "Campo testo"
+
+#: rpr-admin-menu.php:421
+msgid "Select Field"
+msgstr "Selezione campo"
+
+#: rpr-admin-menu.php:422
+msgid "Checkbox Fields"
+msgstr "Campi casella verifica"
+
+#: rpr-admin-menu.php:423
+msgid "Radio Fields"
+msgstr "Campi radio"
+
+#: rpr-admin-menu.php:424
+msgid "Text Area"
+msgstr "Area di testo"
+
+#: rpr-admin-menu.php:425
+msgid "Hidden Field"
+msgstr "Campo nascosto"
+
+#: rpr-admin-menu.php:426
+msgid "Static Text"
+msgstr ""
+
+#: rpr-admin-menu.php:429
+msgid "Options"
+msgstr "Opzioni"
+
+#: rpr-admin-menu.php:432
+msgid "Database Key"
+msgstr ""
+
+#: rpr-admin-menu.php:435
+#, fuzzy
+msgid "Show on Profile"
+msgstr "Profilo"
+
+#: rpr-admin-menu.php:438
+#, fuzzy
+msgid "Show on Registration"
+msgstr "Registrazione"
+
+#: rpr-admin-menu.php:441
+#, fuzzy
+msgid "Required Field"
+msgstr "Asterisco campi obbligatori"
+
+#: rpr-admin-menu.php:444
+msgid "Actions"
+msgstr "Azioni"
+
+#: rpr-admin-menu.php:445 rpr-admin-menu.php:709
+msgid "Help"
+msgstr ""
+
+#: rpr-admin-menu.php:445
+msgid "No help available"
+msgstr ""
+
+#: rpr-admin-menu.php:446 rpr-admin-menu.php:701
+#, fuzzy
+msgid "Remove"
+msgstr "Rimuovi codice"
+
+#: rpr-admin-menu.php:446 rpr-admin-menu.php:702
+msgid "Remove Field"
+msgstr "Rimuovi campo"
+
+#: rpr-admin-menu.php:457
+msgid "Add Field"
+msgstr "Aggiungi campo"
+
+#: rpr-admin-menu.php:457
+msgid "Add a new custom field."
+msgstr "Aggiungi un nuovo campo personalizzato."
+
+#: rpr-admin-menu.php:496
+#, fuzzy
+msgid "Autocomplete URL"
+msgstr "Compilazione richieste in automatico"
+
+#: rpr-admin-menu.php:497
+#, fuzzy
+msgid ""
+"You can create a URL to autocomplete specific fields for the user. "
+"Additional fields use the database key. Included below are available keys "
+"and an example URL."
+msgstr ""
+"Puoi ora collegarti alla pagina di registrazione con le richieste di auto-"
+"compilazione dei campi specifici per l'utente. Qui sotto le chiavi di "
+"richiesta ed un esempio per la richiesta URL."
+
+#: rpr-admin-menu.php:501
+msgid "New User Message Settings"
+msgstr "Impostazioni messaggio nuovo utente"
+
+#: rpr-admin-menu.php:504
+msgid "New User Message"
+msgstr "Messaggio nuovo utente"
+
+#: rpr-admin-menu.php:506
+msgid "Do NOT send user an email after they are registered"
+msgstr "NON inviare all'utente una email dopo che si é registrato"
+
+#: rpr-admin-menu.php:507
+msgid "Do NOT send user an email when created by an administrator"
+msgstr ""
+"NON inviare una email all'utente quando l'account é stato creato da un "
+"amministratore"
+
+#: rpr-admin-menu.php:511
+msgid "Custom New User Message"
+msgstr "Messaggio personalizzato nuovo utente"
+
+#: rpr-admin-menu.php:513 rpr-admin-menu.php:544 rpr-admin-menu.php:592
+msgid "Enable..."
+msgstr "Abilita..."
+
+#: rpr-admin-menu.php:517 rpr-admin-menu.php:548 rpr-admin-menu.php:596
+msgid "From Email"
+msgstr "Email mittente"
+
+#: rpr-admin-menu.php:518 rpr-admin-menu.php:522 rpr-admin-menu.php:526
+#: rpr-admin-menu.php:531 rpr-admin-menu.php:549 rpr-admin-menu.php:553
+#: rpr-admin-menu.php:557 rpr-admin-menu.php:562 rpr-admin-menu.php:597
+#: rpr-admin-menu.php:601 rpr-admin-menu.php:605 rpr-admin-menu.php:610
+msgid "Restore Default"
+msgstr "Ripristina la configurazione predefinita"
+
+#: rpr-admin-menu.php:521 rpr-admin-menu.php:552 rpr-admin-menu.php:600
+msgid "From Name"
+msgstr "Nome mittente"
+
+#: rpr-admin-menu.php:525 rpr-admin-menu.php:556 rpr-admin-menu.php:604
+msgid "Subject"
+msgstr "Oggetto"
+
+#: rpr-admin-menu.php:530 rpr-admin-menu.php:561
+msgid "User Message"
+msgstr "Messaggio utente"
+
+#: rpr-admin-menu.php:532 rpr-admin-menu.php:563 rpr-admin-menu.php:611
+msgid "Replacement Keywords"
+msgstr "Sostituzione parole chiavi"
+
+#: rpr-admin-menu.php:533 rpr-admin-menu.php:564 rpr-admin-menu.php:612
+msgid "Send as HTML"
+msgstr "Invia come HTML"
+
+#: rpr-admin-menu.php:534 rpr-admin-menu.php:565 rpr-admin-menu.php:613
+msgid "Convert new lines to &lt;br /&gt; tags (HTML only)"
+msgstr "Converti le nuove linee a tag &lt;br /&gt; (solo HTML)"
+
+#: rpr-admin-menu.php:542
+msgid "Custom Verification Message"
+msgstr "Messaggio di verifica personalizzato"
+
+#: rpr-admin-menu.php:573 rpr-admin-menu.php:621
+msgid "Summary"
+msgstr "Riassunto"
+
+#: rpr-admin-menu.php:579
+msgid "Admin Notification Settings"
+msgstr "Impostazioni notifica amministratore"
+
+#: rpr-admin-menu.php:582
+msgid "Admin Notification"
+msgstr "Notifica amministratore"
+
+#: rpr-admin-menu.php:584
+msgid "Do NOT send administrator an email whenever a new user registers"
+msgstr ""
+"NON inviare all'amministratore una email per l'avvenuta registrazione di un "
+"nuovo utente"
+
+#: rpr-admin-menu.php:585
+msgid ""
+"Do NOT send administrator an email whenever a new user is created by an "
+"administrator"
+msgstr ""
+"NON inviare all'amministratore una email per l'avvenuta creazione di un "
+"nuovo utente da parte di un amministratore"
+
+#: rpr-admin-menu.php:586
+#, fuzzy
+msgid "Send administrator an email after a new user is verified"
+msgstr ""
+"NON inviare all'amministratore una email per l'avvenuta registrazione di un "
+"nuovo utente"
+
+#: rpr-admin-menu.php:590
+msgid "Custom Admin Notification"
+msgstr "Notifica personalizzata amministratore"
+
+#: rpr-admin-menu.php:609
+msgid "Admin Message"
+msgstr "Messaggio amministratore"
+
+#: rpr-admin-menu.php:628
+msgid "Custom CSS for Register & Login Pages"
+msgstr "CSS personalizzato per le pagine di login e registrazione"
+
+#: rpr-admin-menu.php:629
+msgid "CSS Rule Example:"
+msgstr "Esempio regola CSS:"
+
+#: rpr-admin-menu.php:632
+msgid "Custom Register CSS"
+msgstr "CSS registrazione personalizzata"
+
+#: rpr-admin-menu.php:636
+msgid "Custom Login CSS"
+msgstr "CSS personalizzato login"
+
+#: rpr-admin-menu.php:641
+msgid "Hacks & Fixes"
+msgstr "Hacks e correzioni"
+
+#: rpr-admin-menu.php:644
+msgid "Random Password Appears in Messages"
+msgstr ""
+
+#: rpr-admin-menu.php:646
+#, fuzzy
+msgid "Filter Random Passwords."
+msgstr "Conferma password"
+
+#: rpr-admin-menu.php:647
+msgid ""
+"When user set password is enabled, and another plugin is being used to "
+"modify outgoing messages, a random password may appear in those messages, "
+"regardless of the fact that a user entered password was specified. This "
+"option will filter all password requests and show the user entered password "
+"if possible."
+msgstr ""
+
+#: rpr-admin-menu.php:652
+msgid "Save Changes"
+msgstr "Salva le modifiche"
+
+#: rpr-admin-menu.php:653
+#, fuzzy
+msgid "Preview Registration Page"
+msgstr "Anteprima pagina di registrazione"
+
+#: rpr-admin-menu.php:690
+msgid "New"
+msgstr ""
+
+#: rpr-admin-menu.php:691
+#, fuzzy
+msgid "New Field"
+msgstr "Campo testo"
+
+#: rpr-admin-menu.php:710
+msgid ""
+"You must save after adding new fields before all options become available."
+msgstr ""
+
+#: rpr-admin-menu.php:727
+msgid "The following message will be sent when a user is registered:"
+msgstr "Il messaggio seguente verrà inviato quando un utente é registrato:"
+
+#: rpr-admin-menu.php:741 rpr-admin-menu.php:780 rpr-admin-menu.php:817
+msgid "To: "
+msgstr "A:"
+
+#: rpr-admin-menu.php:742 rpr-admin-menu.php:781 rpr-admin-menu.php:818
+msgid "From: "
+msgstr "Da:"
+
+#: rpr-admin-menu.php:743 rpr-admin-menu.php:782 rpr-admin-menu.php:819
+msgid "Subject: "
+msgstr "Oggetto:"
+
+#: rpr-admin-menu.php:744 rpr-admin-menu.php:783 rpr-admin-menu.php:820
+msgid "Content-Type: "
+msgstr "Tipologia contenuti:"
+
+#: rpr-admin-menu.php:752
+msgid ""
+"No message will be sent to user whether they are registered or created by an "
+"administrator."
+msgstr ""
+"Nessun messaggio verrà inviato all'utente qualora fosse stato registrato "
+"oppure creato da un amministratore."
+
+#: rpr-admin-menu.php:756 rpr-admin-menu.php:799
+msgid "The following message will be sent when a user is "
+msgstr "Il messaggio seguente verrà inviato quando un utente é stato "
+
+#: rpr-admin-menu.php:757 rpr-admin-menu.php:800
+msgid "registered"
+msgstr "registrato"
+
+#: rpr-admin-menu.php:758 rpr-admin-menu.php:801
+msgid " or "
+msgstr " oppure "
+
+#: rpr-admin-menu.php:759 rpr-admin-menu.php:802
+msgid "created"
+msgstr "creato"
+
+#: rpr-admin-menu.php:760
+msgid " after "
+msgstr " dopo "
+
+#: rpr-admin-menu.php:762
+#, fuzzy
+msgid "the user has verified their email address"
+msgstr "Verifica indirizzo email di tutti i nuovi utenti."
+
+#: rpr-admin-menu.php:763
+msgid " and/or "
+msgstr " e/o "
+
+#: rpr-admin-menu.php:765
+msgid "an administrator has approved the new user"
+msgstr "un amministratore ha approvato il nuovo utente"
+
+#: rpr-admin-menu.php:795
+msgid ""
+"No message will be sent to administrator whether a user is registered or "
+"created."
+msgstr ""
+"Nessun messaggio verrà inviato all'amminiistratore quando un utente é "
+"registrato oppure creato."
+
+#: rpr-admin-menu.php:972
+msgid "You cannot edit that user."
+msgstr "Non puoi modificare l'utente."
+
+#: rpr-admin-menu.php:996
+msgid "Users approved."
+msgstr "Utenti approvati."
+
+#: rpr-admin-menu.php:999
+msgid "Verification emails sent."
+msgstr "Le email di verifica sono state inviate."
+
+#: rpr-admin-menu.php:1002
+msgid "Users deleted."
+msgstr "Utenti cancellati."
+
+#: rpr-admin-menu.php:1014
+msgid "Bulk Actions"
+msgstr "Azioni di massa"
+
+#: rpr-admin-menu.php:1015
+msgid "Approve"
+msgstr "Approva"
+
+#: rpr-admin-menu.php:1016
+msgid "Send E-mail Verification"
+msgstr "Invia verifica email"
+
+#: rpr-admin-menu.php:1017 rpr-admin-menu.php:1051
+msgid "Delete"
+msgstr "Elimina"
+
+#: rpr-admin-menu.php:1019
+msgid "Apply"
+msgstr "Applica"
+
+#: rpr-admin-menu.php:1028
+msgid "Username"
+msgstr "Nome utente"
+
+#: rpr-admin-menu.php:1029
+msgid "Temp Username"
+msgstr "Nome utente temporaneo"
+
+#: rpr-admin-menu.php:1030 rpr-login.php:821 rpr-login.php:826
+#: rpr-login.php:835 rpr-login.php:840
+msgid "E-mail"
+msgstr "E-mail"
+
+#: rpr-admin-menu.php:1031
+msgid "Registered"
+msgstr "Registrato"
+
+#: rpr-admin-menu.php:1032
+msgid "Verification Sent"
+msgstr "Invio verifica"
+
+#: rpr-admin-menu.php:1033
+msgid "Verified"
+msgstr "Verificato"
+
+#: rpr-admin-menu.php:1050
+msgid "Edit"
+msgstr "Modifica"
+
+#: rpr-admin-menu.php:1055
+msgid "E-mail: "
+msgstr "Email:"
+
+#: rpr-admin-menu.php:1068
+msgid "Approve Selected Users"
+msgstr "Approva gli utenti selezionati"
+
+#: rpr-admin-menu.php:1069
+msgid "Send E-mail Verification to Selected Users"
+msgstr "Invia agli utenti selezionati la verifica email"
+
+#: rpr-admin-menu.php:1070
+msgid "Delete Selected Users"
+msgstr "Cancella gli utenti selezionati"
+
+#: rpr-dashboard-widget.php:14
+msgid "Invitation Code Tracking"
+msgstr "Tracciamento codice invito"
+
+#: rpr-dashboard-widget.php:22
+#, fuzzy
+msgid "%s Users Registered."
+msgstr "Nuova registrazione utente"
+
+#: rpr-login.php:63 rpr-signup.php:238
+msgid "Confirm E-mail"
+msgstr "E-mail conferma"
+
+#: rpr-login.php:127 rpr-signup.php:320
+msgid ""
+"Share a little biographical information to fill out your profile. This may "
+"be shown publicly."
+msgstr ""
+"Condividi alcune tue note biografiche conpilando il tuo profilo. Le info "
+"potranno essere pubbliche."
+
+#: rpr-login.php:218 rpr-signup.php:390
+msgid "Password"
+msgstr "Password"
+
+#: rpr-login.php:224 rpr-signup.php:398
+msgid "Confirm Password"
+msgstr "Conferma password"
+
+#: rpr-login.php:230 rpr-signup.php:406
+msgid ""
+"Your password must be at least %d characters long. To make your password "
+"stronger, use upper and lower case letters, numbers, and the following "
+"symbols !@#$%%^&amp;*()"
+msgstr ""
+"La tua password dovrà contenere almeno %d caratteri. Per potere rendere più "
+"sicura la tua password, usa lettere maiuscole e minuscole, numeri nonché i "
+"seguenti simboli !@#$%%^&amp;*()"
+
+#: rpr-login.php:243 rpr-signup.php:420
+msgid ""
+"This website is currently closed to public registrations. You will need an "
+"invitation code to register."
+msgstr ""
+"Le registrazioni pubbliche per il sito non sono al momento attive: é "
+"necessario un codice invito."
+
+#: rpr-login.php:246 rpr-signup.php:422
+msgid "Have an invitation code? Enter it here. (This is not required)"
+msgstr "Hai un codice invito? Inseriscilo qui. (Non é obbligatorio)"
+
+#: rpr-login.php:298 rpr-login.php:304 rpr-login.php:309 rpr-login.php:312
+#: rpr-login.php:317 rpr-login.php:322 rpr-login.php:327 rpr-login.php:332
+#: rpr-login.php:337 rpr-login.php:342 rpr-login.php:347 rpr-login.php:355
+#: rpr-login.php:358 rpr-login.php:363 rpr-login.php:366 rpr-login.php:369
+#: rpr-login.php:374 rpr-login.php:385 rpr-login.php:395 rpr-login.php:403
+#: rpr-login.php:408 rpr-login.php:413
+msgid "ERROR"
+msgstr "ERRORE"
+
+#: rpr-login.php:298
+msgid ""
+"Email address is not appropriate as a username, please enter another email "
+"address."
+msgstr ""
+
+#: rpr-login.php:304
+#, fuzzy
+msgid "This username is already registered, please choose another one."
+msgstr "questo nome utente é già in uso: utilizzane un altro."
+
+#: rpr-login.php:309 rpr-signup.php:519
+#, fuzzy
+msgid "Please confirm your e-mail address."
+msgstr "conferma il tuo indirizzo email."
+
+#: rpr-login.php:312 rpr-signup.php:522
+#, fuzzy
+msgid "Your e-mail address does not match."
+msgstr "il tuo indirizzo email non coincide."
+
+#: rpr-login.php:317 rpr-signup.php:527
+#, fuzzy
+msgid "Please enter your first name."
+msgstr "inserisci il tuo nome."
+
+#: rpr-login.php:322 rpr-signup.php:532
+#, fuzzy
+msgid "Please enter your last name."
+msgstr "inserisci il tuo cognome."
+
+#: rpr-login.php:327 rpr-signup.php:537
+#, fuzzy
+msgid "Please enter your website URL."
+msgstr "inserisci URL del tuo sito."
+
+#: rpr-login.php:332 rpr-signup.php:542
+#, fuzzy
+msgid "Please enter your AIM username."
+msgstr "inserisci il tuo nome utente AIM."
+
+#: rpr-login.php:337 rpr-signup.php:547
+#, fuzzy
+msgid "Please enter your Yahoo IM username."
+msgstr "inserisci il tuo mome utente Yahoo IM."
+
+#: rpr-login.php:342 rpr-signup.php:552
+#, fuzzy
+msgid "Please enter your Jabber / Google Talk username."
+msgstr "inserisci il tuo nome utente Jabber / Google Talk."
+
+#: rpr-login.php:347 rpr-signup.php:557
+#, fuzzy
+msgid "Please enter some information about yourself."
+msgstr "inserisci alcune informazioni su te stesso."
+
+#: rpr-login.php:355 rpr-signup.php:565
+msgid "Please enter a value for %s."
+msgstr ""
+
+#: rpr-login.php:358 rpr-signup.php:568
+msgid ""
+"Please enter new value for %s, value specified is not in the correct format."
+msgstr ""
+
+#: rpr-login.php:363 rpr-signup.php:573
+#, fuzzy
+msgid "Please enter a password."
+msgstr "Inserisci una password."
+
+#: rpr-login.php:366 rpr-signup.php:576
+#, fuzzy
+msgid "Your password must be at least %d characters in length."
+msgstr "la tua password deve essere composta da almeno %d caratteri."
+
+#: rpr-login.php:369 rpr-signup.php:579
+#, fuzzy
+msgid "Your password does not match."
+msgstr "la tua password non coincide."
+
+#: rpr-login.php:374 rpr-signup.php:589
+#, fuzzy
+msgid "Please enter an invitation code."
+msgstr "inserisci un codice invito."
+
+#: rpr-login.php:385 rpr-signup.php:600
+#, fuzzy
+msgid "That invitation code is invalid."
+msgstr "il tuo codice invito non é corretto."
+
+#: rpr-login.php:395 rpr-signup.php:610
+msgid ""
+"This invitation code is already in use, please enter a unique invitation "
+"code."
+msgstr ""
+
+#: rpr-login.php:403 rpr-login.php:408 rpr-login.php:413 rpr-signup.php:618
+#: rpr-signup.php:623 rpr-signup.php:628
+#, fuzzy
+msgid "Please accept the %s"
+msgstr "accetta il %s"
+
+#: rpr-login.php:445
+#, fuzzy
+msgid ""
+"Thank you %s, your account has been verified, please login with the password "
+"you specified during registration."
+msgstr "Grazie %s, il tuo account é stato verificato. Effettua il login."
+
+#: rpr-login.php:447
+#, fuzzy
+msgid ""
+"Thank you %s, your account has been verified, your password will be emailed "
+"to you."
+msgstr "Grazie %s, il tuo account é stato verificato. Effettua il login."
+
+#: rpr-login.php:455
+#, fuzzy
+msgid "Invalid verification code."
+msgstr "Verifica email"
+
+#: rpr-signup.php:502
+msgid "Sorry, that username already exists!"
+msgstr ""
+
+#: rpr-signup.php:511
+msgid ""
+"That username is currently reserved but may be available in a couple of days."
+msgstr ""
+
+#: rpr-signup.php:514
+msgid "username and email used"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Register Plus Redux"
+msgstr "Register Plus Redux"
+
+#. Plugin URI of the plugin/theme
+msgid "http://radiok.info/blog/category/register-plus-redux/"
+msgstr "http://radiok.info/blog/category/register-plus-redux/"
+
+#. Description of the plugin/theme
+msgid ""
+"Enhances the user registration process with complete customization and "
+"additional administration options."
+msgstr ""
+"Migliora la procedura di registrazione utente grazie ad una configurazione "
+"personalizzabile e ricca di opzioni aggiuntive."
+
+#. Author of the plugin/theme
+msgid "radiok"
+msgstr "radiok"
+
+#. Author URI of the plugin/theme
+msgid "http://radiok.info/"
+msgstr "http://radiok.info/"
+
+#~ msgid "Date Field"
+#~ msgstr "Campo data"
+
+#~ msgid "URL Field"
+#~ msgstr "Campo URL"
+
+#~ msgid "Move this Field Up"
+#~ msgstr "Sposta il campo verso l&#39;alto"
+
+#~ msgid "Move this Field Down"
+#~ msgstr "Sposta il campo verso il basso"
+
+#~ msgid "You must Save Changes to upload logo."
+#~ msgstr "Devi salvare le modifiche per caricare il logo."
+
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgid "Type"
+#~ msgstr "Tipo"
+
+#~ msgid "Date Field Settings"
+#~ msgstr "Impostazioni campo data"
+
+#~ msgid "First Day of the Week"
+#~ msgstr "Giorno inizio settimana"
+
+#~ msgid "Monday"
+#~ msgstr "Lunedì"
+
+#~ msgid "Tuesday"
+#~ msgstr "Martedì"
+
+#~ msgid "Wednesday"
+#~ msgstr "Mercoledì"
+
+#~ msgid "Thursday"
+#~ msgstr "Giovedì"
+
+#~ msgid "Friday"
+#~ msgstr "Venerdì"
+
+#~ msgid "Saturday"
+#~ msgstr "Sabato"
+
+#~ msgid "Sunday"
+#~ msgstr "Domenica"
+
+#~ msgid "Date Format"
+#~ msgstr "Formato data"
+
+#~ msgid "First Selectable Date"
+#~ msgstr "Prima data selezionabile"
+
+#~ msgid "Default Year"
+#~ msgstr "Anno predefinito"
+
+#~ msgid "Default Month"
+#~ msgstr "Mese predefinito"
+
+#~ msgid "Current Month"
+#~ msgstr "Mese corrente"
+
+#~ msgid "Jan"
+#~ msgstr "Gen"
+
+#~ msgid "Feb"
+#~ msgstr "Feb"
+
+#~ msgid "Mar"
+#~ msgstr "Mar"
+
+#~ msgid "Apr"
+#~ msgstr "Apr"
+
+#~ msgid "May"
+#~ msgstr "Mag"
+
+#~ msgid "Jun"
+#~ msgstr "Giu"
+
+#~ msgid "Jul"
+#~ msgstr "Lug"
+
+#~ msgid "Aug"
+#~ msgstr "Ago"
+
+#~ msgid "Sep"
+#~ msgstr "Set"
+
+#~ msgid "Oct"
+#~ msgstr "Ott"
+
+#~ msgid "Nov"
+#~ msgstr "Nov"
+
+#~ msgid "Dec"
+#~ msgstr "Dic"
+
+#~ msgid ""
+#~ "For any custom fields, use your custom field label with the text all "
+#~ "lowercase, using underscores instead of spaces. For example if your "
+#~ "custom field was \"Middle Name\" your query key would be %middle_name%"
+#~ msgstr ""
+#~ "Per ogni campo personalizzato, usa per l'etichetta del tuo campo "
+#~ "personalizzato un testo tutto in minuscolo, facendo uso dei trattini "
+#~ "bassi al posto degli spazi. Se ad esempio il campo personalizzato fosse "
+#~ "\"Middle Name\" la tua chiave di richiesta dovrà essere %middle_name%"
+
+#~ msgid "Example Query URL"
+#~ msgstr "Esempio di Query URL"
+
+#~ msgid "Login URL"
+#~ msgstr "URL login"
+
+#~ msgid "This will redirect the users login after registration."
+#~ msgstr "Questo reindirizzerà il login utente dopo la registrazione."
+
+#~ msgid "Non-English Custom Fields"
+#~ msgstr "Campi personalizzati Non-English"
+
+#~ msgid "Do not sanitize keys."
+#~ msgstr "Nessun sanitize per le chiavi."
+
+#~ msgid ""
+#~ "Custom fields with non-english characters may not work, this hack will "
+#~ "stop sanitizing the custom field name which may resolve this issue."
+#~ msgstr ""
+#~ "I campi personalizzati con dei caratteri Non-English potrebbero non "
+#~ "funzionare, questo hack eviterà il sanitize al nome del campo "
+#~ "personalizzato affinché il problema possa essere potenzialmente "
+#~ "risolvibile."
+
+#~ msgid "URL File Access is Disabled"
+#~ msgstr "L'accesso agli URL dei file é vietato"
+
+#~ msgid "Do not open URL files."
+#~ msgstr "Non aprire gli URL dei file."
+
+#~ msgid ""
+#~ "Some PHP configurations do not allow accessing URL objects like files "
+#~ "(allow_url_fopen=disabled in php.ini), this hack will stop trying to open "
+#~ "URL files as if they were local files. Custom logo must be exactly 326x67 "
+#~ "with this hack enabled, otherwise it will be cropped."
+#~ msgstr ""
+#~ "Alcune configurazioni PHP non permettono l'accesso agli URL objects quali "
+#~ "i file (allow_url_fopen=disabled in php.ini), con questo hack sarà "
+#~ "evitata l'apertura degli URL dei file qualora essi fossero locali. "
+#~ "Qualora avessi attivato questo hack, il logo personalizzato dovrà essere "
+#~ "esattamente di 326x67px diversamente, verrà ritagliato."
+
+#~ msgid "<strong>ERROR</strong>: Please complete %s."
+#~ msgstr "<strong>ERRORE</strong>: completa %s."
+
+#~ msgid "Registration Message"
+#~ msgstr "Messaggio registrazione"
+
+#~ msgid ""
+#~ "The following message will be shown to users while registering. You may "
+#~ "include HTML in this message."
+#~ msgstr ""
+#~ "Il seguente messaggio verrà mostrato agli utenti in seguito alla loro "
+#~ "registrazione (HTML disponibile)."
+
+#~ msgid "Login Page"
+#~ msgstr "Pagina login"
+
+#~ msgid ""
+#~ "Custom Logo will be shown on Login Page in place of the default Wordpress "
+#~ "logo. For the best results custom logo should not exceed 350px width."
+#~ msgstr ""
+#~ "Il logo personalizzato verrà mostrato nella pagina di login al posto di "
+#~ "quello predefinito da Wordpress. La larghezza del logo non dovrà superare "
+#~ "i 350px."
+
+#~ msgid "Preview Login Page"
+#~ msgstr "Anteprima pagina di login"
+
+#~ msgid "Custom Fields"
+#~ msgstr "Campi personalizzati"
+
+#~ msgid "DB Name"
+#~ msgstr "Nome DB"
+
+#~ msgid "Values"
+#~ msgstr "Valori"
+
+#~ msgid "Default Value"
+#~ msgstr "Valore predefinito"
+
+#~ msgid "Regex"
+#~ msgstr "Regex"
+
+#~ msgid "Messages"
+#~ msgstr "Messaggi"
+
+#~ msgid ""
+#~ "This option affects when the new user message will be sent out, and if a "
+#~ "verification message will be sent out. To make changes to this option you "
+#~ "must go to Register Plus Redux's Options Page."
+#~ msgstr ""
+#~ "Questa opzione avrà effetto quando verrà inviato il messaggio del nuovo "
+#~ "utente ed anche se fosse stato inviato un messaggio di verifica. Vai alla "
+#~ "pagina di Register Plus Redux per modificare questa opzione.."
+
+#~ msgid ""
+#~ "This option affects when the new user message will be sent out. To make "
+#~ "changes to this option you must go to Register Plus Redux's Options Page."
+#~ msgstr ""
+#~ "Questa opzione avrà effetto quando verrà inviato il messaggio del nuovo "
+#~ "utente. Vai alla pagina di Register Plus Redux per modificare questa "
+#~ "opzione."
+
+#~ msgid "Preview"
+#~ msgstr "Anteprima"
+
+#~ msgid "Verification Message"
+#~ msgstr "Messaggio verifica"
+
+#~ msgid "Admin Notification Message"
+#~ msgstr "Messaggio notifica amministratore"
+
+#~ msgid "Miscellany"
+#~ msgstr "Varie"
+
+#~ msgid "Agreement Text"
+#~ msgstr "Testo consenso"
+
+#~ msgid "Previous month"
+#~ msgstr "Mese precedente"
+
+#~ msgid "Next Month"
+#~ msgstr "Mese prossimo"
+
+#~ msgid "Close"
+#~ msgstr "Chiudi"
+
+#~ msgid "Choose Date"
+#~ msgstr "Scegli la data"
+
+#~ msgid "Mon"
+#~ msgstr "Lun"
+
+#~ msgid "Tue"
+#~ msgstr "Mar"
+
+#~ msgid "Wed"
+#~ msgstr "Mer"
+
+#~ msgid "Thu"
+#~ msgstr "Gio"
+
+#~ msgid "Fri"
+#~ msgstr "Ven"
+
+#~ msgid "Sat"
+#~ msgstr "Sab"
+
+#~ msgid "Sun"
+#~ msgstr "Dom"
+
+#~ msgid "January"
+#~ msgstr "Gennaio"
+
+#~ msgid "February"
+#~ msgstr "Febbraio"
+
+#~ msgid "March"
+#~ msgstr "Marzo"
+
+#~ msgid "June"
+#~ msgstr "Giugno"
+
+#~ msgid "July"
+#~ msgstr "Luglio"
+
+#~ msgid "August"
+#~ msgstr "Agosto"
+
+#~ msgid "September"
+#~ msgstr "Settembre"
+
+#~ msgid "October"
+#~ msgstr "Ottobre"
+
+#~ msgid "November"
+#~ msgstr "Novembre"
+
+#~ msgid "December"
+#~ msgstr "Dicembre"
+
+#~ msgid "[%s] Your username and password"
+#~ msgstr "[%s] Il tuo nome utente e password"
+
+#~ msgid "Allow New Registrations to set their own Password"
+#~ msgstr "Permetti alle nuove registrazioni di impostare una propria password"
+
+#~ msgid "Recommended logo should not exceed 358px width."
+#~ msgstr "La dimensione del logo non deve eccedere i 358px di larghezza."
+
+#~ msgid "New users will be sent an activation code via email."
+#~ msgstr "Verrà inviato via email ai nuovi utenti un codice invito."
+
+#~ msgid "Enable Invitation Code(s)"
+#~ msgstr "Attiva codice(i) invito"
+
+#~ msgid "Require Invitation Code to Register"
+#~ msgstr "l'utente dovrà fornire un codice invito affinché possa registrarsi"
+
+#~ msgid "Allow Duplicate Email Addresses"
+#~ msgstr "Permetti ripetizione indirizzi email"
+
+#~ msgid "Fields"
+#~ msgstr "Campi"
+
+#~ msgid "Enable Disclaimer"
+#~ msgstr "Attiva avviso di non responsabilità"
+
+#~ msgid "Enable License Agreement"
+#~ msgstr "Attiva consenso condizioni"
+
+#~ msgid "Enable Privacy Policy"
+#~ msgstr "Attiva informativa trattamento dati"
+
+#, fuzzy
+#~ msgid "Custom User Email Notification"
+#~ msgstr "Utilizza la versione email nuovo utente di SPF"
+
+#, fuzzy
+#~ msgid "Customize Admin Notification Email"
+#~ msgstr "(a) spunta \"Disattiva email amministratore..\""
+
+#~ msgid "Disable"
+#~ msgstr "Disattiva"
+
+#~ msgid "Verify Checked Users"
+#~ msgstr "Verifica utente selezionati"
+
+#~ msgid "Resend Verification E-mail"
+#~ msgstr "Reinvio email di verifica"
+
+#~ msgid "Unverified ID"
+#~ msgstr "ID non verificata"
+
+#~ msgid "Role"
+#~ msgstr "Ruolo"
+
+#~ msgid "e-mail: "
+#~ msgstr "e-mail: "
+
+#~ msgid "[%s] User Account Activated"
+#~ msgstr "[%s] Account utente attivato"
+
+#~ msgid ""
+#~ "You have another plugin installed that is conflicting with Register Plus "
+#~ "Redux. This other plugin is overriding the user notification emails. "
+#~ "Please see <a href=\"http://skullbit.com/news/register-plus-conflicts/"
+#~ "\">Register Plus Conflicts</a> for more information."
+#~ msgstr ""
+#~ "Hai installato un plugin che genera un conflitto con Register Plus Redux. "
+#~ "Questo plugin sta sovrascrivendo le email per la notifica utente. Per "
+#~ "ulteriori info, visita la pagina <a href=\"http://skullbit.com/news/"
+#~ "register-plus-conflicts/\">Register Plus Conflicts</a>."
+
+#~ msgid "[%s] Verify Account Link"
+#~ msgstr "[%s] Verifica link account"
+
+#~ msgid "<strong>Error:</strong> Please select a user to send emails to."
+#~ msgstr ""
+#~ "<strong>Errore:</strong> seleziona un utente a cui inviare le email."
+
+#~ msgid ""
+#~ "Please check your e-mail and click the verification link to activate your "
+#~ "account and complete your registration."
+#~ msgstr ""
+#~ "Controlla la tua email e clicca il link di verifica per attivare il tuo "
+#~ "account e completare la tua registrazione."
+
+#~ msgid "Password: %s"
+#~ msgstr "Password: %s"
+
+#~ msgid "New user registered on your site %s:"
+#~ msgstr "Nuova registrazione utente nel tuo sito %s:"
+
+#~ msgid "[%s] New User Registration"
+#~ msgstr "[%s] Nuova registrazione utente"
+
+#~ msgid ""
+#~ "Please use the above link to verify your email address and activate your "
+#~ "account"
+#~ msgstr ""
+#~ "Utilizza il link qui sopra per verificare il tuo indirizzo email ed "
+#~ "attivare il tuo account"

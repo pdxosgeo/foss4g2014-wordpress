@@ -1,0 +1,1371 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Register Plus Redux v3.9.5\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/register-plus-redux\n"
+"POT-Creation-Date: 2013-01-21 09:10:25+00:00\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Will Hinds <radiok@radiok.info>\n"
+"Language-Team: wp-fa.com <amin3d@gmail.com>\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x;_ex;_nx;esc_attr__;esc_attr_e;esc_attr_x;"
+"esc_html__;esc_html_e;esc_html_x\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: register-plus-redux.php:68
+msgid "Additional Information"
+msgstr "اطلاعات اضافه"
+
+#: register-plus-redux.php:72 rpr-admin-menu.php:256 rpr-login.php:238
+#: rpr-signup.php:414
+msgid "Invitation Code"
+msgstr "کد دعوت نامه"
+
+#: register-plus-redux.php:288
+msgid ""
+"<h2>%user_login% is your new username</h2>\n"
+"<p>But, before you can start using your new username, <strong>you must "
+"activate it</strong></p>\n"
+"<p>Check your inbox at <strong>%user_email%</strong> and click the link "
+"given.</p>\n"
+"<p>If you do not activate your username within two days, you will have to "
+"sign up again.</p>"
+msgstr ""
+
+#: register-plus-redux.php:289
+msgid ""
+"Please verify your account using the verification link sent to your email "
+"address."
+msgstr ""
+"لطفا عضویت خود را با کلیک برروی پیوند تائید که به رایانامه شما ارسال گردیده "
+"است تائید فرمائید"
+
+#: register-plus-redux.php:291 rpr-login.php:451
+msgid ""
+"Your account will be reviewed by an administrator and you will be notified "
+"when it is activated."
+msgstr ""
+"کاربری شما توسط مدیریت مورد بازبینی قرار خواهد گرفت و هنگام فعال سازی به شما "
+"اطلاع داده خواهد شد"
+
+#: register-plus-redux.php:347
+msgid "Your Login Information"
+msgstr "اطلاعات ورود شما"
+
+#: register-plus-redux.php:354
+msgid "Verify Your Account"
+msgstr "تائید کاربریتان"
+
+#: register-plus-redux.php:365
+msgid "New User Registered"
+msgstr "کاربری جدید ثبت نام کرد"
+
+#: rpr-admin-menu.php:19
+#, fuzzy
+msgid ""
+"Register Plus Redux requires WordPress 3.2 or greater. You are currently "
+"using WordPress %s, please upgrade WordPress or deactivate Register Plus "
+"Redux."
+msgstr ""
+"افزونه ثبت نام پیشرفته به وردپرس نسخه 3 یا بالاتر نیاز مند است. نسخه مورد "
+"استفاده شما نسخه %s است. لطفا یا وردپرس خود را برروز رسانی کنید یا این "
+"افزونه را غیر فعال کنید."
+
+#: rpr-admin-menu.php:26
+msgid ""
+"Register Plus Redux must be Network Activated by Super Admin under WordPress "
+"Multisite. You will have limited functionality while not Network Activated. "
+"Please refer to <a href=\"%s\">radiok.info</a> for help resolving this issue."
+msgstr ""
+
+#: rpr-admin-menu.php:32
+#, fuzzy
+msgid ""
+"There is another active plugin that is conflicting with Register Plus Redux. "
+"The conflicting plugin is creating its own wp_new_user_notification "
+"function, this function is used to alter the messages sent out following the "
+"creation of a new user. Please refer to <a href=\"%s\">radiok.info</a> for "
+"help resolving this issue."
+msgstr ""
+"یک افزونه فعال دیگر با افزونه ثبت نام پیشرفته تصادم ایجاد کرده است. این "
+"افزونه متصادم تابع own wp_new_user_notification خود را ایجاد کرده است. این "
+"تابع برای تغییر پیامی که در جریان ایجاد کاربر ارسال می شود مورد استفاده قرار "
+"می گیرد . به آدرس  <a href='http://radiok.info/blog/wp_new_user_notification-"
+"conflicts/'>http://radiok.info/blog/wp_new_user_notification-conflicts/</a> "
+"برای حل این مشکل مراجعه فرمائید."
+
+#: rpr-admin-menu.php:40 rpr-admin-menu.php:78
+msgid "Register Plus Redux Settings"
+msgstr "تنظیمات رجیستر پلاس"
+
+#: rpr-admin-menu.php:47 rpr-admin-menu.php:1008
+msgid "Unverified Users"
+msgstr "کاربران تائید نشده"
+
+#: rpr-admin-menu.php:52
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: rpr-admin-menu.php:74
+msgid "Settings Saved"
+msgstr "تنظیمات ذخیره شدند"
+
+#: rpr-admin-menu.php:84
+msgid "Custom Logo URL"
+msgstr "مسیر لوگو دلخواه"
+
+#: rpr-admin-menu.php:86
+#, fuzzy
+msgid "Upload Image"
+msgstr "بارگذاری یک لوگو جدید"
+
+#: rpr-admin-menu.php:87
+msgid ""
+"Custom Logo will be shown on Registration and Login Forms in place of the "
+"default Wordpress logo. For the best results custom logo should not exceed "
+"350px width."
+msgstr ""
+"لوگو شخصی سازی در فرم  ثبت نام و ورود  به جای لولگو پیش فرض نمایش داده می "
+"شود . برای نتیجه بهتر عرض لوگو شما نباید از 350 پیکسل تجاوز کند"
+
+#: rpr-admin-menu.php:92
+msgid "Remove Logo"
+msgstr "حذف لوگو"
+
+#: rpr-admin-menu.php:93
+msgid "You must Save Changes to remove logo."
+msgstr "برای حذف لوگو شما می بایست تنظیمات را ذخیره نمائید"
+
+#: rpr-admin-menu.php:98
+msgid "Email Verification"
+msgstr "تائید رایانامه"
+
+#: rpr-admin-menu.php:100
+msgid "Verify all new users email address..."
+msgstr "تائید همه رایانامه های کاربران جدید......"
+
+#: rpr-admin-menu.php:101
+msgid ""
+"A verification code will be sent to any new users email address, new users "
+"will not be able to login or reset their password until they have completed "
+"the verification process. Administrators may authorize new users from the "
+"Unverified Users Page at their own discretion."
+msgstr ""
+"کد تائیدیه برای رایانامه هر کاربر جدید ارسال خواهد شد. کاربر جدید تا کامل "
+"نکردن عملیات تائید این اجازه را نخواهد داشت تا وارد سیستم شود و یا پسورد خود "
+"را ریست نماید."
+
+#: rpr-admin-menu.php:103
+msgid ""
+"The following message will be shown to users after registering. You may "
+"include HTML in this message."
+msgstr ""
+"پیغام آورده شده پس از ثبت نام به کاربر نمایش داده خواهد شد. شما می توانید در "
+"پیام از قالب html نیز بهره ببرید."
+
+#: rpr-admin-menu.php:110
+msgid "Admin Verification"
+msgstr "تائید مدیر"
+
+#: rpr-admin-menu.php:112
+msgid "Moderate all new user registrations..."
+msgstr "اداره کردن تمامی کاربران ثبت نامی"
+
+#: rpr-admin-menu.php:113
+msgid ""
+"New users will not be able to login or reset their password until they have "
+"been authorized by an administrator from the Unverified Users Page. If both "
+"verification options are enabled, users will not be able to login until an "
+"administrator authorizes them, regardless of whether they complete the email "
+"verification process."
+msgstr ""
+"کاربر جدید امکان ریست کردن کلمه عبور خود را و یا ورود به سایت تا هنگام اجازه "
+"مدیر برای تائید کاربر در صفحه کاربران تائید نشده نخواهد داشت. اگر هر دو "
+"اختیار مربوط به تائید فعال باشد صرفنظر از آنکه آیا کاربر عملیات تائید را "
+"انجام داده است یا خیر اجازه ورود نحواهد داشت و این منوظ به اجازه دادن مدیر "
+"است."
+
+#: rpr-admin-menu.php:115
+msgid ""
+"The following message will be shown to users after registering (or verifying "
+"their email if both verification options are enabled). You may include HTML "
+"in this message."
+msgstr ""
+"پیغام آورده شده پس از ثبت نام به کاربر نمایش داده خواهد شد و یا اگر در زمانی "
+"که دو اختیار مربوط به تائید انتخاب شده باشد. شما می توانید در پیام از قالب "
+"html نیز بهره ببرید."
+
+#: rpr-admin-menu.php:121
+msgid "Grace Period"
+msgstr " دوره مهلت"
+
+#: rpr-admin-menu.php:123
+msgid "days"
+msgstr "روز"
+
+#: rpr-admin-menu.php:124
+msgid ""
+"All unverified users will automatically be deleted after the Grace Period "
+"specified, to disable this process enter 0 to never automatically delete "
+"unverified users."
+msgstr ""
+"تمامی کاربران مورد تائید قرار نگرفته بطور خودکار و پس از روزهای تعیین شده در "
+"دوره مهلت پاک خواهند شدو برای جلوگیری از این موضوع و عدم مقدار صفر را وارد "
+"نمائید"
+
+#: rpr-admin-menu.php:128
+msgid "Registration Redirect"
+msgstr "تغییر مسیر ثبت نام"
+
+#: rpr-admin-menu.php:131
+#, fuzzy
+msgid ""
+"By default, after registering, users will be sent to %s/wp-login.php?"
+"checkemail=registered, leave this value empty if you do not wish to change "
+"this behavior. You may enter another address here, however, if that address "
+"is not on the same domain, Wordpress will ignore the redirect."
+msgstr ""
+"بطور پیش فرض ، پس از ثبت نام ، کاربر به مسیر %s/wp-login.php?"
+"checkemail=registered ارجاع داده می شود ، این بخش را خالی قرار دهید اگر می "
+"خواهید این رخداد تغییری نکند. شما ممکن است آدرسی دیگری را در این جا وارد "
+"کنید علی رقم آنکه این آدرس می تواند برروی یک دامین مشابه نباشد ، وردپرس این "
+"تغییر مسیر را نادیده خواهد گرفت"
+
+#: rpr-admin-menu.php:135
+msgid "Verification Redirect"
+msgstr "تغییر مسیر تائیدیه"
+
+#: rpr-admin-menu.php:138
+#, fuzzy
+msgid ""
+"By default, after verifying, users will be sent to %s/wp-login.php, leave "
+"this value empty if you do not wish to change this behavior. You may enter "
+"another address here, however, if that addresses is not on the same domain, "
+"Wordpress will ignore the redirect."
+msgstr ""
+"بطور پیش فرض ، پس از تائید ، کاربر به مسیر %s/wp-login.php ارجاع داده می "
+"شود ، این بخش را خالی قرار دهید اگر می خواهید این رخداد تغییری نکند. شما "
+"ممکن است آدرسی دیگری را در این جا وارد کنید علی رقم آنکه این آدرس می تواند "
+"برروی یک دامین مشابه نباشد ، وردپرس این تغییر مسیر را نادیده خواهد گرفت"
+
+#: rpr-admin-menu.php:143
+msgid "Autologin user"
+msgstr ""
+
+#: rpr-admin-menu.php:145
+#, fuzzy
+msgid "Autologin user after registration."
+msgstr "این کاربر را به صفحه ورود پس از ثبت نام ارجاع می دهد"
+
+#: rpr-admin-menu.php:146
+msgid ""
+"Works if Email Verification and Admin Verification are turned off. By "
+"default users will be sent to %s, to change this behavior, set up "
+"Registration Redirect field above."
+msgstr ""
+
+#: rpr-admin-menu.php:152
+#, fuzzy
+msgid "Registration Form"
+msgstr "ثبت نام"
+
+#: rpr-admin-menu.php:153
+#, fuzzy
+msgid ""
+"Select which fields to show on the Registration Form. Users will not be able "
+"to register without completing any fields marked required."
+msgstr ""
+"در این بخش تعیین کنید که چه فیلدهایی در صفحه ثبت نام به نمایش درآیند. "
+"کاربران نمی توانند ثبت نام خود را کامل کنند مگر این که تمامی فیلدهایی که "
+"الزامی است را پرنمایند"
+
+#: rpr-admin-menu.php:155
+msgid "Signup Form"
+msgstr ""
+
+#: rpr-admin-menu.php:156
+#, fuzzy
+msgid ""
+"Select which fields to show on the Signup Form. Users will not be able to "
+"signup without completing any fields marked required."
+msgstr ""
+"در این بخش تعیین کنید که چه فیلدهایی در صفحه ثبت نام به نمایش درآیند. "
+"کاربران نمی توانند ثبت نام خود را کامل کنند مگر این که تمامی فیلدهایی که "
+"الزامی است را پرنمایند"
+
+#: rpr-admin-menu.php:160
+msgid "Use Email as Username"
+msgstr "استفاده از رایانامه به عنوان نام کاربری"
+
+#: rpr-admin-menu.php:161
+msgid ""
+"New users will not be asked to enter a username, instead their email address "
+"will be used as their username."
+msgstr ""
+"از کاربران جدید برای وارد کردن نام کاربری سئوالی پرسیده نخواهد شد و در عوض "
+"رایانامه آنها به عنوان نام کاربری مورد استفاده قرار خواهد گرفت"
+
+#: rpr-admin-menu.php:164
+msgid "Confirm Email"
+msgstr "تصدیق رایانامه"
+
+#: rpr-admin-menu.php:165
+msgid "Require new users to enter e-mail address twice during registration."
+msgstr ""
+"در هنگام عملیات ثبت نام کاربر ملزم می شود تا دوبار رایانامه خود را وارد کند"
+
+#: rpr-admin-menu.php:168
+msgid "Profile Fields"
+msgstr "فیلدهای شناسه"
+
+#: rpr-admin-menu.php:173
+msgid "Show"
+msgstr "نمایش"
+
+#: rpr-admin-menu.php:174
+msgid "Require"
+msgstr "الزامی"
+
+#: rpr-admin-menu.php:178 rpr-login.php:72 rpr-signup.php:249
+msgid "First Name"
+msgstr "نام"
+
+#: rpr-admin-menu.php:183 rpr-login.php:81 rpr-signup.php:260
+msgid "Last Name"
+msgstr "نام خانوادگی"
+
+#: rpr-admin-menu.php:188 rpr-login.php:90 rpr-signup.php:271
+msgid "Website"
+msgstr "وب سایت"
+
+#: rpr-admin-menu.php:193 rpr-login.php:99 rpr-signup.php:282
+msgid "AIM"
+msgstr "کاربری AIM"
+
+#: rpr-admin-menu.php:198 rpr-login.php:108 rpr-signup.php:293
+msgid "Yahoo IM"
+msgstr "کاربری یاهو"
+
+#: rpr-admin-menu.php:203 rpr-login.php:117 rpr-signup.php:304
+msgid "Jabber / Google Talk"
+msgstr "Jabber / Google Talk"
+
+#: rpr-admin-menu.php:208 rpr-login.php:126 rpr-signup.php:315
+msgid "About Yourself"
+msgstr "در مورد خودتان"
+
+#: rpr-admin-menu.php:217
+msgid "User Set Password"
+msgstr "کاربر کلمه عبور تعیین کند"
+
+#: rpr-admin-menu.php:219
+msgid "Require new users enter a password during registration..."
+msgstr "الزام می کند کاربر را تا هنگام ثبت نام یک کلمه عبور تعیین کند..."
+
+#: rpr-admin-menu.php:221
+msgid "Minimum password length: "
+msgstr "حداقل طول کلمه عبور"
+
+#: rpr-admin-menu.php:222
+msgid "Do not require users to confirm password."
+msgstr ""
+
+#: rpr-admin-menu.php:223
+msgid "Show password strength meter..."
+msgstr "نمایش سطج قدرت کلمه عبور..."
+
+#: rpr-admin-menu.php:227
+msgid "Empty"
+msgstr "خالی"
+
+#: rpr-admin-menu.php:231
+msgid "Short"
+msgstr "کوتاه"
+
+#: rpr-admin-menu.php:235
+msgid "Bad"
+msgstr "بد"
+
+#: rpr-admin-menu.php:239
+msgid "Good"
+msgstr "خوب"
+
+#: rpr-admin-menu.php:243
+msgid "Strong"
+msgstr "قوی"
+
+#: rpr-admin-menu.php:247
+msgid "Mismatch"
+msgstr "عدم تطابق"
+
+#: rpr-admin-menu.php:258
+msgid "Use invitation codes to track or authorize new user registration..."
+msgstr "استفاده از کد دعوت نامه برای پیگیری و اجازه برای ثبت نام کاربر جدید"
+
+#: rpr-admin-menu.php:260
+msgid ""
+"Require new user enter one of the following invitation codes to register."
+msgstr ""
+"این گزینه الزام می کند کاربر را تا یکی از کدهای دعوت ارائه گردیده را در "
+"هنگام ثبت نام وارد نماید"
+
+#: rpr-admin-menu.php:261
+msgid "Enforce case-sensitivity of invitation codes."
+msgstr "مجبور می کند که کد دعوت نسبت به برزگی و یا کوچکی حروف حساس باشد"
+
+#: rpr-admin-menu.php:262
+msgid "Each invitation code may only be used once."
+msgstr ""
+
+#: rpr-admin-menu.php:263
+msgid "Show Invitation Code Tracking widget on Dashboard."
+msgstr "نمایش ابزارگ پیگردی کد دعوت در داشبورد"
+
+#: rpr-admin-menu.php:272 rpr-admin-menu.php:676 rpr-admin-menu.php:677
+msgid "Remove Code"
+msgstr "حذف کد"
+
+#: rpr-admin-menu.php:275
+#, fuzzy
+msgid "Show %d hidden invitation code"
+msgid_plural "Show %d hidden invitation codes"
+msgstr[0] "اضافه کردین یک کد دعوت جدید"
+
+#: rpr-admin-menu.php:279
+msgid "Add Code"
+msgstr "اضافه کرد کد"
+
+#: rpr-admin-menu.php:279
+msgid "Add a new invitation code"
+msgstr "اضافه کردین یک کد دعوت جدید"
+
+#: rpr-admin-menu.php:284
+msgid "Disclaimer"
+msgstr "رفع مسئولیت"
+
+#: rpr-admin-menu.php:286
+msgid "Show Disclaimer during registration..."
+msgstr "نمایش رفع مسئولیت هنگام ثبت نام ...."
+
+#: rpr-admin-menu.php:291
+msgid "Disclaimer Title"
+msgstr "عنوان رفع مسئولیت"
+
+#: rpr-admin-menu.php:299
+msgid "Disclaimer Content"
+msgstr "محتوای رفع مسئولیت"
+
+#: rpr-admin-menu.php:305 rpr-admin-menu.php:337 rpr-admin-menu.php:369
+msgid "Require Agreement"
+msgstr "توافقنامه الزامی است"
+
+#: rpr-admin-menu.php:316
+msgid "License Agreement"
+msgstr "توافقنامه"
+
+#: rpr-admin-menu.php:318
+msgid "Show License Agreement during registration..."
+msgstr "نمایش توافقنامه هنگام ثبت نام"
+
+#: rpr-admin-menu.php:323
+msgid "License Agreement Title"
+msgstr "عنوان توافقنامه"
+
+#: rpr-admin-menu.php:331
+msgid "License Agreement Content"
+msgstr "محتوای توافقنامه"
+
+#: rpr-admin-menu.php:348
+msgid "Privacy Policy"
+msgstr "حریم شخصی"
+
+#: rpr-admin-menu.php:350
+msgid "Show Privacy Policy during registration..."
+msgstr "نمایش حریم شخصی هنگام ثبت نام"
+
+#: rpr-admin-menu.php:355
+msgid "Privacy Policy Title"
+msgstr "عنوان حریم شخصی"
+
+#: rpr-admin-menu.php:363
+msgid "Privacy Policy Content"
+msgstr "محتوای حریم شخصی"
+
+#: rpr-admin-menu.php:380
+msgid "Use Default Style Rules"
+msgstr "از قواعد پیش فرض شیو نامه ها استفاده شود"
+
+#: rpr-admin-menu.php:381
+#, fuzzy
+msgid "Apply default Wordpress styling to all fields."
+msgstr "بکاربردن ترکیب ظاهری وردپرس نسخه 3.0.1 برای تمامی فیلدها"
+
+#: rpr-admin-menu.php:384
+msgid "Required Fields Style Rules"
+msgstr "قواعد شیوه نامه برای فیلدهای الزامی"
+
+#: rpr-admin-menu.php:388
+msgid "Required Fields Asterisk"
+msgstr "ستاره فیلدهای الزامی"
+
+#: rpr-admin-menu.php:389
+msgid "Add asterisk to left of all required field's name."
+msgstr "یک ستاره در سمت چپ نام تمامی فیلدهای الزامی اضافه می کند"
+
+#: rpr-admin-menu.php:393
+msgid "Starting Tabindex"
+msgstr "تب ایندکس آغازین"
+
+#: rpr-admin-menu.php:396
+msgid ""
+"The first field added will have this tabindex, the tabindex will increment "
+"by 1 for each additional field. Enter 0 to remove all tabindex's."
+msgstr ""
+"اولین فلیدی که اضافه شود این تب ایندکس را خواهد داشت. تب ایندکس به ازای هر "
+"فیلدی که اضافه می کنید یکی بالا می رود. برای حذف تمامی تب ایندکس ها مقدار "
+"صفر را وارد کنید."
+
+#: rpr-admin-menu.php:401
+msgid "Additional Fields"
+msgstr "فیلدهای اضافه"
+
+#: rpr-admin-menu.php:402
+msgid ""
+"Enter additional fields to show on the User Profile and/or Registration "
+"Pages. Additional fields will be shown after existing profile fields on User "
+"Profile, and after selected profile fields on Registration Page but before "
+"Password, Invitation Code, Disclaimer, License Agreement, or Privacy Policy "
+"(if any of those fields are enabled). Options must be entered for Select, "
+"Checkbox, and Radio fields. Options should be entered with commas separating "
+"each possible value. For example, a Radio field named \"Gender\" could have "
+"the following options, \"Male,Female\"."
+msgstr ""
+"در این بخش می توانید فیلدهای اضافه را برای نمایش در بخش شناسه و همچنین صفحه "
+"ثبت نام وارد کنید. فیلدهای اضافه پس از فلیدهای موجود در بخش شناسه نمایش داده "
+"می شود و همچنین پس از فلیدهای انتخاب شده پروفایل در صفحه ثبت نام   اما پس از "
+"کلمه عبور , کد دعوت , رفع مسئولیت , توافقنامه و یا سیاست حفظ اسرار نمایش "
+"داده خواهند شد. اختیار یا option ها می بایست برای  فیلد های Select , "
+"Checkbox و Radio وارد گردند. اختیارات می بایست با کاما از یکدیگر جدا شوند . "
+"برای مثال یک فلید Radio ای که جنسیت نامیده شده است می تواند دو اختیار مرد و "
+"زن داشت باشد که بصورت زیر باید وارد شوند <br />زن , مرد"
+
+#: rpr-admin-menu.php:413
+msgid "Reorder"
+msgstr ""
+
+#: rpr-admin-menu.php:413
+msgid "Drag to Reorder"
+msgstr ""
+
+#: rpr-admin-menu.php:418
+msgid "Display"
+msgstr ""
+
+#: rpr-admin-menu.php:420
+#, fuzzy
+msgid "Textbox Field"
+msgstr "فیلد متنی"
+
+#: rpr-admin-menu.php:421
+msgid "Select Field"
+msgstr "فیلذ انتخابی"
+
+#: rpr-admin-menu.php:422
+msgid "Checkbox Fields"
+msgstr "فیلد های checkbox"
+
+#: rpr-admin-menu.php:423
+msgid "Radio Fields"
+msgstr "فیلد رادیویی"
+
+#: rpr-admin-menu.php:424
+msgid "Text Area"
+msgstr "محبط متنی"
+
+#: rpr-admin-menu.php:425
+msgid "Hidden Field"
+msgstr "فیلد مخفی"
+
+#: rpr-admin-menu.php:426
+msgid "Static Text"
+msgstr "متن ثابت"
+
+#: rpr-admin-menu.php:429
+msgid "Options"
+msgstr "اختیارات"
+
+#: rpr-admin-menu.php:432
+msgid "Database Key"
+msgstr ""
+
+#: rpr-admin-menu.php:435
+#, fuzzy
+msgid "Show on Profile"
+msgstr "شناسه"
+
+#: rpr-admin-menu.php:438
+#, fuzzy
+msgid "Show on Registration"
+msgstr "ثبت نام"
+
+#: rpr-admin-menu.php:441
+#, fuzzy
+msgid "Required Field"
+msgstr "ستاره فیلدهای الزامی"
+
+#: rpr-admin-menu.php:444
+msgid "Actions"
+msgstr "عملیات"
+
+#: rpr-admin-menu.php:445 rpr-admin-menu.php:709
+msgid "Help"
+msgstr ""
+
+#: rpr-admin-menu.php:445
+msgid "No help available"
+msgstr "هیچی کمکی در دسترس نیست"
+
+#: rpr-admin-menu.php:446 rpr-admin-menu.php:701
+#, fuzzy
+msgid "Remove"
+msgstr "حذف کد"
+
+#: rpr-admin-menu.php:446 rpr-admin-menu.php:702
+msgid "Remove Field"
+msgstr "حذف فیلد"
+
+#: rpr-admin-menu.php:457
+msgid "Add Field"
+msgstr "اضافه کردن فیلد"
+
+#: rpr-admin-menu.php:457
+msgid "Add a new custom field."
+msgstr "اضافه کردن یک فیلد دلخواه"
+
+#: rpr-admin-menu.php:496
+#, fuzzy
+msgid "Autocomplete URL"
+msgstr "پرسه جو های خودکار"
+
+#: rpr-admin-menu.php:497
+#, fuzzy
+msgid ""
+"You can create a URL to autocomplete specific fields for the user. "
+"Additional fields use the database key. Included below are available keys "
+"and an example URL."
+msgstr ""
+"شما می توانید با استفاده از یک پرسه جو که به صفحه ثبت نام پیوند داده می شود "
+"یک فیلد خاص را برای کاربر بطور خودکار پر کنید. کلیدهای پرسه جو به همراه "
+"مثالی برای شما آورده شده است"
+
+#: rpr-admin-menu.php:501
+msgid "New User Message Settings"
+msgstr "تنظیمات پیغام برای کاربر جدید"
+
+#: rpr-admin-menu.php:504
+msgid "New User Message"
+msgstr "پیام کاربر جدید"
+
+#: rpr-admin-menu.php:506
+msgid "Do NOT send user an email after they are registered"
+msgstr "عدم ارسال رایانامه پس از ثبت نام کاربران"
+
+#: rpr-admin-menu.php:507
+msgid "Do NOT send user an email when created by an administrator"
+msgstr "عدم ارسال پیام پس از ایجاد کاربر توسط مدیریت"
+
+#: rpr-admin-menu.php:511
+msgid "Custom New User Message"
+msgstr "پیام دلخواه برای کاربر جدید"
+
+#: rpr-admin-menu.php:513 rpr-admin-menu.php:544 rpr-admin-menu.php:592
+msgid "Enable..."
+msgstr "فعال کردن ..."
+
+#: rpr-admin-menu.php:517 rpr-admin-menu.php:548 rpr-admin-menu.php:596
+msgid "From Email"
+msgstr "از طرف (رایانامه)"
+
+#: rpr-admin-menu.php:518 rpr-admin-menu.php:522 rpr-admin-menu.php:526
+#: rpr-admin-menu.php:531 rpr-admin-menu.php:549 rpr-admin-menu.php:553
+#: rpr-admin-menu.php:557 rpr-admin-menu.php:562 rpr-admin-menu.php:597
+#: rpr-admin-menu.php:601 rpr-admin-menu.php:605 rpr-admin-menu.php:610
+msgid "Restore Default"
+msgstr "برگرداندن به پیش فرض"
+
+#: rpr-admin-menu.php:521 rpr-admin-menu.php:552 rpr-admin-menu.php:600
+msgid "From Name"
+msgstr "نام فرم"
+
+#: rpr-admin-menu.php:525 rpr-admin-menu.php:556 rpr-admin-menu.php:604
+msgid "Subject"
+msgstr "عنوان"
+
+#: rpr-admin-menu.php:530 rpr-admin-menu.php:561
+msgid "User Message"
+msgstr "پیام ارسالی به کاربر"
+
+#: rpr-admin-menu.php:532 rpr-admin-menu.php:563 rpr-admin-menu.php:611
+msgid "Replacement Keywords"
+msgstr "کلید واژه های جایگزین"
+
+#: rpr-admin-menu.php:533 rpr-admin-menu.php:564 rpr-admin-menu.php:612
+msgid "Send as HTML"
+msgstr "در قالب html ارسال شود "
+
+#: rpr-admin-menu.php:534 rpr-admin-menu.php:565 rpr-admin-menu.php:613
+msgid "Convert new lines to &lt;br /&gt; tags (HTML only)"
+msgstr ""
+"تبدیل خطوط جدید به تگ  &lt;br /&gt; این امکان فقط در حالت فعال بودن گزینه  "
+"html امکان پذیر است"
+
+#: rpr-admin-menu.php:542
+msgid "Custom Verification Message"
+msgstr "پیغام تائید دلخواه"
+
+#: rpr-admin-menu.php:573 rpr-admin-menu.php:621
+msgid "Summary"
+msgstr "خلاصه"
+
+#: rpr-admin-menu.php:579
+msgid "Admin Notification Settings"
+msgstr "تنظیمات اطلاع رسانی مدیریت"
+
+#: rpr-admin-menu.php:582
+msgid "Admin Notification"
+msgstr "اطلاع رسانی مدیریت"
+
+#: rpr-admin-menu.php:584
+msgid "Do NOT send administrator an email whenever a new user registers"
+msgstr "عدم ارسال رایانامه هر زمان که کاربر جدیدی ثبت نام می نماید"
+
+#: rpr-admin-menu.php:585
+msgid ""
+"Do NOT send administrator an email whenever a new user is created by an "
+"administrator"
+msgstr "عدم ارسال رایانامه هر زمان که کاربر جدیدی توسط مدیریت ایجاد شود"
+
+#: rpr-admin-menu.php:586
+#, fuzzy
+msgid "Send administrator an email after a new user is verified"
+msgstr "عدم ارسال رایانامه هر زمان که کاربر جدیدی ثبت نام می نماید"
+
+#: rpr-admin-menu.php:590
+msgid "Custom Admin Notification"
+msgstr "ابلاغ شخصی سازی شده برای مدیریت"
+
+#: rpr-admin-menu.php:609
+msgid "Admin Message"
+msgstr "پیام مدیریت"
+
+#: rpr-admin-menu.php:628
+msgid "Custom CSS for Register & Login Pages"
+msgstr "شیوه نامه شخصی سازی شده  برای صفحات ثبت نام و ورود"
+
+#: rpr-admin-menu.php:629
+msgid "CSS Rule Example:"
+msgstr "مثالی از قواعد شیوه نامه"
+
+#: rpr-admin-menu.php:632
+msgid "Custom Register CSS"
+msgstr "شیوه نامه شخصی سازی شده برای ثبت نام"
+
+#: rpr-admin-menu.php:636
+msgid "Custom Login CSS"
+msgstr "شیوه نامه شخصی سازی شده برای ورود"
+
+#: rpr-admin-menu.php:641
+msgid "Hacks & Fixes"
+msgstr "هک و تعمیرها"
+
+#: rpr-admin-menu.php:644
+msgid "Random Password Appears in Messages"
+msgstr ""
+
+#: rpr-admin-menu.php:646
+#, fuzzy
+msgid "Filter Random Passwords."
+msgstr "کلمه عبور قوی"
+
+#: rpr-admin-menu.php:647
+msgid ""
+"When user set password is enabled, and another plugin is being used to "
+"modify outgoing messages, a random password may appear in those messages, "
+"regardless of the fact that a user entered password was specified. This "
+"option will filter all password requests and show the user entered password "
+"if possible."
+msgstr ""
+
+#: rpr-admin-menu.php:652
+msgid "Save Changes"
+msgstr "ذخیره تغییرات"
+
+#: rpr-admin-menu.php:653
+msgid "Preview Registration Page"
+msgstr "پیش نمایش صفحه ثبت نام"
+
+#: rpr-admin-menu.php:690
+msgid "New"
+msgstr ""
+
+#: rpr-admin-menu.php:691
+#, fuzzy
+msgid "New Field"
+msgstr "فیلد متنی"
+
+#: rpr-admin-menu.php:710
+msgid ""
+"You must save after adding new fields before all options become available."
+msgstr ""
+
+#: rpr-admin-menu.php:727
+msgid "The following message will be sent when a user is registered:"
+msgstr "پیام ذیل هنگامی که کاربر ثبت نام کند ارسال خواهد شد"
+
+#: rpr-admin-menu.php:741 rpr-admin-menu.php:780 rpr-admin-menu.php:817
+msgid "To: "
+msgstr "به"
+
+#: rpr-admin-menu.php:742 rpr-admin-menu.php:781 rpr-admin-menu.php:818
+msgid "From: "
+msgstr "از طرف"
+
+#: rpr-admin-menu.php:743 rpr-admin-menu.php:782 rpr-admin-menu.php:819
+msgid "Subject: "
+msgstr "عنوان"
+
+#: rpr-admin-menu.php:744 rpr-admin-menu.php:783 rpr-admin-menu.php:820
+msgid "Content-Type: "
+msgstr "نوع محتوا"
+
+#: rpr-admin-menu.php:752
+msgid ""
+"No message will be sent to user whether they are registered or created by an "
+"administrator."
+msgstr ""
+"هیچ پیامی برای کاربر ارسال نخواهد شد حتی اگر کاربر ثبت نام کند و یا توسط "
+"مدیریت ایجاد شود"
+
+#: rpr-admin-menu.php:756 rpr-admin-menu.php:799
+msgid "The following message will be sent when a user is "
+msgstr "پیام ذیل ارسال خواهد شد هنگامی که کاربر هست"
+
+#: rpr-admin-menu.php:757 rpr-admin-menu.php:800
+msgid "registered"
+msgstr "ثبت نام کرده است"
+
+#: rpr-admin-menu.php:758 rpr-admin-menu.php:801
+msgid " or "
+msgstr "یا"
+
+#: rpr-admin-menu.php:759 rpr-admin-menu.php:802
+msgid "created"
+msgstr "ساخته شده است"
+
+#: rpr-admin-menu.php:760
+msgid " after "
+msgstr "پس از"
+
+#: rpr-admin-menu.php:762
+msgid "the user has verified their email address"
+msgstr "کاربر رایانامه خود را مورد تائید قرار داده است."
+
+#: rpr-admin-menu.php:763
+msgid " and/or "
+msgstr "و / یا"
+
+#: rpr-admin-menu.php:765
+msgid "an administrator has approved the new user"
+msgstr "مدیر کاربر جدید را تائید نموده است"
+
+#: rpr-admin-menu.php:795
+msgid ""
+"No message will be sent to administrator whether a user is registered or "
+"created."
+msgstr ""
+"هیچ پیامی برای مدیریت ارسال نخواهد شد خواه کاربر ثبت نام کند و یا ایجاد شود"
+
+#: rpr-admin-menu.php:972
+msgid "You cannot edit that user."
+msgstr "شما نمی توانید آن کاربر را ویرایش کنید"
+
+#: rpr-admin-menu.php:996
+msgid "Users approved."
+msgstr "کاربران تائید شدند"
+
+#: rpr-admin-menu.php:999
+msgid "Verification emails sent."
+msgstr "رایانامه تائیدیه ارسال شد"
+
+#: rpr-admin-menu.php:1002
+msgid "Users deleted."
+msgstr "کاربران حدف شدند"
+
+#: rpr-admin-menu.php:1014
+msgid "Bulk Actions"
+msgstr "عملیات گروهی"
+
+#: rpr-admin-menu.php:1015
+msgid "Approve"
+msgstr "تائید کردن"
+
+#: rpr-admin-menu.php:1016
+msgid "Send E-mail Verification"
+msgstr "ارسال تائیدیه"
+
+#: rpr-admin-menu.php:1017 rpr-admin-menu.php:1051
+msgid "Delete"
+msgstr "حذف"
+
+#: rpr-admin-menu.php:1019
+msgid "Apply"
+msgstr "بکاربردن"
+
+#: rpr-admin-menu.php:1028
+msgid "Username"
+msgstr "نام کاربری"
+
+#: rpr-admin-menu.php:1029
+msgid "Temp Username"
+msgstr "نام کاربری موقت"
+
+#: rpr-admin-menu.php:1030 rpr-login.php:821 rpr-login.php:826
+#: rpr-login.php:835 rpr-login.php:840
+msgid "E-mail"
+msgstr "رایانامه"
+
+#: rpr-admin-menu.php:1031
+msgid "Registered"
+msgstr "عضو شده"
+
+#: rpr-admin-menu.php:1032
+msgid "Verification Sent"
+msgstr "تائیدیه ارسال گردید"
+
+#: rpr-admin-menu.php:1033
+msgid "Verified"
+msgstr "تائید شده"
+
+#: rpr-admin-menu.php:1050
+msgid "Edit"
+msgstr "ویرایش"
+
+#: rpr-admin-menu.php:1055
+msgid "E-mail: "
+msgstr "رایانامه"
+
+#: rpr-admin-menu.php:1068
+msgid "Approve Selected Users"
+msgstr "تائید کاربران انتخابی"
+
+#: rpr-admin-menu.php:1069
+msgid "Send E-mail Verification to Selected Users"
+msgstr "ارسال رایانامه تائید برای کاربران انتخاب شده"
+
+#: rpr-admin-menu.php:1070
+msgid "Delete Selected Users"
+msgstr "حذف کاربران انتخاب شده"
+
+#: rpr-dashboard-widget.php:14
+msgid "Invitation Code Tracking"
+msgstr "پیکیری کد دعوت"
+
+#: rpr-dashboard-widget.php:22
+#, fuzzy
+msgid "%s Users Registered."
+msgstr "کاربری جدید ثبت نام کرد"
+
+#: rpr-login.php:63 rpr-signup.php:238
+msgid "Confirm E-mail"
+msgstr "تائید رایانامه"
+
+#: rpr-login.php:127 rpr-signup.php:320
+msgid ""
+"Share a little biographical information to fill out your profile. This may "
+"be shown publicly."
+msgstr ""
+"قراردادن کمی اطلاعات در مورد خودتان که در بخش شناسه نمایش داده شود. البته "
+"ممکن است بصورت عمومی نیز نمایش داده شود"
+
+#: rpr-login.php:218 rpr-signup.php:390
+msgid "Password"
+msgstr "کلمه عبور"
+
+#: rpr-login.php:224 rpr-signup.php:398
+msgid "Confirm Password"
+msgstr "تائید رایانامه"
+
+#: rpr-login.php:230 rpr-signup.php:406
+msgid ""
+"Your password must be at least %d characters long. To make your password "
+"stronger, use upper and lower case letters, numbers, and the following "
+"symbols !@#$%%^&amp;*()"
+msgstr ""
+"کلمه عبور شما می بیاست حداقل %d کاراکتر طول داشته باشد. برای آنکه کلمه عبور "
+"قوی تری داشته باشید , از حروف بزرگ , کوچک , اعداد و کاراکترهای که در ادامه "
+"می توانید بهره ببرید. !@#$%%^&amp;*()"
+
+#: rpr-login.php:243 rpr-signup.php:420
+msgid ""
+"This website is currently closed to public registrations. You will need an "
+"invitation code to register."
+msgstr ""
+"این وب سایت در حال حاضر برای ثبت نام عمومی بسته شده است. شما به یک کد دعوت "
+"برای ثبت نام نیاز دارید."
+
+#: rpr-login.php:246 rpr-signup.php:422
+msgid "Have an invitation code? Enter it here. (This is not required)"
+msgstr ""
+"آیا شما یک کد دعوت دارید؟ آن را این جا وارد کنید ( این گزینه الزامی نیست )"
+
+#: rpr-login.php:298 rpr-login.php:304 rpr-login.php:309 rpr-login.php:312
+#: rpr-login.php:317 rpr-login.php:322 rpr-login.php:327 rpr-login.php:332
+#: rpr-login.php:337 rpr-login.php:342 rpr-login.php:347 rpr-login.php:355
+#: rpr-login.php:358 rpr-login.php:363 rpr-login.php:366 rpr-login.php:369
+#: rpr-login.php:374 rpr-login.php:385 rpr-login.php:395 rpr-login.php:403
+#: rpr-login.php:408 rpr-login.php:413
+msgid "ERROR"
+msgstr "خطا"
+
+#: rpr-login.php:298
+msgid ""
+"Email address is not appropriate as a username, please enter another email "
+"address."
+msgstr ""
+"وارد کردن رایانامه به عنوان نام کاربری مناسب نیست ، لطفا رایانامه دیکری را "
+"انتخاب کنید"
+
+#: rpr-login.php:304
+msgid "This username is already registered, please choose another one."
+msgstr ""
+"با این نام کاربری عضویتی صورت پذیرفته است , لطفا نامی دیگر انتخاب نمائید"
+
+#: rpr-login.php:309 rpr-signup.php:519
+#, fuzzy
+msgid "Please confirm your e-mail address."
+msgstr "لطفا رایانامه خود را تائید کنید"
+
+#: rpr-login.php:312 rpr-signup.php:522
+#, fuzzy
+msgid "Your e-mail address does not match."
+msgstr "رایانامه شما تطابق ندارد"
+
+#: rpr-login.php:317 rpr-signup.php:527
+#, fuzzy
+msgid "Please enter your first name."
+msgstr "لطفا نام خود را وارد کنید"
+
+#: rpr-login.php:322 rpr-signup.php:532
+#, fuzzy
+msgid "Please enter your last name."
+msgstr "لطفا نام خانوادگی خود را وارد کنید"
+
+#: rpr-login.php:327 rpr-signup.php:537
+#, fuzzy
+msgid "Please enter your website URL."
+msgstr "لطفل آدرس وب سایت خود را وارد کنید"
+
+#: rpr-login.php:332 rpr-signup.php:542
+#, fuzzy
+msgid "Please enter your AIM username."
+msgstr "<strong>خطا</strong>:لطفا کاربری AIM خود را وارد کنید"
+
+#: rpr-login.php:337 rpr-signup.php:547
+#, fuzzy
+msgid "Please enter your Yahoo IM username."
+msgstr "<strong>خطا</strong>:لطفا کاربری یاهو خود را وارد کنید"
+
+#: rpr-login.php:342 rpr-signup.php:552
+#, fuzzy
+msgid "Please enter your Jabber / Google Talk username."
+msgstr "لطفا کاربری Jabber / Google Talk خود را وارد نمائید"
+
+#: rpr-login.php:347 rpr-signup.php:557
+#, fuzzy
+msgid "Please enter some information about yourself."
+msgstr "لطفا اطلاعاتی در مورد خودتان وارد نمائید"
+
+#: rpr-login.php:355 rpr-signup.php:565
+msgid "Please enter a value for %s."
+msgstr ""
+
+#: rpr-login.php:358 rpr-signup.php:568
+#, fuzzy
+msgid ""
+"Please enter new value for %s, value specified is not in the correct format."
+msgstr ""
+"لطفا مقداری جدید برای %s وارد کنید , مقداری که پیش  از این وارد نموده بودید "
+"با قالب بندی صحیح تطابق ندارد"
+
+#: rpr-login.php:363 rpr-signup.php:573
+#, fuzzy
+msgid "Please enter a password."
+msgstr "لطفا کلمه عبور را وارد کنید"
+
+#: rpr-login.php:366 rpr-signup.php:576
+#, fuzzy
+msgid "Your password must be at least %d characters in length."
+msgstr "شما باید حداقل %d کاراکتر برای کلمه عبور وارد نمائید"
+
+#: rpr-login.php:369 rpr-signup.php:579
+#, fuzzy
+msgid "Your password does not match."
+msgstr "کلمه عبور شما تطابق ندارد"
+
+#: rpr-login.php:374 rpr-signup.php:589
+#, fuzzy
+msgid "Please enter an invitation code."
+msgstr "لطفا کد دعوت را وارد نمائید"
+
+#: rpr-login.php:385 rpr-signup.php:600
+#, fuzzy
+msgid "That invitation code is invalid."
+msgstr "کد دعوت نامعتبر است"
+
+#: rpr-login.php:395 rpr-signup.php:610
+msgid ""
+"This invitation code is already in use, please enter a unique invitation "
+"code."
+msgstr ""
+
+#: rpr-login.php:403 rpr-login.php:408 rpr-login.php:413 rpr-signup.php:618
+#: rpr-signup.php:623 rpr-signup.php:628
+#, fuzzy
+msgid "Please accept the %s"
+msgstr "لطفا %s را قبول کنید"
+
+#: rpr-login.php:445
+msgid ""
+"Thank you %s, your account has been verified, please login with the password "
+"you specified during registration."
+msgstr ""
+"با تشکر %s. کاربری شما مورد تائید قرار گرفت. لطفا با نام کاربری و کلمه عبوری "
+"که در هنگام ثبت نام تعیین کردید وارد شوید."
+
+#: rpr-login.php:447
+msgid ""
+"Thank you %s, your account has been verified, your password will be emailed "
+"to you."
+msgstr ""
+"با تشکر %s. کاربری شما مورد تائید قرار گرفت.کلمه عبور شما برایتان ایمیل "
+"خواهد شد.."
+
+#: rpr-login.php:455
+msgid "Invalid verification code."
+msgstr "کد تائید نامعتبر"
+
+#: rpr-signup.php:502
+msgid "Sorry, that username already exists!"
+msgstr ""
+
+#: rpr-signup.php:511
+msgid ""
+"That username is currently reserved but may be available in a couple of days."
+msgstr ""
+
+#: rpr-signup.php:514
+msgid "username and email used"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#, fuzzy
+msgid "Register Plus Redux"
+msgstr "تنظیمات رجیستر پلاس"
+
+#. Plugin URI of the plugin/theme
+msgid "http://radiok.info/blog/category/register-plus-redux/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Enhances the user registration process with complete customization and "
+"additional administration options."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "radiok"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://radiok.info/"
+msgstr ""
+
+#~ msgid "Date Field"
+#~ msgstr "فیلد تاریخ"
+
+#~ msgid "URL Field"
+#~ msgstr "فیلد آدرس"
+
+#~ msgid "Move this Field Up"
+#~ msgstr "بردن این فیلد به بالا"
+
+#~ msgid "Move this Field Down"
+#~ msgstr "بردن این فیلد به پائین"
+
+#~ msgid "You must Save Changes to upload logo."
+#~ msgstr "برای بارگذاری تصویر شما می بایست تنظیمات را ذخیره نمائید"
+
+#~ msgid "Registration Page"
+#~ msgstr "صفحه ثبت نام"
+
+#~ msgid "Name"
+#~ msgstr "نام"
+
+#~ msgid "Type"
+#~ msgstr "نوع"
+
+#~ msgid "Date Field Settings"
+#~ msgstr "تنظیمات فیلد تاریخ"
+
+#~ msgid "First Day of the Week"
+#~ msgstr "اولین روز هفته"
+
+#~ msgid "Monday"
+#~ msgstr "دوشنبه"
+
+#~ msgid "Tuesday"
+#~ msgstr "سه شنبه"
+
+#~ msgid "Wednesday"
+#~ msgstr "چهارشنبه"
+
+#~ msgid "Thursday"
+#~ msgstr "پنچ شنبه"
+
+#~ msgid "Friday"
+#~ msgstr "جمعه"
+
+#~ msgid "Saturday"
+#~ msgstr "شنبه"
+
+#~ msgid "Sunday"
+#~ msgstr "یکشنبه"
+
+#~ msgid "Date Format"
+#~ msgstr "قالب زمان"
+
+#~ msgid "First Selectable Date"
+#~ msgstr "اول تاریخ قابل انتخاب"
+
+#~ msgid "Default Year"
+#~ msgstr "سال پیش فرض"
+
+#~ msgid "Default Month"
+#~ msgstr "ماه پیش فرض"
+
+#~ msgid "Current Month"
+#~ msgstr "ما جاری"
+
+#~ msgid "Jan"
+#~ msgstr "دی"
+
+#~ msgid "Feb"
+#~ msgstr "بهمن"
+
+#~ msgid "Mar"
+#~ msgstr "اسفند"
+
+#~ msgid "Apr"
+#~ msgstr "فروردین"
+
+#~ msgid "May"
+#~ msgstr "اردیبهشت"
+
+#~ msgid "Jun"
+#~ msgstr "خرداد"
+
+#~ msgid "Jul"
+#~ msgstr "تیر"
+
+#~ msgid "Aug"
+#~ msgstr "مرداد"
+
+#~ msgid "Sep"
+#~ msgstr "شهریور"
+
+#~ msgid "Oct"
+#~ msgstr "مهر"
+
+#~ msgid "Nov"
+#~ msgstr "آبان"
+
+#~ msgid "Dec"
+#~ msgstr "آذر"
+
+#~ msgid ""
+#~ "For any custom fields, use your custom field label with the text all "
+#~ "lowercase, using underscores instead of spaces. For example if your "
+#~ "custom field was \"Middle Name\" your query key would be %middle_name%"
+#~ msgstr ""
+#~ "برای هر فیلد دلخواه , شما می توانید نام برچسب آن را به همه متنی که تمامی "
+#~ "حروف آن بصورت کوچک وراد شده است و فاصله هایی که بجای آن زیر خط وارد می "
+#~ "شود بهره ببرید. بطور مثال اگر فیلدی با نام\"Middle Name\" دارید , کلید "
+#~ "پرسه جوی شما "
+
+#~ msgid "Example Query URL"
+#~ msgstr "مثالی از آدرس پرسه جو"
+
+#~ msgid "Login URL"
+#~ msgstr "آدرس ورود"
+
+#~ msgid "Non-English Custom Fields"
+#~ msgstr "فیلدهای شخصی سازی غیر انگلیسی"
+
+#~ msgid "Do not sanitize keys."
+#~ msgstr "کلیدها سالم سازی نشود"
+
+#~ msgid ""
+#~ "Custom fields with non-english characters may not work, this hack will "
+#~ "stop sanitizing the custom field name which may resolve this issue."
+#~ msgstr ""
+#~ "از آنجائی که ممکن است فلیدهای شخصی با کاراکترهای غیر انگلیسی کار نکنند از "
+#~ "این هک بهره گرفته شده است تا عملیات سالم سازی رور نام فیلدهای شخصی صورت "
+#~ "نپذیرد"
+
+#~ msgid "URL File Access is Disabled"
+#~ msgstr "دسترسی مسیر فایل"
+
+#~ msgid "Do not open URL files."
+#~ msgstr "عدم بازکردن فایلهای مسیر"
+
+#~ msgid ""
+#~ "Some PHP configurations do not allow accessing URL objects like files "
+#~ "(allow_url_fopen=disabled in php.ini), this hack will stop trying to open "
+#~ "URL files as if they were local files. Custom logo must be exactly 326x67 "
+#~ "with this hack enabled, otherwise it will be cropped."
+#~ msgstr ""
+#~ "بعضی از تنظیمات php امکان دسترسی به آبجکت های مسیر مانند فایل ها را نمی "
+#~ "دهید (allow_url_fopen=disabled in php.ini) این هک باعث توقف تلاش برای باز "
+#~ "کردن فایل های مسیر را می دهد مثل اینکه انها فایلهای محلی بوده اند. لوگو "
+#~ "می بایست دقیقا با اندازه 326 در 67 باشد اگر این هک فعال است در غیر این "
+#~ "صورت خودکار قسمت های اضافی حذف می شود"
+
+#~ msgid "<strong>ERROR</strong>: Please complete %s."
+#~ msgstr "لطفا %s را کامل کنید"
+
+#~ msgid "Agreement Text"
+#~ msgstr "متن توافقنامه"
+
+#~ msgid "Strength Indicator"
+#~ msgstr "شاخص قذرت"
+
+#~ msgid "Too Short"
+#~ msgstr "خیلی کوتاه"
+
+#~ msgid "Bad Password"
+#~ msgstr "کلمه عبور بد"
+
+#~ msgid "Good Password"
+#~ msgstr "کلمه عبور خوب"
+
+#~ msgid "Password Mismatch"
+#~ msgstr "عدم تطابق کلمه عبور"
+
+#~ msgid "Accept the License Agreement"
+#~ msgstr "من توافقنامه را قبول دارم"

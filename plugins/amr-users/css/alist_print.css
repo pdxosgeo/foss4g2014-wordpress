@@ -1,0 +1,15 @@
+/* Style for printed pages  */
+#wphead,
+#adminmenu,
+#adminmenuback,
+#adminmenuwrap,
+#screenmeta,
+.filter,
+.postbox,
+.button,
+#footer,
+.csvlink,
+.perpage-box
+ { 
+	display:none;
+}
