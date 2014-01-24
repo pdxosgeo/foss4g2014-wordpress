@@ -5,7 +5,8 @@
             <div class="col-sm-2"></div>
         		<div class="col-sm-4">
         			<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/logo_landing_main.png">
-              <img style="max-width:150px;height:auto;" class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/logo_landing_main_text.png">
+              <!-- trying as all one <img style="max-width:150px;height:auto;" class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/logo_landing_main_text.png">
+              -->
             </div>
             <div class="col-sm-6">
               <div class="col-sm-12" id="conference-info">
