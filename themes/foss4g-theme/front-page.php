@@ -34,9 +34,9 @@
       	</div> <!-- /container -->
       </section> <!-- /landing-intro -->
 
-      <section id="sponsors" class="" style="display:none">
+      <section id="sponsors" class="">
         <div class="container">
-          <div id="featured-sponsors">
+          <div id="featured-sponsors" style="display:none">
             <p>Presented By:</p>
             <img src="http://placehold.it/130x50">              
             <img src="http://placehold.it/130x50">
@@ -47,30 +47,32 @@
             <div class="carousel-inner">
               <div class="item active">
                 <div class="sponsor-list text-center">
+                  <a href="http://www.sensorsandsystems.com">
+                    <img src="/wp-content/uploads/2014/01/systems_and_sensors_logo.png">
+                  </a>
+                  <a href="http://www.directionsmag.com">
+                    <img src="/wp-content/uploads/2014/01/directionsmagazine_logo.png">
+                  </a>
+                  <a href="http://www.geoinformatics.com">
+                    <img src="/wp-content/uploads/2014/01/geoinformatics_logo.png">
+                  </a>
+                  <!--
                   <img src="http://placehold.it/130x60">
                   <img src="http://placehold.it/130x60">
                   <img src="http://placehold.it/130x60">
                   <img src="http://placehold.it/130x60">
                   <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
+                  -->
                 </div>
               </div>
               <div class="item">
                 <div class="sponsor-list text-center">
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
+                  <a href="http://www.geoconnexion.com">
+                    <img src="/wp-content/uploads/2014/01/geoconnexion_logo.png">
+                  </a>
+                  <a href="http://www.slashgeo.org">
+                    <img src="/wp-content/uploads/2014/01/slashgeo_logo.png">
+                  </a>
                 </div>
               </div>
             </div>
