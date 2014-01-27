@@ -1,5 +1,5 @@
 <div class="container">
-<div id="contact">
+<div id="contact" class="down">
 	<div id="contact-container">
 		<div id="contact-form-button">Contact Us <span class="nav-arrow">&#9650;</span><span class="nav-arrow hide">&#9660;</span></div>
 		<div id="contact-form">

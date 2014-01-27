@@ -6436,9 +6436,15 @@ Single Post & Page
 #contact {
   position: relative;
   bottom: 0;
-  height: 250px;
   width: 280px;
+}
+#contact.up {
+  height: 250px;
   margin-top: -200px;
+}
+#contact.down {
+  height: 40px;
+  margin-top: 10px;
 }
 #contact #contact-container {
   position: absolute;
