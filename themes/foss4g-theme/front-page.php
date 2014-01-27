@@ -48,13 +48,13 @@
               <div class="item active">
                 <div class="sponsor-list text-center">
                   <a href="http://www.sensorsandsystems.com">
-                    <img src="/wp-content/uploads/2014/01/systems_and_sensors_logo.png">
+                    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/systems_and_sensors_logo.png">
                   </a>
                   <a href="http://www.directionsmag.com">
-                    <img src="/wp-content/uploads/2014/01/directionsmagazine_logo.png">
+                    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/directionsmagazine_logo.png">
                   </a>
                   <a href="http://www.geoinformatics.com">
-                    <img src="/wp-content/uploads/2014/01/geoinformatics_logo.png">
+                    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/geoinformatics_logo.png">
                   </a>
                   <!--
                   <img src="http://placehold.it/130x60">
@@ -68,10 +68,10 @@
               <div class="item">
                 <div class="sponsor-list text-center">
                   <a href="http://www.geoconnexion.com">
-                    <img src="/wp-content/uploads/2014/01/geoconnexion_logo.png">
+                    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/geoconnexion_logo.png">
                   </a>
                   <a href="http://www.slashgeo.org">
-                    <img src="/wp-content/uploads/2014/01/slashgeo_logo.png">
+                    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/slashgeo_logo.png">
                   </a>
                 </div>
               </div>
