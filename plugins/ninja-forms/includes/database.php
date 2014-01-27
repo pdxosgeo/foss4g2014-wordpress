@@ -136,6 +136,7 @@ function ninja_forms_get_field_by_id($field_id){
 
 function ninja_forms_get_fields_by_form_id($form_id, $orderby = 'ORDER BY `order` ASC'){
 	global $wpdb;
+
 	$field_results = $wpdb->get_results($wpdb->prepare("SELECT * FROM ".NINJA_FORMS_FIELDS_TABLE_NAME." WHERE form_id = %d ".$orderby, $form_id), ARRAY_A);
 	if(is_array($field_results) AND !empty($field_results)){
 		$x = 0;
@@ -145,6 +146,7 @@ function ninja_forms_get_fields_by_form_id($form_id, $orderby = 'ORDER BY `order
 			$x++;
 		}
 	}
+
 	return $field_results;
 }
 
@@ -227,6 +229,99 @@ function ninja_forms_get_all_defs(){
 }
 
 // Begin Submission Interaction Functions
+
+/*
+ *
+ * Function that returns a count of the number of submissions.
+ *
+ * @since 2.3.8
+ * @return string $count
+ */
+
+function ninja_forms_get_subs_count( $args = array() ) {
+	global $wpdb;
+
+	$plugin_settings = get_option( 'ninja_forms_settings' );
+	if ( isset ( $plugin_settings['date_format'] ) ) {
+		$date_format = $plugin_settings['date_format'];
+	} else {
+		$date_format = 'm/d/Y';
+	}
+	if(is_array($args) AND !empty($args)){
+		$where = '';
+		if(isset($args['form_id'])){
+			$where = '`form_id` = '.$args['form_id'];
+			unset($args['form_id']);
+		}
+		if(isset($args['user_id'])){
+			if($where != ''){
+				$where .= ' AND ';
+			}
+			$where .= '`user_id` = '.$args['user_id'];
+			unset($args['user_id']);
+		}
+		if(isset($args['status'])){
+			if($where != ''){
+				$where .= ' AND ';
+			}
+			$where .= '`status` = '.$args['status'];
+			unset($args['status']);
+		}
+		if(isset($args['action'])){
+			if($where != ''){
+				$where .= ' AND ';
+			}
+			$where .= '`action` = "'.$args['action'].'"';
+			unset($args['action']);
+		}
+		if(isset($args['begin_date']) AND $args['begin_date'] != ''){
+			$begin_date = $args['begin_date'];
+			if ( $date_format == 'd/m/Y' ) {
+				$begin_date = str_replace( '/', '-', $begin_date );
+			} else if ( $date_format == 'm-d-Y' ) {
+				$begin_date = str_replace( '-', '/', $begin_date );
+			}
+			$begin_date = strtotime($begin_date);
+			$begin_date = date("Y-m-d G:i:s", $begin_date);
+			unset($args['begin_date']);
+		}else{
+			unset($args['begin_date']);
+			$begin_date = '';
+		}
+		if(isset($args['end_date']) AND $args['end_date'] != ''){
+			$end_date = $args['end_date'];
+			if ( $date_format == 'd/m/Y' ) {
+				$end_date = str_replace( '/', '-', $end_date );
+			} else if ( $date_format == 'm-d-Y' ) {
+				$end_date = str_replace( '-', '/', $end_date );
+			}
+			$end_date = strtotime($end_date);
+			$end_date = date("Y-m-d G:i:s", $end_date);
+			unset($args['end_date']);
+		}else{
+			unset($args['end_date']);
+			$end_date = '';
+		}
+	}
+
+	if($begin_date != ''){
+		if($where != ''){
+			$where .= ' AND ';
+		}
+		$where .= "date_updated > '".$begin_date."'";
+	}
+	if($end_date != ''){
+		if($where != ''){
+			$where .= ' AND ';
+		}
+		$where .= "date_updated < '".$end_date."'";
+	}
+
+	$subs_results = $wpdb->get_results($wpdb->prepare("SELECT COUNT(*) FROM ".NINJA_FORMS_SUBS_TABLE_NAME." WHERE ".$where." ORDER BY `date_updated`", NINJA_FORMS_SUBS_TABLE_NAME), ARRAY_A);
+
+	return $subs_results[0]['COUNT(*)'];
+
+}
 
 function ninja_forms_get_subs($args = array()){
 	global $wpdb;

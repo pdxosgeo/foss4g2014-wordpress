@@ -15,7 +15,7 @@ function ninja_forms_help_field_settings(){
 	<p><?php _e('Any character you place in the "custom mask" box that is not in the list below will be automatically entered for the user as they type and will not be removeable', 'ninja-forms');?>.</p>
 	</p><?php _e('These are the predefined masking characters', 'ninja-forms');?>:
 		<ul>
-			<li><?php _e('a - Represents an alpha character (A-Z,a-z) - Only allows letters to be entered', 'ninja-forms');?>.</lid>
+			<li><?php _e('a - Represents an alpha character (A-Z,a-z) - Only allows letters to be entered', 'ninja-forms');?>.</li>
 			<li><?php _e('9 - Represents a numeric character (0-9) - Only allows numbers to be entered', 'ninja-forms');?>.</li>
 			<li><?php _e('* - Represents an alphanumeric character (A-Z,a-z,0-9) - This allows both numbers and letters to be entered', 'ninja-forms');?>.</li>
 		</ul>

@@ -106,7 +106,7 @@ function ninja_forms_append_to_page($content){
 
 function ninja_forms_display_form( $form_id = '' ){
 	//Define our global variables
-	global $post, $wpdb, $ninja_forms_fields, $ninja_forms_processing;
+	global $post, $wpdb, $ninja_forms_fields, $ninja_forms_loading, $ninja_forms_processing;
 
 	//Get the settings telling us whether or not we should clear/hide the completed form.
 	//Check to see if the form_id has been sent.
@@ -119,16 +119,33 @@ function ninja_forms_display_form( $form_id = '' ){
 		$function = true;
 	}
 	if($form_id != ''){ //Make sure that we have an active form_id.
-		$form_row = ninja_forms_get_form_by_id($form_id);
-		$form_row = apply_filters( 'ninja_forms_display_form_form_data', $form_row );
-		if( isset( $form_row['data']['ajax'] ) ){
-			$ajax = $form_row['data']['ajax'];
-		}else{
+
+		// Instantiate our loading global singleton.
+		if ( !isset ( $ninja_forms_processing ) ) {
+			$ninja_forms_loading = new Ninja_Forms_Loading( $form_id );
+		}
+
+		// Run our two loading action hooks.
+		do_action( 'ninja_forms_display_pre_init', $form_id );
+		do_action( 'ninja_forms_display_init', $form_id );
+
+		if ( isset ( $ninja_forms_loading ) ) {
+			$ajax = $ninja_forms_loading->get_form_setting( 'ajax' );
+		} else {
+			$ajax = $ninja_forms_processing->get_form_setting( 'ajax' );
+		}
+
+		if ( !$ajax ) {
 			$ajax = 0;
 		}
-		if( isset( $form_row['data']['logged_in'] ) ){
-			$logged_in = $form_row['data']['logged_in'];
-		}else{
+
+		if ( isset ( $ninja_forms_loading ) ) {
+			$logged_in = $ninja_forms_loading->get_form_setting( 'logged_in' );
+		} else {
+			$logged_in = $ninja_forms_processing->get_form_setting( 'logged_in' );
+		}
+
+		if ( !$logged_in ) {
 			$logged_in = 0;
 		}
 

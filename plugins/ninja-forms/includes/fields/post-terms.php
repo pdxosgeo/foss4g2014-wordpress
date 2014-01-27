@@ -66,18 +66,29 @@ if ( !function_exists ( 'ninja_forms_register_field_post_terms' ) ) {
 				if( function_exists( 'ninja_forms_register_field' ) ){
 					ninja_forms_register_field( '_post_'.$tax, $args );
 				}
+				add_filter( 'ninja_forms_display_field_type', 'ninja_forms_post_field_type', 10, 2 );
 			}
 		}
 	}
 
-	add_action( 'init', 'ninja_forms_register_field_post_terms' );
+	add_action( 'init', 'ninja_forms_register_field_post_terms', 20 );
+
+	function ninja_forms_post_field_type( $type, $field_id ) {
+		global $ninja_forms_fields;
+		$field_row = ninja_forms_get_field_by_id( $field_id );
+		$field_type = $field_row['type'];
+		if ( isset ( $ninja_forms_fields[$field_type]['tax'] ) ) {
+			$type = 'list';
+		}
+		return $type;
+	}
 
 	function ninja_forms_field_post_terms_display($field_id, $data){
 		global $ninja_forms_fields;
 
 		$form_row = ninja_forms_get_form_by_field_id($field_id);
 		$form_data = $form_row['data'];
-
+		$field_class = ninja_forms_get_field_class($field_id);
 		$field_row = ninja_forms_get_field_by_id( $field_id );
 		$field_type = $field_row['type'];
 		$post_tax = $ninja_forms_fields[$field_type]['tax'];
@@ -150,7 +161,7 @@ if ( !function_exists ( 'ninja_forms_register_field_post_terms' ) ) {
 				<li id="term_<?php echo $field_id;?>_li_template" class="new-<?php echo $field_id;?>" style="display:none;">
 					<label class="selectit">
 						<input value="" type="hidden" id="ninja_forms_field_<?php echo $field_id;?>[new][][parent]" class="term-parent">
-						<input value="" type="checkbox" id="ninja_forms_field_<?php echo $field_id;?>[new][][name]" checked="checked"> <span></span>
+						<input value="" type="checkbox" id="ninja_forms_field_<?php echo $field_id;?>[new][][name]" checked="checked" class="<?php echo $field_class;?>" rel="<?php echo $field_id;?>"> <span></span>
 					</label>
 				</li>
 
@@ -162,7 +173,7 @@ if ( !function_exists ( 'ninja_forms_register_field_post_terms' ) ) {
 								?>
 								<li id="<?php echo $field_id;?>_<?php echo $term->term_id;?>_li" class="popular-term">
 									<label class="selectit">
-										<input value="<?php echo $term->term_id;?>" type="checkbox" name="ninja_forms_field_<?php echo $field_id;?>[terms][]" id="term-<?php echo $term->term_id;?>" class="<?php echo $field_id;?>-checkbox term-<?php echo $term->term_id;?>" <?php checked( in_array( $term->term_id, $terms ) ) ?>> <span><?php echo $term->name;?></span>
+										<input value="<?php echo $term->term_id;?>" type="checkbox" name="ninja_forms_field_<?php echo $field_id;?>[terms][]" id="term-<?php echo $term->term_id;?>" class="<?php echo $field_id;?>-checkbox term-<?php echo $term->term_id;?> <?php echo $field_class;?>" rel="<?php echo $field_id;?>" <?php checked( in_array( $term->term_id, $terms ) ) ?>> <span><?php echo $term->name;?></span>
 									</label>
 									<?php
 					
@@ -177,7 +188,7 @@ if ( !function_exists ( 'ninja_forms_register_field_post_terms' ) ) {
 											?>
 											<li id="<?php echo $field_id;?>_<?php echo $child_term->term_id;?>_li" class="popular-term">
 												<label class="selectit">
-													<input value="<?php echo $child_term->term_id;?>" type="checkbox" name="ninja_forms_field_<?php echo $field_id;?>[terms][]" id="term-<?php echo $child_term->term_id;?>" class="<?php echo $field_id;?>-checkbox term-<?php echo $child_term->term_id;?>" <?php checked( in_array( $child_term->term_id, $terms ) ) ?>> <span><?php echo $child_term->name;?></span>
+													<input value="<?php echo $child_term->term_id;?>" type="checkbox" name="ninja_forms_field_<?php echo $field_id;?>[terms][]" id="term-<?php echo $child_term->term_id;?>" class="<?php echo $field_id;?>-checkbox term-<?php echo $child_term->term_id;?> <?php echo $field_class;?>" rel="<?php echo $field_id;?>" <?php checked( in_array( $child_term->term_id, $terms ) ) ?>> <span><?php echo $child_term->name;?></span>
 												</label>
 											</li>
 											<?php
@@ -240,7 +251,7 @@ if ( !function_exists ( 'ninja_forms_register_field_post_terms' ) ) {
 					?>
 					<li>
 						<label for="ninja_forms_field_<?php echo $field_id;?>_<?php echo $x;?>">
-							<input type="checkbox" id="ninja_forms_field_<?php echo $field_id;?>_<?php echo $x;?>" name="ninja_forms_field_<?php echo $field_id;?>[terms][]" value="<?php echo $t->term_id;?>" <?php checked( in_array($t->term_id, $terms) );?>> <?php echo $t->name;?>
+							<input type="checkbox" id="ninja_forms_field_<?php echo $field_id;?>_<?php echo $x;?>" name="ninja_forms_field_<?php echo $field_id;?>[terms][]" value="<?php echo $t->term_id;?>" class="<?php echo $field_class;?>" rel="<?php echo $field_id;?>" <?php checked( in_array($t->term_id, $terms) );?>> <?php echo $t->name;?>
 						</label>
 						<?php
 							$child_terms = get_categories( array( 'taxonomy' => $post_tax, 'child_of' => $t->term_id, 'hide_empty' => false ) );
@@ -253,7 +264,7 @@ if ( !function_exists ( 'ninja_forms_register_field_post_terms' ) ) {
 									?>
 									<li>
 										<label>
-											<input value="<?php echo $child_term->term_id;?>" type="checkbox" name="ninja_forms_field_<?php echo $field_id;?>[terms][]" class="" <?php checked( in_array( $child_term->term_id, $terms ) ) ?>> <span><?php echo $child_term->name;?></span>
+											<input value="<?php echo $child_term->term_id;?>" type="checkbox" name="ninja_forms_field_<?php echo $field_id;?>[terms][]" class="<?php echo $field_class;?>" rel="<?php echo $field_id;?>" <?php checked( in_array( $child_term->term_id, $terms ) ) ?>> <span><?php echo $child_term->name;?></span>
 										</label>
 									</li>
 									<?php

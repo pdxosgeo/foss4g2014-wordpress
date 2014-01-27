@@ -43,7 +43,7 @@ function ninja_forms_edit_field_label_pos($field_id){
 			array('name' => __( 'Below Element', 'ninja-forms' ), 'value' => 'below'),
 			array('name' => __( 'Right of Element', 'ninja-forms' ), 'value' => 'right'),
 			array('name' => __( 'Inside Element', 'ninja-forms' ), 'value' => 'inside'),
-		);		
+		);
 	}else{
 		$options = $label_pos_options;
 	}
@@ -52,7 +52,7 @@ function ninja_forms_edit_field_label_pos($field_id){
 		if(isset($field_data['label_pos'])){
 			$label_pos = $field_data['label_pos'];
 		}else{
-			$label_pos = '';
+			$label_pos = 'above';
 		}
 
 		ninja_forms_edit_field_el_output($field_id, 'select', __( 'Label Position', 'ninja-forms' ), 'label_pos', $label_pos, 'wide', $options, 'widefat');

@@ -44,7 +44,7 @@ function ninja_forms_field_honeypot_pre_process( $field_id, $user_value ){
 
 	$plugin_settings = get_option( 'ninja_forms_settings' );
 	if(isset($plugin_settings['honeypot_error'])){
-		$honeypot_error = $plugin_settings['honeypot_error'];
+		$honeypot_error = __( $plugin_settings['honeypot_error'], 'ninja-forms' );
 	}
 
 	if( $ninja_forms_processing->get_action() != 'save' AND $ninja_forms_processing->get_action() != 'mp_save' AND !isset($_POST['_wp_login']) AND $user_value != '' ){

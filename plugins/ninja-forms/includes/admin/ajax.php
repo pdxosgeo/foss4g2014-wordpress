@@ -398,7 +398,7 @@ function ninja_forms_edit_sub(){
 }
 
 add_action('wp_ajax_ninja_forms_delete_sub', 'ninja_forms_delete_sub');
-add_action('wp_ajax_nopriv_ninja_forms_delete_sub', 'ninja_forms_delete_sub');
+//add_action('wp_ajax_nopriv_ninja_forms_delete_sub', 'ninja_forms_delete_sub');
 function ninja_forms_delete_sub($sub_id = ''){
 	global $wpdb;
 	if($sub_id == ''){

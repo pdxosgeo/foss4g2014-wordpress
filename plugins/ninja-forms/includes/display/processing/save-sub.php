@@ -30,7 +30,7 @@ function ninja_forms_save_sub(){
 
 		if(is_array($field_data) AND !empty($field_data)){
 			foreach($field_data as $field_id => $user_value){
-				$field_row = ninja_forms_get_field_by_id($field_id);
+				$field_row = $ninja_forms_processing->get_field_settings($field_id);
 				$field_type = $field_row['type'];
 				$save_sub = $ninja_forms_fields[$field_type]['save_sub'];
 

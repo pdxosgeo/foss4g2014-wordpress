@@ -1,7 +1,7 @@
 <?php
 
 function ninja_forms_display_js($form_id, $local_vars = ''){
-	global $post, $ninja_forms_display_localize_js, $wp_locale;
+	global $post, $ninja_forms_display_localize_js, $wp_locale, $ninja_forms_loading, $ninja_forms_processing;
 
 	if ( defined( 'NINJA_FORMS_JS_DEBUG' ) && NINJA_FORMS_JS_DEBUG ) {
 		$suffix = '';
@@ -22,11 +22,33 @@ function ninja_forms_display_js($form_id, $local_vars = ''){
 	$calc_eq = false;
 	$sub_total = false;
 	$tax = false;
-	$fields = ninja_forms_get_fields_by_form_id( $form_id );
+	if ( isset ( $ninja_forms_loading ) ) {
+		$fields = $ninja_forms_loading->get_all_fields();
+	} else {
+		$fields = $ninja_forms_processing->get_all_fields();
+	}
+
 	if( is_array( $fields ) AND !empty( $fields ) ){
-		foreach( $fields as $field ){
-			$field_id = $field['id'];
-			$field_type = $field['type'];
+		foreach( $fields as $field_id => $user_value ){
+			
+			if ( isset ( $ninja_forms_loading ) ) {
+				$field = $ninja_forms_loading->get_field_settings( $field_id );
+			} else {
+				$field = $ninja_forms_processing->get_field_settings( $field_id );
+			}
+
+			if ( isset ( $field['id'] ) ) {
+				$field_id = $field['id'];
+			} else {
+				$field_id = '';
+			}
+
+			if ( isset ( $field['type'] ) ) {
+				$field_type = $field['type'];
+			} else {
+				$field_type = '';
+			}
+
 			$field['data'] = apply_filters( 'ninja_forms_display_script_field_data', $field['data'], $field_id );
 			if( isset( $field['data']['datepicker'] ) AND $field['data']['datepicker'] == 1 ){
 				$datepicker = 1;
@@ -107,9 +129,26 @@ function ninja_forms_display_js($form_id, $local_vars = ''){
 		}
 
 		// Loop through our fields again looking for calc fields that are totals.
-		foreach( $fields as $field ){
-			$field_id = $field['id'];
-			$field_type = $field['type'];
+		foreach( $fields as $field_id => $user_value ){
+			if ( isset ( $ninja_forms_loading ) ) {
+				$field = $ninja_forms_loading->get_field_settings( $field_id );
+			} else {
+				$field = $ninja_forms_processing->get_field_settings( $field_id );
+			}
+			
+			if ( isset ( $field['id'] ) ) {
+				$field_id = $field['id'];
+			} else {
+				$field_id = '';
+			}
+
+			if ( isset ( $field['type'] ) ) {
+				$field_type = $field['type'];
+			} else {
+				$field_type = '';
+			}
+
+
 			if ( $field_type == '_calc' ) {
 				if ( isset ( $field['data']['payment_total'] ) AND $field['data']['payment_total'] == 1 ) {
 					if ( $sub_total AND $tax AND $field['data']['calc_method'] == 'auto' ) {
@@ -126,8 +165,13 @@ function ninja_forms_display_js($form_id, $local_vars = ''){
 	if ( $calc_eq ) {
 		foreach ( $calc_fields as $calc_id => $calc ) {
 			if( $calc['method'] == 'eq' ) {
-				foreach ( $fields as $field ) {
-					if (preg_match("/\bfield_".$field['id']."\b/i", $calc['eq'] ) ) {
+				foreach( $fields as $field_id => $user_value ){
+					if ( isset ( $ninja_forms_loading ) ) {
+						$field = $ninja_forms_loading->get_field_settings( $field_id );
+					} else {
+						$field = $ninja_forms_processing->get_field_settings( $field_id );
+					}
+					if (preg_match("/\bfield_".$field_id."\b/i", $calc['eq'] ) ) {
 						$calc_fields[$calc_id]['fields'][] = $field['id'];
 					}
 				}

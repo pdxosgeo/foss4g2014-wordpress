@@ -710,7 +710,7 @@ jQuery(document).ready(function($) {
 
 	// Handle the importing of textarea data when the user clicks: "done"
 
-	$(".save-list-import").click(function(e){
+	$(document).on( 'click', '.save-list-import', function(e){
 		e.preventDefault();
 		var options = $(this).parent().find("textarea").val();
 		var field_id = $(this).attr("rel");
@@ -1022,6 +1022,15 @@ jQuery(document).ready(function($) {
 
 function ninja_forms_new_field_response( response ){
 	jQuery("#ninja_forms_field_list").append(response.new_html).show('slow');
+	if ( response.new_type == 'List' ) {
+		//Make List Options sortable
+		jQuery(".ninja-forms-field-list-options").sortable({
+			helper: 'clone',
+			handle: '.ninja-forms-drag',
+			items: 'div',
+			placeholder: "ui-state-highlight",
+		});
+	}
 	if(typeof response.edit_options != 'undefined'){
 		for(var i = 0; i < response.edit_options.length; i++){
 			if(response.edit_options[i].type == 'rte'){

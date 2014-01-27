@@ -1,14 +1,14 @@
 <?php
 /**
- * This Ninja Forms Processing Class is used to interact with Ninja Forms as it processes form data.
+ * This Ninja Forms Loading Class is used to interact with Ninja Forms as it loads form data.
  * It is based upon the WordPress Error API.
  *
- * Contains the Ninja_Forms_Processing class
+ * Contains the Ninja_Forms_Loading class
  *
  */
 
 /**
- * Ninja Forms Processing class.
+ * Ninja Forms Loading class.
  *
  * Class used to interact with form processing.
  * This class stores all data related to the form submission, including data from the Ninja Form mySQL table.
@@ -21,8 +21,7 @@
  *		set_action('action') - Used to set the action currently being performed. ('submit', 'save', 'edit_sub').
  *
  * Submitted Values Methods:
- *		get_all_fields() - Returns an array of all the fields within a form. The return is array('field_ID' => 'user value').
- *		get_submitted_fields() - Returns an array of just the fields that the user has submitted. The return is array('field_ID' => 'user_value').
+ *		get_all_fields() - Returns an array of all the user submitted fields in the form of array('field_ID' => 'user value').
  *		get_field_value('field_ID') - Used to access the submitted data by field_ID.
  *		update_field_value('field_ID', 'new_value') - Used to change the value submitted by the user. If the field does not exist, it will be created.
  *		remove_field_value('field_ID') - Used to delete values submitted by the user.
@@ -75,7 +74,7 @@
  *		get_credit_card() - Used to get an array of the user's credit card information.
  */
 
-class Ninja_Forms_Processing {
+class Ninja_Forms_Loading {
 
 	/**
 	 *
@@ -104,126 +103,127 @@ class Ninja_Forms_Processing {
 				$user_ID = '';
 			}
 			$this->data['user_ID'] = $user_ID;
+			$this->setup_form_data();
+			$this->setup_field_data();
 		}
 	}
 
 	/**
-	 * Add the submitted vars to $this->data['fields'].
-	 * Also runs any functions registered to the field's pre_process hook.
+	 * 
+	 * Function to add the field data to $this->data['fields'].
 	 *
-	 *
+	 * @since 2.3.9
+	 * @return void.
 	 */
-	function setup_submitted_vars() {
-		global $ninja_forms_fields, $wp;
-		$form_ID = $this->data['form_ID'];
 
-		//Get our plugin settings
-		$plugin_settings = get_option("ninja_forms_settings");
-		$req_field_error = __( $plugin_settings['req_field_error'], 'ninja-forms' );
+	function setup_field_data() {
+		global $current_user, $post, $ninja_forms_fields;
+		$form_id = $this->data['form_ID'];
+		$field_results = ninja_forms_get_fields_by_form_id($form_id);
+		//$field_results = apply_filters('ninja_forms_display_fields_array', $field_results, $form_id);
 
-		if ( empty ( $this->data ) )
-			return '';
-		
-		$this->data['action'] = 'submit';
-		$this->data['form']['form_url'] = $this->get_current_url();
-		$cache = get_transient( $_SESSION['ninja_forms_transient_id'] );
+		foreach( $field_results as $field ) {
+			$data = $field['data'];
+			$field_id = $field['id'];
+			$field_type = $field['type'];
 
-		// If we have fields in our $_POST object, then loop through the $_POST'd field values and add them to our global variable.
-		if ( isset ( $_POST['_ninja_forms_display_submit'] ) OR isset ( $_POST['_ninja_forms_edit_sub'] ) ) {
-			$field_results = ninja_forms_get_fields_by_form_id($form_ID);
-			//$field_results = apply_filters('ninja_forms_display_fields_array', $field_results, $form_ID);
-
-			foreach( $field_results as $field ) {
-				$data = $field['data'];
-				$field_id = $field['id'];
-				$field_type = $field['type'];
-
-				if ( isset ( $_POST['ninja_forms_field_' . $field_id ] ) ) {
-					$val = ninja_forms_stripslashes_deep( $_POST['ninja_forms_field_' . $field_id ] );
-					$this->data['submitted_fields'][] = $field_id;
-				} else {
-					$val = false;
-				}
-
-				$this->data['fields'][$field_id] = $val;
-				$field_row = ninja_forms_get_field_by_id( $field_id );
-				$field_row['data']['field_class'] = 'ninja-forms-field';
-				$this->data['field_data'][$field_id] = $field_row;
+			if( isset ( $data['default_value'] ) ) {
+				$default_value = $data['default_value'];
+			} else if ( isset ( $ninja_forms_fields[$field_type]['default_value'] ) ) { 
+				$default_value = $ninja_forms_fields[$field_type]['default_value'];
+			} else {
+				$default_value = '';
 			}
+			// Check to see if our default value is one of our preset values:
+			get_currentuserinfo();
+			$user_ID 			= $current_user->ID;
+			$user_firstname 	= $current_user->user_firstname;
+		    $user_lastname 		= $current_user->user_lastname;
+		    $user_display_name 	= $current_user->display_name;
+		    $user_email 		= $current_user->user_email;
 
-			foreach($_POST as $key => $val){
-				if(substr($key, 0, 1) == '_'){
-					$this->data['extra'][$key] = $val;
-				}
-			}
+		    if ( is_object ( $post ) ) {
+			    $post_ID 			= $post->ID;
+			    $post_title 		= $post->post_title;
+			    $post_url			= get_permalink( $post_ID );
+		    } else {
+		    	$post_ID      		= '';
+		    	$post_title 		= '';
+		    	$post_url 			= '';
+		    }
 
-			//Grab the form info from the database and store it in our global form variables.
-			$form_row = ninja_forms_get_form_by_id($form_ID);
-			$form_data = $form_row['data'];
-
-			if(isset($_REQUEST['_sub_id']) AND !empty($_REQUEST['_sub_id'])){
-				$form_data['sub_id'] = absint ( $_REQUEST['_sub_id'] );
-			}else{
-				$form_data['sub_id'] = '';
-			}
-
-			//Loop through the form data and set the global $ninja_form_data variable.
-			if(is_array($form_data) AND !empty($form_data)){
-				foreach($form_data as $key => $val){
-					if(!is_array($val)){
-						$value = stripslashes($val);
-						//$value = esc_html($value);
-						//$value = htmlspecialchars($value);
-					}else{
-						$value = $val;
+		    switch( $default_value ){
+				case '_user_id':
+					$default_value = $user_ID;
+					break;
+				case '_user_firstname':
+					$default_value = $user_firstname;
+					break;
+				case '_user_lastname':
+					$default_value = $user_lastname;
+					break;
+				case '_user_display_name':
+					$default_value = $user_display_name;
+					break;
+				case '_user_email':
+					$default_value = $user_email;
+					break;
+				case 'post_id':
+					$default_value = $post_ID;
+					break;
+				case 'post_title':
+					$default_value = $post_title;
+					break;
+				case 'post_url':
+					$default_value = $post_url;
+					break;
+				case 'today':
+					$plugin_settings = get_option( 'ninja_forms_settings' );
+					if ( isset ( $plugin_settings['date_format'] ) ) {
+						$date_format = $plugin_settings['date_format'];
+					} else {
+						$date_format = 'm/d/Y';
 					}
-					$this->data['form'][$key] = $value;
-				}
-				$this->data['form']['admin_attachments'] = array();
-				$this->data['form']['user_attachments'] = array();
+					$default_value = date( $date_format, strtotime( 'now' ) );
+					break;
 			}
 
-		} else if ( $cache !== false ) { // Check to see if we have $_SESSION values from a submission.
-			if ( is_array ( $cache['field_values'] ) ) {
-				// We do have a submission contained in our $_SESSION variable. We'll populate the field values with that data.
-				foreach ( $cache['field_values'] as $field_id => $val ) {
-					$field_row = ninja_forms_get_field_by_id($field_id);
-					if(is_array($field_row) AND !empty($field_row)){
-						if(isset($field_row['type'])){
-							$field_type = $field_row['type'];
-						}else{
-							$field_type = '';
-						}
-						if(isset($field_row['data']['req'])){
-							$req = $field_row['data']['req'];
-						}else{
-							$req = '';
-						}
+			$this->data['fields'][$field_id] = $default_value;
+			$field_row = ninja_forms_get_field_by_id( $field_id );
+			$field_row['data']['field_class'] = 'ninja-forms-field';
+			$this->data['field_data'][$field_id] = $field_row;
+		}
+	}
 
-						$val = ninja_forms_stripslashes_deep( $val );
-						//$val = ninja_forms_esc_html_deep( $val );
+	function setup_form_data() {
+		$form_id = $this->data['form_ID'];
+		$form_row = ninja_forms_get_form_by_id( $form_id );
+		$form_row = apply_filters( 'ninja_forms_display_form_form_data', $form_row );
+		$form_data = $form_row['data'];
 
-						$this->data['fields'][$field_id] = $val;
-						if ( isset ( $cache['field_settings'][$field_id] ) ) {
-							$field_row = $cache['field_settings'][$field_id];
-						} else {
-							$field_row = ninja_forms_get_field_by_id( $field_id );
-						}
-
-						$field_row['data']['field_class'] = 'ninja-forms-field';
-						
-						$this->data['field_data'][$field_id] = $field_row;
-					}
-				}
-			}
-			$this->data['form'] = $cache['form_settings'];
-			$this->data['success'] = $cache['success_msgs'];
-			$this->data['errors'] = $cache['error_msgs'];
-			
+		if(isset($_REQUEST['_sub_id']) AND !empty($_REQUEST['_sub_id'])){
+			$form_data['sub_id'] = absint ( $_REQUEST['_sub_id'] );
+		}else{
+			$form_data['sub_id'] = '';
 		}
 
-	} // Submitted Vars function
-
+		//Loop through the form data and set the global $ninja_form_data variable.
+		if(is_array($form_data) AND !empty($form_data)){
+			foreach($form_data as $key => $val){
+				if(!is_array($val)){
+					$value = stripslashes($val);
+					//$value = esc_html($value);
+					//$value = htmlspecialchars($value);
+				}else{
+					$value = $val;
+				}
+				$this->data['form'][$key] = $value;
+			}
+			$this->data['form']['admin_attachments'] = array();
+			$this->data['form']['user_attachments'] = array();
+		}
+	}
+	
 	/**
 	 * Submitted Values Methods:
 	 *
@@ -266,31 +266,7 @@ class Ninja_Forms_Processing {
 	}
 
 	/**
-	 * Retrieve the action currently being performed.
-	 *
-	 */
-	function get_action() {
-		if ( empty($this->data['action']) ){
-			return false;
-		}else{
-			return $this->data['action'];
-		}
-	}
-
-	/**
-	 * Set the action currently being performed.
-	 *
-	 */
-	function set_action( $action ) {
-		if ( empty($this->data) ){
-			return false;
-		}else{
-			return $this->data['action'] = $action;
-		}
-	}
-
-	/**
-	 * Retrieve all the fields attached to a form.
+	 * Retrieve all the user submitted form data.
 	 *
 	 */
 	function get_all_fields() {
@@ -298,25 +274,6 @@ class Ninja_Forms_Processing {
 			return false;
 		}else{
 			return $this->data['fields'];
-		}
-	}
-
-	/**
-	 * Retrieve all the user submitted form data.
-	 *
-	 */
-	function get_all_submitted_fields() {
-		if ( empty( $this->data['submitted_fields'] ) ) {
-			return false;
-		} else {
-			$fields = array();
-			$submitted_fields = $this->data['submitted_fields'];
-			foreach ( $submitted_fields as $field_id ) {
-				if ( isset ( $this->data['fields'][$field_id] ) ) {
-					$fields[$field_id] = $this->data['fields'][$field_id];
-				}
-			}
-			return $fields;
 		}
 	}
 
@@ -380,6 +337,7 @@ class Ninja_Forms_Processing {
 	function get_field_setting( $field_id = '', $setting_id = '' ) {
 		if ( empty ( $this->data ) OR $field_id == '' OR $setting_id == '' )
 			return false;
+
 		if ( isset ( $this->data['field_data'][$field_id][$setting_id] ) ) {
 			return $this->data['field_data'][$field_id][$setting_id];
 		} else if ( isset ( $this->data['field_data'][$field_id]['data'][$setting_id] ) ) {
@@ -412,7 +370,7 @@ class Ninja_Forms_Processing {
 	function update_field_setting( $field_id = '', $setting_id = '', $value = '' ) {
 		if( empty( $this->data ) OR $field_id == '' OR $setting_id == '' OR $value == '' )
 			return false;
-		
+
 		if ( isset ( $this->data['field_data'][$field_id][$setting_id] ) ) {
 			$this->data['field_data'][$field_id][$setting_id] = $value;
 		} else {
@@ -975,15 +933,6 @@ class Ninja_Forms_Processing {
 		}
 		// Get our sub-total if it exists.
 		$sub_total = $this->get_calc_sub_total( false );
-		$locale_info = localeconv();
-		$decimal_point = $locale_info['decimal_point'];
-		if ( $decimal_point == '.' ) {
-			$sub_total = str_replace(',', '', $sub_total );
-		} else {
-			$sub_total = str_replace('.', '', $sub_total );
-		}
-
-		$sub_total = intval( $sub_total );
 
 		// Get our total if it exists.
 		$total = $this->get_calc_total( false, false );

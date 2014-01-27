@@ -10,13 +10,18 @@
 // Make sure that this function isn't already defined.
 if ( !function_exists ( 'ninja_forms_field_filter_populate_term' ) ) {
     function ninja_forms_field_filter_populate_term( $data, $field_id ){
-        global $post;
+        global $post, $ninja_forms_loading, $ninja_forms_processing;
 
         $add_field = apply_filters( 'ninja_forms_use_post_fields', false );
         if ( !$add_field )
             return $data;
 
-        $field_row = ninja_forms_get_field_by_id( $field_id );
+        if ( isset ( $ninja_forms_loading ) ) {
+            $field_row = $ninja_forms_loading->get_field_settings( $field_id );
+        } else if ( isset ( $ninja_forms_processing ) ) {
+            $field_row = $ninja_forms_processing->get_field_settings( $field_id );
+        }
+        
         $field_type = $field_row['type'];
         $field_data = $field_row['data'];
 

@@ -750,7 +750,10 @@ function ninja_forms_update_success_msg(response){
 			jQuery("#ninja_forms_form_" + form_id ).hide();
 		}
 		if(clear_complete == 1 ){
-			jQuery("#ninja_forms_form_" + form_id ).resetForm();
+			jQuery("#ninja_forms_form_" + form_id ).clearForm();
+			if( 'rating' in jQuery("input[type=radio].ninja-forms-star") ) {
+				jQuery("input[type=radio].ninja-forms-star").rating("drain");
+			}
 		}
 	}
 }

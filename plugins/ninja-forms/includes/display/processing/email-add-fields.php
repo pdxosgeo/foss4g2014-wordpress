@@ -50,7 +50,7 @@ function ninja_forms_filter_email_add_fields( $message ){
 		}
 		foreach( $all_fields as $field_id => $user_value ){
 
-			$field_row = ninja_forms_get_field_by_id( $field_id );
+			$field_row = $ninja_forms_processing->get_field_settings( $field_id );
 			$field_label = $field_row['data']['label'];
 			$field_label = apply_filters( 'ninja_forms_email_field_label', $field_label, $field_id );
 			$user_value = apply_filters( 'ninja_forms_email_user_value', $user_value, $field_id );
@@ -63,6 +63,7 @@ function ninja_forms_filter_email_add_fields( $message ){
 						if(!is_array($val)){
 							if($x > 0){
 								$field_label = '----';
+								$field_label = apply_filters( 'ninja_forms_email_field_label', $field_label, $field_id );
 							}
 							if($email_type == 'html'){
 								$message .= "<tr><td width='50%'>".$field_label.":</td><td width='50%'>".$val."</td></tr>";
@@ -74,6 +75,7 @@ function ninja_forms_filter_email_add_fields( $message ){
 								if(!is_array($v)){
 									if($x > 0){
 										$field_label = '----';
+										$field_label = apply_filters( 'ninja_forms_email_field_label', $field_label, $field_id );
 									}
 									if($email_type == 'html'){
 										$message .= "<tr><td width='50%'>".$field_label.":</td><td width='50%'>".$v."</td></tr>";
@@ -84,6 +86,7 @@ function ninja_forms_filter_email_add_fields( $message ){
 									foreach($v as $a){
 										if($x > 0){
 											$field_label = '----';
+											$field_label = apply_filters( 'ninja_forms_email_field_label', $field_label, $field_id );
 										}
 										if($email_type == 'html'){
 											$message .= "<tr><td width='50%'>".$field_label.":</td><td width='50%'>".$a."</td></tr>";

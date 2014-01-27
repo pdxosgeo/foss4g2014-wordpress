@@ -4,17 +4,21 @@ add_action( 'admin_menu', 'ninja_forms_add_menu' );
 function ninja_forms_add_menu(){
 	$plugins_url = plugins_url();
 
-	$capabilities = 'administrator';
-	$capabilities = apply_filters( 'ninja_forms_admin_menu_capabilities', $capabilities );
+	$page = add_menu_page("Ninja Forms" , __( 'Forms', 'ninja-forms' ), apply_filters( 'ninja_forms_admin_menu_capabilities', 'manage_options' ), "ninja-forms", "ninja_forms_admin", NINJA_FORMS_URL."/images/ninja-head-ico-small.png", "35.1337" );
 
-	$page = add_menu_page("Ninja Forms" , __( 'Forms', 'ninja-forms' ), $capabilities, "ninja-forms", "ninja_forms_admin", NINJA_FORMS_URL."/images/ninja-head-ico-small.png", "35.1337" );
-	$all_forms = add_submenu_page("ninja-forms", __( 'Forms', 'ninja-forms' ), __( 'All Forms', 'ninja-forms' ), $capabilities, "ninja-forms", "ninja_forms_admin");
-	$new_form = add_submenu_page("ninja-forms", __( 'Add New', 'ninja-forms' ), __( 'Add New', 'ninja-forms' ), $capabilities, "ninja-forms&tab=form_settings&form_id=new", "ninja_forms_admin");
-	$subs = add_submenu_page("ninja-forms", __( 'Submissions', 'ninja-forms' ), __( 'Submissions', 'ninja-forms' ), $capabilities, "ninja-forms-subs", "ninja_forms_admin");
-	$import = add_submenu_page("ninja-forms", __( 'Import/Export', 'ninja-forms' ), __( 'Import / Export', 'ninja-forms' ), $capabilities, "ninja-forms-impexp", "ninja_forms_admin");
-	$settings = add_submenu_page("ninja-forms", __( 'Ninja Form Settings', 'ninja-forms' ), __( 'Settings', 'ninja-forms' ), $capabilities, "ninja-forms-settings", "ninja_forms_admin");
-	$system_status = add_submenu_page("ninja-forms", __( 'System Status', 'ninja-forms' ), __( 'System Status', 'ninja-forms' ), $capabilities, "ninja-forms-system-status", "ninja_forms_admin");
-	$extend = add_submenu_page("ninja-forms", __( 'Ninja Form Extensions', 'ninja-forms' ), __( 'Extend', 'ninja-forms' ), $capabilities, "ninja-forms-extend", "ninja_forms_admin");
+	$all_forms = add_submenu_page("ninja-forms", __( 'Forms', 'ninja-forms' ), __( 'All Forms', 'ninja-forms' ), apply_filters( 'ninja_forms_admin_menu_capabilities', 'manage_options' ), "ninja-forms", "ninja_forms_admin");
+
+	$new_form = add_submenu_page("ninja-forms", __( 'Add New', 'ninja-forms' ), __( 'Add New', 'ninja-forms' ), apply_filters( 'ninja_forms_admin_add_new_capabilities', 'manage_options' ), "ninja-forms&tab=form_settings&form_id=new", "ninja_forms_admin");
+
+	$subs = add_submenu_page("ninja-forms", __( 'Submissions', 'ninja-forms' ), __( 'Submissions', 'ninja-forms' ), apply_filters( 'ninja_forms_admin_submissions_capabilities', 'manage_options' ), "ninja-forms-subs", "ninja_forms_admin");
+
+	$import = add_submenu_page("ninja-forms", __( 'Import/Export', 'ninja-forms' ), __( 'Import / Export', 'ninja-forms' ), apply_filters( 'ninja_forms_admin_import_export_capabilities', 'manage_options' ), "ninja-forms-impexp", "ninja_forms_admin");
+
+	$settings = add_submenu_page("ninja-forms", __( 'Ninja Form Settings', 'ninja-forms' ), __( 'Settings', 'ninja-forms' ), apply_filters( 'ninja_forms_admin_settings_capabilities', 'manage_options' ), "ninja-forms-settings", "ninja_forms_admin");
+
+	$system_status = add_submenu_page("ninja-forms", __( 'System Status', 'ninja-forms' ), __( 'System Status', 'ninja-forms' ), apply_filters( 'ninja_forms_admin_status_capabilities', 'manage_options' ), "ninja-forms-system-status", "ninja_forms_admin");
+
+	$extend = add_submenu_page("ninja-forms", __( 'Ninja Form Extensions', 'ninja-forms' ), __( 'Extend', 'ninja-forms' ), apply_filters( 'ninja_forms_admin_extend_capabilities', 'manage_options' ), "ninja-forms-extend", "ninja_forms_admin");
 
 	add_action('admin_print_styles-' . $page, 'ninja_forms_admin_css');
 	add_action('admin_print_styles-' . $page, 'ninja_forms_admin_js');
@@ -216,35 +220,38 @@ function ninja_forms_date_to_datepicker($date){
 	return preg_replace($pattern,$replace,$date);
 }
 
-function str_putcsv($array, $delimiter = ',', $enclosure = '"', $terminator = "\n") {
-	# First convert associative array to numeric indexed array
-	foreach ($array as $key => $value) $workArray[] = $value;
+function str_putcsv( $array, $delimiter = ',', $enclosure = '"', $terminator = "\n" ) {
+	// First convert associative array to numeric indexed array
+	$workArray = array();
+	foreach ($array as $key => $value) {
+		$workArray[] = $value;
+	}
 
 	$returnString = '';                 # Initialize return string
-	$arraySize = count($workArray);     # Get size of array
+	$arraySize = count( $workArray );     # Get size of array
 
-	for ($i=0; $i<$arraySize; $i++) {
-		# Nested array, process nest item
-		if (is_array($workArray[$i])) {
-			$returnString .= str_putcsv($workArray[$i], $delimiter, $enclosure, $terminator);
+	for ( $i=0; $i<$arraySize; $i++ ) {
+		// Nested array, process nest item
+		if ( is_array( $workArray[$i] ) ) {
+			$returnString .= str_putcsv( $workArray[$i], $delimiter, $enclosure, $terminator );
 		} else {
-			switch (gettype($workArray[$i])) {
-				# Manually set some strings
+			switch ( gettype( $workArray[$i] ) ) {
+				// Manually set some strings
 				case "NULL":     $_spFormat = ''; break;
 				case "boolean":  $_spFormat = ($workArray[$i] == true) ? 'true': 'false'; break;
-				# Make sure sprintf has a good datatype to work with
+				// Make sure sprintf has a good datatype to work with
 				case "integer":  $_spFormat = '%i'; break;
 				case "double":   $_spFormat = '%0.2f'; break;
 				case "string":   $_spFormat = '%s'; $workArray[$i] = str_replace("$enclosure", "$enclosure$enclosure", $workArray[$i]); break;
-				# Unknown or invalid items for a csv - note: the datatype of array is already handled above, assuming the data is nested
+				// Unknown or invalid items for a csv - note: the datatype of array is already handled above, assuming the data is nested
 				case "object":
 				case "resource":
 				default:         $_spFormat = ''; break;
 			}
-							$returnString .= sprintf('%2$s'.$_spFormat.'%2$s', $workArray[$i], $enclosure);
-				$returnString .= ($i < ($arraySize-1)) ? $delimiter : $terminator;
+			$returnString .= sprintf('%2$s'.$_spFormat.'%2$s', $workArray[$i], $enclosure);
+			$returnString .= ($i < ($arraySize-1)) ? $delimiter : $terminator;
 		}
 	}
-	# Done the workload, return the output information
+	// Done the workload, return the output information
 	return $returnString;
 }

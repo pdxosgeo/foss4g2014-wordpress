@@ -48,7 +48,7 @@ function ninja_forms_req_fields_process(){
 			$plugin_settings = get_option("ninja_forms_settings");
 			$req_field_error = $plugin_settings['req_field_error'];
 			if( isset( $plugin_settings['req_error_label'] ) ){
-				$req_error_label = $plugin_settings['req_error_label'];
+				$req_error_label = __( $plugin_settings['req_error_label'], 'ninja-forms' );
 			}else{
 				$req_error_label = __( 'Please check required fields.', 'ninja-forms' );
 			}

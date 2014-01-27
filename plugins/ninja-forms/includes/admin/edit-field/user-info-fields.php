@@ -9,8 +9,20 @@
  */
 
 function ninja_forms_user_info_fields_groups( $field_id ){
+	global $ninja_forms_fields;
 	$field = ninja_forms_get_field_by_id( $field_id );
-	if ( isset ( $field['data']['user_info_field_group'] ) AND $field['data']['user_info_field_group'] == 1 ) {
+	$field_type = $field['type'];
+	$default_user_info = 0;
+	if ( isset ( $ninja_forms_fields[$field_type]['edit_options'] ) and is_array( $ninja_forms_fields[$field_type]['edit_options'] ) ) {
+		foreach ( $ninja_forms_fields[$field_type]['edit_options'] as $option ) {
+			if ( isset ( $option['name'] ) and $option['name'] == 'user_info_field_group' and isset ( $option['default'] ) ) {
+				$default_user_info = $option['default'];
+				break;
+			}
+		}
+	}
+
+	if ( ( isset ( $field['data']['user_info_field_group'] ) AND $field['data']['user_info_field_group'] == 1 ) or ( ( !isset ( $field['data']['user_info_field_group'] ) or $field['data']['user_info_field_group'] !== 0 ) and $default_user_info == 1 ) ) {
 		$options = array(
 			array( 'name' => '- '.__( 'None', 'ninja-forms' ), 'value' => '' ),
 			array( 'name' => __( 'Billing', 'ninja-forms' ), 'value' => 'billing' ),

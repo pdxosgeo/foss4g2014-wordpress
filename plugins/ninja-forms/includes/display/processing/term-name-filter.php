@@ -10,12 +10,19 @@
 // Make sure that this function isn't already defined.
 if ( !function_exists ( 'ninja_forms_filter_term_ids_for_name' ) ) {
 	function ninja_forms_filter_term_ids_for_name( $val, $field_id ){
+		global $ninja_forms_loading, $ninja_forms_processing;
 
+		
 		$add_field = apply_filters( 'ninja_forms_use_post_fields', false );
 		if ( !$add_field )
 			return $val;
 
-		$field_row = ninja_forms_get_field_by_id( $field_id );
+		if ( isset ( $ninja_forms_loading ) ) {
+			$field_row = $ninja_forms_loading->get_field_settings( $field_id );
+		} else {
+			$field_row = $ninja_forms_processing->get_field_settings( $field_id );
+		}
+		
 		if ( $field_row['type'] == '_list' ) {
 			if ( isset( $field_row['data']['populate_term'] ) ) {
 				$tax = $field_row['data']['populate_term'];

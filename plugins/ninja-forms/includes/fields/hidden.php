@@ -48,7 +48,7 @@ function ninja_forms_field_hidden_edit($field_id, $data){
 	<p class="description description-thin">
 		<label for="">
 			<?php _e( 'Default Value' , 'ninja-forms'); ?><br />
-			<select id="default_value_<?php echo $field_id;?>" name="" class="widefat ninja-forms-hidden-default-value" rel="<?php echo $field_id;?>">
+			<select id="default_value_<?php echo $field_id;?>" name="" class="widefat ninja-forms-_text-default-value" rel="<?php echo $field_id;?>">
 				<option value="" <?php if( $default_value == ''){ echo 'selected'; $custom = 'no';}?>><?php _e('None', 'ninja-forms'); ?></option>
 				<option value="_user_id" <?php if($default_value == '_user_id'){ echo 'selected'; $custom = 'no';}?>><?php _e('User ID (If logged in)', 'ninja-forms'); ?></option>
 				<option value="_user_firstname" <?php if($default_value == '_user_firstname'){ echo 'selected'; $custom = 'no';}?>><?php _e('User Firstname (If logged in)', 'ninja-forms'); ?></option>

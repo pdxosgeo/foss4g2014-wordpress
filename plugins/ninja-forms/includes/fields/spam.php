@@ -116,7 +116,7 @@ function ninja_forms_field_spam_pre_process( $field_id, $user_value ){
 
 	$plugin_settings = get_option("ninja_forms_settings");
 	if(isset($plugin_settings['spam_error'])){
-		$spam_error = $plugin_settings['spam_error'];
+		$spam_error = __( $plugin_settings['spam_error'], 'ninja-forms' );
 	}
 	$field_row = ninja_forms_get_field_by_id($field_id);
 	$field_data = $field_row['data'];
