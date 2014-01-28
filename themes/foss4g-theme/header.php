@@ -36,6 +36,7 @@
 			        'walker'            => new wp_bootstrap_navwalker())
 			    );
 			?>
+      <!-- REMOVE FOR LOGIN
           <ul class="nav navbar-nav navbar-right">
 	        	<?php
               if ( is_user_logged_in() ) {
@@ -51,6 +52,6 @@
 
               }
             ?>
-	      	</ul>   
+	      	</ul> -->  
         </div><!-- /.navbar-collapse -->
       </nav>

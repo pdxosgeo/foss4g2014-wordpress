@@ -6428,23 +6428,21 @@ Single Post & Page
 .page-header {
   padding: 80px 0 8px;
   margin: 0 0 5px 0;
-  background: url(img/landing-header-bg-repeater.jpg) center center repeat;
-  border-bottom: solid 1px #33cbcb;
+  border-bottom: none;
 }
 .page-header h1 {
-  color: #f3f3f3;
-  font-size: 3.5em;
+  color: #5e3a22;
+  font-size: 3em;
   font-weight: 700;
   margin: 0;
-}
-.page-header.post {
-  border-bottom: solid 10px #33cbcb;
+  padding-left: 15px;
+  border-left: 5px solid steelblue;
 }
 .page-header.post h1 {
   font-size: 3.0em;
 }
 .content {
-  margin: 15px 0;
+  margin: 0 0 15px;
 }
 .content p {
   margin-top: 10px;
@@ -6466,16 +6464,13 @@ Single Post & Page
 .widget-area ul li ul {
   margin: 0;
   padding: 5px 0 5px 5px;
-  background-color: #f4e9e1;
 }
 .widget-area .widget-title {
   font-size: 1.5em;
   font-weight: 600;
   color: #5e3a22;
-  border-bottom: 1px solid #ddbaa2;
-  padding: 2px 0 2px 5px;
+  padding: 2px 0 0 5px;
   margin: 15px 0 0;
-  background-color: #fff;
 }
 /* Profile */
 /* Footer */

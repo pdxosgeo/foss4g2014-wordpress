@@ -144,7 +144,7 @@
                     <div class="post">
                       <div class="col-sm-12 landing-post-meta">
                         <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                        <h2>By FOSS4G UPDATES <span class="date"><?php the_date(); ?></span></h2>
+                        <h2>FOSS4G UPDATES <span class="date"><?php the_date(); ?></span></h2>
                       </div>
                       <div class="col-sm-11 landing-post-content">
                         <?php the_content(); ?>
