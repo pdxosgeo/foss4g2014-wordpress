@@ -44,7 +44,7 @@
           
           <div id="sponsor-slider" class="hidden-xs carousel slide" data-ride="carousel">
             <!-- Wrapper for slides -->
-            <div class="carousel-inner">
+            <div class="carousel-inner" style="min-height: 65px">
               <div class="item active">
                 <div class="sponsor-list text-center">
                   <a href="http://www.sensorsandsystems.com">
