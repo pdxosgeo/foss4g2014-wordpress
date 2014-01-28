@@ -6088,40 +6088,30 @@ td.visible-print {
 .navbar,
 .navbar-default {
   border: none;
-  background-color: #99e5e5;
-  border-bottom: 1px solid #70dbdb;
-  border-top: 5px solid #70dbdb;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddbaa2;
+  border-top: 5px solid #a9683d;
+  opacity: .9;
 }
 .navbar .collapse,
 .navbar-default .collapse {
-  background-color: #99e5e5;
-}
-.navbar .collapse .nav .active a,
-.navbar-default .collapse .nav .active a,
-.navbar .collapse .navbar-nav .active a,
-.navbar-default .collapse .navbar-nav .active a {
-  color: #29a3a3;
-  background-color: #99e5e5;
-}
-.navbar .collapse .nav .active a:hover,
-.navbar-default .collapse .nav .active a:hover,
-.navbar .collapse .navbar-nav .active a:hover,
-.navbar-default .collapse .navbar-nav .active a:hover {
-  color: #29a3a3;
-  background-color: #70dbdb;
+  background-color: #ffffff;
 }
 .navbar .collapse .nav a,
 .navbar-default .collapse .nav a,
 .navbar .collapse .navbar-nav a,
 .navbar-default .collapse .navbar-nav a {
+  text-transform: uppercase;
+  font-size: .9em;
+  font-weight: 400;
   padding: 17px 7px;
   margin: 0 5px;
-  color: #29a3a3;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
+  color: #5e3a22;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -6130,14 +6120,27 @@ td.visible-print {
 .navbar-default .collapse .nav a:hover,
 .navbar .collapse .navbar-nav a:hover,
 .navbar-default .collapse .navbar-nav a:hover {
-  color: #29a3a3;
-  background-color: #70dbdb;
+  color: #a9683d;
+}
+.navbar .collapse .nav .active a,
+.navbar-default .collapse .nav .active a,
+.navbar .collapse .navbar-nav .active a,
+.navbar-default .collapse .navbar-nav .active a {
+  color: #ffffff;
+  background-color: #ffffff;
+}
+.navbar .collapse .nav .active a:hover,
+.navbar-default .collapse .nav .active a:hover,
+.navbar .collapse .navbar-nav .active a:hover,
+.navbar-default .collapse .navbar-nav .active a:hover {
+  color: #a5a5a5;
+  background-color: #e5e5e5;
 }
 .navbar .collapse .nav ul,
 .navbar-default .collapse .nav ul,
 .navbar .collapse .navbar-nav ul,
 .navbar-default .collapse .navbar-nav ul {
-  background-color: #99e5e5;
+  background-color: #f3f3f3;
 }
 .navbar .collapse .nav ul li a,
 .navbar-default .collapse .nav ul li a,
@@ -6150,15 +6153,15 @@ td.visible-print {
 .navbar-default .collapse .nav ul li a:hover,
 .navbar .collapse .navbar-nav ul li a:hover,
 .navbar-default .collapse .navbar-nav ul li a:hover {
-  background-color: #29a3a3;
-  color: #99e5e5;
+  background-color: #a5a5a5;
+  color: #ffffff;
   border: none;
 }
 .navbar .navbar-toggle,
 .navbar-default .navbar-toggle {
-  border-color: #29a3a3;
-  background-color: #99e5e5;
-  color: #29a3a3;
+  border-color: #a5a5a5;
+  background-color: #ffffff;
+  color: #a5a5a5;
 }
 .navbar .navbar-toggle .icon-bar,
 .navbar-default .navbar-toggle .icon-bar {
@@ -6176,8 +6179,8 @@ td.visible-print {
 .navbar-default .navbar-nav > .active > a:focus,
 .open > a,
 .open > a.dropdown {
-  color: #29a3a3 !important;
-  background-color: #70dbdb !important;
+  color: #a5a5a5 !important;
+  background-color: #e5e5e5 !important;
 }
 .navbar-brand {
   padding: 5px 10px !important;
@@ -6357,9 +6360,6 @@ section {
 /* Content */
 body {
   font-family: 'Open Sans', helvetica, arial, sans-serif;
-}
-.cms-page .outer-container > .container {
-  margin: 50px auto;
 }
 p {
   font-weight: 400;

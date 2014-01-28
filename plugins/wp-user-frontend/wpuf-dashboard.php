@@ -73,7 +73,7 @@ class WPUF_Dashboard {
         ?>
 
         <h2 class="page-head">
-            <span class="colour"><?php printf( __( "%s's Dashboard", 'wpuf' ), $userdata->user_login ); ?></span>
+            <span class="colour"><?php printf( __( "%s's Submissions", 'wpuf' ), $userdata->user_firstname ); ?></span>
         </h2>
 
         <?php if ( wpuf_get_option( 'show_post_count', 'wpuf_dashboard', 'on' ) == 'on' ) { ?>
@@ -98,7 +98,7 @@ class WPUF_Dashboard {
                         }
                         ?>
                         <th><?php _e( 'Title', 'wpuf' ); ?></th>
-                        <th><?php _e( 'Status', 'wpuf' ); ?></th>
+                        <!-- <th><?php _e( 'Status', 'wpuf' ); ?></th> -->
                         <?php
                         if ( 'yes' == $charging_enabled ) {
                             echo '<th>' . __( 'Payment', 'wpuf' ) . '</th>';
@@ -135,9 +135,9 @@ class WPUF_Dashboard {
 
                                 <?php } ?>
                             </td>
-                            <td>
+                            <!-- <td>
                                 <?php wpuf_show_post_status( $post->post_status ) ?>
-                            </td>
+                            </td> -->
 
                             <?php
                             if ( $charging_enabled == 'yes' ) {

@@ -36,12 +36,12 @@
 			        'walker'            => new wp_bootstrap_navwalker())
 			    );
 			?>
-      <!-- INSERT ONCE WE WANT REGISTRATION
           <ul class="nav navbar-nav navbar-right">
 	        	<?php
               if ( is_user_logged_in() ) {
               $user = wp_get_current_user();
-              $logged_in = '<li><a href="#">' . $user->user_firstname . '</a></li>';
+              $profile_link = home_url();
+              $logged_in = '<li><a href="' . $profile_link . '/profile">' . $user->user_firstname . '</a></li>';
               $logged_in .= '<li><a href="' . wp_logout_url( home_url() ) . '" title="Logout">Logout</a></li>';
               echo $logged_in; }
               else {
@@ -51,6 +51,6 @@
 
               }
             ?>
-	      	</ul> -->        
+	      	</ul>   
         </div><!-- /.navbar-collapse -->
       </nav>
