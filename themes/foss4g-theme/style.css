@@ -6166,8 +6166,9 @@ td.visible-print {
 .navbar .collapse .navbar-nav ul li a,
 .navbar-default .collapse .navbar-nav ul li a {
   margin: 0;
+  color: #5e3a22 !important;
   padding: 3px 7px;
-  border-bottom: none;
+  border-bottom: none !important;
 }
 .navbar .collapse .nav ul li a:hover,
 .navbar-default .collapse .nav ul li a:hover,
