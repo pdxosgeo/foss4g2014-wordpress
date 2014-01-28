@@ -1,7 +1,19 @@
 <?php get_header(); ?>
-<?php get_sidebar(); ?>
-<div id="content">
-	<h1>Uh oh!</h1>
-	<p>Something isn't right. Head back to the <a href="<?php echo home_url(); ?>/news">news</a> to get back on track.</p>
+<section class="page-header">
+	<div class="container">
+		<h1>Uh Oh!</h1>
+	</div>
+</section>
+<section class="page-content">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 content">
+           	<p>Shoot! We messed up. That doesn't mean the end of the world, though. <a href="<?php echo home_url(); ?>/contact">Let us know</a> if this is a major problem, otherwise make sure you are registered and have submitted your content for FOSS4G2014 in Portland. See you there!</p>
+        </div>
+        <div class="col-md-4 sidebar">
+        	<?php get_sidebar(); ?>
+        </div>
+    </div>
 </div>
+
 <?php get_footer(); ?>
