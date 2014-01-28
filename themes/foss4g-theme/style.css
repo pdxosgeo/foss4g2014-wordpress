@@ -6498,6 +6498,7 @@ Single Post & Page
   width: 100%;
 }
 #contact #contact-container #contact-form-button {
+  border-top: 5px solid steelblue;
   width: 120px;
   text-align: center;
   position: relative;
