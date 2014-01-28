@@ -3,7 +3,7 @@
 Theme Name: FOSS4G
 Description: Wordpress Theme for FOSS4G-PDX 2014
 Author: Sam Matthews
-Author URI: http://mapsam.com
+Author URI: http://situatedlaboratories.com
 Version: 0.1
 Tags: open source, geography
 License: GNU General Public License
@@ -6341,7 +6341,7 @@ section {
 #landing-posts {
   margin-top: -60px;
   padding-top: 10px;
-  border-radius: 3px;
+  border-top: 8px solid steelblue;
   background-color: #eafafa;
 }
 #landing-posts .landing-post-meta {
@@ -6377,6 +6377,9 @@ section {
 }
 #landing-posts .landing-post-content p {
   margin-bottom: 10px;
+}
+#map {
+  margin-bottom: -50px;
 }
 /* Content */
 body {
@@ -6452,6 +6455,27 @@ Single Post & Page
 }
 #ws-plugin--s2member-profile table input {
   margin: 0 0 15px;
+}
+/* Sidebar */
+.widget-area ul {
+  padding: 0;
+}
+.widget-area ul li {
+  list-style-type: none;
+}
+.widget-area ul li ul {
+  margin: 0;
+  padding: 5px 0 5px 5px;
+  background-color: #f4e9e1;
+}
+.widget-area .widget-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #5e3a22;
+  border-bottom: 1px solid #ddbaa2;
+  padding: 2px 0 2px 5px;
+  margin: 15px 0 0;
+  background-color: #fff;
 }
 /* Profile */
 /* Footer */
