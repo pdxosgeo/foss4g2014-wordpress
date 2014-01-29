@@ -6089,10 +6089,9 @@ td.visible-print {
 .navbar-default {
   border: none;
   background-color: #ffffff;
-  border-bottom: 1px solid #ddbaa2;
+  border-bottom: 1px solid #f8f1ed;
   border-top: 5px solid #a9683d;
   opacity: .9;
-  height: 50px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -6473,7 +6472,20 @@ Single Post & Page
   padding: 2px 0 0 5px;
   margin: 15px 0 0;
 }
-/* Profile */
+/* User Styles (pages, forms, login, etc.) */
+.btn.user {
+  color: #f3f3f3;
+  text-transform: uppercase;
+  font-size: 1.0em;
+  opacity: 0.9;
+  background-color: #5e3a22;
+}
+.btn.user.blue {
+  background-color: steelblue;
+}
+.btn.user:hover {
+  opacity: 1;
+}
 /* Footer */
 #contact {
   position: relative;
