@@ -6214,7 +6214,11 @@ section {
 }
 #landing-intro {
   padding: 100px 0 50px;
-  background: #99e5e5 url(img/landing-header-bg-repeater.jpg) center center repeat;
+  background: #99e5e5 url(img/landing-portland-header3.jpg) bottom center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   text-align: center;
   border-bottom: 10px solid #70dbdb;
 }
@@ -6236,7 +6240,7 @@ section {
 }
 #landing-intro #conference-info #conference-times {
   margin-bottom: 20px;
-  border-left: 5px solid #33cbcb;
+  border-left: 5px solid steelblue;
   padding-left: 10px;
 }
 #landing-intro #conference-info #conference-times p {
@@ -6429,6 +6433,11 @@ Single Post & Page
   padding: 80px 0 8px;
   margin: 0 0 5px 0;
   border-bottom: none;
+  background: url(img/page-header-portland-osm2.jpg) bottom center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .page-header h1 {
   color: #5e3a22;
