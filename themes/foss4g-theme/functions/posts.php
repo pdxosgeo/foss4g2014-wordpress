@@ -39,5 +39,5 @@ function create_sponsor_post_type() {
 		'rewrite'           => array( 'slug' => 'level' ),
 	);
 
-	register_taxonomy( 'level', array( 'book' ), $args );	
+	register_taxonomy( 'level', array( 'sponsor' ), $args );	
 }
