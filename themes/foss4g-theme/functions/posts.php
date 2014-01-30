@@ -1,7 +1,7 @@
 <?php
 
-add_action( 'init', 'create_post_type' );
-function create_post_type() {
+add_action( 'init', 'create_sponsor_post_type' );
+function create_sponsor_post_type() {
 	register_post_type( 'sponsor',
 		array(
 			'labels' => array(
@@ -14,13 +14,7 @@ function create_post_type() {
 		'taxonomies' => array('level')
 		)
 	);
-}
 
-// create custom taxonomy level for sponsor types
-add_action( 'init', 'create_sponsor_level_taxonomies', 0 );
-
-// 
-function create_sponsor_level_taxonomies() {
 	// Add new taxonomy, make it hierarchical (like categories)
 	$labels = array(
 		'name'              => _x( 'Levels', 'taxonomy general name' ),
@@ -45,5 +39,5 @@ function create_sponsor_level_taxonomies() {
 		'rewrite'           => array( 'slug' => 'level' ),
 	);
 
-	register_taxonomy( 'level', array( 'book' ), $args );
+	register_taxonomy( 'level', array( 'book' ), $args );	
 }
