@@ -73,6 +73,9 @@
                   <a href="http://www.slashgeo.org">
                     <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/slashgeo_logo.png">
                   </a>
+		  <a href="http://gisuser.com">
+                    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/GISusrNews.jpg">
+                  </a>
                 </div>
               </div>
             </div>
