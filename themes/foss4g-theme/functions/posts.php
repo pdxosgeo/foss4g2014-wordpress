@@ -55,7 +55,7 @@ function create_session_post_type() {
 			),
 		'public' => true,
 		'has_archive' => true,
-		'menu_position' => 20,
+		'menu_position' => 11,
 		'supports' => array( 'title', 'editor', 'custom-fields')
 		)
 	);
@@ -72,7 +72,7 @@ function create_workshop_post_type() {
 			),
 		'public' => true,
 		'has_archive' => true,
-		'menu_position' => 30,
+		'menu_position' => 12,
 		'supports' => array( 'title', 'editor', 'custom-fields')
 		)
 	);

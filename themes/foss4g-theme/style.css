@@ -6479,7 +6479,7 @@ Single Post & Page
   font-size: 3.0em;
 }
 .content {
-  margin: 0 0 15px;
+  margin: 15px 0;
 }
 .content p {
   margin-top: 10px;
@@ -6523,17 +6523,17 @@ Single Post & Page
 .btn.user:hover {
   opacity: 1;
 }
-#theme-my-login1 p {
+#theme-my-login p {
   font-size: 1em;
   font-weight: 400;
 }
-#theme-my-login1 p label {
+#theme-my-login p label {
   display: block;
   margin-bottom: 2px;
   font-weight: 700;
   font-size: 0.9em;
 }
-#theme-my-login1 p input {
+#theme-my-login p input {
   padding: 5px 7px;
   display: block;
   width: 50%;
@@ -6541,41 +6541,57 @@ Single Post & Page
   border: 1px solid #70dbdb;
   color: #555555;
 }
-#theme-my-login1 p input[type="submit"] {
+#theme-my-login p input[type="submit"] {
   width: auto;
   color: #f3f3f3;
   border: none;
 }
-#theme-my-login1 p input[type="checkbox"] {
+#theme-my-login p input[type="checkbox"] {
   display: inline;
   width: auto;
   margin-right: 5px;
 }
-#theme-my-login1 p input[type="checkbox"] + label {
+#theme-my-login p input[type="checkbox"] + label {
   display: inline;
   width: auto;
 }
-#theme-my-login1 p input:focus {
+#theme-my-login p input:focus {
   border: 1px solid steelblue;
   outline: none;
 }
-#theme-my-login1 .tml-action-links {
+#theme-my-login p.submit input[type="submit"] {
+  width: auto;
+  color: #f3f3f3;
+  border: none;
+  background-color: #5e3a22;
+  font-weight: 400;
+  padding: 5px 7px;
+}
+#theme-my-login p.submit input[type="submit"]:hover {
+  opacity: .9;
+}
+#theme-my-login .tml-action-links,
+#theme-my-login .tml-user-links {
   margin: 10px 0;
   padding: 5px 0;
   border-top: 1px solid #e5e5e5;
 }
-#theme-my-login1 .tml-action-links li {
+#theme-my-login .tml-action-links li,
+#theme-my-login .tml-user-links li {
   display: inline;
 }
-#theme-my-login1 .tml-action-links li:after {
+#theme-my-login .tml-action-links li:after,
+#theme-my-login .tml-user-links li:after {
   content: ' | ';
   font-size: 1.3em;
   color: steelblue;
 }
-#theme-my-login1 .tml-action-links li:last-child:after {
+#theme-my-login .tml-action-links li:last-child:after,
+#theme-my-login .tml-user-links li:last-child:after {
   content: '';
 }
-#theme-my-login1 .tml-action-links li a {
+#theme-my-login .tml-action-links li a,
+#theme-my-login .tml-user-links li a {
   text-transform: uppercase;
   color: steelblue;
   font-weight: 700;
@@ -6642,6 +6658,13 @@ Single Post & Page
 .wpuf-post-form li textarea:focus {
   border: 1px solid steelblue;
   outline: none;
+}
+.content .success {
+  padding: 5px 7px;
+  width: auto;
+  color: #555555;
+  background-color: #ffffe0;
+  border: 1px solid #e6db55;
 }
 /* Profile Styles */
 .wpuf-profile #your-profile fieldset {
