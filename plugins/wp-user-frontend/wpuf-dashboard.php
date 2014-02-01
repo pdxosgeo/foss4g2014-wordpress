@@ -97,7 +97,7 @@ class WPUF_Dashboard {
                         }
                         ?>
                         <th><?php _e( 'Title', 'wpuf' ); ?></th>
-                        <!-- <th><?php _e( 'Status', 'wpuf' ); ?></th> -->
+                        <th><?php _e( 'Type', 'wpuf' ); ?></th>
                         <?php
                         if ( 'yes' == $charging_enabled ) {
                             echo '<th>' . __( 'Payment', 'wpuf' ) . '</th>';
@@ -134,9 +134,9 @@ class WPUF_Dashboard {
 
                                 <?php } ?>
                             </td>
-                            <!-- <td>
-                                <?php wpuf_show_post_status( $post->post_status ) ?>
-                            </td> -->
+                            <td>
+                                <?php echo $post->post_type; ?>
+                            </td>
 
                             <?php
                             if ( $charging_enabled == 'yes' ) {
