@@ -29,7 +29,6 @@ class WPUF_Dashboard {
         if ( is_user_logged_in() ) {
             $this->post_listing( $post_type );
         } else {
-            printf( __( "This page is restricted. Please %s to view this page.", 'wpuf' ), wp_loginout( '', false ) );
         }
 
         $content = ob_get_contents();
