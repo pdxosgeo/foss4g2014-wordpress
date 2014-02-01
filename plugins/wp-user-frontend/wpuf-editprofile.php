@@ -171,14 +171,10 @@ class WPUF_Edit_Profile {
                 </fieldset>
 
                 <fieldset>
-                    <legend><?php _e( 'About Yourself' ); ?></legend>
+                    <legend><?php _e( 'Password' ); ?></legend>
 
                     <table class="wpuf-table">
-                        <tr>
-                            <th><label for="description"><?php _e( 'Biographical Info', 'wpuf' ); ?></label></th>
-                            <td><textarea name="description" id="description" rows="5" cols="30"><?php echo esc_html( $profileuser->description ); ?></textarea><br />
-                                <span class="description"><?php _e( 'Share a little biographical information to fill out your profile. This may be shown publicly.' ); ?></span></td>
-                        </tr>
+                        
                         <tr id="password">
                             <th><label for="pass1"><?php _e( 'New Password', 'wpuf' ); ?></label></th>
                             <td>

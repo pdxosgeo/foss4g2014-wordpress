@@ -20,10 +20,13 @@ Template Name: User Profile
 <section class="page-content">
 <div class="container">
     <div class="row">
-        <div class="col-md-8 content">
+        <div class="col-md-6 content">
             <?php the_content(); ?>
+            <?php echo do_shortcode("[wpuf_editprofile]"); ?>
             <?php endwhile; // end of the loop. ?>
-
+        </div>
+        <div class="col-md-6 user-submissions">
+            <?php echo do_shortcode("[wpuf_dashboard]"); ?>
         </div>
         <div class="col-md-4">
         </div>
