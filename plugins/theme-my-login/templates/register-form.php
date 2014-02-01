@@ -14,6 +14,16 @@ Theme My Login will always look in your theme's directory first, before using th
 		</p>
 
 		<p>
+			<label for="first_name<?php $template->the_instance(); ?>"><?php _e( 'First name' ) ?></label>
+			<input type="text" name="first_name" id="first_name<?php $template->the_instance(); ?>" class="input" value="<?php $template->the_posted_value( 'first_name' ); ?>" size="20" />
+		</p>
+
+		<p>
+			<label for="last_name<?php $template->the_instance(); ?>"><?php _e( 'Last name' ) ?></label>
+			<input type="text" name="last_name" id="last_name<?php $template->the_instance(); ?>" class="input" value="<?php $template->the_posted_value( 'last_name' ); ?>" size="20" />
+		</p>
+
+		<p>
 			<label for="user_email<?php $template->the_instance(); ?>"><?php _e( 'E-mail' ); ?></label>
 			<input type="text" name="user_email" id="user_email<?php $template->the_instance(); ?>" class="input" value="<?php $template->the_posted_value( 'user_email' ); ?>" size="20" />
 		</p>
