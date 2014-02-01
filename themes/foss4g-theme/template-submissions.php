@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: User Submissions
+Template Name: Submissions
 */
 ?>
 
@@ -16,7 +16,7 @@ Template Name: User Submissions
 <section class="page-content">
 <div class="container">
     <div class="row">
-        <div class="col-md-8 content">
+        <div class="col-md-6 content">
             <?php the_content(); ?>
         <?php endwhile; // end of the loop. ?>
         </div>

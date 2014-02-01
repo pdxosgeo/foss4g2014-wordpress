@@ -6130,6 +6130,34 @@ td.visible-print {
   color: #a9683d;
   border-bottom-color: #ddbaa2;
 }
+.navbar .collapse .nav.navbar-right,
+.navbar-default .collapse .nav.navbar-right,
+.navbar .collapse .navbar-nav.navbar-right,
+.navbar-default .collapse .navbar-nav.navbar-right {
+  background-color: #f7f7f7;
+  border-left: 1px solid #e5e5e5;
+  padding: 0 10px 5px 5px;
+}
+.navbar .collapse .nav.navbar-right a,
+.navbar-default .collapse .nav.navbar-right a,
+.navbar .collapse .navbar-nav.navbar-right a,
+.navbar-default .collapse .navbar-nav.navbar-right a {
+  color: #555555;
+  border-bottom: none;
+}
+.navbar .collapse .nav.navbar-right a.user-name,
+.navbar-default .collapse .nav.navbar-right a.user-name,
+.navbar .collapse .navbar-nav.navbar-right a.user-name,
+.navbar-default .collapse .navbar-nav.navbar-right a.user-name {
+  font-weight: 700;
+  font-size: 1.0em;
+}
+.navbar .collapse .nav.navbar-right a:hover,
+.navbar-default .collapse .nav.navbar-right a:hover,
+.navbar .collapse .navbar-nav.navbar-right a:hover,
+.navbar-default .collapse .navbar-nav.navbar-right a:hover {
+  color: steelblue;
+}
 .navbar .collapse .nav .active a,
 .navbar-default .collapse .nav .active a,
 .navbar .collapse .navbar-nav .active a,
@@ -6494,6 +6522,142 @@ Single Post & Page
 }
 .btn.user:hover {
   opacity: 1;
+}
+#theme-my-login1 p {
+  font-size: 1em;
+  font-weight: 400;
+}
+#theme-my-login1 p label {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+#theme-my-login1 p input {
+  padding: 5px 7px;
+  display: block;
+  width: 50%;
+  border-radius: 4px;
+  border: 1px solid #70dbdb;
+  color: #555555;
+}
+#theme-my-login1 p input[type="submit"] {
+  width: auto;
+  color: #f3f3f3;
+  border: none;
+}
+#theme-my-login1 p input[type="checkbox"] {
+  display: inline;
+  width: auto;
+  margin-right: 5px;
+}
+#theme-my-login1 p input[type="checkbox"] + label {
+  display: inline;
+  width: auto;
+}
+#theme-my-login1 p input:focus {
+  border: 1px solid steelblue;
+  outline: none;
+}
+#theme-my-login1 .tml-action-links {
+  margin: 10px 0;
+  padding: 5px 0;
+  border-top: 1px solid #e5e5e5;
+}
+#theme-my-login1 .tml-action-links li {
+  display: inline;
+}
+#theme-my-login1 .tml-action-links li:after {
+  content: ' | ';
+  font-size: 1.3em;
+  color: steelblue;
+}
+#theme-my-login1 .tml-action-links li:last-child:after {
+  content: '';
+}
+#theme-my-login1 .tml-action-links li a {
+  text-transform: uppercase;
+  color: steelblue;
+  font-weight: 700;
+}
+/* Submissions */
+.wpuf-post-form {
+  margin: 30px 0;
+  padding: 10px 0;
+}
+.wpuf-post-form li {
+  display: block;
+  list-style-type: none;
+}
+.wpuf-post-form li label,
+.wpuf-post-form li input {
+  display: block;
+}
+.wpuf-post-form li label {
+  margin-bottom: 2px;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+.wpuf-post-form li input {
+  width: 50%;
+}
+.wpuf-post-form li textarea {
+  width: 100%;
+}
+.wpuf-post-form li input,
+.wpuf-post-form li textarea {
+  padding: 5px 7px;
+  border-radius: 4px;
+  border: 1px solid #70dbdb;
+  color: #555555;
+}
+.wpuf-post-form li input[type="submit"],
+.wpuf-post-form li textarea[type="submit"] {
+  width: auto;
+  color: #f3f3f3;
+  border: none;
+  font-size: 1em;
+  letter-spacing: .2em;
+  font-color: #f3f3f3;
+  background-color: steelblue;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.wpuf-post-form li input[type="submit"]:hover,
+.wpuf-post-form li textarea[type="submit"]:hover {
+  opacity: 0.9;
+}
+.wpuf-post-form li input[type="checkbox"],
+.wpuf-post-form li textarea[type="checkbox"] {
+  display: inline;
+  width: auto;
+  margin-right: 5px;
+}
+.wpuf-post-form li input[type="checkbox"] + label,
+.wpuf-post-form li textarea[type="checkbox"] + label {
+  display: inline;
+  width: auto;
+}
+.wpuf-post-form li input:focus,
+.wpuf-post-form li textarea:focus {
+  border: 1px solid steelblue;
+  outline: none;
+}
+@media (max-width: 768px) {
+  #theme-my-login1 p input {
+    width: 450px;
+  }
+  .wpuf-post-form li input {
+    width: 450px;
+  }
+}
+@media (max-width: 480px) {
+  #theme-my-login1 p input {
+    width: 100%;
+  }
+  .wpuf-post-form li input {
+    width: 100%;
+  }
 }
 /* Footer */
 #contact {

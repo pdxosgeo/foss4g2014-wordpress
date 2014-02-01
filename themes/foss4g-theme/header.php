@@ -41,8 +41,8 @@
               if ( is_user_logged_in() ) {
               $user = wp_get_current_user();
               $profile_link = home_url();
-              $logged_in = '<li><a href="' . $profile_link . '/profile">' . $user->user_firstname . '</a></li>';
-              $logged_in .= '<li><a href="' . wp_logout_url( home_url() ) . '" title="Logout">Logout</a></li>';
+              $logged_in = '<li><a href="' . $profile_link . '/profile" class="user-name">' . $user->user_firstname . '</a></li>';
+              $logged_in .= '<li><a href="' . wp_logout_url() . '" title="Logout">Logout</a></li>';
               echo $logged_in; }
               else {
               $not_logged_in = '<li><a href="' . get_bloginfo('url') .'/register">Register</a></li>';

@@ -63,7 +63,7 @@ function create_session_post_type() {
 
 // registers the workshops - no taxonomy
 add_action( 'init', 'create_workshop_post_type' );
-function create_session_post_type() {
+function create_workshop_post_type() {
 	register_post_type( 'workshop',
 		array(
 			'labels' => array(
