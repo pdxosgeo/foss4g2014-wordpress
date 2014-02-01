@@ -1,5 +1,6 @@
 <?php
 
+// registers the sponsor post type
 add_action( 'init', 'create_sponsor_post_type' );
 function create_sponsor_post_type() {
 	register_post_type( 'sponsor',
@@ -10,7 +11,8 @@ function create_sponsor_post_type() {
 			),
 		'public' => true,
 		'has_archive' => true,
-		'supports' => array( 'title', 'editor', 'thumbnail' ),
+		'menu_position' => 10,
+		'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
 		'taxonomies' => array('level')
 		)
 	);
@@ -41,3 +43,46 @@ function create_sponsor_post_type() {
 
 	register_taxonomy( 'level', array( 'sponsor' ), $args );	
 }
+
+// registers the regular session talks - no taxonomy
+add_action( 'init', 'create_session_post_type' );
+function create_session_post_type() {
+	register_post_type( 'session',
+		array(
+			'labels' => array(
+				'name' => __( 'Sessions' ),
+				'singular_name' => __( 'Session' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		'menu_position' => 20,
+		'supports' => array( 'title', 'editor', 'custom-fields')
+		)
+	);
+}
+
+// registers the workshops - no taxonomy
+add_action( 'init', 'create_workshop_post_type' );
+function create_session_post_type() {
+	register_post_type( 'workshop',
+		array(
+			'labels' => array(
+				'name' => __( 'Workshops' ),
+				'singular_name' => __( 'Workshop' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		'menu_position' => 30,
+		'supports' => array( 'title', 'editor', 'custom-fields')
+		)
+	);
+}
+
+
+
+//redirect after post submission
+function custom_redirect( $url ) {
+    global $post;
+    return get_permalink( $post->ID=29 ); // needs to be id of specific page (presumably a thankyou page)
+}
+add_filter( 'wpuf_after_post_redirect', 'custom_redirect' );

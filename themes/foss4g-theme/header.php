@@ -36,7 +36,7 @@
 			        'walker'            => new wp_bootstrap_navwalker())
 			    );
 			?>
-          <!-- <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right">
 	        	<?php
               if ( is_user_logged_in() ) {
               $user = wp_get_current_user();
@@ -45,12 +45,12 @@
               $logged_in .= '<li><a href="' . wp_logout_url( home_url() ) . '" title="Logout">Logout</a></li>';
               echo $logged_in; }
               else {
-              $not_logged_in = '<li><a href="' . wp_registration_url( home_url() ) . '">Register</a></li>';
-              $not_logged_in .= '<li><a href="' . wp_login_url( home_url() ) . '">Login</a></li>';
+              $not_logged_in = '<li><a href="' . get_bloginfo('url') .'/register">Register</a></li>';
+              $not_logged_in .= '<li><a href="' . get_bloginfo('url') .'/login">Login</a></li>';
               echo $not_logged_in;
 
               }
             ?>
-	      	</ul> -->
+	      	</ul>
         </div><!-- /.navbar-collapse -->
       </nav>
