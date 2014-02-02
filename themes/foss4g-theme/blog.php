@@ -27,10 +27,12 @@ Template Name: News/Blog
 			  	<!-- the loop -->
 			  	<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 		    	<div class="post">
-	        		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-	        		<h3>By <?php the_author(); ?> <span class="date"><?php the_date(); ?></span></h2>
+	        		<div class="post-title">
+		        		<h1 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+		        		<h2 class="meta">By <?php the_author(); ?> <span class="date"><?php the_date(); ?></span></h2>
+		        	</div>
 		        	<div class="post-content">
-		        		<?php the_content(); ?>
+		        		<?php the_excerpt(); ?>
 		        	</div>
 		    	</div>
 			  	<?php endwhile; ?>

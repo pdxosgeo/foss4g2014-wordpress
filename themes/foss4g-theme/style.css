@@ -6424,10 +6424,10 @@ p {
   margin: 0;
 }
 p a {
-  color: #db6f6f;
+  color: #428bca;
 }
 p a:hover {
-  color: #cb3333;
+  text-decoration: underline;
 }
 .btn-default {
   background-color: #fcfaf3;
@@ -6478,27 +6478,25 @@ Single Post & Page
 .page-header.post h1 {
   font-size: 3.0em;
 }
-.content h1,
-.content h2,
-.content h3 {
-  border-left: 2px solid #70dbdb;
-  padding-left: 5px;
-  margin-left: -5px;
-}
 .content h1 {
   font-size: 2.0em;
   font-weight: 700;
   color: #a9683d;
+  margin: 30px 0 5px;
+  border-bottom: 1px solid #70dbdb;
+  padding-bottom: 5px;
 }
 .content h2 {
   font-size: 1.5em;
   font-weight: 400;
   color: #a9683d;
+  margin: 25px 0 5px;
 }
 .content h3 {
   font-size: 1.3em;
   font-weight: 900;
   color: steelblue;
+  margin: 25px 0 5px;
 }
 .content p {
   font-size: 1.1em;
@@ -6517,28 +6515,70 @@ Single Post & Page
 .content#news .post {
   margin-bottom: 45px;
 }
-.content#news .post h2 {
+.content#news .post .post-title {
+  border-left: none;
+  border-bottom: 1px solid #70dbdb;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.content#news .post .post-title .title {
+  padding-left: 5px;
+  margin-left: -5px;
   margin: 0 0 5px;
   font-size: 2em;
-}
-.content#news .post h2 a {
   color: #555555;
+}
+.content#news .post .post-title .title a {
   text-decoration: none;
 }
-.content#news .post h2 a:hover {
+.content#news .post .post-title .title a:hover {
   text-decoration: underline;
 }
-.content#news .post h3 {
+.content#news .post .post-title .meta {
   margin: 0 0 5px;
   font-size: .8em;
   text-transform: uppercase;
   color: #33cbcb;
+  border: none;
 }
-.content#news .post h3 span {
+.content#news .post .post-title .meta span {
   margin: 0 0 0 10px;
   color: #555555;
   font-weight: 300;
   text-transform: uppercase;
+}
+.content#news .post .post-content {
+  margin-left: 20px;
+}
+.content#news .post .post-content h1 {
+  font-size: 2.0em;
+  font-weight: 700;
+  color: #a9683d;
+}
+.content#news .post .post-content h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #a9683d;
+}
+.content#news .post .post-content h3 {
+  font-size: 1.3em;
+  font-weight: 900;
+  color: steelblue;
+}
+.content#news .post .post-content p {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-top: 15px;
+  color: #555555;
+}
+.content#news .post .post-content p img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+.content#news .post .post-content ul,
+.content#news .post .post-content ol {
+  margin-top: 15px;
 }
 .content {
   margin: 15px 0;
