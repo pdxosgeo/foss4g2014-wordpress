@@ -6478,6 +6478,9 @@ Single Post & Page
 .page-header.post h1 {
   font-size: 3.0em;
 }
+.wpuf_customs {
+  display: none;
+}
 .content h1 {
   font-size: 2.0em;
   font-weight: 700;
@@ -6508,9 +6511,6 @@ Single Post & Page
   max-width: 100%;
   height: auto;
   margin-top: 15px;
-}
-.content .wpuf_customs {
-  display: none;
 }
 .content#news .post {
   margin-bottom: 45px;
