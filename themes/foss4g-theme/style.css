@@ -6602,8 +6602,15 @@ Single Post & Page
   padding: 10px 0;
 }
 .wpuf-post-form li {
+  margin-top: 20px;
   display: block;
   list-style-type: none;
+}
+.wpuf-post-form li p.description {
+  font-weight: 100;
+  font-size: .9em;
+  font-style: italic;
+  margin-top: 2px;
 }
 .wpuf-post-form li label,
 .wpuf-post-form li input {
