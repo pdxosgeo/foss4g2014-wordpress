@@ -25,6 +25,14 @@ function foss4g2014_theme_customizer( $wp_customize ) {
 		'section' 		=> 'foss4g2014_header',
 		'priority' 		=> 10,
 	) );
+	$wp_customize->add_setting( 'foss4g2014_conference_location', array(
+		'default' 		=> '',
+	) );
+	$wp_customize->add_control( 'foss4g2014_conference_location', array(
+		'label' 		=> 'Conference Location',
+		'section' 		=> 'foss4g2014_header',
+		'priority' 		=> 11,
+	) );
 	$wp_customize->add_setting( 'foss4g2014_conference_date', array(
 		'default' 		=> '',
 	) );

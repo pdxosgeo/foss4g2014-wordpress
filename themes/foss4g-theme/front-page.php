@@ -13,6 +13,7 @@
                 <h2><?php get_bloginfo('description'); ?></h2>
                 <div id="conference-times">
                   <p class="larger"><?php echo get_theme_mod( 'foss4g2014_conference_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_conference_date' ); ?></span></p>
+                  <p <?php echo get_theme_mod( 'foss4g2014_conference_location' ); ?> </p>
                   <p <?php echo ( get_theme_mod( 'foss4g2014_registration_display' ) ) ? "style='display:none;'" : "" ?> ><?php echo get_theme_mod( 'foss4g2014_registration_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_registration_date' ); ?></span></p>
                   <p <?php echo ( get_theme_mod( 'foss4g2014_submission_display' ) ) ? "style='display:none;'" : "" ?>><?php echo get_theme_mod( 'foss4g2014_submission_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_submission_date' ); ?></span></p>
                   <p <?php echo ( get_theme_mod( 'foss4g2014_workshop_display' ) ) ? "style='display:none;'" : "" ?>><?php echo get_theme_mod( 'foss4g2014_workshop_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_workshop_date' ); ?></span></p>
