@@ -6478,6 +6478,68 @@ Single Post & Page
 .page-header.post h1 {
   font-size: 3.0em;
 }
+.content h1,
+.content h2,
+.content h3 {
+  border-left: 2px solid #70dbdb;
+  padding-left: 5px;
+  margin-left: -5px;
+}
+.content h1 {
+  font-size: 2.0em;
+  font-weight: 700;
+  color: #a9683d;
+}
+.content h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #ddbaa2;
+}
+.content h3 {
+  font-size: 1.3em;
+  font-weight: 900;
+  color: steelblue;
+}
+.content p {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-top: 15px;
+  color: #555555;
+}
+.content p img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+.content .wpuf_customs {
+  display: none;
+}
+.content#news .post {
+  margin-bottom: 45px;
+}
+.content#news .post h2 {
+  margin: 0 0 5px;
+  font-size: 2em;
+}
+.content#news .post h2 a {
+  color: #555555;
+  text-decoration: none;
+}
+.content#news .post h2 a:hover {
+  text-decoration: underline;
+}
+.content#news .post h3 {
+  margin: 0 0 5px;
+  font-size: .8em;
+  text-transform: uppercase;
+  color: #33cbcb;
+}
+.content#news .post h3 span {
+  margin: 0 0 0 10px;
+  color: #555555;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 .content {
   margin: 15px 0;
 }
@@ -6491,6 +6553,7 @@ Single Post & Page
 #ws-plugin--s2member-profile table input {
   margin: 0 0 15px;
 }
+/* News / Blog Roll */
 /* Sidebar */
 .widget-area ul {
   padding: 0;

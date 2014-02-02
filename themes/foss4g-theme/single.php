@@ -8,8 +8,10 @@
 <section class="page-content">
 <div class="container">
     <div class="row">
-        <div class="col-md-8 content post">
-           	<?php the_content(); ?>
+        <div class="col-md-8 content" id="single-post">
+           	<div class="post-content">
+                <?php the_content(); ?>
+            </div>
 			<?php endwhile; // end of the loop. ?>
         </div>
         <div class="col-md-4">
