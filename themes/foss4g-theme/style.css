@@ -6522,16 +6522,17 @@ Single Post & Page
   margin-bottom: 10px;
 }
 .content#news .post .post-title .title {
-  padding-left: 5px;
-  margin-left: -5px;
   margin: 0 0 5px;
   font-size: 2em;
   color: #555555;
+  border: none;
 }
 .content#news .post .post-title .title a {
+  color: #555555;
   text-decoration: none;
 }
 .content#news .post .post-title .title a:hover {
+  color: #555555;
   text-decoration: underline;
 }
 .content#news .post .post-title .meta {
@@ -6539,7 +6540,7 @@ Single Post & Page
   font-size: .8em;
   text-transform: uppercase;
   color: #33cbcb;
-  border: none;
+  border: none !important;
 }
 .content#news .post .post-title .meta span {
   margin: 0 0 0 10px;

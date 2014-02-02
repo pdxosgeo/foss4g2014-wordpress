@@ -150,7 +150,7 @@
                         <h2>FOSS4G UPDATES <span class="date"><?php the_date(); ?></span></h2>
                       </div>
                       <div class="col-sm-11 landing-post-content">
-                        <?php the_content(); ?>
+                        <?php the_excerpt(); ?>
                       </div>
                     </div>
                   <?php endwhile; ?>
