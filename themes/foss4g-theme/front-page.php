@@ -22,6 +22,7 @@
                   </p>
                   <p <?php echo ( get_theme_mod( 'foss4g2014_registration_display' ) ) ? "style='display:none;'" : "" ?> ><?php echo get_theme_mod( 'foss4g2014_registration_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_registration_date' ); ?></span></p>
                   <p <?php echo ( get_theme_mod( 'foss4g2014_submission_display' ) ) ? "style='display:none;'" : "" ?>><?php echo get_theme_mod( 'foss4g2014_submission_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_submission_date' ); ?></span></p>
+                  <p <?php echo ( get_theme_mod( 'foss4g2014_at_submission_display' ) ) ? "style='display:none;'" : "" ?>><?php echo get_theme_mod( 'foss4g2014_at_submission_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_at_submission_date' ); ?></span></p>
                   <p <?php echo ( get_theme_mod( 'foss4g2014_workshop_display' ) ) ? "style='display:none;'" : "" ?>><?php echo get_theme_mod( 'foss4g2014_workshop_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_workshop_date' ); ?></span></p>
                 </div>
                 <a href="<?php echo get_theme_mod( 'foss4g2014_button_one_link' ); ?>" <?php echo ( get_theme_mod( 'foss4g2014_button_one_display' ) ) ? "style='display:none;'" : "" ?> type="button" class="btn btn-lg" id="button-one"><?php echo get_theme_mod( 'foss4g2014_button_one_text' ); ?></a>
