@@ -98,7 +98,7 @@ function foss4g2014_theme_customizer( $wp_customize ) {
         'priority'		=> 36,
     ));
 
-	// submission deadlines
+	// regular presentation submission deadlines
 	$wp_customize->add_setting( 'foss4g2014_submission_title', array(
 		'default' 		=> '',
 	) );
@@ -125,6 +125,34 @@ function foss4g2014_theme_customizer( $wp_customize ) {
         'type'     		=> 'checkbox',
         'priority'		=> 46,
     ));
+  // academic track submission deadlines
+  $wp_customize->add_setting( 'foss4g2014_at_submission_title', array(
+    'default'     => '',
+  ) );
+  $wp_customize->add_control( 'foss4g2014_at_submission_title', array(
+    'label'     => 'AT Submission Text',
+    'section'     => 'foss4g2014_header',
+    'priority'    => 40,
+  ) );
+  $wp_customize->add_setting( 'foss4g2014_at_submission_date', array(
+    'default'     => '',
+  ) );
+  $wp_customize->add_control( 'foss4g2014_at_submission_date', array(
+    'label'     => 'AT Submission Deadline',
+    'section'     => 'foss4g2014_header',
+    'priority'    => 45,
+  ) );
+  $wp_customize->add_setting('foss4g2014_at_submission_display', array(
+        'default'     => 0,
+      ));
+    $wp_customize->add_control('foss4g2014_at_submission_display', array(
+        'settings'    => 'foss4g2014_at_submission_display',
+        'label'       => 'Hide AT Submission Info',
+        'section'     => 'foss4g2014_header',
+        'type'        => 'checkbox',
+        'priority'    => 46,
+    ));
+
 
 	// register section for conference times
 	$wp_customize->add_section( 'foss4g2014_header', array(
