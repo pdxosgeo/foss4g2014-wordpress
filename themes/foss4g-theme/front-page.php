@@ -1,44 +1,43 @@
 <?php get_header(); ?>
-	<section id="landing-intro">
-      	<div class="container">
-          <div class="row">
-            <div class="col-sm-2"></div>
-        		<div class="col-sm-4">
-        			<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/logo_landing_main.png">
-              <!-- trying as all one <img style="max-width:150px;height:auto;" class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/logo_landing_main_text.png">
-              -->
-            </div>
-            <div class="col-sm-6">
-              <div class="col-sm-12" id="conference-info">
-                <h2><?php get_bloginfo('description'); ?></h2>
-                <div id="conference-times">
-                  <p class="larger"><?php echo get_theme_mod( 'foss4g2014_conference_title' ); ?> 
-                      <span class="date">
-                        <?php echo get_theme_mod( 'foss4g2014_conference_date' ); ?>
-                      </span>
-                  </p>
-                  <p class="larger" style="font-style: italic;font-weight: 100">
-                    <?php echo get_theme_mod( 'foss4g2014_conference_location' ); ?>
-                  </p>
-                  <p <?php echo ( get_theme_mod( 'foss4g2014_registration_display' ) ) ? "style='display:none;'" : "" ?> ><?php echo get_theme_mod( 'foss4g2014_registration_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_registration_date' ); ?></span></p>
-                  <p <?php echo ( get_theme_mod( 'foss4g2014_submission_display' ) ) ? "style='display:none;'" : "" ?>><?php echo get_theme_mod( 'foss4g2014_submission_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_submission_date' ); ?></span></p>
-                  <p <?php echo ( get_theme_mod( 'foss4g2014_at_submission_display' ) ) ? "style='display:none;'" : "" ?>><?php echo get_theme_mod( 'foss4g2014_at_submission_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_at_submission_date' ); ?></span></p>
-                  <p <?php echo ( get_theme_mod( 'foss4g2014_workshop_display' ) ) ? "style='display:none;'" : "" ?>><?php echo get_theme_mod( 'foss4g2014_workshop_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_workshop_date' ); ?></span></p>
-                </div>
-                <a href="<?php echo get_theme_mod( 'foss4g2014_button_one_link' ); ?>" <?php echo ( get_theme_mod( 'foss4g2014_button_one_display' ) ) ? "style='display:none;'" : "" ?> type="button" class="btn btn-lg" id="button-one"><?php echo get_theme_mod( 'foss4g2014_button_one_text' ); ?></a>
-                <a href="<?php echo get_theme_mod( 'foss4g2014_button_two_link' ); ?>" <?php echo ( get_theme_mod( 'foss4g2014_button_two_display' ) ) ? "style='display:none;'" : "" ?> type="button" class="btn btn-lg" id="button-two"><?php echo get_theme_mod( 'foss4g2014_button_two_text' ); ?></a>
-              </div>
-            </div>
-          </div> <!-- /row -->
-          <div class="row" <?php echo ( get_theme_mod( 'foss4g2014_description_display' ) ) ? "style='display:none;'" : "" ?>>
-            <div class="col-sm-2">  
-            </div>
-            <div class="col-sm-8" id="description">
-                <p><?php echo get_theme_mod( 'foss4g2014_description' ); ?></p>
-            </div>
-            <div class="col-sm-2">  
-            </div>
-          </div>
+<section id="landing-intro">
+	<div class="container">
+    <div class="row">
+      <div class="col-sm-2"></div>
+  		<div class="col-sm-4">
+  			<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/logo_landing_main.png">
+      </div>
+      <div class="col-sm-6">
+        <h2><?php echo get_theme_mod( 'foss4g2014_conference_location' ); ?></h2>
+        <h3><?php echo get_theme_mod( 'foss4g2014_conference_date' ); ?></h3>
+        <p><?php echo get_theme_mod( 'foss4g2014_description' ); ?></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="conference-info">
+  <div id="conference-times" class="row">
+    <div class="col-sm-4">
+      <p <?php echo ( get_theme_mod( 'foss4g2014_section1_display' ) ) ? "style='display:none;'" : "" ?>><?php echo get_theme_mod( 'foss4g2014_section1_title' ); ?> <br> 
+      <span class="date"><?php echo get_theme_mod( 'foss4g2014_section1_desc' ); ?></span></p>
+      <a href="<?php echo get_theme_mod( 'foss4g2014_button_one_link' ); ?>" <?php echo ( get_theme_mod( 'foss4g2014_button_one_display' ) ) ? "style='display:none;'" : "" ?> type="button" class="btn btn-lg" id="button-one"><?php echo get_theme_mod( 'foss4g2014_button_one_text' ); ?></a>             
+    </div>
+    <div class="col-sm-4">
+      <p <?php echo ( get_theme_mod( 'foss4g2014_section2_display' ) ) ? "style='display:none;'" : "" ?>><?php echo get_theme_mod( 'foss4g2014_section2_title' ); ?> <br> 
+      <span class="date"><?php echo get_theme_mod( 'foss4g2014_section2_desc' ); ?></span></p>
+      <a href="<?php echo get_theme_mod( 'foss4g2014_button_two_link' ); ?>" <?php echo ( get_theme_mod( 'foss4g2014_button_two_display' ) ) ? "style='display:none;'" : "" ?> type="button" class="btn btn-lg" id="button-two"><?php echo get_theme_mod( 'foss4g2014_button_two_text' ); ?></a>
+    </div>
+    <div class="col-sm-4">
+      <p <?php echo ( get_theme_mod( 'foss4g2014_section3_display' ) ) ? "style='display:none;'" : "" ?>><?php echo get_theme_mod( 'foss4g2014_section3_title' ); ?> <br> 
+      <span class="date"><?php echo get_theme_mod( 'foss4g2014_section3_desc' ); ?></span></p>
+      <a href="<?php echo get_theme_mod( 'foss4g2014_button_three_link' ); ?>" <?php echo ( get_theme_mod( 'foss4g2014_button_three_display' ) ) ? "style='display:none;'" : "" ?> type="button" class="btn btn-lg" id="button-three"><?php echo get_theme_mod( 'foss4g2014_button_three_text' ); ?></a>  
+    </div>
+  </div>
+</section>
+                           
+                
+          
+          
       	</div> <!-- /container -->
       </section> <!-- /landing-intro -->
 
@@ -137,7 +136,7 @@
         </div>
       </section>
 
-      <section id="portland-image"></section>
+      <section id="portland-home-image"></section>
 
       <section id="recent">
         <div class="container">

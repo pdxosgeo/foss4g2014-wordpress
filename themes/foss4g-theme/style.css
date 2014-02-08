@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Bevan);
+@import url(http://fonts.googleapis.com/css?family=Marvel);
 /*
 Theme Name: FOSS4G
 Description: Wordpress Theme for FOSS4G-PDX 2014
@@ -6247,7 +6249,7 @@ section {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  text-align: center;
+  text-align: left;
   border-bottom: 10px solid #70dbdb;
 }
 #landing-intro img {
@@ -6256,55 +6258,73 @@ section {
   display: block;
   margin: auto;
 }
-#landing-intro #conference-info {
-  margin: 90px 0 0;
-  text-align: left;
-}
-#landing-intro #conference-info h2 {
-  color: #888888;
+#landing-intro h2 {
+  font-family: 'Bevan', cursive;
+  color: #5e3a22;
   font-weight: 700;
-  font-size: 2.5em;
-  margin-bottom: 16px;
+  font-size: 2.6em;
+  margin: 60px auto 0 0;
 }
-#landing-intro #conference-info #conference-times {
-  margin-bottom: 20px;
-  border-left: 5px solid steelblue;
-  padding-left: 10px;
+#landing-intro h3 {
+  font-family: 'Marvel', sans-serif;
+  font-size: 2.8em;
+  color: #5e3a22;
+  margin: 0 0 15px 0;
 }
-#landing-intro #conference-info #conference-times p {
+#landing-intro p {
+  font-size: 1.1em;
+}
+#conference-info {
+  margin: 90px 0 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: block;
+  margin: auto;
+}
+#conference-info #conference-times {
+  display: block;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+#conference-info #conference-times p {
   font-weight: 700;
   color: #555555;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
-#landing-intro #conference-info #conference-times p.larger {
-  font-size: 1.4em;
-}
-#landing-intro #conference-info #conference-times p span {
-  margin-left: 10px;
+#conference-info #conference-times p span {
   font-weight: 100;
   font-style: italic;
+  margin-bottom: 10px;
 }
-#landing-intro #conference-info a.btn {
+#conference-info #conference-times .col-sm-4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100%;
+}
+#conference-info a.btn {
   margin-right: 10px;
   color: #fff;
   text-decoration: none;
 }
-#landing-intro #conference-info a.btn:hover {
+#conference-info a.btn:hover {
   opacity: 0.8;
 }
-#landing-intro #description {
+#description {
   border-top: 1px solid #33cbcb;
   margin-top: 25px;
   padding-top: 15px;
 }
-#landing-intro #description p {
+#description p {
   font-size: 1.8em;
   font-weight: 100;
   color: #555555;
   font-style: italic;
 }
-#portland-image {
+#portland-home-image {
   height: 200px;
-  background: url(img/portland-aerial-cropped.jpg) center center no-repeat;
+  background: center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -6468,6 +6488,7 @@ Single Post & Page
   background-size: cover;
 }
 .page-header h1 {
+  font-family: 'Bevan', cursive;
   color: #5e3a22;
   font-size: 3em;
   font-weight: 700;
@@ -6482,23 +6503,22 @@ Single Post & Page
   display: none;
 }
 .content h1 {
+  font-family: 'Marvel', sans-serif;
   font-size: 2.0em;
-  font-weight: 700;
-  color: #a9683d;
+  color: #5e3a22;
   margin: 30px 0 5px;
   border-bottom: 1px solid #70dbdb;
   padding-bottom: 5px;
 }
 .content h2 {
+  font-family: 'Marvel', sans-serif;
   font-size: 1.5em;
-  font-weight: 400;
   color: #a9683d;
   margin: 25px 0 5px;
 }
 .content h3 {
   font-size: 1.3em;
-  font-weight: 900;
-  color: steelblue;
+  color: #5e3a22;
   margin: 25px 0 5px;
 }
 .content p {

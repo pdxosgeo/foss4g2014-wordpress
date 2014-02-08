@@ -42,34 +42,6 @@ function foss4g2014_theme_customizer( $wp_customize ) {
 		'priority' 		=> 15,
 	) );
 
-	// workshop dates
-	$wp_customize->add_setting( 'foss4g2014_workshop_title', array(
-		'default' 		=> '',
-	) );
-	$wp_customize->add_control( 'foss4g2014_workshop_title', array(
-		'label' 		=> 'Workshop Text',
-		'section' 		=> 'foss4g2014_header',
-		'priority' 		=> 20,
-	) );
-	$wp_customize->add_setting( 'foss4g2014_workshop_date', array(
-		'default' 		=> '',
-	) );
-	$wp_customize->add_control( 'foss4g2014_workshop_date', array(
-		'label' 		=> 'Workshop Dates',
-		'section' 		=> 'foss4g2014_header',
-		'priority' 		=> 25,
-	) );
-	$wp_customize->add_setting('foss4g2014_workshop_display', array(
-        'default' 		=> 0,
-	    ));
-    $wp_customize->add_control('foss4g2014_workshop_display', array(
-        'settings' 		=> 'foss4g2014_workshop_display',
-        'label'    		=> 'Hide Workshop Info',
-        'section'  		=> 'foss4g2014_header',
-        'type'     		=> 'checkbox',
-        'priority'		=> 26,
-    ));
-
 	// registration deadlines
 	$wp_customize->add_setting( 'foss4g2014_registration_title', array(
 		'default' 		=> '',
@@ -96,61 +68,6 @@ function foss4g2014_theme_customizer( $wp_customize ) {
         'section'  		=> 'foss4g2014_header',
         'type'     		=> 'checkbox',
         'priority'		=> 36,
-    ));
-
-	// regular presentation submission deadlines
-	$wp_customize->add_setting( 'foss4g2014_submission_title', array(
-		'default' 		=> '',
-	) );
-	$wp_customize->add_control( 'foss4g2014_submission_title', array(
-		'label' 		=> 'Submission Text',
-		'section' 		=> 'foss4g2014_header',
-		'priority' 		=> 40,
-	) );
-	$wp_customize->add_setting( 'foss4g2014_submission_date', array(
-		'default' 		=> '',
-	) );
-	$wp_customize->add_control( 'foss4g2014_submission_date', array(
-		'label' 		=> 'Submission Deadline',
-		'section' 		=> 'foss4g2014_header',
-		'priority' 		=> 45,
-	) );
-	$wp_customize->add_setting('foss4g2014_submission_display', array(
-        'default' 		=> 0,
-	    ));
-    $wp_customize->add_control('foss4g2014_submission_display', array(
-        'settings' 		=> 'foss4g2014_submission_display',
-        'label'    		=> 'Hide Submission Info',
-        'section'  		=> 'foss4g2014_header',
-        'type'     		=> 'checkbox',
-        'priority'		=> 46,
-    ));
-  // academic track submission deadlines
-  $wp_customize->add_setting( 'foss4g2014_at_submission_title', array(
-    'default'     => '',
-  ) );
-  $wp_customize->add_control( 'foss4g2014_at_submission_title', array(
-    'label'     => 'AT Submission Text',
-    'section'     => 'foss4g2014_header',
-    'priority'    => 40,
-  ) );
-  $wp_customize->add_setting( 'foss4g2014_at_submission_date', array(
-    'default'     => '',
-  ) );
-  $wp_customize->add_control( 'foss4g2014_at_submission_date', array(
-    'label'     => 'AT Submission Deadline',
-    'section'     => 'foss4g2014_header',
-    'priority'    => 45,
-  ) );
-  $wp_customize->add_setting('foss4g2014_at_submission_display', array(
-        'default'     => 0,
-      ));
-    $wp_customize->add_control('foss4g2014_at_submission_display', array(
-        'settings'    => 'foss4g2014_at_submission_display',
-        'label'       => 'Hide AT Submission Info',
-        'section'     => 'foss4g2014_header',
-        'type'        => 'checkbox',
-        'priority'    => 46,
     ));
 
 
@@ -187,15 +104,33 @@ function foss4g2014_theme_customizer( $wp_customize ) {
         'priority' 		=> 120,
     ) );
 
-// BUTTON ONE
+// SECTION ONE
+	// section title
+	$wp_customize->add_setting( 'foss4g2014_section1_title', array(
+		'default' 		=> '',
+	) );
+	$wp_customize->add_control( 'foss4g2014_section1_title', array(
+		'label' 		=> 'Title',
+		'section' 		=> 'foss4g2014_section1',
+		'priority' 		=> 10,
+	) );
+	// section description
+	$wp_customize->add_setting( 'foss4g2014_section1_desc', array(
+		'default' 		=> '',
+	) );
+	$wp_customize->add_control( 'foss4g2014_section1_desc', array(
+		'label' 		=> 'Description',
+		'section' 		=> 'foss4g2014_section1',
+		'priority' 		=> 20,
+	) );
 	// button hyperlink text
 	$wp_customize->add_setting( 'foss4g2014_button_one_text', array(
 		'default' 		=> 'Button Text',
 	) );
 	$wp_customize->add_control( 'foss4g2014_button_one_text', array(
 		'label' 		=> 'Text',
-		'section' 		=> 'foss4g2014_button_one',
-		'priority' 		=> 2,
+		'section' 		=> 'foss4g2014_section1',
+		'priority' 		=> 30,
 	) );
 	// button hyperlink
 	$wp_customize->add_setting( 'foss4g2014_button_one_link', array(
@@ -203,8 +138,8 @@ function foss4g2014_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'foss4g2014_button_one_link', array(
 		'label' 		=> 'Link',
-		'section' 		=> 'foss4g2014_button_one',
-		'priority' 		=> 3,
+		'section' 		=> 'foss4g2014_section1',
+		'priority' 		=> 40,
 	) );
 	// button color
 	$wp_customize->add_setting( 'foss4g2014_button_one_color', array(
@@ -212,8 +147,9 @@ function foss4g2014_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'button_one_color', array(
 		'label'        => __( 'Button Color', 'foss4g2014' ),
-		'section'    => 'foss4g2014_button_one',
+		'section'    => 'foss4g2014_section1',
 		'settings'   => 'foss4g2014_button_one_color',
+		'priority'	 => 45,
 	) ) );
 	// button display button
 	$wp_customize->add_setting('foss4g2014_button_one_display', array(
@@ -222,27 +158,45 @@ function foss4g2014_theme_customizer( $wp_customize ) {
     $wp_customize->add_control('foss4g2014_button_one_display', array(
         'settings' 		=> 'foss4g2014_button_one_display',
         'label'    		=> 'Hide Button',
-        'section'  		=> 'foss4g2014_button_one',
+        'section'  		=> 'foss4g2014_section1',
         'type'     		=> 'checkbox',
-        'priority'		=> 4,
+        'priority'		=> 50,
     ));
 
 	// button section
-	$wp_customize->add_section( 'foss4g2014_button_one', array(
-        'title' 		=> 'Button One',
-        'description' 	=> 'Landing Page Buttons',
+	$wp_customize->add_section( 'foss4g2014_section1', array(
+        'title' 		=> 'Section One',
+        'description' 	=> 'Landing Page Description - Column 1',
         'priority' 		=> 130,
     ) );
 
-// BUTTON TWO
+// SECTION TWO
+	// section title
+	$wp_customize->add_setting( 'foss4g2014_section2_title', array(
+		'default' 		=> '',
+	) );
+	$wp_customize->add_control( 'foss4g2014_section2_title', array(
+		'label' 		=> 'Title',
+		'section' 		=> 'foss4g2014_section2',
+		'priority' 		=> 10,
+	) );
+	// section description
+	$wp_customize->add_setting( 'foss4g2014_section2_desc', array(
+		'default' 		=> '',
+	) );
+	$wp_customize->add_control( 'foss4g2014_section2_desc', array(
+		'label' 		=> 'Description',
+		'section' 		=> 'foss4g2014_section2',
+		'priority' 		=> 20,
+	) );
 	// button hyperlink text
 	$wp_customize->add_setting( 'foss4g2014_button_two_text', array(
 		'default' 		=> 'Button Text',
 	) );
 	$wp_customize->add_control( 'foss4g2014_button_two_text', array(
 		'label' 		=> 'Text',
-		'section' 		=> 'foss4g2014_button_two',
-		'priority' 		=> 2,
+		'section' 		=> 'foss4g2014_section2',
+		'priority' 		=> 30,
 	) );
 	// button hyperlink
 	$wp_customize->add_setting( 'foss4g2014_button_two_link', array(
@@ -250,17 +204,18 @@ function foss4g2014_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'foss4g2014_button_two_link', array(
 		'label' 		=> 'Link',
-		'section' 		=> 'foss4g2014_button_two',
-		'priority' 		=> 3,
+		'section' 		=> 'foss4g2014_section2',
+		'priority' 		=> 40,
 	) );
 	// button color
 	$wp_customize->add_setting( 'foss4g2014_button_two_color', array(
-		'default'		=> '#c0c0c0',
+		'default'		=> 'red',
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'button_two_color', array(
 		'label'        => __( 'Button Color', 'foss4g2014' ),
-		'section'    => 'foss4g2014_button_two',
+		'section'    => 'foss4g2014_section2',
 		'settings'   => 'foss4g2014_button_two_color',
+		'priority'	 => 45,
 	) ) );
 	// button display button
 	$wp_customize->add_setting('foss4g2014_button_two_display', array(
@@ -269,17 +224,84 @@ function foss4g2014_theme_customizer( $wp_customize ) {
     $wp_customize->add_control('foss4g2014_button_two_display', array(
         'settings' 		=> 'foss4g2014_button_two_display',
         'label'    		=> 'Hide Button',
-        'section'  		=> 'foss4g2014_button_two',
+        'section'  		=> 'foss4g2014_section2',
         'type'     		=> 'checkbox',
-        'priority'		=> 4,
+        'priority'		=> 50,
     ));
 
 	// button section
-	$wp_customize->add_section( 'foss4g2014_button_two', array(
-        'title' 		=> 'Button Two',
-        'description' 	=> 'Landing Page Buttons',
+	$wp_customize->add_section( 'foss4g2014_section2', array(
+        'title' 		=> 'Section Two',
+        'description' 	=> 'Landing Page Description - Column 2',
         'priority' 		=> 140,
     ) );
+
+// SECTION THREE
+	// section title
+	$wp_customize->add_setting( 'foss4g2014_section3_title', array(
+		'default' 		=> '',
+	) );
+	$wp_customize->add_control( 'foss4g2014_section3_title', array(
+		'label' 		=> 'Title',
+		'section' 		=> 'foss4g2014_section3',
+		'priority' 		=> 10,
+	) );
+	// section description
+	$wp_customize->add_setting( 'foss4g2014_section3_desc', array(
+		'default' 		=> '',
+	) );
+	$wp_customize->add_control( 'foss4g2014_section3_desc', array(
+		'label' 		=> 'Description',
+		'section' 		=> 'foss4g2014_section3',
+		'priority' 		=> 20,
+	) );
+	// button hyperlink text
+	$wp_customize->add_setting( 'foss4g2014_button_three_text', array(
+		'default' 		=> 'Button Text',
+	) );
+	$wp_customize->add_control( 'foss4g2014_button_three_text', array(
+		'label' 		=> 'Text',
+		'section' 		=> 'foss4g2014_section3',
+		'priority' 		=> 30,
+	) );
+	// button hyperlink
+	$wp_customize->add_setting( 'foss4g2014_button_three_link', array(
+		'default' 		=> 'http:// ...',
+	) );
+	$wp_customize->add_control( 'foss4g2014_button_three_link', array(
+		'label' 		=> 'Link',
+		'section' 		=> 'foss4g2014_section3',
+		'priority' 		=> 40,
+	) );
+	// button color
+	$wp_customize->add_setting( 'foss4g2014_button_three_color', array(
+		'default'		=> 'black',
+	) );
+	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'button_three_color', array(
+		'label'        => __( 'Button Color', 'foss4g2014' ),
+		'section'    => 'foss4g2014_section3',
+		'settings'   => 'foss4g2014_button_three_color',
+		'priority'	 => 45,
+	) ) );
+	// button display button
+	$wp_customize->add_setting('foss4g2014_button_three_display', array(
+        'default' 		=> 0,
+	    ));
+    $wp_customize->add_control('foss4g2014_button_three_display', array(
+        'settings' 		=> 'foss4g2014_button_three_display',
+        'label'    		=> 'Hide Button',
+        'section'  		=> 'foss4g2014_section3',
+        'type'     		=> 'checkbox',
+        'priority'		=> 50,
+    ));
+
+	// button section
+	$wp_customize->add_section( 'foss4g2014_section3', array(
+        'title' 		=> 'Section Three',
+        'description' 	=> 'Landing Page Description - Column 3',
+        'priority' 		=> 150,
+    ) );
+
 
 
 }
@@ -290,6 +312,7 @@ function foss4g2014_customize_css() {
 	<style type="text/css">
 		#button-one { background-color:<?php echo get_theme_mod('foss4g2014_button_one_color'); ?>; }
 		#button-two { background-color:<?php echo get_theme_mod('foss4g2014_button_two_color'); ?>; }
+		#button-three { background-color:<?php echo get_theme_mod('foss4g2014_button_three_color'); ?>; }
 	</style>
 
 <?php
