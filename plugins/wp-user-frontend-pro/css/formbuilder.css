@@ -1,0 +1,22 @@
+.wpuf-hide{display:none;}
+#wpuf-metabox-editor{background:#fff;}#wpuf-metabox-editor .handlediv{display:none;}
+#wpuf-metabox-editor .hndle{display:none;}
+#wpuf-metabox-editor .wpuf-updated{background-color:#ffffe0;border:1px solid #e6db55;border-radius:5px;padding:0 10px;margin:5px 0 15px;font-weight:bold;}
+#wpuf-metabox-fields h2{margin:0;}
+#wpuf-metabox-fields .wpuf-form-buttons{margin-bottom:10px;}
+#wpuf-metabox-fields button{margin-bottom:5px;}
+#wpuf-metabox-fields .wpuf-loading{width:16px;height:16px;background:url('../images/wpspin_light.gif') no-repeat;}#wpuf-metabox-fields .wpuf-loading.hide{display:none;}
+.wpuf-form-editor{font-size:12px;margin:0;}.wpuf-form-editor li{background:#F9F9F9;margin-bottom:10px;border:1px solid #dfdfdf;border-radius:3px;}.wpuf-form-editor li.ui-state-highlight{border:1px dashed #DDD;min-height:50px;background:#eee;}
+.wpuf-form-editor li.password .required-field,.wpuf-form-editor li.user_email .required-field{display:none;}
+.wpuf-form-editor li .wpuf-legend{background:#f1f1f1;background-image:-webkit-gradient(linear, left bottom, left top, from(#ececec), to(#f9f9f9));background-image:-webkit-linear-gradient(bottom, #ececec, #f9f9f9);background-image:-moz-linear-gradient(bottom, #ececec, #f9f9f9);background-image:-o-linear-gradient(bottom, #ececec, #f9f9f9);background-image:linear-gradient(to top, #ececec, #f9f9f9);color:#464646;border-bottom:1px solid #ccc;padding-bottom:5px;padding:7px 10px;}.wpuf-form-editor li .wpuf-legend:after{clear:both;content:"";display:table;}
+.wpuf-form-editor li .wpuf-legend:hover{cursor:move;}
+.wpuf-form-editor li .wpuf-legend .wpuf-label{float:left;width:70%;}
+.wpuf-form-editor li .wpuf-legend .wpuf-actions{float:right;}.wpuf-form-editor li .wpuf-legend .wpuf-actions a{font-size:11px;padding:2px 5px;}
+.wpuf-form-editor li .wpuf-legend .wpuf-actions a.wpuf-remove{background:transparent url(../images/delete.png) no-repeat 70% 50%;color:#f00;width:16px;text-indent:-9999px;display:inline-block;}
+.wpuf-form-editor li .wpuf-legend .wpuf-actions a.wpuf-toggle{background:transparent url(../images/arrows.png) no-repeat 0 2px;width:10px;text-indent:-9999px;display:inline-block;}
+.wpuf-form-editor li .wpuf-form-holder{padding:10px;}
+.wpuf-form-editor li .wpuf-form-rows{padding-bottom:3px;}.wpuf-form-editor li .wpuf-form-rows:after{clear:both;content:"";display:table;}
+.wpuf-form-editor li .wpuf-form-rows label{float:left;width:30%;font-size:12px;}
+.wpuf-form-editor li .wpuf-form-rows textarea{width:60%;}
+.wpuf-form-editor li .wpuf-form-rows .wpuf-form-sub-fields{width:65%;float:left;}.wpuf-form-editor li .wpuf-form-rows .wpuf-form-sub-fields label{float:none;display:inline-block;width:auto;}
+.ui-state-highlight{height:1.5em;line-height:1.2em;}
