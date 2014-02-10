@@ -26,7 +26,8 @@ Template Name: User Profile
             <?php endwhile; // end of the loop. ?>
         </div>
         <div class="col-md-6 user-submissions">
-            <?php echo do_shortcode("[wpuf_dashboard]"); ?>
+            <?php echo do_shortcode('[wpuf_dashboard post_type="session"]'); ?>
+            <?php echo do_shortcode('[wpuf_dashboard post_type="workshop"]'); ?>
         </div>
         <div class="col-md-4">
         </div>
