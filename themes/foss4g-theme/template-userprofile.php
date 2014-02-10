@@ -22,7 +22,7 @@ Template Name: User Profile
     <div class="row">
         <div class="col-md-6 content">
             <?php the_content(); ?>
-            <?php echo do_shortcode("[wpuf_editprofile]"); ?>
+            <?php echo do_shortcode('[wpuf_profile type="profile" id="272"]'); ?>
             <?php endwhile; // end of the loop. ?>
         </div>
         <div class="col-md-6 user-submissions">
