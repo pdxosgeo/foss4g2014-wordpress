@@ -132,8 +132,7 @@
   <url>
     <loc>https://2014.foss4g.org/profile/</loc>
     <lastmod>2014-02-01T15:14:58+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>always</priority>
+    <changefreq>always</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
