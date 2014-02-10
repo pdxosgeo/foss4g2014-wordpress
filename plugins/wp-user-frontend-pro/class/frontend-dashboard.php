@@ -80,9 +80,11 @@ class WPUF_Frontend_Dashboard {
         $post_type_obj = get_post_type_object( $post_type );
         ?>
 
+        <!--
         <h2 class="page-head">
             <span class="colour"><?php printf( __( "%s's Dashboard", 'wpuf' ), $userdata->user_login ); ?></span>
         </h2>
+        -->
 
         <?php if ( wpuf_get_option( 'show_post_count', 'wpuf_dashboard', 'on' ) == 'on' ) { ?>
             <div class="post_count"><?php printf( __( 'You have created <span>%d</span> %s', 'wpuf' ), $dashboard_query->found_posts, $post_type_obj->label ); ?></div>
