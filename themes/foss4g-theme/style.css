@@ -6110,11 +6110,12 @@ td.visible-print {
 .navbar .collapse .navbar-nav a,
 .navbar-default .collapse .navbar-nav a {
   text-transform: uppercase;
-  font-size: .9em;
+  font-size: 1.2em;
   font-weight: 400;
   padding: 17px 7px 13px;
   margin: 0 5px;
   color: #5e3a22;
+  font-family: 'Marvel', sans-serif;
   border-bottom: 4px solid #ffffff;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -6277,9 +6278,10 @@ section {
 #conference-info {
   margin: 90px 0 0;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #f2ebdf;
   display: block;
   margin: auto;
+  border-bottom: 1px solid #ddbaa2;
 }
 #conference-info #conference-times {
   display: block;
@@ -6289,7 +6291,7 @@ section {
 }
 #conference-info #conference-times p {
   font-weight: 700;
-  color: #555555;
+  color: #5e3a22;
   font-size: 1.5em;
   margin-bottom: 10px;
 }
@@ -6331,7 +6333,6 @@ section {
   background-size: cover;
 }
 #sponsors {
-  padding: 20px 0 40px;
   background-color: #f2ebdf;
   text-align: center;
 }
@@ -6340,22 +6341,37 @@ section {
   font-size: 1.1em;
   margin-bottom: 20px;
 }
-#sponsors #sponsor-slider {
-  margin: 20px 0 0;
+#sponsors #featured-sponsors {
+  padding: 20px 0 20px;
+  text-align: right:;
 }
-#sponsors .carousel carousel-inner {
+#sponsors #featured-sponsors h2 {
+  font-family: 'Marvel', sans-serif;
+  font-size: 2em;
+  margin: 0 0 8px;
+}
+#sponsors #featured-sponsors p {
+  margin: 0;
+  padding: 0;
+}
+#sponsors #sponsor-slider {
+  padding-left: 0;
+  padding: 20px 0 20px;
+  min-height: 65px;
+  border-left: 1px solid #ddbaa2;
+}
+#sponsors .carousel .carousel-inner {
   width: 100%;
 }
-#sponsors .carousel carousel-inner .sponsor-list {
+#sponsors .carousel .carousel-inner .item .sponsor-list {
   text-align: center;
 }
-#sponsors .carousel .carousel-indicators {
-  bottom: -40px;
+#sponsors .carousel .carousel-inner .item .sponsor-list a {
+  margin-right: 10px;
 }
-#sponsors .carousel .carousel-indicators li {
-  background-color: #70dbdb;
-  border-color: #70dbdb;
-  border-radius: none;
+#sponsors .carousel .carousel-inner .item .sponsor-list a img {
+  height: 60px;
+  width: auto;
 }
 #featured-speakers {
   padding: 20px 0;

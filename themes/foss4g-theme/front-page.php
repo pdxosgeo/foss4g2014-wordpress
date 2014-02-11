@@ -16,7 +16,7 @@
 </section>
 
 <section id="conference-info">
-  <div id="conference-times" class="row">
+  <div id="conference-times" class="row container">
     <div class="col-sm-4">
       <p <?php echo ( get_theme_mod( 'foss4g2014_section1_display' ) ) ? "style='display:none;'" : "" ?>><?php echo get_theme_mod( 'foss4g2014_section1_title' ); ?> <br> 
       <span class="date"><?php echo get_theme_mod( 'foss4g2014_section1_desc' ); ?></span></p>
@@ -43,54 +43,43 @@
 
       <section id="sponsors" class="">
         <div class="container">
-          <div id="featured-sponsors" style="display:none">
-            <p>Presented By:</p>
-            <img src="http://placehold.it/130x50">              
-            <img src="http://placehold.it/130x50">
+          <div class="col-md-3" id="featured-sponsors">
+            <h2>Sponsors</h2>
+            <p><a href="/sponsors">Learn more</a> about how to help out.</p>
           </div>
           
-          <div id="sponsor-slider" class="hidden-xs carousel slide" data-ride="carousel">
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" style="min-height: 65px">
-              <div class="item active">
-                <div class="sponsor-list text-center">
-                  <a href="http://www.sensorsandsystems.com">
-                    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/systems_and_sensors_logo.png">
-                  </a>
-                  <a href="http://www.directionsmag.com">
-                    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/directionsmagazine_logo.png">
-                  </a>
-                  <a href="http://www.geoinformatics.com">
-                    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/geoinformatics_logo.png">
-                  </a>
-                  <!--
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
-                  <img src="http://placehold.it/130x60">
-                  -->
+          <div class="col-md-9" style="padding-left:0;">
+            <div id="sponsor-slider" class="hidden-xs carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="sponsor-list text-center">
+                    <a href="http://www.sensorsandsystems.com">
+                      <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/systems_and_sensors_logo.png">
+                    </a>
+                    <a href="http://www.directionsmag.com">
+                      <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/directionsmagazine_logo.png">
+                    </a>
+                    <a href="http://www.geoinformatics.com">
+                      <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/geoinformatics_logo.png">
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div class="item">
-                <div class="sponsor-list text-center">
-                  <a href="http://www.geoconnexion.com">
-                    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/geoconnexion_logo.png">
-                  </a>
-                  <a href="http://www.slashgeo.org">
-                    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/slashgeo_logo.png">
-                  </a>
-		  <a href="http://gisuser.com">
-                    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/GISusrNews.png">
-                  </a>
+                <div class="item">
+                  <div class="sponsor-list text-center">
+                    <a href="http://www.geoconnexion.com">
+                      <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/geoconnexion_logo.png">
+                    </a>
+                    <a href="http://www.slashgeo.org">
+                      <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/slashgeo_logo.png">
+                    </a>
+  		  <a href="http://gisuser.com">
+                      <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/GISusrNews.png">
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#sponsor-slider" data-slide-to="0" class="active"></li>
-              <li data-target="#sponsor-slider" data-slide-to="1"></li>
-            </ol>
           </div>
               
             
