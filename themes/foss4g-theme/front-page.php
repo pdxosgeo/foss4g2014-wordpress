@@ -85,11 +85,25 @@
                   </a>
                 </div>
               </div>
+	       <div class="item">
+                <div class="sponsor-list text-center">
+                  <a href="http://www.lbxjournal.com/">
+                    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/LBxJournal_web_trimmed.png">
+                  </a>
+                  <a href="http://www.veryspatial.com/">
+                    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/VSlogobanner1_.png">
+                  </a>
+		  <a href="http://www.3dvisworld.com/">
+                    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/3dvisworld2800_square_trans_small2-300x75.png">
+                  </a>
+                </div>
+              </div>
             </div>
             <!-- Indicators -->
             <ol class="carousel-indicators">
               <li data-target="#sponsor-slider" data-slide-to="0" class="active"></li>
               <li data-target="#sponsor-slider" data-slide-to="1"></li>
+	      <li data-target="#sponsor-slider" data-slide-to="2"></li>
             </ol>
           </div>
               
