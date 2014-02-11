@@ -36,7 +36,7 @@
 			        'walker'            => new wp_bootstrap_navwalker())
 			    );
 			?>
-          <!-- <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right">
 	        	<?php
               if ( is_user_logged_in() ) {
               $user = wp_get_current_user();
@@ -50,7 +50,7 @@
               echo $not_logged_in;
 
               }
-            ?> -->
+            ?>
 	      	</ul>
         </div><!-- /.navbar-collapse -->
       </nav>
