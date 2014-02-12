@@ -6081,6 +6081,13 @@ td.visible-print {
   font-weight: 600;
   font-size: 1.1em;
 }
+.three-sixty {
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+}
 /* base colors */
 /* Nav Colors */
 /* Spec Colors */
@@ -6961,7 +6968,6 @@ Single Post & Page
 footer {
   background-color: #99e5e5;
   padding: 20px 0 20px;
-  border-bottom: 5px solid #33cbcb;
 }
 footer p {
   margin-bottom: .1em;
@@ -6972,4 +6978,25 @@ footer p a {
 }
 footer p a:hover {
   text-decoration: underline;
+}
+footer #footer-icons {
+  margin-top: 6px;
+  text-align: right;
+}
+footer #footer-icons a img {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  width: 35px;
+  height: auto;
+  margin-right: 7px;
+}
+footer #footer-icons a img:hover {
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
 }

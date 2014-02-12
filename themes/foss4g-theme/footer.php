@@ -12,8 +12,12 @@
 <footer class="footer">
     <div class="container">
         <div class="col-md-6">
-            <p>FOSS4G 2014 is a production of the <a href="http://www.osgeo.org/">OSGeo</a> organization. </p>
-            <p>Site built by <a href="http://cugos.org">CUGOS</a> using <a href="#">Wordpress</a>.</p>
+          <p>FOSS4G 2014 is a production of the <a href="http://www.osgeo.org/">OSGeo</a> organization. </p>
+          <p>Site built by <a href="http://cugos.org">CUGOS</a> using <a href="#">Wordpress</a>.</p>
+        </div>
+        <div class="col-md-6" id="footer-icons">
+          <a href="https://github.com/pdxosgeo" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/social-github.png"></a>
+          <a href="https://twitter.com/foss4g" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/social-twitter.png"></a>
         </div>   
     </div>
 </footer>

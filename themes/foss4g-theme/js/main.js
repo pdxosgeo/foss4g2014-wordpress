@@ -2,7 +2,6 @@ function init() {
 
 	// set image on homepage of portland
 	var homeImages = [
-			'portland-home-1.jpg',
 			'portland-home-2.jpg',
 			'portland-home-3.jpg',
 			'portland-home-4.jpg',
