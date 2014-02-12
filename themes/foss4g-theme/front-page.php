@@ -45,7 +45,7 @@
         <div class="container">
           <div class="col-md-3" id="featured-sponsors">
             <h2>Sponsors</h2>
-            <p><a href="/sponsors">Learn more</a> about how to help out.</p>
+            <p><a href="/sponsorships">Learn more</a> about how to help out.</p>
           </div>
           
           <div class="col-md-9" style="padding-left:0;">
