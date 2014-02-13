@@ -164,7 +164,7 @@ class WP_User_Frontend {
         $path = plugins_url( '', __FILE__ );
         $scheme = is_ssl() ? 'https' : 'http';
         
-        wp_enqueue_script( 'google-maps', $scheme . '://maps.google.com/maps/api/js?sensor=true' );
+        //wp_enqueue_script( 'google-maps', $scheme . '://maps.google.com/maps/api/js?sensor=true' );
         wp_enqueue_style( 'wpuf-css', $path . '/css/frontend-forms.css' );
         wp_enqueue_script( 'wpuf-form', $path . '/js/frontend-form.js', array('jquery') );
         
