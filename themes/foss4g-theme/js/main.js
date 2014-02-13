@@ -15,7 +15,6 @@ function init() {
 		],
 		image = Math.floor(Math.random() * homeImages.length);
 	$('#portland-home-image').css('background-image', 'url(wp-content/themes/foss4g-theme/img/portland-home/' + homeImages[image] + ')');
-	console.log(image);
 
 	// contact form functionality
 	$('#contact-form-button').click(function(){
@@ -25,6 +24,18 @@ function init() {
 		$(this).children('.nav-arrow').toggleClass('hide');
 	});
 
+	// jquery marquee
+	var sponsors = $('.marquee > a').length;
+	var speed = sponsors * 1400;
+	console.log(sponsors);
+	$('.marquee').marquee({
+		speed: 12000,
+		gap: 0,
+		delayBeforeStart: 15,
+		direction: 'right',
+		duplicated: true,
+		pauseOnHover: true
+	});
 
 
 }

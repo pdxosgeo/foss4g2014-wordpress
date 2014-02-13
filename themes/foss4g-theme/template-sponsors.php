@@ -38,9 +38,13 @@ Template Name: Sponsors
                 if( $my_query->have_posts() ) {
                   echo $tax_term->name; ?>
                   <ul>
-                  <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                    <li><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
-                    <?php
+                  <?php while ($my_query->have_posts()) : $my_query->the_post(); 
+                    $url = get_post_meta( $post->ID, "_URL", true );
+                    if ($url) { ?>
+                        <li><a href="<?php echo $url; ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
+                    <?php } else { ?>
+                        <li><?php the_title(); ?></li>
+                    <?php }
                   endwhile; ?>
                   </ul> 
                 <?php }

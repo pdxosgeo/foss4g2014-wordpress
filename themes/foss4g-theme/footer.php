@@ -27,6 +27,7 @@
 
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.marquee.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

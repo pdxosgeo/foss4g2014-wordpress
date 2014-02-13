@@ -6366,19 +6366,13 @@ section {
   padding: 20px 0 20px;
   min-height: 65px;
   border-left: 1px solid #ddbaa2;
+  overflow: hidden;
 }
-#sponsors .carousel .carousel-inner {
-  width: 100%;
-}
-#sponsors .carousel .carousel-inner .item .sponsor-list {
-  text-align: center;
-}
-#sponsors .carousel .carousel-inner .item .sponsor-list a {
-  margin-right: 10px;
-}
-#sponsors .carousel .carousel-inner .item .sponsor-list a img {
-  height: 60px;
+#sponsors #sponsor-slider .marquee a img {
+  max-height: 60px;
   width: auto;
+  max-width: 150px;
+  margin-right: 35px;
 }
 #featured-speakers {
   padding: 20px 0;

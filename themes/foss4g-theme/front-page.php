@@ -49,36 +49,31 @@
           </div>
           
           <div class="col-md-9" style="padding-left:0;">
-            <div id="sponsor-slider" class="hidden-xs carousel slide" data-ride="carousel">
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner">
-                <div class="item active">
-                  <div class="sponsor-list text-center">
-                    <a href="http://www.sensorsandsystems.com">
-                      <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/systems_and_sensors_logo.png">
-                    </a>
-                    <a href="http://www.directionsmag.com">
-                      <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/directionsmagazine_logo.png">
-                    </a>
-                    <a href="http://www.geoinformatics.com">
-                      <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/geoinformatics_logo.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="sponsor-list text-center">
-                    <a href="http://www.geoconnexion.com">
-                      <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/geoconnexion_logo.png">
-                    </a>
-                    <a href="http://www.slashgeo.org">
-                      <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/slashgeo_logo.png">
-                    </a>
-  		  <a href="http://gisuser.com">
-                      <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/01/GISusrNews.png">
-                    </a>
-                  </div>
-                </div>
+            <div id="sponsor-slider" class="hidden-xs">
+              <div class='marquee'>
+                
+                <?php
+                $args=array(
+                  'post_type' => 'sponsor',
+                  'post_status' => 'publish',
+                  'posts_per_page' => 10,
+                  'orderby' => 'rand'
+                );
+
+                $my_query = null;
+                $my_query = new WP_Query($args);
+                if( $my_query->have_posts() ) {
+                  while ($my_query->have_posts()) : $my_query->the_post(); 
+                    $url = get_post_meta( $post->ID, "_URL", true ); ?>
+                        <a href="<?php echo $url; ?>" target="_blank"><?php the_post_thumbnail(); ?></a>
+                  <?php endwhile; ?>
+                <?php }
+                wp_reset_query(); ?>
+
+                
+
               </div>
+              <div class="clearfix"></div>
             </div>
           </div>
               
