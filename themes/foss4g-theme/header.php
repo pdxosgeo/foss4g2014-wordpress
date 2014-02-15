@@ -45,7 +45,7 @@
               $logged_in .= '<li><a href="' . wp_logout_url( home_url() ) . '" title="Logout">Logout</a></li>';
               echo $logged_in; }
               else {
-              $not_logged_in = '<li><a href="' . get_bloginfo('url') .'/register">Register</a></li>';
+              $not_logged_in = '<li><a href="' . get_bloginfo('url') .'/register">Sign Up</a></li>';
               $not_logged_in .= '<li><a href="' . wp_login_url( home_url() ) . '">Login</a></li>';
               echo $not_logged_in;
 
