@@ -38,7 +38,7 @@
             </div>
 
             <!-- right sidebar -->
-            <div class="col-sm-3 visible-lg sidebar">
+            <div class="col-sm-3 sidebar">
             <?php
                 get_sidebar();
                 get_template_part( 'includes/partials/sidebar-submit', 'sidebar-submit' );
