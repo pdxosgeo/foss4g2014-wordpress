@@ -8,7 +8,7 @@
 **/
 
 /* Defining the functions directory */
-define("FUN", get_template_directory() . "/functions");
+define("FUN", get_template_directory() . "/includes/functions");
 
 /* Bring those files into this file, which is automaticall read by Wordpress */
 require_once FUN . "/wp_bootstrap_navwalker.php";
