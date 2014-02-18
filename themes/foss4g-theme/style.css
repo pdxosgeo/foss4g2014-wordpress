@@ -7022,7 +7022,8 @@ Single Post & Page
   bottom: 0;
   left: 0;
   display: none;
-  background-color: #f3f3f3;
+  background-color: #70dbdb;
+  border-top: 5px solid #f3f3f3;
   padding: 10px;
 }
 #contact #contact-container #contact-form .ninja-forms-required-items {
@@ -7042,7 +7043,7 @@ Single Post & Page
 #contact #contact-container #contact-form input,
 #contact #contact-container #contact-form textarea {
   margin: 0 0 7px 0;
-  background-color: #c8c8c8;
+  background-color: #f3f3f3;
 }
 #contact #contact-container #contact-form input[type="submit"] {
   margin-top: 10px;
@@ -7055,6 +7056,7 @@ Single Post & Page
 footer {
   background-color: #f3f3f3;
   padding: 20px 0 20px;
+  z-index: 1;
 }
 footer p {
   margin-bottom: .1em;
