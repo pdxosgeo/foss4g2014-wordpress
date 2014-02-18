@@ -8,7 +8,7 @@ function init() {
 			'portland-home-5.jpg',
 			'portland-home-6.jpg',
 			'portland-home-7.jpg',
-			'portland-home-8.jpg',
+			'portland-home-8.png',
 			'portland-home-9.jpg',
 			'portland-home-10.jpg',
 			'portland-home-11.jpg'
