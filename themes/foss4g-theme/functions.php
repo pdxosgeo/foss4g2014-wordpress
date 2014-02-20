@@ -16,3 +16,4 @@ require_once FUN . "/general.php";
 require_once FUN . "/widgets.php";
 require_once FUN . "/customizer.php";
 require_once FUN . "/posts.php";
+require_once FUN . "/excerpt.php";

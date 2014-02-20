@@ -8,10 +8,6 @@ register_nav_menus( array(
     'primary' => __( 'Primary', 'foss4g' ),
 ) );
 
-function custom_excerpt_length( $length ) {
-	return 150;
-}
-
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 add_theme_support( 'post-thumbnails' );
