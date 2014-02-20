@@ -21,7 +21,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo_nav_bw.png"></a>
+          <a class="navbar-brand" href="<?php echo home_url(); ?>"><img id="the-bird" height="45" width="auto" src="<?php bloginfo('template_url'); ?>/img/logo_bird.png"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

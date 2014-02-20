@@ -6254,6 +6254,25 @@ td.visible-print {
 .user-name {
   font-size: 1.2em !important;
 }
+#the-bird {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  /* IE 9 */
+  -webkit-transform-origin: 50% 100%;
+  /* Chrome, Safari, Opera */
+}
+#the-bird:hover {
+  transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  /* IE 9 */
+  -webkit-transform: rotate(30deg);
+  /* Safari and Chrome */
+}
 /* Landing Page Specific CSS */
 section {
   display: block;
