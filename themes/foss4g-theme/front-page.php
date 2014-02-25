@@ -81,41 +81,81 @@
         </div>
         </div>
       </section>
-      <section id="featured-speakers" style="display:none;">
+      <section id="featured-speakers">
         <div class="container">
-          <div class="row">
-            <div class="col-xs-6 speaker">
-              <div class="col-sm-4"><div class="speaker-photo-container"><img class="img-responsive" src="http://placehold.it/200x200"></div></div>
-              <div class="col-sm-8">
-                <h2>Speaker Name</h2>
-                <h3>Company</h3>
-                <p>Noldor Rivendell olog-hai nazgul dolor auctor. Variags dragon miruvor Elrond Forodwaith sapien fermentum Frodo Baggins dragon the world is indeed full of peril and in it there are many dark places. All there is much that is fair. And though in all lands, love is now mingled with grief, it still grows, perhaps.</p>
-              </div>
-            </div>
-            <div class="col-xs-6 speaker">
-              <div class="col-sm-4"><div class="speaker-photo-container"><img class="img-responsive" src="http://placehold.it/200x200"></div></div>
-              <div class="col-sm-8">
-                <h2>Speaker Name</h2>
-                <h3>Company</h3>
-                <p>You shall be the fellowship of the ring. Great! Where are we going? interdum nec Minhiriath Bree you have my sword... and my axe... and my bow Morgomir orci tortor. Afternoon tea Easterlings uruk-hai Grey Havens ac aliquam Gandalf Cirdan Noldor congue viverra ent Annatar Bree all's well that ends better et congue.</p>
-              </div>
-            </div>
-            <div class="col-xs-6 speaker">
-              <div class="col-sm-4"><div class="speaker-photo-container"><img class="img-responsive" src="http://placehold.it/200x200"></div></div>
-              <div class="col-sm-8">
-                <h2>Speaker Name</h2>
-                <h3>Company</h3>
-                <p>Eagles undefined rhoncus metus nisi where there's life there's hope, and need of vittles warg Silmaril metus a semper. Cirdan Samwise Gamgee Elrond adipiscing tempor felis Morgomir Isildur Lindon Grey Havens imperdiet ultricies sem Merry Rhudaur Isildur afternoon tea supper vitae augue mi.</p>
-              </div>
-            </div>
-            <div class="col-xs-6 speaker">
-              <div class="col-sm-4"><div class="speaker-photo-container"><img class="img-responsive" src="http://placehold.it/200x200"></div></div>
-              <div class="col-sm-8">
-                <h2>Speaker Name</h2>
-                <h3>Company</h3>
-                <p>Dinner Tolkien they come in pints? I'm getting one Middle-earth a a. Galadriel black gate supper orci enim Rivendell balrog Mount Doom nec luctus. Isildur nazgul et metus Gondor Easterlings vel rhoncus. Easterlings warg Easterlings eagles tellus aliquam nazgul Numenoreans even the smallest person can change the course of the future Tom Bombadil.</p>
-              </div>
-            </div>
+
+          <!-- keynote speaker -->
+          <div class="row" id="keynote">
+            <?php
+            $args = array(
+              'post_type' => 'speaker',
+              'post_status' => 'publish',
+              'orderby' => 'ASC',
+              'tax_query' => array(
+                array(
+                  'taxonomy' => 'group',
+                  'field' => 'slug',
+                  'terms' => 'keynote'
+                )
+              )
+            );
+            $query = new WP_Query( $args );
+              if ( $query->have_posts() ) : ?>
+                <!-- the loop -->
+                <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                  <div class="col-xs-6 speaker">
+                    <?php
+                    if (has_post_thumbnail( $post->ID ) ):
+                      $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+                      <a href="#"><div class="keynote-photo col-sm-4" style="background-image: url('<?php echo $image[0]; ?>')"></div></a>
+                    <?php endif; ?>
+                    <div class="col-sm-8">
+                      <h2><?php the_title(); ?></h2>
+                      <h3>Company</h3>
+                      <p><?php the_excerpt(); ?></p>
+                    </div>
+                  </div>
+                <?php endwhile; ?>
+                <!-- end of the loop -->
+                <?php wp_reset_postdata(); ?>
+            <?php else:  ?>
+              <p><?php _e( 'No speakers yet!' ); ?></p>
+            <?php endif; ?>
+          </div>
+
+          <hr>
+
+          <!-- other featured speakers -->
+          <div class="speakers-container">
+            <?php
+            $args = array(
+              'post_type' => 'speaker',
+              'post_status' => 'publish',
+              'orderby' => 'ASC',
+              'tax_query' => array(
+                array(
+                  'taxonomy' => 'group',
+                  'field' => 'slug',
+                  'terms' => 'keynote',
+                  'operator'  => 'NOT IN'
+                )
+              )
+            );
+            $query = new WP_Query( $args );
+              if ( $query->have_posts() ) : ?>
+                <!-- the loop -->
+                <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                  <?php
+                  if (has_post_thumbnail( $post->ID ) ):
+                    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+                    <a href="#" class="speaker" style="background-image: url('<?php echo $image[0]; ?>')"></a>
+                  <?php endif; ?>
+                <?php endwhile; ?>
+                <!-- end of the loop -->
+                <?php wp_reset_postdata(); ?>
+            <?php else:  ?>
+              <p><?php _e( 'No speakers yet!' ); ?></p>
+            <?php endif; ?>
           </div>
         </div>
       </section>

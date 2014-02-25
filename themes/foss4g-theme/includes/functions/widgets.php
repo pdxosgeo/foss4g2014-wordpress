@@ -11,4 +11,3 @@ function foss4g2014_widgets_init() {
 		'after_title' => '</h3>',
 		) );
 }
-

@@ -6369,7 +6369,7 @@ section {
   background-size: cover;
 }
 #sponsors {
-  background: url(img/bg1.png) repeat;
+  background: url(img/landing-speakers-bg-repeater.png) top left repeat;
   text-align: center;
 }
 #sponsors p {
@@ -6407,30 +6407,62 @@ section {
   padding: 20px 0;
   background: url(img/landing-speakers-bg-repeater.png) top left repeat;
 }
-#featured-speakers .speaker {
-  margin-bottom: 10px;
-  padding: 10px;
-}
-#featured-speakers .speaker .speaker-photo-container {
+#featured-speakers .speakers-container a {
+  position: relative;
   overflow: hidden;
-  border-radius: 100px;
-  border: 5px solid #fff;
+  top: 0;
+  float: left;
+  height: auto;
+  text-decoration: none;
+  border-radius: 5px;
 }
-#featured-speakers .speaker h2 {
-  margin: 2px 0 0;
-  text-transform: uppercase;
-  font-size: 1.5em;
-  color: #db6f6f;
+/* Two Column */
+@media screen and (min-width: 500px) {
+  .speakers-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+  }
+  .speakers-container a {
+    width: 47%;
+    margin: 0 3% 20px 0;
+    padding-bottom: 47%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+  }
 }
-#featured-speakers .speaker h3 {
-  margin: 0;
-  font-size: 1em;
-  font-weight: 400;
-  text-transform: none;
+/* Three Column */
+@media screen and (min-width: 800px) {
+  .speakers-container a {
+    width: 31%;
+    margin: 0 2% 20px 0;
+    padding-bottom: 31%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+  }
 }
-#featured-speakers .speaker p {
-  font-weight: 300;
-  font-size: .9em;
+/* Four Column */
+@media screen and (min-width: 1200px) {
+  .speakers-container a {
+    width: 23%;
+    margin: 20px 2% 0 0;
+    padding-bottom: 23%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+  }
 }
 #recent {
   background: url(img/bg1.png) repeat;
