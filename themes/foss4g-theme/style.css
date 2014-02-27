@@ -6408,6 +6408,9 @@ section {
   background: #70dbdb;
   text-align: center;
   border-bottom: 10px solid rgba(255, 255, 255, 0.7);
+  -webkit-backface-visibility: hidden;
+  /* prevent image shift with css3 transformations */
+  backface-visibility: hidden;
 }
 #featured-speakers .speakers-container a {
   position: relative;
