@@ -6267,10 +6267,10 @@ td.visible-print {
   /* Chrome, Safari, Opera */
 }
 #the-bird:hover {
-  transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
+  transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
   /* IE 9 */
-  -webkit-transform: rotate(30deg);
+  -webkit-transform: rotate(20deg);
   /* Safari and Chrome */
 }
 /* Landing Page Specific CSS */
@@ -6380,6 +6380,7 @@ section {
 #sponsors #featured-sponsors {
   padding: 20px 0 20px;
   text-align: right:;
+  border-right: 1px solid #ddbaa2;
 }
 #sponsors #featured-sponsors h2 {
   font-family: 'Marvel', sans-serif;
@@ -6394,7 +6395,6 @@ section {
   padding-left: 0;
   padding: 20px 0 20px;
   min-height: 65px;
-  border-left: 1px solid #ddbaa2;
   overflow: hidden;
 }
 #sponsors #sponsor-slider .marquee a img {
@@ -6404,17 +6404,71 @@ section {
   margin-right: 35px;
 }
 #featured-speakers {
-  padding: 20px 0;
-  background: url(img/landing-speakers-bg-repeater.png) top left repeat;
+  padding: 20px 0 40px;
+  background: #70dbdb;
+  text-align: center;
+  border-bottom: 10px solid rgba(255, 255, 255, 0.7);
 }
 #featured-speakers .speakers-container a {
   position: relative;
-  overflow: hidden;
   top: 0;
   float: left;
   height: auto;
   text-decoration: none;
-  border-radius: 5px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center top;
+}
+#featured-speakers .speakers-container a .speaker-image {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center top;
+}
+#featured-speakers .speakers-container a .name {
+  position: absolute;
+  text-align: center;
+  padding: 3px 10px;
+  font-family: 'Marvel', sans-serif;
+  color: #f3f3f3;
+  text-shadow: 1px 1px #5e3a22;
+  font-size: 1.5em;
+  width: 100%;
+  bottom: 0%;
+}
+#featured-speakers .speakers-container a .speaker-content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-top: 5px solid steelblue;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+#featured-speakers .speakers-container a .speaker-content .speaker-group {
+  position: absolute;
+  top: 0;
+  background-color: ;
+}
+#featured-speakers .speakers-container a .speaker-content .speaker-info {
+  position: absolute;
+  left: 100%;
+}
+#featured-speakers .speakers-container a:hover .speaker-content .speaker-info {
+  right: 0;
 }
 /* Two Column */
 @media screen and (min-width: 500px) {
@@ -6422,7 +6476,6 @@ section {
     max-width: 1600px;
     margin: 0 auto;
     padding: 20px 0;
-    overflow: hidden;
   }
   .speakers-container a {
     width: 47%;
@@ -6433,7 +6486,6 @@ section {
     -o-background-size: cover;
     background-size: cover;
     background-position: center top;
-    overflow: hidden;
   }
 }
 /* Three Column */
@@ -6447,7 +6499,6 @@ section {
     -o-background-size: cover;
     background-size: cover;
     background-position: center top;
-    overflow: hidden;
   }
 }
 /* Four Column */
@@ -6461,8 +6512,44 @@ section {
     -o-background-size: cover;
     background-size: cover;
     background-position: center top;
-    overflow: hidden;
   }
+}
+#keynote:hover #keynote-callout {
+  opacity: 1.0;
+  left: 52%;
+}
+#keynote:hover #keynote-bird {
+  transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+}
+#keynote-bird {
+  position: absolute;
+  top: -33px;
+  left: 38%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: normal;
+  transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+}
+#keynote-callout {
+  position: absolute;
+  top: -87px;
+  left: 47%;
+  width: 100px;
+  height: auto;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  cursor: normal;
 }
 #recent {
   background: url(img/bg1.png) repeat;
