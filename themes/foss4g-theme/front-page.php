@@ -111,6 +111,7 @@
                     <a href="#" id="keynote" class="speaker">
                       <div class="speaker-image" style="background-image: url('<?php echo $image[0]; ?>')"></div>
                       <div class="name"><?php the_title(); ?></div>
+                      <div class="tree-ring"></div>
                      <!--  <div class="speaker-content">
                         <div class="speaker-group"><?php wp_get_post_terms(); ?></div>
                         <div class="speaker-name"><?php the_title(); ?></div>
@@ -151,6 +152,7 @@
                     $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
                     <a href="#" id="keynote" class="speaker">
                       <div class="speaker-image" style="background-image: url('<?php echo $image[0]; ?>')"></div>
+                      <div class="tree-ring"></div>
                       <div class="name"><?php the_title(); ?></div>
                      <!--  <div class="speaker-content">
                         <div class="speaker-group"><?php wp_get_post_terms(); ?></div>

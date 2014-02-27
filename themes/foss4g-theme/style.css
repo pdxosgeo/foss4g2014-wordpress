@@ -6435,6 +6435,16 @@ section {
   background-size: cover;
   background-position: center top;
 }
+#featured-speakers .speakers-container a .tree-ring {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(img/tree-ring.png) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 #featured-speakers .speakers-container a .name {
   position: absolute;
   text-align: center;
