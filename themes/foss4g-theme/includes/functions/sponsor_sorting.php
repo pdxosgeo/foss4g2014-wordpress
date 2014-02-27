@@ -17,7 +17,7 @@ function weighted_sponsor( $orderby )
          WHEN 'bronze' then log(4) * rand()
          WHEN 'supporter' then log(3) * rand()
          WHEN 'media' then log(2) * rand()
-         ELSE 1 END
+         ELSE rand() END
          DESC";
 }
 ?>
