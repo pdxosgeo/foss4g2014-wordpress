@@ -1,6 +1,8 @@
 <?php
 
 echo 'Sponsors';
+add_filter('posts_orderby', 'weighted_sponsor' );
+add_filter('posts_join', 'weighted_sponsor_join' );
 // 5 random sponsors
 $args=array(
   'post_type' => 'sponsor',
@@ -21,3 +23,5 @@ if( $my_query->have_posts() ) {
 </ul>
 <?php }
 wp_reset_query();
+remove_filter('posts_orderby', 'weighted_sponsor' );
+remove_filter('posts_join', 'weighted_sponsor_join' );

@@ -53,11 +53,14 @@
               <div class='marquee'>
                 
                 <?php
+                add_filter('posts_orderby', 'weighted_sponsor' );
+                add_filter('posts_join', 'weighted_sponsor_join' );
+
+                
                 $args=array(
                   'post_type' => 'sponsor',
                   'post_status' => 'publish',
                   'posts_per_page' => 10,
-                  'orderby' => 'rand'
                 );
 
                 $my_query = null;
@@ -68,10 +71,10 @@
                         <a href="<?php echo $url; ?>" target="_blank"><?php the_post_thumbnail(); ?></a>
                   <?php endwhile; ?>
                 <?php }
-                wp_reset_query(); ?>
-
-                
-
+                wp_reset_query(); 
+                remove_filter('posts_orderby', 'weighted_sponsor' );
+                remove_filter('posts_join', 'weighted_sponsor_join' );
+                ?>
               </div>
               <div class="clearfix"></div>
             </div>
@@ -161,3 +164,4 @@
       </section>
       <section id="map"></section>
 <?php get_footer(); ?>
+
