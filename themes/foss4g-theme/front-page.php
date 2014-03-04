@@ -55,6 +55,7 @@
                 <?php
                 add_filter('posts_orderby', 'weighted_sponsor' );
                 add_filter('posts_join', 'weighted_sponsor_join' );
+                add_filter('posts_where' , 'sponsors_where' );
 
                 
                 $args=array(
@@ -74,6 +75,7 @@
                 wp_reset_query(); 
                 remove_filter('posts_orderby', 'weighted_sponsor' );
                 remove_filter('posts_join', 'weighted_sponsor_join' );
+                remove_filter('posts_where' , 'sponsors_where' );
                 ?>
               </div>
               <div class="clearfix"></div>
