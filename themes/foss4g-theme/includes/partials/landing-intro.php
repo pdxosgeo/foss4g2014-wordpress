@@ -15,7 +15,7 @@
     </div>
     
   </div>
-  <div id="portland">
+  <!-- <div id="portland">
     <?php get_template_part( 'includes/partials/inline', 'sthelens.svg' ); ?>
-  </div>
+  </div> -->
 </section>

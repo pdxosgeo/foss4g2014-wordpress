@@ -6428,6 +6428,44 @@ section {
   max-width: 150px;
   margin-right: 35px;
 }
+#keynote {
+  margin: 0 0 -20px 0;
+  padding: 0;
+  background-color: #70dbdb;
+}
+#keynote .keynote-image-container {
+  text-align: center;
+}
+#keynote .keynote-image-container .keynote-image {
+  margin-top: -20px;
+  padding: 20px;
+  height: 250px;
+  width: 250px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 2px 0 10px -3px #000000;
+  border: 5px solid #f3f3f3;
+}
+#keynote .keynote-content {
+  margin-left: 30px;
+}
+#keynote .keynote-content h1 {
+  font-family: 'Marvel', sans-serif;
+}
+#keynote .keynote-content h1 span {
+  font-family: 'Open Sans', sans-serif;
+  vertical-align: middle;
+  margin: 10px 0 5px 20px;
+  padding: 5px 10px;
+  background-color: steelblue;
+  color: #fff;
+  font-size: .3em;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
 #featured-speakers {
   padding: 20px 0 40px;
   background: #70dbdb;
@@ -6437,7 +6475,7 @@ section {
   /* prevent image shift with css3 transformations */
   backface-visibility: hidden;
 }
-#featured-speakers .speakers-container a {
+#featured-speakers .speakers-container .speaker {
   position: relative;
   top: 0;
   float: left;
@@ -6448,65 +6486,40 @@ section {
   -o-background-size: cover;
   background-size: cover;
   background-position: center top;
-}
-#featured-speakers .speakers-container a .speaker-image {
-  width: 90%;
-  height: 90%;
-  border-radius: 50%;
   overflow: hidden;
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center top;
 }
-#featured-speakers .speakers-container a .tree-ring {
+#featured-speakers .speakers-container .speaker .speaker-content {
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
-  background: url(img/tree-ring.png) no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  top: 85%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-top: 5px solid steelblue;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
-#featured-speakers .speakers-container a .name {
-  position: absolute;
+#featured-speakers .speakers-container .speaker .speaker-content .name {
   text-align: center;
   padding: 3px 10px;
   font-family: 'Marvel', sans-serif;
-  color: #f3f3f3;
-  text-shadow: 1px 1px #5e3a22;
+  color: #333;
   font-size: 1.5em;
   width: 100%;
-  bottom: 0%;
 }
-#featured-speakers .speakers-container a .speaker-content {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.85);
-  border-top: 5px solid steelblue;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
+#featured-speakers .speakers-container .speaker .speaker-content .speaker-description {
+  display: block;
+  margin: 10px auto;
+  width: 95%;
+  text-align: left;
 }
-#featured-speakers .speakers-container a .speaker-content .speaker-group {
-  position: absolute;
+#featured-speakers .speakers-container .speaker:hover .speaker-content {
   top: 0;
-  background-color: ;
 }
-#featured-speakers .speakers-container a .speaker-content .speaker-info {
-  position: absolute;
-  left: 100%;
-}
-#featured-speakers .speakers-container a:hover .speaker-content .speaker-info {
-  right: 0;
+#featured-speakers .speakers-container .speaker:hover .speaker-content .name {
+  border-bottom: 1px solid #888888;
 }
 /* Two Column */
 @media screen and (min-width: 500px) {
@@ -6515,7 +6528,7 @@ section {
     margin: 0 auto;
     padding: 20px 0;
   }
-  .speakers-container a {
+  .speakers-container .speaker {
     width: 47%;
     margin: 0 3% 20px 0;
     padding-bottom: 47%;
@@ -6528,7 +6541,7 @@ section {
 }
 /* Three Column */
 @media screen and (min-width: 800px) {
-  .speakers-container a {
+  .speakers-container .speaker {
     width: 31%;
     margin: 0 2% 20px 0;
     padding-bottom: 31%;
@@ -6541,7 +6554,7 @@ section {
 }
 /* Four Column */
 @media screen and (min-width: 1200px) {
-  .speakers-container a {
+  .speakers-container .speaker {
     width: 23%;
     margin: 20px 2% 0 0;
     padding-bottom: 23%;

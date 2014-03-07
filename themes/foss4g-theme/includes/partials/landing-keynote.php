@@ -1,6 +1,6 @@
 <section id="keynote">
   <div class="container">
-    <div class="speakers-container">
+    <div class="row">
       <?php
       $args = array(
         'post_type' => 'speaker',
@@ -21,18 +21,12 @@
             <?php
             if (has_post_thumbnail( $post->ID ) ):
               $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-              <a href="#" id="keynote" class="speaker">
-                <div class="speaker-image" style="background-image: url('<?php echo $image[0]; ?>')"></div>
-                <div class="tree-ring"></div>
-                <div class="name"><?php the_title(); ?></div>
-                
-               <!--  <div class="speaker-content">
-                  <div class="speaker-group"><?php wp_get_post_terms(); ?></div>
-                  <div class="speaker-name"><?php the_title(); ?></div>
-                  <div class="speaker-info">T</div>
-                </div> -->
-                <img id="keynote-bird" src="<?php bloginfo('template_url'); ?>/img/logo_bird.png">
-                <img id="keynote-callout" src="<?php bloginfo('template_url'); ?>/img/keynote-callout.png">
+                <div class="col-sm-3 keynote-image-container">
+                  <div class="keynote-image" style="background-image: url('<?php echo $image[0]; ?>')"></div>
+                </div>
+                <div class="col-sm-6 keynote-content">
+                  <h1><?php the_title(); ?><span>Keynote</span></h1>
+                  <?php the_content(); ?>
               </a>
               
             <?php endif; ?>
