@@ -21,7 +21,7 @@ function weighted_sponsor( $orderby )
          DESC";
 }
 
-function posts_where( $where ) {
+function sponsors_where( $where ) {
   $where .= " AND slug NOT IN ('media')";
   return $where;
 }
