@@ -6280,12 +6280,9 @@ section {
 	margin:auto;
 }
 #landing-intro {
+  position: relative;
   padding: 100px 0 50px;
-  background: #99e5e5 url(img/landing-portland-header3.jpg) bottom center no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: #fdf1dd;
   text-align: left;
   border-bottom: 10px solid #70dbdb;
 }
@@ -6311,10 +6308,38 @@ section {
 #landing-intro p {
   font-size: 1.1em;
 }
+#portland {
+  margin-top: 300px;
+  width: 100%;
+  position: relative;
+  height: 500px;
+}
+#sthelens-container {
+  position: relative;
+  max-width: 1400px;
+  overflow: hidden;
+  height: 500px;
+  margin-top: -80px;
+  margin-bottom: -440px;
+}
+#st-helens {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+#st-helens .contour {
+  stroke-width: .5px;
+  stroke: #ddbaa2;
+  fill: none;
+}
+#st-helens .contour.large-step {
+  stroke-width: 1.2px;
+}
 #conference-info {
   margin: 90px 0 0;
   text-align: center;
-  background: url(img/bg1.png) repeat;
+  background: #fdf1dd;
   display: block;
   margin: auto;
   border-bottom: 1px solid #ddbaa2;
@@ -6538,7 +6563,7 @@ section {
 }
 #keynote-bird {
   position: absolute;
-  top: -33px;
+  top: -38px;
   left: 38%;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -6552,7 +6577,7 @@ section {
 }
 #keynote-callout {
   position: absolute;
-  top: -87px;
+  top: -95px;
   left: 47%;
   width: 100px;
   height: auto;
