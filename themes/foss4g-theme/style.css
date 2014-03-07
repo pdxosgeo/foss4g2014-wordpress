@@ -6591,7 +6591,7 @@ section {
 }
 #recent {
   background: url(img/bg1.png) repeat;
-  padding: 20px 0;
+  padding: 20px 0 60px;
 }
 #landing-posts {
   margin-top: -60px;

@@ -22,8 +22,7 @@
             if (has_post_thumbnail( $post->ID ) ):
               $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
               <a href="#" id="keynote" class="speaker">
-                <div class="speaker-image" style="background-image: url('http://placehold.it/400')"></div> -->
-                <!-- <div class="speaker-image" style="background-image: url('<?php echo $image[0]; ?>')"></div> -->
+                <div class="speaker-image" style="background-image: url('<?php echo $image[0]; ?>')"></div>
                 <div class="tree-ring"></div>
                 <div class="name"><?php the_title(); ?></div>
                 
