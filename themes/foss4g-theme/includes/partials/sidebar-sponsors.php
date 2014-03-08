@@ -1,6 +1,5 @@
 <?php
 
-echo 'Sponsors';
 // 5 random sponsors
 $args=array(
   'post_type' => 'sponsor',

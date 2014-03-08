@@ -30,6 +30,7 @@
       <div class="col-sm-4" id="landing-side">
         <aside>
           <?php get_sidebar(); ?>
+          <?php get_template_part( 'includes/partials/sidebar-sponsors', 'sidebar-sponsors' ); ?>
         </aside>
       </div>
     </div>

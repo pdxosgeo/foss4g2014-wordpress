@@ -6284,7 +6284,6 @@ section {
   padding: 100px 0 50px;
   background: #fdf1dd;
   text-align: left;
-  border-bottom: 10px solid #70dbdb;
 }
 #landing-intro img {
   margin-right: auto;
@@ -6429,42 +6428,30 @@ section {
   margin-right: 35px;
 }
 #keynote {
-  margin: 0 0 -20px 0;
-  padding: 0;
+  padding: 20px 0;
   background-color: #70dbdb;
 }
-#keynote .keynote-image-container {
-  text-align: center;
-}
-#keynote .keynote-image-container .keynote-image {
-  margin-top: -20px;
-  padding: 20px;
-  height: 250px;
-  width: 250px;
+#keynote img {
+  float: left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: center center;
   box-shadow: 2px 0 10px -3px #000000;
-  border: 5px solid #f3f3f3;
+  margin-right: 20px;
 }
-#keynote .keynote-content {
-  margin-left: 30px;
-}
-#keynote .keynote-content h1 {
-  font-family: 'Marvel', sans-serif;
-}
-#keynote .keynote-content h1 span {
+#keynote h5 {
   font-family: 'Open Sans', sans-serif;
   vertical-align: middle;
-  margin: 10px 0 5px 20px;
-  padding: 5px 10px;
-  background-color: steelblue;
-  color: #fff;
-  font-size: .3em;
+  margin: 0;
+  padding: 0;
+  color: steelblue;
+  font-size: .9em;
   text-transform: uppercase;
   border-radius: 2px;
+}
+#keynote h1 {
+  font-family: 'Marvel', sans-serif;
 }
 #featured-speakers {
   padding: 20px 0 40px;
@@ -6606,6 +6593,22 @@ section {
   background: url(img/bg1.png) repeat;
   padding: 20px 0 60px;
 }
+#recent .subsponsors {
+  padding: 0;
+  margin: 0 !important;
+  list-style-type: none;
+}
+#recent .subsponsors li {
+  margin-bottom: 15px;
+  max-width: 100%;
+  height: auto;
+}
+#recent .subsponsors li a {
+  opacity: .7;
+}
+#recent .subsponsors li a:hover {
+  opacity: .9;
+}
 #landing-posts {
   margin-top: -60px;
   padding-top: 10px;
@@ -6651,7 +6654,6 @@ section {
 }
 #map {
   height: 300px;
-  margin-bottom: -50px;
 }
 /* Content */
 body {

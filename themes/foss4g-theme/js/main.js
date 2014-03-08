@@ -38,7 +38,7 @@ function init() {
 	});
 
 	//map on homepage
-	var map = L.mapbox.map('map', 'examples.map-9ijuk24y')
+	var map = L.mapbox.map('map', 'svmatthews.hf8pfph5')
     .setView([45.528419, -122.663247], 9);
     L.mapbox.featureLayer({
 	    type: 'Feature',
@@ -52,10 +52,11 @@ function init() {
 	        // one can customize markers by adding simplestyle properties
 	        // http://mapbox.com/developers/simplestyle/
 	        'marker-size': 'large',
-	        'marker-color': 'steelblue'
+	        'marker-color': '#4682B4'
 	    }
 	}).addTo(map);
-
+    map.scrollWheelZoom.disable();
+    
 }
 
 
