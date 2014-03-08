@@ -26,4 +26,3 @@ function sponsors_where( $where ) {
   return $where;
 }
 ?>
-

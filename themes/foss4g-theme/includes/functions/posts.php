@@ -13,4 +13,3 @@ function custom_redirect( $url ) {
     return get_permalink( $post->ID=184 ); // needs to be id of specific page (presumably a thankyou page)
 }
 add_filter( 'wpuf_after_post_redirect', 'custom_redirect' );
-
