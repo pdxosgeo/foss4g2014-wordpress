@@ -6307,33 +6307,188 @@ section {
 #landing-intro p {
   font-size: 1.1em;
 }
+#landing-intro #logo-text {
+  width: 100%;
+  height: 90px;
+  margin-top: -20px;
+}
 #portland {
-  margin-top: 300px;
   width: 100%;
-  position: relative;
-  height: 500px;
+  background: #fdf1dd;
+  z-index: 5;
 }
-#sthelens-container {
+#portland-container {
+  display: block;
+  margin: 0 auto -13px;
+  max-width: 800px;
+  height: 300px;
   position: relative;
-  max-width: 1400px;
-  overflow: hidden;
-  height: 500px;
-  margin-top: -80px;
-  margin-bottom: -440px;
 }
-#st-helens {
+#downtown-portland {
   position: absolute;
-  width: 100%;
-  height: auto;
-  text-align: center;
+  bottom: 0;
 }
-#st-helens .contour {
-  stroke-width: .5px;
-  stroke: #ddbaa2;
-  fill: none;
+#lift-bridge {
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: lift 10s linear infinite;
+  -moz-animation: lift 10s linear infinite;
+  -o-animation: lift 10s linear infinite;
+  animation: lift 10s linear infinite;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
-#st-helens .contour.large-step {
-  stroke-width: 1.2px;
+@-webkit-keyframes lift {
+  0% {
+    -webkit-transform: translate(0, 0px);
+  }
+  20% {
+    -webkit-transform: translate(0, 0px);
+  }
+  60% {
+    -webkit-transform: translate(0, -30px);
+  }
+  75% {
+    -webkit-transform: translate(0, -30px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+  }
+}
+@-moz-keyframes lift {
+  0% {
+    -webkit-transform: translate(0, 0px);
+  }
+  20% {
+    -webkit-transform: translate(0, 0px);
+  }
+  60% {
+    -webkit-transform: translate(0, -30px);
+  }
+  75% {
+    -webkit-transform: translate(0, -30px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+  }
+}
+@-o-keyframes lift {
+  0% {
+    -webkit-transform: translate(0, 0px);
+  }
+  20% {
+    -webkit-transform: translate(0, 0px);
+  }
+  60% {
+    -webkit-transform: translate(0, -30px);
+  }
+  75% {
+    -webkit-transform: translate(0, -30px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+  }
+}
+@keyframes lift {
+  0% {
+    -webkit-transform: translate(0, 0px);
+    -moz-transform: translate(0, 0px);
+    -ms-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+  20% {
+    -webkit-transform: translate(0, 0px);
+    -moz-transform: translate(0, 0px);
+    -ms-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+  60% {
+    -webkit-transform: translate(0, -30px);
+    -moz-transform: translate(0, -30px);
+    -ms-transform: translate(0, -30px);
+    transform: translate(0, -30px);
+  }
+  75% {
+    -webkit-transform: translate(0, -30px);
+    -moz-transform: translate(0, -30px);
+    -ms-transform: translate(0, -30px);
+    transform: translate(0, -30px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+    -moz-transform: translate(0, 0px);
+    -ms-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+}
+.tree {
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-animation: tree-bounce 5s linear infinite;
+  -moz-animation: tree-bounce 5s linear infinite;
+  -o-animation: tree-bounce 5s linear infinite;
+  animation: tree-bounce 5s linear infinite;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+@-webkit-keyframes tree-bounce {
+  0% {
+    -webkit-transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+  }
+}
+@-moz-keyframes tree-bounce {
+  0% {
+    -webkit-transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+  }
+}
+@-o-keyframes tree-bounce {
+  0% {
+    -webkit-transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+  }
+}
+@keyframes tree-bounce {
+  0% {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+    -moz-transform: scale(1.5, 1.5);
+    -ms-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
 }
 #conference-info {
   margin: 90px 0 0;
@@ -6341,7 +6496,6 @@ section {
   background: #fdf1dd;
   display: block;
   margin: auto;
-  border-bottom: 1px solid #ddbaa2;
 }
 #conference-info #conference-times {
   display: block;
@@ -6653,6 +6807,7 @@ section {
   margin-bottom: 10px;
 }
 #map {
+  border-top: 1px solid #ddbaa2;
   height: 300px;
 }
 /* Content */
