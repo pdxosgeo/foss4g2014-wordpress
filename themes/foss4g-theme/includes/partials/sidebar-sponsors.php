@@ -9,7 +9,7 @@ add_filter('posts_where' , 'sponsors_where' );
 $args=array(
   'post_type' => 'sponsor',
   'post_status' => 'publish',
-  'posts_per_page' => 5,
+  'posts_per_page' => 7,
   'orderby' => 'rand'
 );
 ?>
