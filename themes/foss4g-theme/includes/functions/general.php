@@ -23,3 +23,5 @@ add_theme_support( 'post-thumbnails' );
 
 add_post_type_support('page', 'excerpt');
 
+add_filter('show_admin_bar', '__return_false');
+

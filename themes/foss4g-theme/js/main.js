@@ -14,7 +14,7 @@ jQuery(document).ready(function ($) {
 			'portland-home-11.jpg'
 		],
 		image = Math.floor(Math.random() * homeImages.length);
-	$('#portland-home-image').css('background-image', 'url(wp-content/themes/foss4g-theme/img/portland-home/' + homeImages[image] + ')');
+	$('#portland-home-image').css('background-image', 'url(/foss4g/wp-content/themes/foss4g-theme/img/portland-home/' + homeImages[image] + ')');
 
 	// contact form functionality
 	$('#contact-form-button').click(function(){

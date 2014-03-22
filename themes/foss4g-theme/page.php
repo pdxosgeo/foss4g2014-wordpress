@@ -2,6 +2,7 @@
 <?php while ( have_posts() ) : the_post(); ?>
 
 <section class="page">
+    <?php get_template_part( 'includes/partials/landing-imagebar', 'landing-imagebar' ); ?>
     <div class="container">
         <div class="row">
             <!-- left sidebar -->
@@ -30,8 +31,8 @@
 
             <!-- content -->
             <div class="col-sm-7">
-                <h1 class="title"><?php the_title(); ?></h1>
                 <div class="content">
+                    <h1 class="title"><?php the_title(); ?></h1>
                    	<?php the_content(); ?>
                 </div>
     			<?php endwhile; // end of the loop. ?>

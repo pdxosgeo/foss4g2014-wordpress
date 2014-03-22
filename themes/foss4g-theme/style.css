@@ -37,7 +37,7 @@ License URI: https://www.gnu.org/licenses/gpl.html
   /* Safari and Chrome */
 }
 .background {
-  background: url(img/bg1.png) repeat;
+  background: url(img/ricepaper.png) repeat;
 }
 .content-container {
   padding: 5px 12px 10px;
@@ -485,6 +485,7 @@ section {
   font-style: italic;
 }
 #portland-home-image {
+  position: relative;
   height: 200px;
   background: center center no-repeat;
   -webkit-background-size: cover;
@@ -690,7 +691,7 @@ section {
   cursor: normal;
 }
 #recent {
-  background: url(img/bg1.png) repeat;
+  background: url(img/ricepaper.png) repeat;
   padding: 20px 0 60px;
 }
 #recent .subsponsors {
@@ -759,7 +760,7 @@ section {
 /* Content */
 body {
   font-family: 'Open Sans', helvetica, arial, sans-serif;
-  background: url(img/bg1.png) repeat;
+  background: url(img/ricepaper.png) repeat;
 }
 p {
   font-weight: 400;
@@ -803,9 +804,6 @@ Single Post & Page
 -----------------*/
 .wpuf_customs {
   display: none;
-}
-.page {
-  padding-top: 75px;
 }
 .page .title {
   padding-bottom: 8px;
@@ -880,6 +878,14 @@ Single Post & Page
 }
 .left-sidebar .subsponsors li a:hover {
   opacity: .7;
+}
+.content {
+  margin-top: -30px;
+  border-top: 8px solid steelblue;
+}
+.content .title {
+  margin: 0;
+  padding: 4px 0;
 }
 .content h1 {
   font-family: 'Marvel', sans-serif;
@@ -980,12 +986,6 @@ Single Post & Page
 .content#news .post .post-content ol {
   margin-top: 15px;
 }
-.content {
-  margin: 15px 0;
-}
-.content p {
-  margin-top: 10px;
-}
 #ws-plugin--s2member-profile table label {
   font-size: 1.3em;
   font-weight: 100;
@@ -994,6 +994,93 @@ Single Post & Page
   margin: 0 0 15px;
 }
 /* News / Blog Roll */
+/* Template Styles */
+.conference-day {
+  color: steelblue;
+  font-size: 3em;
+  text-shadow: 2px 4px #f3f3f3;
+  margin: 0;
+  padding: 0;
+}
+.workshop {
+  padding: 20px 0;
+  border-bottom: 1px solid #d4d4d4;
+}
+.workshop:last-child {
+  border: none;
+}
+.workshop .date {
+  color: #555555;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.workshop .date .glyphicon {
+  margin-right: 8px;
+}
+.workshop .workshop-meta {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0 0;
+}
+.workshop .workshop-meta li {
+  margin: 0 0 5px 20px;
+  color: #888888;
+  font-size: 0.9em;
+  text-shadow: 1px 1px #d4d4d4;
+}
+.workshop .workshop-meta li .glyphicon {
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+.workshop .workshop-content h2 {
+  font-family: 'Open Sans', arial, sans-serif;
+  margin: 0 0 10px 0;
+  color: #2f2f2f;
+  font-size: 1.6em;
+  text-shadow: 1px 1px #888888;
+}
+.workshop .workshop-content h3 {
+  color: #555555;
+  font-size: 1.1em;
+  margin: 0 0 10px;
+}
+.workshop .workshop-content h3 .glyphicon {
+  margin-right: 10px;
+  color: #888888;
+}
+.workshop .workshop-content p {
+  margin-bottom: 10px;
+  font-size: 1.0em;
+}
+.schedule-menu-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.schedule-menu {
+  list-style-type: none;
+  margin: 0;
+}
+.schedule-menu li {
+  margin-right: 15px;
+}
+.schedule-menu li.current_page_item a {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.schedule-menu li a {
+  border: 1px solid #f3f3f3;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 4px 8px;
+  color: #f3f3f3;
+}
+.schedule-menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
 /* Sidebar */
 .widget-area .widget-container {
   margin-bottom: 25px;
