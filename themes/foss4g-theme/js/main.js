@@ -1,4 +1,4 @@
-function init() {
+jQuery(document).ready(function ($) {
 
 	// set image on homepage of portland
 	var homeImages = [
@@ -24,18 +24,18 @@ function init() {
 		$(this).children('.nav-arrow').toggleClass('hide');
 	});
 
-	// jquery marquee
-	var sponsors = $('.marquee > a').length;
-	var speed = sponsors * 1400;
-	console.log(sponsors);
-	$('.marquee').marquee({
-		speed: 12000,
-		gap: 0,
-		delayBeforeStart: 15,
-		direction: 'right',
-		duplicated: true,
-		pauseOnHover: true
-	});
+	// // jquery marquee
+	// var sponsors = $('.marquee > a').length;
+	// var speed = sponsors * 1400;
+	// console.log(sponsors);
+	// $('.marquee').marquee({
+	// 	speed: 12000,
+	// 	gap: 0,
+	// 	delayBeforeStart: 15,
+	// 	direction: 'right',
+	// 	duplicated: true,
+	// 	pauseOnHover: true
+	// });
 
 	//map on homepage
 	var map = L.mapbox.map('map', 'foss4g2014.hjbf0lfe')
@@ -57,7 +57,4 @@ function init() {
 	}).addTo(map);
     map.scrollWheelZoom.disable();
     
-}
-
-
-window.onLoad = init();
+});
