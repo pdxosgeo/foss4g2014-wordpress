@@ -26,7 +26,7 @@ Template Name: Workshops
                 <?php
           $args = array(
             'post_type'   => 'workshop',
-            'post_status' => array('future','published'),
+            'post_status' => array('future','published', 'draft'),
             'order'       => 'ASC',
             'orderby'     => 'date',
             'number_of_posts'  => 999
