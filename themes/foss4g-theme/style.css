@@ -806,7 +806,8 @@ Single Post & Page
   display: none;
 }
 .page .title {
-  padding-bottom: 8px;
+  padding-top:60px;
+  padding-bottom: 15px;
   font-family: 'Marvel', sans-serif;
   font-size: 2.7em;
   border-bottom: 1px solid #a0bfda;
