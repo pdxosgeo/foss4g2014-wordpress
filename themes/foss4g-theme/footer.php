@@ -10,8 +10,10 @@
 </div>
 
 <footer class="footer">
-    <section id="footer-image"></section>
-    <section id="footer-content">
+<!--     <div class="footer-section col-sm-4"></div>
+    <div class="footer-section col-sm-4"></div>
+    <div class="footer-section col-sm-4"></div>
+ -->    <section id="footer-content">
       <div class="container">
           <div class="col-md-6">
             <p>FOSS4G 2014 is a production of the <a href="http://www.osgeo.org/">OSGeo</a> organization. </p>

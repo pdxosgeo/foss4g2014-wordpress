@@ -24,12 +24,12 @@
                     </ul>
             <?php
                 }
-                get_template_part( 'includes/partials/sidebar-sponsors', 'sidebar-sponsors' );
+                // get_template_part( 'includes/partials/sidebar-sponsors', 'sidebar-sponsors' );
             ?>
             </div>
 
             <!-- content -->
-            <div class="col-sm-7">
+            <div class="col-sm-7 content-container">
                 <div class="content">
                     <h1 class="title"><?php the_title(); ?></h1>
                    	<?php the_content(); ?>

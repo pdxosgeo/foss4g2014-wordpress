@@ -55,4 +55,8 @@
 	      	</ul>
         </div><!-- /.navbar-collapse -->
       </nav>
-      <?php get_template_part( 'includes/partials/loop-slides', 'loop-slides' ); ?>
+      <?php 
+      if(!is_home()) {
+        get_template_part( 'includes/partials/loop-slides', 'loop-slides' ); 
+      }
+      ?>
