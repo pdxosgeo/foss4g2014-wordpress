@@ -16,8 +16,10 @@
           <p>Site built by <a href="http://cugos.org">CUGOS</a> using <a href="#">Wordpress</a>.</p>
         </div>
         <div class="col-md-6" id="footer-icons">
-          <a href="https://github.com/pdxosgeo" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/social-github.png"></a>
-          <a href="https://twitter.com/foss4g" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/social-twitter.png"></a>
+          <!-- Place this code where you want the badge to render. -->
+          <a href="//plus.google.com/u/0/115019016550251907241?prsrc=3" rel="publisher" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/social-gplus.svg" alt="Google+"/></a>
+          <a href="https://github.com/pdxosgeo" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/social-github.svg" alt="Github"></a>
+          <a href="https://twitter.com/foss4g" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/social-twitter.svg" alt="Twitter"></a>
         </div>   
     </div>
 </footer>
