@@ -2,7 +2,6 @@
 <?php while ( have_posts() ) : the_post(); ?>
 
 <section class="page">
-    <?php get_template_part( 'includes/partials/landing-imagebar', 'landing-imagebar' ); ?>
     <div class="container">
         <div class="row">
             <!-- left sidebar -->

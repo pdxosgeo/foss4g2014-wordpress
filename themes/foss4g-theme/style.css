@@ -806,8 +806,7 @@ Single Post & Page
   display: none;
 }
 .page .title {
-  padding-top:60px;
-  padding-bottom: 15px;
+  padding-bottom: 8px;
   font-family: 'Marvel', sans-serif;
   font-size: 2.7em;
   border-bottom: 1px solid #a0bfda;
@@ -1435,25 +1434,28 @@ Single Post & Page
   background-color: #db6f6f;
 }
 footer {
-  background-color: #f3f3f3;
-  padding: 20px 0 20px;
   z-index: 1;
 }
-footer p {
+footer #footer-content {
+  background-color: #ddbaa2;
+  padding: 20px 0 20px;
+}
+footer #footer-content p {
+  color: #26170e;
   margin-bottom: .1em;
 }
-footer p a {
+footer #footer-content p a {
   color: #db6f6f;
   text-decoration: none;
 }
-footer p a:hover {
+footer #footer-content p a:hover {
   text-decoration: underline;
 }
-footer #footer-icons {
+footer #footer-content #footer-icons {
   margin-top: 6px;
   text-align: right;
 }
-footer #footer-icons a img {
+footer #footer-content #footer-icons a img {
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
@@ -1463,10 +1465,13 @@ footer #footer-icons a img {
   height: auto;
   margin-right: 7px;
 }
-footer #footer-icons a img:hover {
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  /* Safari and Chrome */
+footer #footer-content #footer-icons a img:hover {
+  position: relative;
+  top: -5px;
+}
+footer #footer-image {
+  display: block;
+  height: 130px;
+  width: 100%;
+  background-color: #222;
 }

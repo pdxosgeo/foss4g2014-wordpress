@@ -19,6 +19,7 @@ require_once FUN . "/speakers.php";
 require_once FUN . "/sponsors.php";
 require_once FUN . "/conference-session-types.php";
 require_once FUN . "/posts.php";
+require_once FUN . "/slides.php";
 require_once FUN . "/excerpt.php";
 require_once FUN . "/sponsor_sorting.php";
 
