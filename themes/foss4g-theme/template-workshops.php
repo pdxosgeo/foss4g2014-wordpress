@@ -8,9 +8,6 @@ Template Name: Workshops
 <?php while ( have_posts() ) : the_post(); ?>
 
 <section class="page">
-    <section id="portland-home-image">
-      <?php get_template_part( 'includes/partials/schedule-menu', 'schedule-menu' ); ?>
-    </section>
     <div class="container">
         
         <div class="row">
@@ -36,6 +33,7 @@ Template Name: Workshops
               <!-- the loop -->
               <?php
               while ( $query->have_posts() ) : $query->the_post();
+                $session = session_type(the_time('H'));
                 // meta values
                 $format = get_post_meta($post->ID, 'format', true);
                 $length = get_post_meta($post->ID, 'length', true);
@@ -45,9 +43,8 @@ Template Name: Workshops
               <span class="conference-day row"><?php the_date('l'); ?></span>
               <div class="workshop row">
                 <div class="col-md-3">
-                  <span class="date"><span class="glyphicon glyphicon-time"></span><?php the_time('l, g:ia'); ?></span>
+                  <span class="date"><span class="glyphicon glyphicon-time"></span><?php echo $session . ', ' . $length ?></span>
                   <ul class="workshop-meta">
-                    <li><span class="glyphicon glyphicon-tag"></span><?php echo $length ?></li>
                     <li><span class="glyphicon glyphicon-ok"></span><?php echo $format ?></li>
                     <!-- <li><span class="glyphicon glyphicon-eye-open"></span><?php echo $max_participants ?></li>
                     <li><span class="glyphicon glyphicon-tags"></span><?php echo $target_audience ?></li>

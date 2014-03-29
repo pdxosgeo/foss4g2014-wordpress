@@ -8,9 +8,6 @@ function foss4g_queue() {
 	
 }
 add_action( 'wp_enqueue_scripts', 'foss4g_queue' );
-
-add_theme_support( 'menus' );
-
 add_action( 'widgets_init', 'foss4g2014_widgets_init' );
 
 register_nav_menus( array(
@@ -18,10 +15,14 @@ register_nav_menus( array(
 ) );
 
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+add_filter('show_admin_bar', '__return_false');
 
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'menus' );
 
 add_post_type_support('page', 'excerpt');
 
-add_filter('show_admin_bar', '__return_false');
-
+function session_type($time) {
+	$s = ($time<12 ? 'Morning' : 'Afternoon');
+	return $s;
+}

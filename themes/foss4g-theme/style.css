@@ -952,7 +952,7 @@ Single Post & Page
 }
 .left-sidebar .submenu {
   list-style-type: none;
-  margin: 5px 0 30px;
+  margin: 0 0 30px;
   padding: 0;
 }
 .left-sidebar .submenu li {
@@ -993,22 +993,22 @@ Single Post & Page
   background-color: rgba(0, 0, 0, 0.05);
   text-decoration: none;
 }
-.left-sidebar .subsponsors {
+.subsponsors {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.left-sidebar .subsponsors li {
+.subsponsors li {
   margin-bottom: 15px;
 }
-.left-sidebar .subsponsors li:first-child {
+.subsponsors li:first-child {
   margin-top: 10px;
 }
-.left-sidebar .subsponsors li a img {
+.subsponsors li a img {
   max-width: 100%;
   height: auto;
 }
-.left-sidebar .subsponsors li a:hover {
+.subsponsors li a:hover {
   opacity: .7;
 }
 .content-container {

@@ -4,15 +4,21 @@
 <section class="page">
     <div class="container">
         <div class="row">
-            <!-- left sidebar -->
-            <div class="col-sm-2 left-sidebar">
-            <?php 
-                // page title
+            <div class="col-sm-2">
+                <?php // page title
                 if($post->post_parent)
                 echo get_the_title($post->post_parent);
                 else
-                the_title();
-
+                the_title(); ?>
+            </div>
+            <div class="col-sm-10">
+                <h1 class="title"><?php the_title(); ?></h1>
+            </div>
+        </div>
+        <div class="row">
+            <!-- left sidebar -->
+            <div class="col-sm-2 left-sidebar">
+            <?php 
                 // siblings
                 if($post->post_parent)
                 $children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0");
@@ -24,14 +30,13 @@
                     </ul>
             <?php
                 }
-                // get_template_part( 'includes/partials/sidebar-sponsors', 'sidebar-sponsors' );
             ?>
             </div>
 
             <!-- content -->
             <div class="col-sm-7 content-container">
+                
                 <div class="content">
-                    <h1 class="title"><?php the_title(); ?></h1>
                    	<?php the_content(); ?>
                 </div>
     			<?php endwhile; // end of the loop. ?>
@@ -42,6 +47,7 @@
             <?php
                 get_sidebar();
                 get_template_part( 'includes/partials/sidebar-submit', 'sidebar-submit' );
+                get_template_part( 'includes/partials/sidebar-sponsors', 'sidebar-sponsors' );
             ?>
             </div>
         </div>
