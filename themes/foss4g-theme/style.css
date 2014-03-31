@@ -949,6 +949,7 @@ Single Post & Page
   color: #555555;
   text-shadow: 1px 1px #fff;
   padding: 0;
+  z-index: 10;
 }
 .left-sidebar .submenu {
   list-style-type: none;
@@ -1013,7 +1014,6 @@ Single Post & Page
 }
 .content-container {
   padding: 0;
-  z-index: -1;
 }
 .content {
   background-color: #fcfaf3;
