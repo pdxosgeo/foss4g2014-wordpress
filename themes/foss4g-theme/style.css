@@ -1233,6 +1233,9 @@ Single Post & Page
   font-size: 1.6em;
   text-shadow: 1px 1px #888888;
 }
+.workshop h2 a {
+  color: #a9683d;
+}
 .workshop h3 {
   color: #555555;
   font-size: 1.1em;
