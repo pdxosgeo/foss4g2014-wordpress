@@ -36,8 +36,8 @@ Template Name: Workshops
               'post_type'   => 'workshop',
               'post_status' => array('future','published', 'draft'),
               'order'       => 'ASC',
-              'orderby'     => 'date',
-              'number_of_posts'  => 999
+              'orderby'     => 'title',
+              'posts_per_page'  => -1
             );
             $query = new WP_Query( $args );
             if ( $query->have_posts() ) :
