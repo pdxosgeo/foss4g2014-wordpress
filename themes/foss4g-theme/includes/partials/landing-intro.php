@@ -7,6 +7,7 @@
   			<?php get_template_part( 'includes/partials/inline', 'logo.svg' ); ?>
         <?php get_template_part( 'includes/partials/inline', 'logotext.svg' ); ?>
         <h3><?php echo get_theme_mod( 'foss4g2014_conference_date' ); ?></h3>
+        <?php echo get_theme_mod( 'foss4g2014_description' ); ?>
         
       </div>
       <div class="col-sm-3">
