@@ -49,8 +49,8 @@ Template Name: Workshops
                   <div class="workshop">
                     <h2><?php the_title(); ?></h2>
                     <h3><span class="glyphicon glyphicon-user"></span><?php the_author_meta('first_name'); ?> <?php the_author_meta('last_name'); ?></h3>
-                    <?php the_content(); ?>
-                    <p><strong>Format: </strong><?php echo $format; ?></p>
+                    <div class="ws-content"><?php the_content(); ?></div>
+                    <p class="format"><strong>Format: </strong><?php echo $format; ?></p>
                   </div>
 
               <?php endif;

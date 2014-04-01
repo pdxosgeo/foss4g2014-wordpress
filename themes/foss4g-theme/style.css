@@ -1204,6 +1204,144 @@ Single Post & Page
   margin-bottom: 10px;
   font-size: 1.0em;
 }
+.workshop .ws-content {
+  margin-bottom: 5px;
+  background-color: #fcfaf3;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #d4d4d4;
+}
+.workshop .ws-content *:first-child {
+  margin-top: 0;
+}
+.workshop .ws-content *:last-child {
+  margin-bottom: 0;
+}
+.workshop .ws-content .success {
+  padding: 5px 7px;
+  width: auto;
+  color: #555555;
+  background-color: #ffffe0;
+  border: 1px solid #e6db55;
+}
+.workshop .ws-content .title {
+  margin: 0;
+  padding: 4px 0;
+  padding-bottom: 8px;
+  font-family: 'Marvel', sans-serif;
+  font-size: 2.7em;
+  border-bottom: 1px solid #a0bfda;
+}
+.workshop .ws-content h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.0em;
+  color: #5e3a22;
+  margin: 30px 0 5px;
+  border-bottom: 1px solid #70dbdb;
+  padding-bottom: 5px;
+  text-shadow: 1px 2px 0 #fff, 2px 3px 0 #c0c0c0;
+}
+.workshop .ws-content h2 {
+  font-family: 'Marvel', sans-serif;
+  font-size: 1.5em;
+  color: #a9683d;
+  margin: 25px 0 5px;
+}
+.workshop .ws-content h3 {
+  font-size: 1.3em;
+  color: #5e3a22;
+  margin: 25px 0 5px;
+}
+.workshop .ws-content p {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-top: 15px;
+  color: #555555;
+}
+.workshop .ws-content p img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+.workshop .ws-content#news .post {
+  margin-bottom: 45px;
+}
+.workshop .ws-content#news .post .post-title {
+  border-left: none;
+  border-bottom: 1px solid #70dbdb;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.workshop .ws-content#news .post .post-title .title {
+  margin: 0 0 5px;
+  font-size: 2em;
+  color: #555555;
+  border: none;
+}
+.workshop .ws-content#news .post .post-title .title a {
+  color: #555555;
+  text-decoration: none;
+}
+.workshop .ws-content#news .post .post-title .title a:hover {
+  color: #555555;
+  text-decoration: underline;
+}
+.workshop .ws-content#news .post .post-title .meta {
+  margin: 0 0 5px;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #33cbcb;
+  border: none !important;
+}
+.workshop .ws-content#news .post .post-title .meta span {
+  margin: 0 0 0 10px;
+  color: #555555;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.workshop .ws-content#news .post .post-content {
+  margin-left: 20px;
+}
+.workshop .ws-content#news .post .post-content h1 {
+  font-size: 2.0em;
+  font-weight: 700;
+  color: #a9683d;
+}
+.workshop .ws-content#news .post .post-content h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #a9683d;
+}
+.workshop .ws-content#news .post .post-content h3 {
+  font-size: 1.3em;
+  font-weight: 900;
+  color: steelblue;
+}
+.workshop .ws-content#news .post .post-content p {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-top: 15px;
+  color: #555555;
+}
+.workshop .ws-content#news .post .post-content p img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+.workshop .ws-content#news .post .post-content ul,
+.workshop .ws-content#news .post .post-content ol {
+  margin-top: 15px;
+}
+.workshop .ws-content .success {
+  padding: 5px 7px;
+  width: auto;
+  color: #555555;
+  background-color: #ffffe0;
+  border: 1px solid #e6db55;
+}
+.workshop .format {
+  text-align: right;
+}
 .schedule-menu-container {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 8px 0;
