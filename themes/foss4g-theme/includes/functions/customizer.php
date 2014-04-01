@@ -310,10 +310,10 @@ function foss4g2014_customize_css() {
 
 ?>
 	<style type="text/css">
-		#button-one { background-color:<?php echo get_theme_mod('foss4g2014_button_one_color'); ?>; }
+/*		#button-one { background-color:<?php echo get_theme_mod('foss4g2014_button_one_color'); ?>; }
 		#button-two { background-color:<?php echo get_theme_mod('foss4g2014_button_two_color'); ?>; }
 		#button-three { background-color:<?php echo get_theme_mod('foss4g2014_button_three_color'); ?>; }
-	</style>
+*/	</style>
 
 <?php
 

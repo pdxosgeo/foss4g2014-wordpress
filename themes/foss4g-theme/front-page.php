@@ -1,7 +1,8 @@
 <?php 
 get_header();
 get_template_part( 'includes/partials/landing-intro', 'landing-intro' );
-get_template_part( 'includes/partials/landing-info', 'landing-info' );
+get_template_part( 'includes/partials/landing-reg', 'landing-reg' );
+// get_template_part( 'includes/partials/landing-info', 'landing-info' );
 get_template_part( 'includes/partials/inline', 'downtownportland.svg' );
 get_template_part( 'includes/partials/landing-map', 'landing-map' );           
 get_template_part( 'includes/partials/landing-keynote', 'landing-keynote' );
