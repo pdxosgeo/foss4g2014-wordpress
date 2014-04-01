@@ -18,7 +18,7 @@ Template Name: Workshops
           $ws = array('Monday Morning','Monday Afternoon','Tuesday Morning','Tuesday Afternoon','Monday Full Day','Tuesday Full Day'); ?>
             
             <div class="col-sm-3">
-              <ul class="ws-nav">
+              <ul class="wshop-nav">
                 <li><strong>Monday</strong> <br><a href="#type-0">Morning</a> | <a href="#type-1">Afternoon</a> | <a href="#type-4">Full-day</a></li>
                 <li><strong>Tuesday</strong> <br><a href="#type-2">Morning</a> | <a href="#type-3">Afternoon</a> | <a href="#type-5">Full-day</a></li>
               </ul>
@@ -49,7 +49,7 @@ Template Name: Workshops
                   <div class="workshop">
                     <h2><?php the_title(); ?></h2>
                     <h3><span class="glyphicon glyphicon-user"></span><?php the_author_meta('first_name'); ?> <?php the_author_meta('last_name'); ?></h3>
-                    <div class="ws-content"><?php the_content(); ?></div>
+                    <div class="wshop-content"><?php the_content(); ?></div>
                     <p class="format"><strong>Format: </strong><?php echo $format; ?></p>
                   </div>
 
