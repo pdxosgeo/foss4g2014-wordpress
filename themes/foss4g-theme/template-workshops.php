@@ -46,13 +46,15 @@ Template Name: Workshops
               if($session == $ws[$w]) : 
                 
                 $format = get_post_meta($post->ID, 'format', true); ?>
-                  <div class="workshop">
-                    <h2><?php the_title(); ?></h2>
+                <div class="workshop" id="wshop-<?php echo $post->ID; ?>"
+                    <h2><a data-toggle="collapse" href="#wshop-content-<?php echo $post->ID; ?>"
+                         <?php the_title(); ?>
+                        </a>
+                    </h2>
                     <h3><span class="glyphicon glyphicon-user"></span><?php the_author_meta('first_name'); ?> <?php the_author_meta('last_name'); ?></h3>
-                    <div class="wshop-content"><?php the_content(); ?></div>
+                    <div class="wshop-content collapse" id="wshop-content-<?php echo $post->ID; ?>"><?php the_content(); ?></div>
                     <p class="format"><strong>Format: </strong><?php echo $format; ?></p>
-                  </div>
-
+                  </div>    
               <?php endif;
             endwhile; 
             wp_reset_postdata();
