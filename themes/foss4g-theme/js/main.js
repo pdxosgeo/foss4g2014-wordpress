@@ -8,6 +8,34 @@ jQuery(document).ready(function ($) {
 		$(this).children('.nav-arrow').toggleClass('hide');
 	});
 
+	// page scroll speed on workshop nav click
+	var height = $('nav').height() + 20;
+	$('a[href*=#type]').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+		&& location.hostname == this.hostname) {
+			var $target = $(this.hash);
+			$target = $target.length && $target
+			|| $('[name=' + this.hash.slice(1) +']');
+			if ($target.length) {
+				var targetOffset = ($target.offset().top)-height;
+				$('html,body')
+				.animate({scrollTop: targetOffset}, 450);
+				return false;
+      		}
+    	}
+  	});
+
+  	// updates header sizing
+  	$(window).scroll(function() {
+		var scroll = $(window).scrollTop();
+		if ( scroll < 140 ) {
+			$('.ws-nav').removeClass('fixed');
+		}
+		else {
+			$('.ws-nav').addClass('fixed');
+		}
+	});
+
 	//map on homepage
 	var map = L.mapbox.map('map', 'foss4g2014.hjbf0lfe')
     .setView([45.528419, -122.663247], 9);

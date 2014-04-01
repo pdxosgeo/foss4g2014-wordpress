@@ -56,7 +56,7 @@
         </div><!-- /.navbar-collapse -->
       </nav>
       <?php 
-      if(!is_home()) {
+      if(!is_page_template('template-workshops.php') || !is_home() ) {
         get_template_part( 'includes/partials/loop-slides', 'loop-slides' ); 
       }
       ?>

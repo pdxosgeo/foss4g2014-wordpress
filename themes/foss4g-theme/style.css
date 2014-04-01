@@ -1152,6 +1152,31 @@ Single Post & Page
   margin: 0;
   padding: 0;
 }
+.ws-nav,
+.ws-nav.fixed {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .ws-nav {
+    position: relative;
+  }
+  .ws-nav.fixed {
+    top: 80px;
+    position: fixed;
+  }
+}
+.session-type {
+  color: steelblue;
+  margin-left: -35px;
+}
+.session-type .glyphicon {
+  color: #7ba7cc;
+  font-size: .8em;
+  margin-right: 10px;
+}
 .workshop {
   padding: 20px 0;
   border-bottom: 1px solid #d4d4d4;
@@ -1159,46 +1184,23 @@ Single Post & Page
 .workshop:last-child {
   border: none;
 }
-.workshop .date {
-  color: #555555;
-  font-weight: 700;
-  font-size: 1.1em;
-}
-.workshop .date .glyphicon {
-  margin-right: 8px;
-}
-.workshop .workshop-meta {
-  list-style-type: none;
-  margin: 0;
-  padding: 10px 0 0;
-}
-.workshop .workshop-meta li {
-  margin: 0 0 5px 20px;
-  color: #888888;
-  font-size: 0.9em;
-  text-shadow: 1px 1px #d4d4d4;
-}
-.workshop .workshop-meta li .glyphicon {
-  margin-right: 5px;
-  font-size: 0.9em;
-}
-.workshop .workshop-content h2 {
+.workshop h2 {
   font-family: 'Open Sans', arial, sans-serif;
   margin: 0 0 10px 0;
   color: #2f2f2f;
   font-size: 1.6em;
   text-shadow: 1px 1px #888888;
 }
-.workshop .workshop-content h3 {
+.workshop h3 {
   color: #555555;
   font-size: 1.1em;
   margin: 0 0 10px;
 }
-.workshop .workshop-content h3 .glyphicon {
+.workshop h3 .glyphicon {
   margin-right: 10px;
   color: #888888;
 }
-.workshop .workshop-content p {
+.workshop p {
   margin-bottom: 10px;
   font-size: 1.0em;
 }
