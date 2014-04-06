@@ -15,41 +15,45 @@ Template Name: Sponsors
 <section class="page-content">
 <div class="container">
     <div class="row">
-        <div class="col-md-8 content">
+        <div class="col-md-8 content sponsor-content ">
             
             <?php
             //for a given post type, return all
             $post_type = 'sponsor';
             $tax = 'level';
-            $tax_terms = get_terms($tax);
+            $tax_terms = array('platinum','gold','silver','bronze','supporter','media');
             if ($tax_terms) {
               foreach ($tax_terms as $tax_term) {
                 $args=array(
                   'order' => 'ASC',
                   'post_type' => $post_type,
-                  "$tax" => $tax_term->slug,
+                  "$tax" => $tax_term,
                   'post_status' => 'publish',
                   'posts_per_page' => -1,
                   'caller_get_posts'=> 1              
                 );
 
                 $my_query = null;
+                $count=0;
                 $my_query = new WP_Query($args);
-                if( $my_query->have_posts() ) {
-                  echo $tax_term->name; ?>
-                  <ul>
+                if( $my_query->have_posts() ) {?>
+                  <h1>
+                  <?php echo ucfirst($tax_term); ?>
+                  </h1>
+                  <table class="table">
                   <?php while ($my_query->have_posts()) : $my_query->the_post(); 
-                    $url = get_post_meta( $post->ID, "_URL", true );
-                    if ($url) { ?>
-                        <li><a href="<?php echo $url; ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
-                    <?php } else { ?>
-                        <li><?php the_title(); ?></li>
-                    <?php }
+                    if ($count % 2 == 0 ){echo('<tr>');}
+                    echo('<td class="vert-align" style="border-top:0">');
+                    $url = get_post_meta( $post->ID, "_URL", true ); ?>
+                      <a href="<?php echo $url; ?>" target="_blank"><?php the_post_thumbnail(); ?></a>
+                    </td>
+                    <?php 
+                  if ($count % 2 == 1 ){echo('</tr>');}
+                  $count++;
                   endwhile; ?>
-                  </ul> 
+                </table>
                 <?php }
                 wp_reset_query(); ?>
-                <hr>
               <?php }
             }
             ?>
@@ -63,4 +67,3 @@ Template Name: Sponsors
 </div>
 
 <?php get_footer(); ?>
-

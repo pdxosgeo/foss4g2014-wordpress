@@ -1935,3 +1935,18 @@ footer #footer-content #footer-icons a img:hover {
   position: relative;
   top: -5px;
 }
+.sponsor-content table {
+ border:0;
+ vertical-align: middle;
+}
+
+.sponsor-content td {
+ border:0;
+ border-top:0;
+}
+/* http://stackoverflow.com/questions/13771101/centering-a-button-vertically-in-table-cell-using-twitter-bootstrap */
+.table tbody>tr>td.vert-align
+{
+    vertical-align: middle;
+}
+
