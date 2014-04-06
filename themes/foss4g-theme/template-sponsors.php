@@ -25,7 +25,7 @@ Template Name: Sponsors
             if ($tax_terms) {
               foreach ($tax_terms as $tax_term) {
                 $args=array(
-                  'order' => 'ASC',
+                  'orderby' => 'rand',
                   'post_type' => $post_type,
                   "$tax" => $tax_term,
                   'post_status' => 'publish',
