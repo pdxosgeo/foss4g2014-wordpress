@@ -53,7 +53,7 @@ Template Name: Workshops
                          <?php the_title(); ?>
                         </a>
                     </h2>
-                    <h3 data-toggle="popover" data-placement="left" data-content="<?php the_author_meta('description'); ?>"><span class="glyphicon glyphicon-user"></span><?php the_author_meta('first_name'); ?> <?php the_author_meta('last_name'); ?></h3>
+                    <h3 data-toggle="popover" data-content="<?php the_author_meta('description'); ?>"><span class="glyphicon glyphicon-user"></span><?php the_author_meta('first_name'); ?> <?php the_author_meta('last_name'); ?></h3>
                     <div class="wshop-content collapse" id="wshop-content-<?php echo $post->ID; ?>"><?php the_content(); ?></div>
                     <p class="format"><strong>Format: </strong><?php echo $format; ?></p>
                   </div>
@@ -95,7 +95,7 @@ Template Name: Workshops
 jQuery.ready(
   jQuery('.workshop h3').popover({
     container: 'body', 
-    trigger: 'hover' 
-    })
+    trigger: 'ontouchstart' in document.documentElement ? 'click' : 'hover' ,
+    placement: 'ontouchstart' in document.documentElement ? 'bottom' : 'left'    })
 );
 </script>
