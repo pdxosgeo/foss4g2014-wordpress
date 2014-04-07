@@ -47,7 +47,9 @@ Template Name: Workshops
                 
                 $format = get_post_meta($post->ID, 'format', true); ?>
                 <div class="workshop" id="wshop-<?php echo $post->ID; ?>">
-                    <h2><a data-toggle="collapse" href="#wshop-content-<?php echo $post->ID; ?>">
+                     <h2>
+                        <a data-toggle="collapse" href="#wshop-content-<?php echo $post->ID; ?>">
+                         <span class="glyphicon glyphicon-chevron-right"></span>
                          <?php the_title(); ?>
                         </a>
                     </h2>
@@ -55,6 +57,26 @@ Template Name: Workshops
                     <div class="wshop-content collapse" id="wshop-content-<?php echo $post->ID; ?>"><?php the_content(); ?></div>
                     <p class="format"><strong>Format: </strong><?php echo $format; ?></p>
                   </div>
+                  <script>
+                  jQuery('#wshop-content-<?php echo $post->ID; ?>').on('show.bs.collapse', function (e) {
+                    jQuery("#wshop-content-<?php echo $post->ID; ?>")
+                      .parent()
+                      .children('h2')
+                      .children('a')
+                      .children('span')
+                      .removeClass("glyphicon-chevron-right").addClass("glyphicon-chevron-down")
+
+                  });
+                  jQuery('#wshop-content-<?php echo $post->ID; ?>').on('hide.bs.collapse', function (e) {
+                    jQuery("#wshop-content-<?php echo $post->ID; ?>")
+                      .parent()
+                      .children('h2')
+                      .children('a')
+                      .children('span')
+                      .removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right")
+                  });
+                  </script>
+
               <?php endif;
             endwhile; 
             wp_reset_postdata();
