@@ -49,7 +49,7 @@ Template Name: Workshops
                 <div class="workshop" id="wshop-<?php echo $post->ID; ?>">
                      <h2>
                         <a data-toggle="collapse" href="#wshop-content-<?php echo $post->ID; ?>">
-                         <span class="glyphicon glyphicon-chevron-right"></span>
+                         <span style="font-size: .75em;" class="glyphicon glyphicon-chevron-right"></span>
                          <?php the_title(); ?>
                         </a>
                     </h2>
