@@ -569,32 +569,6 @@ section {
   max-width: 150px;
   margin-right: 35px;
 }
-#keynote {
-  padding: 20px 0;
-  background-color: #70dbdb;
-}
-#keynote img {
-  float: left;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  box-shadow: 2px 0 10px -3px #000000;
-  margin-right: 20px;
-}
-#keynote h5 {
-  font-family: 'Open Sans', sans-serif;
-  vertical-align: middle;
-  margin: 0;
-  padding: 0;
-  color: steelblue;
-  font-size: .9em;
-  text-transform: uppercase;
-  border-radius: 2px;
-}
-#keynote h1 {
-  font-family: 'Marvel', sans-serif;
-}
 #featured-speakers {
   padding: 20px 0 40px;
   background: #70dbdb;
@@ -723,17 +697,6 @@ section {
   -ms-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-  /*-webkit-transform-origin: 50% 50%;
-			-moz-transform-origin: 50% 50%;
-			-o-transform-origin: 50% 50%;
-			-ms-transform-origin: 50% 50%;
-			transform-origin: 50% 50%;
-			-webkit-animation: icon-twist 2.5s linear infinite;
-			-moz-animation: icon-twist 2.5s linear infinite;
-			-o-animation: icon-twist 2.5s linear infinite;
-			animation: icon-twist 2.5s linear infinite;
-			box-sizing: border-box;
-			-webkit-font-smoothing: antialiased;*/
 }
 #main-info .block h2 {
   font-family: 'Marvel', sans-serif;
@@ -773,54 +736,27 @@ section {
     border-bottom: 1px solid #f3f3f3;
   }
 }
-/*@-webkit-keyframes icon-twist { 
-	0% { -webkit-transform:rotate(-35deg); }
-	33% { -webkit-transform:rotate(0deg); }
-	66& { -webkit-transform:rotate(35deg); } 
-	100%{ -webkit-transform:rotate(-35deg); } 
-}
-@-moz-keyframes icon-twist { 
-	0% { -moz-transform:rotate(-35deg); }
-	33% { -moz-transform:rotate(0deg); }
-	66& { -moz-transform:rotate(35deg); } 
-	100%{ -moz-transform:rotate(-35deg); }
-}
-@-o-keyframes icon-twist { 
-	0% { -o-transform:rotate(-35deg); }
-	33% { -o-transform:rotate(0deg); }
-	66& { -o-transform:rotate(35deg); } 
-	100%{ -o-transform:rotate(-35deg); }
-}
-@keyframes icon-twist { 
-	0%{
-		-webkit-transform:rotate(-35deg);
-		-moz-transform:rotate(-35deg);
-		-o-transform:rotate(-35deg);
-		transform:rotate(-35deg);
-	} 
-	33%{
-		-webkit-transform:rotate(0deg);
-		-moz-transform:rotate(0deg);
-		-o-transform:rotate(0deg);
-		transform:rotate(0deg);
-	} 
-	66%{
-		-webkit-transform:rotate(35deg);
-		-moz-transform:rotate(35deg);
-		-o-transform:rotate(35deg);
-		transform:rotate(35deg);
-	} 
-	100%{
-		-webkit-transform:rotate(-35deg);
-		-moz-transform:rotate(-35deg);
-		-o-transform:rotate(-35deg);
-		transform:rotate(-35deg);
-	} 
-}*/
 #keynote {
-  padding: 0;
-  background: #ffffff url(img/mbostock.jpeg) top left no-repeat;
-  height: 100%;
+  background: url(img/noise-lightblue.png) repeat;
+  padding: 20px 0;
+  overflow: auto;
+}
+#keynote img {
+  float: left;
+  height: 200px;
+  width: auto;
+  margin-right: 20px;
+  padding: 5px;
+  border: 1px solid steelblue;
+}
+#keynote h2 {
+  font-family: 'Marvel', sans-serif;
+}
+#keynote h2 span {
+  font-family: 'Open-Sans', sans-serif;
+  color: #5e3a22;
+  font-weight: 700;
+  font-size: .4em;
 }
 #keynote .btn {
   margin-top: 20px;
