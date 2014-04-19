@@ -38,7 +38,7 @@ jQuery(document).ready(function ($) {
 
 	//map on homepage
 	var map = L.mapbox.map('map', 'foss4g2014.hjbf0lfe')
-    .setView([45.528419, -122.663247], 13);
+    .setView([45.530502, -122.711866], 13);
     L.mapbox.featureLayer({
 	    type: 'Feature',
 	    geometry: {

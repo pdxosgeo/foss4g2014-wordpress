@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Bevan);
 @import url(https://fonts.googleapis.com/css?family=Marvel);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
 /*
 Theme Name: FOSS4G
 Description: Wordpress Theme for FOSS4G-PDX 2014
@@ -230,7 +230,7 @@ section {
 }
 #landing-intro {
   position: relative;
-  padding: 100px 0 20px;
+  padding: 85px 0 20px;
   background: #fdf1dd;
   text-align: left;
 }
@@ -259,63 +259,53 @@ section {
   height: 90px;
   margin-top: -20px;
 }
-#registration {
-  background: #fdf1dd;
-  text-align: center;
-}
-#registration .btn {
+#landing-intro .btn {
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-#registration .btn.reg {
-  padding: 20px 30px;
-  border: 3px solid #5e3a22;
+#landing-intro .btn.reg {
+  padding: 15px 40px;
+  border-radius: 25px;
+  border: 1px solid #5e3a22;
+  font-size: 1.3em;
+  font-weight: 100;
+  text-transform: uppercase;
   color: #5e3a22;
-  margin-bottom: 30px;
 }
-#registration .btn.reg:hover {
+#landing-intro .btn.reg:hover {
   background: #5e3a22;
   color: #f3f3f3;
-}
-#registration .btn.sub-reg {
-  padding: 3px 7px;
-  font-size: .7em;
-  border: 1px solid steelblue;
-  color: steelblue;
-}
-#registration .btn.sub-reg:hover {
-  background: steelblue;
-  color: #f3f3f3;
-}
-#registration ul {
-  list-style-type: none;
-}
-#registration ul li {
-  display: inline-block;
-  margin-right: 10px;
-  font-size: .9em;
-}
-#registration ul li a {
-  font-size: 1.3em !important;
 }
 #portland {
   width: 100%;
   background: #fdf1dd;
   z-index: 5;
+  overflow: hidden;
 }
 #portland-container {
   display: block;
-  margin: 0 auto -13px;
-  max-width: 800px;
-  height: 300px;
   position: relative;
+  margin: 0 auto -13px;
+  width: 800px;
+  height: 230px;
+  overflow: hidden;
 }
 #downtown-portland {
   position: absolute;
   bottom: 0;
+}
+@media screen and (max-width: 700px) {
+  #downtown-portland {
+    left: -15%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #downtown-portland {
+    left: -18%;
+  }
 }
 #lift-bridge {
   -webkit-transform-origin: 50% 50%;
@@ -1233,9 +1223,6 @@ Single Post & Page
   font-size: 1.6em;
   text-shadow: 1px 1px #888888;
 }
-.workshop h2 a {
-  color: #a9683d;
-}
 .workshop h3 {
   color: #555555;
   font-size: 1.1em;
@@ -1935,18 +1922,3 @@ footer #footer-content #footer-icons a img:hover {
   position: relative;
   top: -5px;
 }
-.sponsor-content table {
- border:0;
- vertical-align: middle;
-}
-
-.sponsor-content td {
- border:0;
- border-top:0;
-}
-/* http://stackoverflow.com/questions/13771101/centering-a-button-vertically-in-table-cell-using-twitter-bootstrap */
-.table tbody>tr>td.vert-align
-{
-    vertical-align: middle;
-}
-
