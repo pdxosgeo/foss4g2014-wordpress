@@ -225,8 +225,8 @@ License URI: https://www.gnu.org/licenses/gpl.html
 /* Landing Page Specific CSS */
 section {
   display: block;
-  width: 100%
-	margin:auto;
+  width: 100%;
+  margin: auto;
 }
 #landing-intro {
   position: relative;
@@ -252,7 +252,15 @@ section {
   margin: 0 0 15px 0;
 }
 #landing-intro p {
-  font-size: 1.1em;
+  margin-top: -16px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: steelblue;
+}
+#landing-intro p span {
+  font-weight: 100;
 }
 #landing-intro #logo-text {
   width: 100%;
@@ -686,42 +694,154 @@ section {
     background-position: center top;
   }
 }
-#keynote:hover #keynote-callout {
-  opacity: 1.0;
-  left: 52%;
+#main-info {
+  padding-bottom: 30px;
+  border-top: 1px solid #ddbaa2;
+  overflow: auto;
+  background: url(img/noise-blue.png) repeat;
 }
-#keynote:hover #keynote-bird {
-  transform: rotate(-15deg);
-  -ms-transform: rotate(-15deg);
-  -webkit-transform: rotate(-15deg);
+#main-info .tagline {
+  padding: 20px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #f3f3f3;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 100;
+  margin-bottom: 20px;
 }
-#keynote-bird {
-  position: absolute;
-  top: -38px;
-  left: 38%;
+#main-info .block {
+  color: #f3f3f3;
+  text-align: center;
+  border: 10px solid transparent;
+}
+#main-info .block .glyphicon {
+  font-size: 3em;
+  opacity: .7;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  /*-webkit-transform-origin: 50% 50%;
+			-moz-transform-origin: 50% 50%;
+			-o-transform-origin: 50% 50%;
+			-ms-transform-origin: 50% 50%;
+			transform-origin: 50% 50%;
+			-webkit-animation: icon-twist 2.5s linear infinite;
+			-moz-animation: icon-twist 2.5s linear infinite;
+			-o-animation: icon-twist 2.5s linear infinite;
+			animation: icon-twist 2.5s linear infinite;
+			box-sizing: border-box;
+			-webkit-font-smoothing: antialiased;*/
+}
+#main-info .block h2 {
+  font-family: 'Marvel', sans-serif;
+  font-size: 2.2em;
+  color: #2f2f2f;
+}
+#main-info .block .block-info {
+  margin: 20px auto;
+  font-size: 1.3em;
+  color: #f3f3f3;
+  font-weight: 100;
+}
+#main-info .block .btn {
+  height: 40px;
+  border: 1px solid #f3f3f3;
+  background-color: transparent;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: .9em;
+  color: #f3f3f3;
+}
+#main-info .block .btn:hover {
+  background-color: #f3f3f3;
+  color: steelblue;
+}
+#main-info .block:hover .glyphicon {
+  transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  /* IE 9 */
+  -webkit-transform: rotate(25deg);
+  /* Safari and Chrome */
+}
+@media screen and (max-width: 767px) {
+  .block {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f3f3f3;
+  }
+}
+/*@-webkit-keyframes icon-twist { 
+	0% { -webkit-transform:rotate(-35deg); }
+	33% { -webkit-transform:rotate(0deg); }
+	66& { -webkit-transform:rotate(35deg); } 
+	100%{ -webkit-transform:rotate(-35deg); } 
+}
+@-moz-keyframes icon-twist { 
+	0% { -moz-transform:rotate(-35deg); }
+	33% { -moz-transform:rotate(0deg); }
+	66& { -moz-transform:rotate(35deg); } 
+	100%{ -moz-transform:rotate(-35deg); }
+}
+@-o-keyframes icon-twist { 
+	0% { -o-transform:rotate(-35deg); }
+	33% { -o-transform:rotate(0deg); }
+	66& { -o-transform:rotate(35deg); } 
+	100%{ -o-transform:rotate(-35deg); }
+}
+@keyframes icon-twist { 
+	0%{
+		-webkit-transform:rotate(-35deg);
+		-moz-transform:rotate(-35deg);
+		-o-transform:rotate(-35deg);
+		transform:rotate(-35deg);
+	} 
+	33%{
+		-webkit-transform:rotate(0deg);
+		-moz-transform:rotate(0deg);
+		-o-transform:rotate(0deg);
+		transform:rotate(0deg);
+	} 
+	66%{
+		-webkit-transform:rotate(35deg);
+		-moz-transform:rotate(35deg);
+		-o-transform:rotate(35deg);
+		transform:rotate(35deg);
+	} 
+	100%{
+		-webkit-transform:rotate(-35deg);
+		-moz-transform:rotate(-35deg);
+		-o-transform:rotate(-35deg);
+		transform:rotate(-35deg);
+	} 
+}*/
+#keynote {
+  padding: 0;
+  background: #ffffff url(img/mbostock.jpeg) top left no-repeat;
+  height: 100%;
+}
+#keynote .btn {
+  margin-top: 20px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  cursor: normal;
-  transform-origin: 50% 100%;
-  -ms-transform-origin: 50% 100%;
-  -webkit-transform-origin: 50% 100%;
 }
-#keynote-callout {
-  position: absolute;
-  top: -95px;
-  left: 47%;
-  width: 100px;
-  height: auto;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  opacity: 0;
-  cursor: normal;
+#keynote .btn.key {
+  padding: 10px 25px;
+  border-radius: 15px;
+  border: 1px solid #5e3a22;
+  font-size: 1.1em;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #5e3a22;
+}
+#keynote .btn.key:hover {
+  background: #5e3a22;
+  color: #f3f3f3;
 }
 #recent {
   background: url(img/ricepaper.png) repeat;
@@ -910,7 +1030,6 @@ section {
   margin-bottom: 10px;
 }
 #map-container {
-  border-top: 1px solid #ddbaa2;
   position: relative;
   height: 300px;
   background-color: #fff;
