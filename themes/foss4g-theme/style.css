@@ -684,6 +684,9 @@ section {
   font-weight: 100;
   margin-bottom: 20px;
 }
+#main-info .tagline span {
+  border-bottom: 1px solid #f3f3f3;
+}
 #main-info .block {
   color: #f3f3f3;
   text-align: center;
@@ -747,7 +750,7 @@ section {
   width: auto;
   margin-right: 20px;
   padding: 5px;
-  border: 1px solid steelblue;
+  border: 1px solid #888888;
 }
 #keynote h2 {
   font-family: 'Marvel', sans-serif;
@@ -967,20 +970,31 @@ section {
 }
 #map-container {
   position: relative;
-  height: 300px;
+  overflow: auto;
   background-color: #fff;
   width: 100%;
+}
+#map-header {
+  background-color: #444;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4em;
+  padding: 10px;
+}
+#map-header span {
+  font-weight: 100;
 }
 #map {
   position: relative;
   height: 100%;
   padding: 0;
   margin: 0;
+  height: 300px;
 }
 #coordinates {
   position: absolute;
   right: 10px;
-  top: 10px;
+  top: 50px;
   color: #555555;
   font-weight: 700;
   font-size: .8em;

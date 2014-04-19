@@ -1,7 +1,7 @@
 <section id="main-info">
   <div class="tagline">
     <div class="container">
-      The annual FOSS4G conference is the largest global gathering focused on open source geospatial software. FOSS4G brings together developers, users, decision-makers and observers from a broad spectrum of organizations and fields of operation.
+      The annual FOSS4G conference is the largest global gathering focused on <span>open source geospatial software</span>. FOSS4G brings together developers, users, decision-makers and observers from a broad spectrum of organizations and fields of operation.
     </div>
   </div>
   <div class="container">
