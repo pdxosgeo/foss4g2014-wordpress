@@ -234,23 +234,6 @@ section {
   background: #fdf1dd;
   text-align: left;
 }
-#landing-intro img {
-  display: block;
-  margin: auto;
-}
-#landing-intro h2 {
-  font-family: 'Bevan', cursive;
-  color: #5e3a22;
-  font-weight: 700;
-  font-size: 2.6em;
-  margin: 60px auto 0 0;
-}
-#landing-intro h3 {
-  font-family: 'Marvel', sans-serif;
-  font-size: 2.8em;
-  color: #5e3a22;
-  margin: 0 0 15px 0;
-}
 #landing-intro p {
   margin-top: -16px;
   margin-bottom: 20px;
@@ -286,6 +269,14 @@ section {
 #landing-intro .btn.reg:hover {
   background: #5e3a22;
   color: #f3f3f3;
+}
+#announcements a {
+  font-size: .9em;
+  font-weight: 100;
+  color: #5e3a22;
+}
+#announcements a .glyphicon {
+  margin-right: 8px;
 }
 #portland {
   width: 100%;
