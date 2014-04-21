@@ -61,7 +61,7 @@ jQuery(document).ready(function ($) {
                     },  
                     properties: {
                         title: 'Eliot Center',
-                        description: 'Code Sprint be held here.<br><a href="https://2014.foss4g.org/schedule/code-sprint/">Details</a>',
+                        description: 'Code Sprint will be held here.<br><a href="https://2014.foss4g.org/schedule/code-sprint/">Details</a>',
                         type: 'main',
                         'marker-size': 'medium',
                         'marker-color': '#4682B4',
