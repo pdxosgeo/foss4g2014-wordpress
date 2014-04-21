@@ -9,6 +9,8 @@
         <p><span>Portland, Oregon, USA</span> • September 8th - 13th, 2014</p>
         <p id="announcements"><a href="http://eepurl.com/N5Q6X"><span class="glyphicon glyphicon-envelope"></span> Sign up for announcements.</a> </p>
         <a class="btn reg" href="/registration">Register Now</a>    
+        <span> </span>
+        <a class="btn reg" href="http://community-review.foss4g.org">Community Review</a>                          
       </div>
       <div class="col-sm-3"></div>
     </div>
