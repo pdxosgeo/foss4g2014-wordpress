@@ -53,6 +53,36 @@ jQuery(document).ready(function ($) {
 		        'marker-symbol': 'star'
 		    }
 		},
+                {
+                        type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-122.68584, 45.51836]
+                    },  
+                    properties: {
+                        title: 'Eliot Center',
+                        description: 'Code Sprint be held here.<br><a href="https://2014.foss4g.org/schedule/code-sprint/">Details</a>',
+                        type: 'main',
+                        'marker-size': 'medium',
+                        'marker-color': '#4682B4',
+                        'marker-symbol': 'star'
+                    }
+                },
+		{
+			type: 'Feature',
+		    geometry: {
+		        type: 'Point',
+		        coordinates: [-122.68462,45.51182],
+		    },
+		    properties: {
+		        title: 'Portland State University',
+		        description: 'Workshops will be held here.<br><a href="https://2014.foss4g.org/schedule/workshops/">Schedule</a>',
+		        type: 'main',
+		        'marker-size': 'medium',
+		        'marker-color': '#4682B4',
+		        'marker-symbol': 'star'
+		    }
+		},
 		{
 			type: 'Feature',
 		    geometry: {
