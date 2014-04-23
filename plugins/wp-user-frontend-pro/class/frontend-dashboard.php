@@ -152,10 +152,6 @@ class WPUF_Frontend_Dashboard {
 
                                 <?php } ?>
                             </td>
-                            <td>
-                                <?php wpuf_show_post_status( $post->post_status ) ?>
-                            </td>
-
                             <?php do_action( 'wpuf_dashboard_row_col', $args, $post ) ?>
 
                             <?php
