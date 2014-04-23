@@ -21,6 +21,7 @@ require_once FUN . "/conference-session-types.php";
 require_once FUN . "/posts.php";
 require_once FUN . "/slides.php";
 require_once FUN . "/excerpt.php";
+require_once FUN . "/grant_request.php";
 require_once FUN . "/sponsor_sorting.php";
 
 /* Do not add anything beneath this line! Else the world crumbles */
