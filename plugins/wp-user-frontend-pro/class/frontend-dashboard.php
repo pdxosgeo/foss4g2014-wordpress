@@ -108,7 +108,6 @@ class WPUF_Frontend_Dashboard {
                         }
                         ?>
                         <th><?php _e( 'Title', 'wpuf' ); ?></th>
-                        <th><?php _e( 'Status', 'wpuf' ); ?></th>
 
                         <?php do_action( 'wpuf_dashboard_head_col', $args ) ?>
 
