@@ -28,6 +28,7 @@ Template Name: User Profile
         <div class="col-md-6 user-submissions">
             <?php echo do_shortcode('[wpuf_dashboard post_type="session"]'); ?>
             <?php echo do_shortcode('[wpuf_dashboard post_type="workshop"]'); ?>
+            <?php echo do_shortcode('[wpuf_dashboard post_type="travel_grant"]'); ?>
         </div>
         <div class="col-md-4">
         </div>
