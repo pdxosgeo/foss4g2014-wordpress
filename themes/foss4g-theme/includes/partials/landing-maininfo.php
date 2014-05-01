@@ -8,9 +8,9 @@
     <div class="row">
       <div class="col-sm-4 block students">
         <span class="glyphicon glyphicon-bookmark"></span>
-        <h2>Students & Volunteering</h2>
-        <p class="block-info">Student discounts and volunteer opportunites.</p>
-        <a href="https://2014.foss4g.org/attending/student-discounts/" class="btn block">Learn More</a>
+        <h2>Travel Grants & Student Discounts/Opportunities</h2>
+        <p class="block-info">Travel Grants, discounts, and volunteer opportunites.</p>
+        <a href="https://2014.foss4g.org/attending/discounts-and-grants/" class="btn block">Learn More</a>
       </div>
       <div class="col-sm-4 block schedule">
         <span class="glyphicon glyphicon-time"></span>
