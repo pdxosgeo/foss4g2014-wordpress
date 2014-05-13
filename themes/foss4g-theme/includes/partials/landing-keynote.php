@@ -29,7 +29,7 @@
         <small>ProPublica</small>
       </h2>
       <p>
-        Al Shaw is a news applications developer at ProPublica, a non-profit investigative news outlet based in New York City. Equal parts designer, developer and reporter. He has covered campaign finance, schools, disaster recovery and other topics. Before joining ProPublica, Shaw was designer/developer at Talking Points Memo and creator of TPM's popular PollTracker application. Shaw's interactive maps surrounding FEMA's response to Hurricane Sandy was honored with the Society of Professional Journalists' Sigma Delta Chi award. His work has also garnered awards from the Society for News Design, the Online News Association and Investigative Reporters and Editors.
+        Al Shaw is a news applications developer at ProPublica, a non-profit investigative news outlet based in New York City. Equal parts designer, developer and reporter, he has covered campaign finance, schools, disaster recovery and other topics. Before joining ProPublica, Shaw was designer/developer at Talking Points Memo and creator of TPM's popular PollTracker application. Shaw's interactive maps surrounding FEMA's response to Hurricane Sandy was honored with the Society of Professional Journalists' Sigma Delta Chi award. His work has also garnered awards from the Society for News Design, the Online News Association and Investigative Reporters and Editors.
       </p>
     </div>
     <div class="col-sm-2"></div>
