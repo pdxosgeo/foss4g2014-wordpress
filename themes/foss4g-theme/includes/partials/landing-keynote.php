@@ -24,7 +24,7 @@
     </div>
     <div class="col-sm-3">
       <img src="<?php bloginfo('template_url'); ?>/img/al_shaw.jpg">
-      <h2>Al Shaw <span>KEYNOTE</span>
+      <h2>Al Shaw
         <br>
         <small>ProPublica</small>
       </h2>
