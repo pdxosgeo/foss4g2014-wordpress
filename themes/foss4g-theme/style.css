@@ -752,6 +752,11 @@ section {
   font-weight: 700;
   font-size: .4em;
 }
+
+#keynote p {
+  padding-bottom: 1em;
+}
+
 #keynote .btn {
   margin-top: 20px;
   -webkit-transition: 0.3s;
