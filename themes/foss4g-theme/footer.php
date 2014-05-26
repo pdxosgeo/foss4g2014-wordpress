@@ -3,8 +3,20 @@
 	<div id="contact-container">
 		<div id="contact-form-button">Contact Us <span class="nav-arrow">&#9650;</span><span class="nav-arrow hide">&#9660;</span></div>
 		<div id="contact-form">
-			<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 2 ); } ?>
-		</div>
+                  <form id="zFormer" method="POST" action="<?php echo get_template_directory_uri()?>/contact.php" name="former">
+                  <div id="box_form">
+                   <label for="z_name">Your Name:</label>
+                   <input type="text" name="z_name" required>
+                   <label for="z_requestor">Your Email Address: </label>
+                   <input type="email"  name="z_requester" required>
+                   <label for="z_subject">Subject: </label>
+                   <input type="text" name="z_subject" required>
+                   <label for="z_description">What's up? </label>
+                   <textarea name="z_description" required></textarea>
+                   <input type="submit" value="submit" id="submitter">
+                 </div>
+                </form>
+               </div>
 	</div>
 </div>
 </div>
