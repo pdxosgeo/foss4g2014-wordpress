@@ -2039,3 +2039,6 @@ footer #footer-content #footer-icons a img:hover {
   position: relative;
   top: -5px;
 }
+.wpuf-form-add label {
+ display: block;
+}
