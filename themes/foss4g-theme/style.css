@@ -278,6 +278,15 @@ section {
 #announcements a .glyphicon {
   margin-right: 8px;
 }
+#donations a {
+  font-size: .9em;
+  font-weight: 100;
+  color: #5e3a22;
+}
+#donations a .glyphicon {
+  margin-right: 8px;
+  color: #E32028;
+}
 #portland {
   width: 100%;
   background: #fdf1dd;

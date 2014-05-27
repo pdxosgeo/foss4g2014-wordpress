@@ -8,6 +8,7 @@
         <?php get_template_part( 'includes/partials/inline', 'logotext.svg' ); ?>
         <p><span>Portland, Oregon, USA</span> • September 8th - 13th, 2014</p>
         <p id="announcements"><a href="http://eepurl.com/N5Q6X"><span class="glyphicon glyphicon-envelope"></span> Sign up for announcements.</a> </p>
+        <p id="donation"><a href="http://www.eventbrite.com/e/foss4g-travel-fund-tickets-10102856917"><span class="glyphicon glyphicon-heart-empty"></span>Donate to our Travel Grant Fund.</a> </p>
         <a class="btn reg" href="/registration">Register Now</a>    
         <span> </span>
       </div>
