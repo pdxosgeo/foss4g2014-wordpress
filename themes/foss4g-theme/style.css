@@ -278,15 +278,6 @@ section {
 #announcements a .glyphicon {
   margin-right: 8px;
 }
-#donations a {
-  font-size: .9em;
-  font-weight: 100;
-  color: #5e3a22;
-}
-#donations a .glyphicon {
-  margin-right: 8px;
-  color: #E32028;
-}
 #portland {
   width: 100%;
   background: #fdf1dd;
@@ -761,11 +752,6 @@ section {
   font-weight: 700;
   font-size: .4em;
 }
-
-#keynote p {
-  padding-bottom: 1em;
-}
-
 #keynote .btn {
   margin-top: 20px;
   -webkit-transition: 0.3s;
@@ -1300,6 +1286,16 @@ Single Post & Page
 }
 #ws-plugin--s2member-profile table input {
   margin: 0 0 15px;
+}
+article.archive {
+  margin-bottom: 20px;
+}
+article.archive > h3 {
+  margin-top: 0;
+}
+article.archive .date {
+  font-size: .9em;
+  font-weight: 700;
 }
 /* News / Blog Roll */
 /* Template Styles */
@@ -2047,7 +2043,4 @@ footer #footer-content #footer-icons a img {
 footer #footer-content #footer-icons a img:hover {
   position: relative;
   top: -5px;
-}
-.wpuf-form-add label {
- display: block;
 }
