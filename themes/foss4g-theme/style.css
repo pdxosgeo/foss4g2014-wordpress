@@ -1010,10 +1010,12 @@ body {
   font-size: 1.7em;
   color: #7e614e;
 }
-.news h1 {
+.news h1,
+.author-single h1 {
   font-size: 1.6em;
 }
-.news .date {
+.news .date,
+.author-single .date {
   color: #6e4d38;
 }
 .single-meta {

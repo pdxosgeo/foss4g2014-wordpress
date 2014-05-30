@@ -14,7 +14,7 @@
               <article>
                 <div class="landing-post-meta">
                   <h1 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                  <div class="single-meta"><span class="date"><?php the_time('l, F j, Y') ?> | </span><span class="author">by <?php the_author(); ?></span></div>
+                  <div class="single-meta"><span class="date"><?php the_time('l, F j, Y') ?> | </span><span class="author">by <?php the_author_posts_link(); ?></span></div>
                 </div>
                 <div class="content">
                   <?php the_excerpt(); ?>

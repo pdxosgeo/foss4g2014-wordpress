@@ -7,7 +7,7 @@
             <!-- content -->
             <div class="col-sm-8 single">
                 <h1 class="title"><?php the_title(); ?></h1>
-                <div class="single-meta"><span class="date"><?php the_time('l, F j, Y') ?> | </span><span class="author">by <?php the_author(); ?></span></div>
+                <div class="single-meta"><span class="date"><?php the_time('l, F j, Y') ?> | </span><span class="author">by <a href="<?php the_author_link(); ?>"><?php the_author(); ?></a></span></div>
                 <div class="content">
                     <?php the_content(); ?>
                 </div>
