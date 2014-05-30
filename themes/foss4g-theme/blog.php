@@ -29,7 +29,7 @@ Template Name: News/Blog
         		<?php } ?>
 			        		<div class="post-title">
 				        		<h1 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-				        		<div class="single-meta"><span class="date"><?php the_time('l, F j, Y') ?> | </span><span class="author">by by <?php the_author_posts_link(); ?></span></div>
+				        		<div class="single-meta"><span class="date"><?php the_time('l, F j, Y') ?> | </span><span class="author">by <?php the_author_posts_link(); ?></span></div>
 				        	</div>
 				        	<div class="content">
 				        		<?php wp_trim_words( the_excerpt(), $num_words = 55, $more = null ); ?>
