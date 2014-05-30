@@ -14,7 +14,7 @@ register_nav_menus( array(
     'primary' => __( 'Primary', 'foss4g' ),
 ) );
 
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+// add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 add_filter('show_admin_bar', '__return_false');
 
 add_theme_support( 'post-thumbnails' );

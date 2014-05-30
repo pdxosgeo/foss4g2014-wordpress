@@ -14,3 +14,15 @@ wp_reset_postdata();
 else: ?>
 	<p><?php _e( 'No slides.' ); ?></p>
 <?php endif; ?>
+<div class="border">
+	<div id="b01"></div>
+	<div id="b02"></div>
+	<div id="b03"></div>
+	<div id="b04"></div>
+	<div id="b05"></div>
+	<div id="b06"></div>
+	<div id="b07"></div>
+	<div id="b08"></div>
+	<div id="b09"></div>
+	<div id="b10"></div>
+</div>

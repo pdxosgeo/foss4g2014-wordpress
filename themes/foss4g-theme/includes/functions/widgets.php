@@ -10,4 +10,12 @@ function foss4g2014_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 		) );
+	register_sidebar( array (
+		'name' => __('Home Widget Area', 'foss4g'),
+		'id' => 'home-widget-area',
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => "</li>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+		) );
 }

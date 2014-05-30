@@ -4,23 +4,22 @@
 <section class="page">
     <div class="container">
         <div class="row">
-            <!-- left sidebar -->
-            <div class="col-sm-3 left-sidebar">
-            <?php
-            get_sidebar();
-            get_template_part( 'includes/partials/sidebar-sponsors', 'sidebar-sponsors' );
-            ?>
-            </div>
-
             <!-- content -->
-            <div class="col-sm-8">
+            <div class="col-sm-8 single">
                 <h1 class="title"><?php the_title(); ?></h1>
+                <div class="single-meta"><span class="date"><?php the_time('l, F j, Y') ?> | </span><span class="author">by <?php the_author(); ?></span></div>
                 <div class="content">
                     <?php the_content(); ?>
                 </div>
                 <?php endwhile; // end of the loop. ?>
             </div>
 
+            <div class="col-sm-3 sidebar">
+            <?php
+            get_sidebar();
+            get_template_part( 'includes/partials/sidebar-sponsors', 'sidebar-sponsors' );
+            ?>
+            </div>
         </div>
     </div>
 </section>

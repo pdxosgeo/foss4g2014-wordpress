@@ -1,6 +1,6 @@
 <?php
 
-echo 'Sponsors';
+echo '<h3>Sponsors</h3>';
 add_filter('posts_orderby', 'weighted_sponsor' );
 add_filter('posts_join', 'weighted_sponsor_join' );
 add_filter('posts_where' , 'sponsors_where' );

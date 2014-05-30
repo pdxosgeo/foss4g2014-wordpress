@@ -36,6 +36,15 @@ jQuery(document).ready(function ($) {
 		}
 	});
 
+	// border hover for fun
+	$('.border div').on('mouseover', function(){
+		$('.border div').css('width', 80/9+'%');
+		$(this).css('width', '20%');
+	});
+	$('.border').on('mouseout', function(){
+		$('.border div').css('width', '10%');
+	});
+
 	// map geojson
 	var geojson = [
 		{

@@ -3,16 +3,8 @@
 <section class="page">
     <div class="container">
         <div class="row">
-            <!-- left sidebar -->
-            <div class="col-sm-3 left-sidebar">
-            <?php
-            get_sidebar();
-            get_template_part( 'includes/partials/sidebar-sponsors', 'sidebar-sponsors' );
-            ?>
-            </div>
-
             <!-- content -->
-            <div class="col-sm-8">
+            <div class="col-sm-9">
 				<h1 class="title">
 				<?php
 					if ( is_month() ) :
@@ -23,13 +15,19 @@
 				?>
 				</h1>
 				<?php while ( have_posts() ) : the_post(); ?>
-					<article class="archive content">
-						<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-						<span class="date"><?php the_time('l, F j, Y') ?></span>
-						<?php the_excerpt(); ?>
+					<article>
+						<h1 class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+						<div class="single-meta"><span class="date"><?php the_time('l, F j, Y') ?> | </span><span class="author">by <?php the_author(); ?></span></div>
+						<div class="content"><?php the_excerpt(); ?></div>
 					</article>
 				<?php endwhile; ?>
 			</div>
+			 <div class="col-sm-3 sidebar">
+            <?php
+            get_sidebar();
+            get_template_part( 'includes/partials/sidebar-sponsors', 'sidebar-sponsors' );
+            ?>
+            </div>
         </div>
     </div>
 </section>
