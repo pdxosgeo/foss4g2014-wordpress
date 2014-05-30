@@ -17,7 +17,7 @@
 				<?php while ( have_posts() ) : the_post(); ?>
 					<article>
 						<h1 class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
-						<div class="single-meta"><span class="date"><?php the_time('l, F j, Y') ?> | </span><span class="author">by <a href="<?php the_author_link(); ?>"><?php the_author(); ?></a></span></div>
+						<div class="single-meta"><span class="date"><?php the_time('l, F j, Y') ?> | </span><span class="author">by <?php the_author_posts_link(); ?></span></div>
 						<div class="content"><?php the_excerpt(); ?></div>
 					</article>
 				<?php endwhile; ?>
