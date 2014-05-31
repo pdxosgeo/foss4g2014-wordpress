@@ -608,7 +608,7 @@ section {
 #featured-speakers .speakers-container .speaker .speaker-content .name {
   text-align: center;
   padding: 3px 10px;
-  font-family: 'Marvel', sans-serif;
+  font-family: 'Arvo', serif;
   color: #333;
   font-size: 1.5em;
   width: 100%;
@@ -703,8 +703,8 @@ section {
   transition: 0.2s;
 }
 #main-info .block h2 {
-  font-family: 'Marvel', sans-serif;
-  font-size: 2.2em;
+  font-family: 'Arvo', serif;
+  font-size: 1.9em;
   color: #2f2f2f;
 }
 #main-info .block .block-info {
@@ -754,7 +754,8 @@ section {
   border: 1px solid #888888;
 }
 #keynote h2 {
-  font-family: 'Marvel', sans-serif;
+  font-family: 'Arvo', serif;
+  font-size: 1.7em;
 }
 #keynote h2 span {
   font-family: 'Open-Sans', sans-serif;
