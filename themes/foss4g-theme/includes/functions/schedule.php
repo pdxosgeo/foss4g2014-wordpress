@@ -71,10 +71,11 @@ function get_schedule() {
       for($session = 1; $session<=3; $session++) {
         echo '<div class="col-sm-4 session"><h2>Session '.$session.'</h2>';
         for($slot = 1; $slot<=3; $slot++) {
-            $the_query = new WP_Query( args_for_post($day, $session, $track, $slot) );
+          $session_id = "d".$day."t".$track."s".$session."l".$slot;
+          $the_query = new WP_Query( args_for_post($day, $session, $track, $slot) );
             while ( $the_query->have_posts() ) {
               $the_query->the_post();
-              echo '<div class="single-session">';
+              echo '<div id="'.$session_id.'" class="single-session">';
               echo '<span class="session-time">';
               echo time_for_presentation($day,$session,$slot);
               echo '</span><br>';
@@ -82,7 +83,7 @@ function get_schedule() {
               echo '<span class="session-presenter">';
               echo the_author_meta('first_name').' ';
               echo the_author_meta('last_name').'</span>';
-              echo '<div class="post-content hidden">';
+              echo '<div id="'.$session_id.'-content" class="post-content hidden">';
               echo the_content().'</div>';
               echo '</div>'; //single-session
             } //while
