@@ -73,20 +73,20 @@ function get_schedule() {
         for($slot = 1; $slot<=3; $slot++) {
           $session_id = "d".$day."t".$track."s".$session."l".$slot;
           $the_query = new WP_Query( args_for_post($day, $session, $track, $slot) );
-            while ( $the_query->have_posts() ) {
-              $the_query->the_post();
-              echo '<div id="'.$session_id.'" class="single-session">';
-              echo '<span class="session-time">';
-              echo time_for_presentation($day,$session,$slot);
-              echo '</span><br>';
-              echo '<span class="session-title">'.get_the_title().'</span><br>';
-              echo '<span class="session-presenter">';
-              echo the_author_meta('first_name').' ';
-              echo the_author_meta('last_name').'</span>';
-              echo '<div id="'.$session_id.'-content" class="post-content hidden">';
-              echo the_content().'</div>';
-              echo '</div>'; //single-session
-            } //while
+          while ( $the_query->have_posts() ) {
+            $the_query->the_post();
+            echo '<div id="'.$session_id.'" class="single-session">';
+            echo '<span class="session-time">';
+            echo time_for_presentation($day,$session,$slot);
+            echo '</span><br>';
+            echo '<span class="session-title">'.get_the_title().'</span><br>';
+            echo '<span class="session-presenter">';
+            echo the_author_meta('first_name').' ';
+            echo the_author_meta('last_name').'</span>';
+            echo '<div id="'.$session_id.'-content" class="post-content hidden">';
+            echo the_content().'</div>';
+            echo '</div>'; //single-session
+          } //while
         } //for each slot
         echo '</div>'; // end session
       } // for each session
