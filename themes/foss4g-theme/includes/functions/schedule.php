@@ -73,9 +73,8 @@ function get_schedule() {
         for($slot = 1; $slot<=3; $slot++) {
             $the_query = new WP_Query( args_for_post($day, $session, $track, $slot) );
             while ( $the_query->have_posts() ) {
-              $post=$the_query->the_post();
+              $the_query->the_post();
               echo '<div class="single-session">';
-              $user = get_userdata($post->post_author);
               echo '<span class="session-time">';
               echo time_for_presentation($day,$session,$slot);
               echo '</span><br>';
@@ -83,6 +82,8 @@ function get_schedule() {
               echo '<span class="session-presenter">';
               echo the_author_meta('first_name').' ';
               echo the_author_meta('last_name').'</span>';
+              echo '<div class="post-content hidden">';
+              echo the_content().'</div>';
               echo '</div>'; //single-session
             } //while
         } //for each slot
