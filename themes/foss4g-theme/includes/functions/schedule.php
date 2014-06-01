@@ -77,6 +77,9 @@ function get_schedule() {
           while ( $the_query->have_posts() ) {
             $the_query->the_post();
             echo '<div id="'.$session_id.'" class="single-session">';
+            // foreach (get_post_custom_values('topic')  as $key => $value ) {
+            //   echo '<span class="session-topic">'. $value.'</span><br>';
+            // }
             echo '<span class="session-time">';
             echo time_for_presentation($day,$session,$slot);
             echo '</span><br>';
