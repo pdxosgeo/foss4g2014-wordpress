@@ -124,7 +124,37 @@ jQuery(document).ready(function ($) {
 		},
 	];
 
-	//map on homepage
+	// schedule sorting and everything
+	var currentDay = 'd'+$('#day-sort li.current').attr('id').slice(4);
+	$('.sorting li').click(function(){
+		var sortID = $(this).parent().attr('id');
+		if(sortID==='day-sort') {
+			console.log('you clicked a day');
+			switchCurrent($(this));
+			$('#track-sort li').removeClass('current');
+			$('#track-sort li:first').addClass('current');
+			currentDay = 'd'+$(this).attr('id').slice(4);
+			$('.sched-block').hide(200);
+			$('#'+currentDay+'t1').show(200);
+		} else if (sortID==='track-sort') {
+			console.log('you clicked a track');
+			switchCurrent($(this));
+			$('.sched-block').hide(200);
+			var trackID = $(this).attr('id').slice(6);
+			console.log('#'+currentDay+'t'+trackID);
+			$('#'+currentDay+'t'+trackID).show(200);
+		} else {
+			console.log('you clicked a time');
+		}
+
+
+		function switchCurrent(t) {
+			t.siblings().removeClass('current');
+			t.addClass('current');
+		}
+	});
+
+	// //map on homepage
 	var map = L.mapbox.map('map', 'foss4g2014.hjbf0lfe');
     var poi = L.mapbox.featureLayer().addTo(map);
     poi.setGeoJSON(geojson);
@@ -162,6 +192,4 @@ jQuery(document).ready(function ($) {
 		coordBox.innerHTML = map.getCenter();
 	});
 
-
-    
 });

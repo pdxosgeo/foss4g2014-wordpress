@@ -1112,6 +1112,60 @@ article h1 {
 .subsponsors li {
   margin-bottom: 10px;
 }
+/* Schedule Formats */
+.sorting {
+  margin: 10px 0;
+  padding: 0;
+}
+.sorting li {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid #c0c0c0;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.sorting li.current {
+  background-color: #333;
+  color: #fff;
+}
+.sorting li.current:hover {
+  background-color: #333;
+}
+.sorting li:hover {
+  background-color: #c0c0c0;
+}
+.sched-block {
+  display: none;
+}
+.sched-block .session h2 {
+  font-family: 'Arvo', serif;
+  color: #FCBA16;
+}
+.sched-block .session .single-session {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed steelblue;
+}
+.sched-block .session .single-session:last-child {
+  border: none;
+}
+.sched-block .session .single-session .session-title {
+  font-family: 'Arvo', serif;
+  color: #5E3A22;
+}
+.sched-block .session .single-session .session-time {
+  color: steelblue;
+  margin-right: 5px;
+  font-weight: 700;
+}
+.sched-block .session .single-session .session-presenter {
+  color: #9e887a;
+  font-family: "Helvetica Neue", arial, sans-serif;
+  font-weight: 400;
+}
+#d1t1 {
+  display: block;
+}
 /* News / Blog Roll */
 /*@import "news.less";*/
 /* Template Styles */
