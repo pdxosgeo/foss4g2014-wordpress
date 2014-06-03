@@ -91,11 +91,11 @@ function get_schedule() {
             echo '<span class="session-time">';
             echo time_for_presentation($day,$session,$slot);
             echo '</span><br>';
-            echo '<span class="session-title">'.get_the_title().'</span><br>';
+            echo '<span data-toggle="collapse" data-target="#'.$session_id.'-content" class="session-title">'.get_the_title().'</span><br>';
             echo '<span class="session-presenter">';
             echo the_author_meta('first_name').' ';
             echo the_author_meta('last_name').'</span>';
-            echo '<div id="'.$session_id.'-content" class="post-content hidden">';
+            echo '<div id="'.$session_id.'-content" class="post-content collapse">';
             echo the_content().'</div>';
             echo '</div>'; //single-session
           } //while
