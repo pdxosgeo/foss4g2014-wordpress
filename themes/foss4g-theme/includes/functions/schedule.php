@@ -67,10 +67,12 @@ function args_for_post($day, $session, $track, $slot){
 
 function get_schedule() {
   for($day = 1; $day<=3; $day++) {
-    for($track = 1; $track<=9; $track++) {
-      echo '<div id="d'.$day.'t'.$track.'" class="sched-block row">';
-      for($session = 1; $session<=3; $session++) {
-        echo '<div class="col-sm-4 session"><h2>Session '.$session.'</h2>';
+    for($session = 1; $session<=3; $session++) {
+      echo '<div id="d'.$day.'s'.$session.'" class="sched-block ">';
+      $j=1;
+      for($track = 1; $track<=9; $track++) {
+        if ($j % 3 == 1) {echo '<div class="row">';}
+        echo '<div class="col-sm-4 session "><h2>Track '. $track .'</h2>';
         for($slot = 1; $slot<=3; $slot++) {
           $session_id = "d".$day."t".$track."s".$session."l".$slot;
           $the_query = new WP_Query( args_for_post($day, $session, $track, $slot) );
@@ -93,7 +95,9 @@ function get_schedule() {
           } //while
         } //for each slot
         echo '</div>'; // end session
-      } // for each session
+        if ($j % 3 == 0) {echo '</div>';} // end row div
+        $j++;
+      } // for each track
       echo '</div>'; //end sched-block
     }
   }
