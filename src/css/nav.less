@@ -1,0 +1,124 @@
+nav {
+
+}
+.navbar, .navbar-default {
+	border:none;
+	background-color:@c-nav-light2;
+	border-top:5px solid @c-brown-light;
+	opacity:.9;
+	.padding-inside();
+	.collapse {
+		background-color:@c-nav-light2;
+		.padding-inside();
+		.nav, .navbar-nav {
+			a {
+				text-transform:uppercase;
+				font-size:.95em;
+				font-weight:400;
+				padding:17px 7px 13px;
+				margin:0 5px;
+				color:@c-brown;
+				font-family: 'Arvo', serif;
+				border-bottom:4px solid @c-nav-light2;
+				&:hover {
+					color:lighten(@c-brown, 20%);
+					border-bottom-color:@c-brown-light2;
+				}
+				.transition(.2s);
+				.padding-inside();
+			}
+			&.navbar-right {
+				background-color:lighten(@c-grey2, 7%);
+				border-left:1px solid @c-grey2;
+				padding:0 10px 5px 5px;
+				a {
+					color:@c-grey;
+					border-bottom:none;
+					&.user-name {
+						font-weight:700;
+						font-size:1.0em;
+					}
+					&:hover {
+						color:steelblue;
+					}
+				}
+			}
+			.active {
+				a {					
+					color:@c-nav-light2;
+					border-bottom:4px solid @c-brown;
+					&:hover {
+						color:@c-nav-dark2;
+						border-bottom:4px solid @c-brown-light2;
+					}
+				}
+			}
+			ul {
+				background-color:@c-nav-light2;
+				border-bottom:4px solid @c-brown-light2;
+				&.dropdown-menu {
+					box-shadow:none;
+					border:none;
+					border-bottom:4px solid @c-brown-light2;
+					border-radius:0;
+
+				}
+				li {
+					a {
+						margin:0;
+						color:@c-brown !important;
+						padding:3px 7px;
+						border-bottom:none !important;
+						&:hover {
+							background-color:@c-nav-dark2;
+							color:@c-nav-light2;
+							border:none;
+						}
+					}
+				}
+			}
+		}
+	}
+	.navbar-toggle {
+		border-color:@c-nav-dark2;
+		background-color:@c-nav-light2;
+		color:@c-nav-dark2;
+		.icon-bar {
+			background-color:@c-blue-dark2;
+		}
+		&:hover {
+			background-color:@c-blue;
+		}
+	}
+}
+
+.navbar-nav.navbar-right:last-child {
+	margin:0;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .open>a, .open>a.dropdown {
+	color:@c-white !important;
+	background-color:@c-brown-light2 !important;	
+	border-bottom-color:@c-brown-light2 !important;
+}
+
+.navbar-brand {
+	padding:5px 10px !important;
+}
+
+.user-name {
+	font-size:1.2em !important;
+}
+
+#the-bird {
+	.transition(.4s);
+	transform-origin:50% 100%;
+	-ms-transform-origin:50% 100%; /* IE 9 */
+	-webkit-transform-origin:50% 100%; /* Chrome, Safari, Opera */
+	&:hover {
+		transform:rotate(20deg);
+		-ms-transform:rotate(20deg); /* IE 9 */
+		-webkit-transform:rotate(20deg); /* Safari and Chrome */
+	}
+}
+

@@ -1,0 +1,107 @@
+.conference-day {
+	color:steelblue;
+	font-size:3em;
+	text-shadow:2px 4px @c-white;
+	margin:0;
+	padding:0;
+}
+
+.wshop-nav,
+.wshop-nav.fixed {
+	position: relative;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+@media screen and (min-width:768px) {
+	.wshop-nav {
+		position: relative;
+	}
+	.wshop-nav.fixed {
+		top:80px;
+		position:fixed;
+	}
+}
+.session-type {
+	color:steelblue;
+	margin-left:-35px;
+	.glyphicon {
+		color:lighten(steelblue, 15%);
+		font-size:.8em;
+		margin-right:10px;
+	}
+}
+.workshop {
+	padding:20px 0;
+	border-bottom:1px solid @c-grey-light2;
+	&:last-child {
+		border:none;
+	}
+	h2 {
+		font-family:'Open Sans', arial, sans-serif;
+		margin:0 0 10px 0;
+		color:@c-grey-dark;
+		font-size:1.6em;
+		text-shadow:1px 1px @c-grey-light;
+	}
+	h3 {
+		color:@c-grey;
+		font-size:1.1em;
+		margin:0 0 10px;
+		.glyphicon {
+			margin-right:10px;
+			color:@c-grey-light;
+		}
+	}
+	p {
+		margin-bottom:10px;
+		font-size:1.0em;
+	}
+	.wshop-content {
+		margin-bottom:5px;
+		* {
+			&:first-child {
+				margin-top:0;
+			}
+			&:last-child {
+				margin-bottom:0;
+			}
+		}
+		.content();
+	}
+	.format {
+		text-align:right;
+	}
+}
+
+.schedule-menu-container {
+	background-color:rgba(0,0,0,0.6);
+	padding:8px 0;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	text-align:center;
+}
+.schedule-menu {
+	list-style-type:none;
+	margin:0;
+	li {
+		&.current_page_item {
+			a {
+				background-color:rgba(255,255,255,0.4);
+			}
+		}
+		margin-right:15px;
+		a {
+			border:1px solid @c-white;
+			border-radius:3px;
+			display:inline-block;
+			padding:4px 8px;
+			color:@c-white;
+			&:hover {
+				background-color:rgba(255,255,255,0.2);
+				text-decoration:none;
+			}
+		}
+	}
+}

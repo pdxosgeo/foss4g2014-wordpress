@@ -1,0 +1,276 @@
+.btn {
+	&.user {
+		color:@c-white;
+		text-transform:uppercase;
+		font-size:1.0em;
+		opacity:0.9;
+		background-color:@c-brown;
+		&.blue {
+			background-color:steelblue;
+		}
+		&:hover {
+			opacity:1;
+		}
+	}
+}
+
+#theme-my-login {
+	p {
+		font-size:1em;
+		font-weight:400;
+		label {
+			display:block;
+			margin-bottom:2px;
+			font-weight:700;
+			font-size:0.9em;
+		}
+		input {
+			padding:5px 7px;
+			display:block;
+			width:50%;
+			border-radius:4px;
+			border:1px solid @c-blue;
+			color:@c-grey;
+			&[type="submit"] {
+				width:auto;
+				color:@c-white;
+				border:none;
+			}
+			&[type="checkbox"] {
+				display:inline;
+				width:auto;
+				margin-right:5px;
+				& + label {
+					display:inline;
+					width:auto;
+				}
+			}
+			&:focus {
+				border:1px solid steelblue;
+				outline:none;
+			}
+		}
+		&.submit {
+			input {
+				&[type="submit"] {
+					width:auto;
+					color:@c-white;
+					border:none;
+					background-color:@c-brown;
+					font-weight:400;
+					padding:5px 7px;
+					&:hover {
+						opacity:.9;
+					}
+				}
+			}
+		}
+	}
+	.tml-action-links, .tml-user-links {
+		margin:10px 0;
+		padding:5px 0;
+		border-top:1px solid @c-grey2;
+		li {
+			display:inline;
+			&:after {
+				content:' | ';
+				font-size:1.3em;
+				color:steelblue;
+			}
+			&:last-child {
+				&:after {
+					content:'';
+				}
+			}
+			a {
+				text-transform:uppercase;
+				color:steelblue;
+				font-weight:700;
+			}
+		}
+	}
+}
+
+/* Submissions */
+.wpuf-post-form {
+	margin:30px 0;
+	padding:10px 0;
+	li {
+		margin-top:20px;
+		display:block;
+		list-style-type:none;
+		p {
+			&.description {
+				font-weight:100;
+				font-size:.9em;
+				font-style:italic;
+				margin-top:2px;
+			}
+		}
+		label,
+		input {
+			display:block;
+		}
+		label {
+			margin-bottom:2px;
+			font-weight:700;
+			font-size:0.9em;
+		}
+		input {
+			width:50%;
+		}
+		textarea {
+			width:100%;
+		}
+		input, textarea {
+			padding:5px 7px;
+			
+			border-radius:4px;
+			border:1px solid @c-blue;
+			color:@c-grey;
+			&[type="submit"] {
+				width:auto;
+				color:@c-white;
+				border:none;
+				font-size:1em;
+				letter-spacing:.1em;
+				font-color:@c-white;
+				background-color:steelblue;
+				font-weight:400;
+				text-transform:uppercase;
+				&:hover {
+					opacity:0.9;
+				}
+			}
+			&[type="checkbox"] {
+				display:inline;
+				width:auto;
+				margin-right:5px;
+				& + label {
+					display:inline;
+					width:auto;
+				}
+			}
+			&:focus {
+				border:1px solid steelblue;
+				outline:none;
+			}
+		}
+	}
+}
+.content {
+	.success {
+		padding:5px 7px;
+		width:auto;
+		color:@c-grey;
+		background-color:#ffffe0;
+		border:1px solid #e6db55;
+	}
+}
+
+/* Profile Styles */
+.wpuf-profile {
+	#your-profile {
+		fieldset {
+			margin-top:20px;
+			legend {
+				font-weight:700;
+				color:@c-brown-light;
+				margin:0 0 4px 0;
+			}
+			table {
+				width:100%;
+				th {
+					label {
+						font-weight:300;
+					}
+				}
+				tr {
+					input, textarea {
+						width:100%;
+						padding:5px 7px;
+						border-radius:4px;
+						border:1px solid @c-blue;
+						color:@c-grey;
+						&[type="text"]:disabled {
+							color:@c-grey-light2;
+						}
+					}
+					.description {
+						font-weight:100;
+						font-size:.9em;
+						font-style:italic;
+					}
+				}
+			}
+		}
+		.submit {
+			input {
+				&[type="submit"] {
+					width:auto;
+					color:@c-white;
+					border:none;
+					font-size:1em;
+					letter-spacing:.1em;
+					font-color:@c-white;
+					background-color:steelblue;
+					font-weight:400;
+					text-transform:uppercase;
+					border-radius:5px;
+					padding:5px 7px;
+					&:hover {
+						opacity:0.9;
+					}
+				}
+			}
+		}
+	}
+}
+.user-submissions {
+	.wpuf-table {
+		width:100%;
+		tr {
+			td {
+				border:1px solid @c-grey-light2;
+				padding:5px 7px;
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: 768px) { 
+	#theme-my-login1 {
+		p {
+			input {
+				width:450px;
+			}
+		}
+	}
+	.wpuf-post-form {
+		li {
+			input {
+				width:450px;
+			}
+		}
+	}
+}
+@media (max-width: 480px) { 
+	#theme-my-login1 {
+		p {
+			input {
+				width:100%;
+			}
+		}
+	}
+	.wpuf-post-form {
+		li {
+			input {
+				width:100%;
+			}
+		}
+	}
+}
+
+

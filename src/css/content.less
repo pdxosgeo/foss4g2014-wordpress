@@ -1,0 +1,141 @@
+body {
+	font-family:'Open Sans', helvetica, arial, sans-serif;
+}
+.header-images {
+	height:200px;
+	.background-cover();
+}
+.border {
+	border-bottom:1px dashed #b1a89a;
+	padding-bottom:10px;
+	margin-bottom:20px;
+	width:100%;
+	div {
+		height:7px;
+		width:10%;
+		float:left;
+		.transition(.2s);
+	}
+	#b01 { background-color:#8e7564; } #b02 { background-color:#5E3A22; } #b03 { background-color:#6e4d38; } #b04 { background-color:#7e614e; } #b05 { background-color:#8e7564; } #b06 { background-color:#9e887a; } #b07 { background-color:#FCBA16; } #b08 { background-color:#cac0b0; } #b09 { background-color:#e3d8c6; } #b10 { background-color:#FDF1DD; }
+}
+
+/* content space */
+.content {
+	background-color:#FDF1DD;
+	border-radius:5px;
+	padding:10px;
+	font-family:"Helvetica Neue", arial, sans-serif;
+	font-weight:200;
+	font-size:1.1em;
+	h1, h2, h3, h4, h5, h6, h7 {
+		font-family: 'Arvo', serif;
+	}
+	h1 {
+		color:steelblue;
+	}
+	h2 {
+		font-size:1.7em;
+		color:#7e614e;
+	}
+}
+.news, .author-single {
+	h1 {
+		font-size:1.6em;
+	}
+	.date {
+		color:#6e4d38;
+	}
+}
+.single-meta {
+	margin-bottom:10px;
+}
+.date {
+	font-family: 'Arvo', serif;
+	color:steelblue;
+}
+.author {
+	font-family: 'Arvo', serif;
+	color:#cac0b0;
+}
+h1 {
+	&.title {
+		font-family: 'Arvo', serif;
+		color:#5E3A22;
+		border-bottom:1px dashed #cac0b0;
+		margin:0 0 8px 0;
+	}
+}
+article {
+	margin-bottom:20px;
+	h1 {
+		font-size:1.8em;
+	}
+}
+
+/* sidebar */
+.sidebar {
+	list-style-type: none;
+	ul {
+		font-family:"Helvetica Neue", arial, sans-serif;
+		font-weight:200;
+		margin:0;
+		padding:0;
+		list-style-type: none;
+		li {
+			list-style-type: none;
+			a {
+				color:#8e7564;
+			}
+			.post-date {
+				display:block;
+				color:#cac0b0;
+			}
+			ul {
+				li {
+					border-left:1px solid #FCBA16;
+					margin-bottom:8px;
+					padding-left:5px;
+				}
+			}
+		}
+	}
+	h3 {
+		font-family: 'Arvo', serif;
+		color:steelblue;
+		border-bottom:1px dashed #cac0b0;
+	}
+}
+.nav-sidebar {
+	text-align:left;
+	ul {
+		list-style-type: none;
+		margin:0;
+		padding:0;
+		li {
+			border-bottom:1px solid @c-grey-light2;
+			&:first-child {
+				border-top:1px solid @c-grey-light2;
+			}
+			a {
+				font-family: 'Arvo', serif;
+				display:block;
+				padding:5px 8px;
+				&:hover {
+					background-color:@c-light;
+					text-decoration:none;
+				}
+			}
+			&.current_page_item {
+				a {
+					background-color:steelblue;
+					color:@c-light;
+				}
+			}
+		}
+	}
+}
+.subsponsors {
+	li {
+		margin-bottom:10px;
+	}
+}
