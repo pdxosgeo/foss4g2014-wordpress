@@ -6,6 +6,12 @@ function foss4g_queue() {
 	wp_enqueue_script( 'tabletop-js', get_template_directory_uri() . '/js/tabletop.js' );
 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery') );
 	wp_enqueue_style( 'site-css',  get_stylesheet_uri() );
+	if(is_home()) {
+		wp_enqueue_script( 'home-map-js', get_template_directory_uri() . '/js/home-map.js', array('jquery') );
+	}
+	if(is_page_template('template-schedule.php')) {
+		wp_enqueue_script( 'home-map-js', get_template_directory_uri() . '/js/schedule.js', array('jquery') );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'foss4g_queue' );
 add_action( 'widgets_init', 'foss4g2014_widgets_init' );
