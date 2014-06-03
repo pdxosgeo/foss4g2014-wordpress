@@ -70,9 +70,15 @@ function get_schedule() {
     for($session = 1; $session<=3; $session++) {
       echo '<div id="d'.$day.'s'.$session.'" class="sched-block ">';
       $j=1;
-      for($track = 1; $track<=9; $track++) {
+      for($track = 0; $track<=8; $track++) {
         if ($j % 3 == 1) {echo '<div class="row">';}
-        echo '<div class="col-sm-4 session "><h2>Track '. $track .'</h2>';
+        echo '<div class="col-sm-4 session "><h2>';
+            if ($track == 0) {
+              echo 'Invited Talk';
+            } else {
+              echo 'Track '. $track ;
+          }
+        echo '</h2>';
         for($slot = 1; $slot<=3; $slot++) {
           $session_id = "d".$day."t".$track."s".$session."l".$slot;
           $the_query = new WP_Query( args_for_post($day, $session, $track, $slot) );
