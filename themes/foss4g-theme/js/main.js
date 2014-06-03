@@ -126,6 +126,7 @@ jQuery(document).ready(function ($) {
 
 	// schedule sorting and everything
 	var currentDay = 'd'+$('#day-sort li.current').attr('id').slice(4);
+	var sec = 200;
 	$('.sorting li').click(function(){
 		var sortID = $(this).parent().attr('id');
 		if(sortID==='day-sort') {
@@ -134,15 +135,15 @@ jQuery(document).ready(function ($) {
 			$('#track-sort li').removeClass('current');
 			$('#track-sort li:first').addClass('current');
 			currentDay = 'd'+$(this).attr('id').slice(4);
-			$('.sched-block').hide(200);
-			$('#'+currentDay+'t1').show(200);
+			$('.sched-block').fadeOut(sec).delay(sec);
+			$('#'+currentDay+'t1').fadeIn(sec);
 		} else if (sortID==='track-sort') {
 			console.log('you clicked a track');
 			switchCurrent($(this));
-			$('.sched-block').hide(200);
+			$('.sched-block').fadeOut(sec).delay(sec);
 			var trackID = $(this).attr('id').slice(6);
 			console.log('#'+currentDay+'t'+trackID);
-			$('#'+currentDay+'t'+trackID).show(200);
+			$('#'+currentDay+'t'+trackID).fadeIn(sec);
 		} else {
 			console.log('you clicked a time');
 		}
