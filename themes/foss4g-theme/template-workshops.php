@@ -6,6 +6,28 @@ Template Name: Workshops
 
 <?php get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
+<style>
+.workshops h2 {
+  font-family: 'Arvo', serif;
+  color: #FCBA16;
+}
+.workshop h2 {
+  font-family: 'Arvo', serif;
+  color: #FCBA16;
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.workshop h3 {
+  font-family: 'Arvo', serif;
+  font-size: 1.1em;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.workshop .format {
+  font-family: 'Arvo', serif;
+}
+</style>
 
 <section class="page">
     <div class="container">
