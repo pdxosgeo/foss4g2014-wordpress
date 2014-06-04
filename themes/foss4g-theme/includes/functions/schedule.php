@@ -95,10 +95,13 @@ function get_schedule() {
             echo '<span class="session-presenter">';
             echo the_author_meta('first_name').' ';
             echo the_author_meta('last_name');
+            if (get_the_author_meta('organization')){echo ', ';the_author_meta('organization');};
             $p2=get_post_custom_values('presenter2_full_name');
             $p3=get_post_custom_values('presenter3_full_name');
-            if ($p2) {echo ', '.$p2[0];}
-            if ($p3) {echo ', '.$p3[0];}
+            $p2org=get_post_custom_values('presenter2_organization');
+            $p3org=get_post_custom_values('presenter3_organization');
+            if ($p2) {echo '<br>'.$p2[0];} if ($p2org) {echo ', '.$p2org[0];}
+            if ($p3) {echo '<br>'.$p3[0];} if ($p3org) {echo ', '.$p3org[0];}
             echo '</span>';
             echo '<div id="'.$session_id.'-content" class="post-content collapse">';
             echo the_content().'</div>';
