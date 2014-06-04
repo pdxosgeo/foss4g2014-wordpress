@@ -75,7 +75,20 @@ Template Name: Workshops
                          <?php the_title(); ?>
                         </a>
                     </h2>
-                    <h3 data-toggle="popover" data-content="<?php the_author_meta('description'); ?>"><span class="glyphicon glyphicon-user"></span><?php the_author_meta('first_name'); ?> <?php the_author_meta('last_name'); ?></h3>
+                    <h3 data-toggle="popover" data-content="<?php the_author_meta('description'); ?>">
+                      <span class="glyphicon glyphicon-user"></span><?php the_author_meta('first_name'); ?> <?php the_author_meta('last_name'); ?>
+                      <?php if (get_the_author_meta('organization')){echo ', ';the_author_meta('organization');};?>
+                    </h3>
+                      <?php $p2=get_post_custom_values('presenter2_full_name');
+                            $p3=get_post_custom_values('presenter3_full_name');
+                            $p4=get_post_custom_values('presenter4_full_name');
+                            $p2org=get_post_custom_values('presenter2_organization');
+                            $p3org=get_post_custom_values('presenter3_organization');
+                            $p4org=get_post_custom_values('presenter4_organization');
+                            if ($p2) {echo '<h3><span class="glyphicon glyphicon-user"></span>'.$p2[0]; if ($p2org) {echo ', '.$p2org[0];} echo '</h3>';}
+                            if ($p3) {echo '<h3><span class="glyphicon glyphicon-user"></span>'.$p3[0]; if ($p3org) {echo ', '.$p3org[0];}echo '</h3>';}
+                            if ($p4) {echo '<h3><span class="glyphicon glyphicon-user"></span>'.$p4[0]; if ($p4org) {echo ', '.$p4org[0];}echo '</h3>';}
+                      ?>
                     <div class="wshop-content collapse" id="wshop-content-<?php echo $post->ID; ?>"><?php the_content(); ?></div>
                     <p class="format"><strong>Format: </strong><?php echo $format; ?></p>
                   </div>
