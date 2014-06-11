@@ -64,7 +64,9 @@ for dir in $save_dirs; do
   fi
 done
 
-/bin/cp  ${localrepo}/sitemap.xml ${wpdir}/../sitemap.xml
+if [ -e ${localrepo}/sitemap.xml ]; do
+  /bin/cp  ${localrepo}/sitemap.xml ${wpdir}/../sitemap.xml
+done
 
 # make sure perms on uploads are correct
 chown -R apache:${group} ${wpdir}/uploads 
