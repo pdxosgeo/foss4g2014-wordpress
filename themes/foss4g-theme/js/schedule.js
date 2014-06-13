@@ -9,6 +9,11 @@ jQuery(document).ready(function ($) {
       $('#session-sort li').removeClass('current');
       $('#session-sort li:first').addClass('current');
       currentDay = 'd'+$(this).attr('id').slice(4);
+      if ($(this).attr('id')=='day-3') {
+        jQuery('#session-3').hide();
+      } else {
+        jQuery('#session-3').show();
+      }
       $('.sched-block').fadeOut(sec).delay(sec);
       $('#'+currentDay+'s1').fadeIn(sec);
     } else if (sortID==='session-sort') {
