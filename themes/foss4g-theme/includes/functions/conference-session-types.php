@@ -14,7 +14,7 @@ function create_session_post_type() {
 		'public' => true,
 		'has_archive' => true,
 		'menu_position' => 12,
-		'supports' => array( 'title', 'editor', 'custom-fields')
+		'supports' => array( 'title', 'editor', 'author', 'custom-fields')
 		)
 	);
 }
@@ -36,7 +36,7 @@ function create_workshop_post_type() {
 		'public' => true,
 		'has_archive' => true,
 		'menu_position' => 13,
-		'supports' => array( 'title', 'editor', 'custom-fields')
+		'supports' => array( 'title', 'editor','author', 'custom-fields')
 		)
 	);
 }

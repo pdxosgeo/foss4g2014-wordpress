@@ -11,7 +11,7 @@ function create_travel_grant_post_type() {
     'public' => true,
     'has_archive' => true,
     'menu_position' => 12,
-    'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+    'supports' => array( 'title', 'editor', 'author', 'custom-fields' ),
     )
   );
 }
