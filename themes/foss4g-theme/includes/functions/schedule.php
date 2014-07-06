@@ -104,8 +104,8 @@ function get_schedule() {
             $p3=get_post_custom_values('presenter3_full_name');
             $p2org=get_post_custom_values('presenter2_organization');
             $p3org=get_post_custom_values('presenter3_organization');
-            if ($p2) {echo '<br>'.$p2[0];} if ($p2org) {echo ', '.$p2org[0];}
-            if ($p3) {echo '<br>'.$p3[0];} if ($p3org) {echo ', '.$p3org[0];}
+            if ($p2[0]) {echo '<br>'.$p2[0]; if ($p2org[0] ) {echo ', '.$p2org[0];}}
+            if ($p3[0]) {echo '<br>'.$p3[0]; if ($p3org[0] ) {echo ', '.$p3org[0];}}
             echo '</span>';
             echo '<div id="'.$session_id.'-content" class="post-content collapse">';
             echo the_content().'</div>';
