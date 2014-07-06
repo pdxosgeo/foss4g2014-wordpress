@@ -1,12 +1,12 @@
 <?php
 
-function slot_time_str($start_time,$slot){
+function slot_time_str($start_time,$slot,$length=25){
   $start_time=$start_time+(($slot-1)*60*30);
-  $finish_time=$start_time + (60*25); #25 minutes long
+  $finish_time=$start_time + (60*$length); #25 minutes long
   return(date('H:i', $start_time) . ' - ' . date('H:i', $finish_time));
 }
 
-function time_for_presentation($day, $session, $slot){
+function time_for_presentation($day, $session, $slot,$length=25){
   # third day starts half hour later, for that
   # extra hangover recovery time.
   $first_session=strtotime('10:00');
@@ -15,15 +15,15 @@ function time_for_presentation($day, $session, $slot){
   }
   switch ($session){
     case 1:
-      $ret = slot_time_str($first_session, $slot);
+      $ret = slot_time_str($first_session, $slot,$length);
       break;
     case 2:
       # second sessions starts 3 hours after first
-      $ret = slot_time_str($first_session+(3*60*60), $slot);
+      $ret = slot_time_str($first_session+(3*60*60), $slot,$length);
       break;
     case 3:
       # third sessions starts 5 hours after first
-      $ret = slot_time_str($first_session+(5*60*60), $slot);
+      $ret = slot_time_str($first_session+(5*60*60), $slot,$length);
       break;
     default:
       $ret = 'Unknown Time Slot';
@@ -89,7 +89,11 @@ function get_schedule() {
             //   echo '<span class="session-topic">'. $value.'</span><br>';
             // }
             echo '<span class="session-time">';
-            echo time_for_presentation($day,$session,$slot);
+            if ($track == 0) {
+              echo time_for_presentation($day,$session,$slot, 60);
+            } else {
+              echo time_for_presentation($day,$session,$slot);
+            }
             echo '</span><br>';
             echo '<span data-toggle="collapse" data-target="#'.$session_id.'-content" class="session-title">'.get_the_title().'</span><br>';
             echo '<span class="session-presenter">';
