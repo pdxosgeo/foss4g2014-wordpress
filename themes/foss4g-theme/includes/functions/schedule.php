@@ -10,9 +10,9 @@ function time_for_presentation($day, $session, $slot,$length=25){
   # third day starts half hour later, for that
   # extra hangover recovery time.
   $first_session=strtotime('10:00');
-  if ($day == 3) {
-    $first_session=strtotime('10:30');
-  }
+  //if ($day == 3) {
+  //  $first_session=strtotime('10:30');
+  //}
   switch ($session){
     case 1:
       $ret = slot_time_str($first_session, $slot,$length);
