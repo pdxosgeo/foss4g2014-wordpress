@@ -85,9 +85,9 @@ Template Name: Workshops
                             $p2org=get_post_custom_values('presenter2_organization');
                             $p3org=get_post_custom_values('presenter3_organization');
                             $p4org=get_post_custom_values('presenter4_organization');
-                            if ($p2) {echo '<h3><span class="glyphicon glyphicon-user"></span>'.$p2[0]; if ($p2org) {echo ', '.$p2org[0];} echo '</h3>';}
-                            if ($p3) {echo '<h3><span class="glyphicon glyphicon-user"></span>'.$p3[0]; if ($p3org) {echo ', '.$p3org[0];}echo '</h3>';}
-                            if ($p4) {echo '<h3><span class="glyphicon glyphicon-user"></span>'.$p4[0]; if ($p4org) {echo ', '.$p4org[0];}echo '</h3>';}
+                            if ($p2[0]) {echo '<h3><span class="glyphicon glyphicon-user"></span>'.$p2[0]; if ($p2org[0]) {echo ', '.$p2org[0];} echo '</h3>';}
+                            if ($p3[0]) {echo '<h3><span class="glyphicon glyphicon-user"></span>'.$p3[0]; if ($p3org[0]) {echo ', '.$p3org[0];}echo '</h3>';}
+                            if ($p4[0]) {echo '<h3><span class="glyphicon glyphicon-user"></span>'.$p4[0]; if ($p4org[0]) {echo ', '.$p4org[0];}echo '</h3>';}
                       ?>
                     <div class="wshop-content collapse" id="wshop-content-<?php echo $post->ID; ?>"><?php the_content(); ?></div>
                     <p class="format"><strong>Format: </strong><?php echo $format; ?></p>
