@@ -56,7 +56,7 @@ Template Name: Workshops
             <?php
             $args = array(
               'post_type'   => 'workshop',
-              'post_status' => array('future','published', 'draft'),
+              'post_status' => array('future','published', 'draft', 'publish'),
               'order'       => 'ASC',
               'orderby'     => 'title',
               'posts_per_page'  => -1
