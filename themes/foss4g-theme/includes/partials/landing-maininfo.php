@@ -18,7 +18,7 @@
         <span class="glyphicon glyphicon-plane"></span>
         <h2>Travel & Accomodations</h2>
         <p class="block-info">Information for your visit.</p>
-        <a href="https://2014.foss4g.org/attending/accommodations/" class="btn block">Accomodations</a>
+        <a href="https://2014.foss4g.org/attending/accommodations/" class="btn block">Accomodations</a><br>
         <a href="https://2014.foss4g.org/attending/getting-to-portland/" style="margin-top: 5px" class="btn block">Visiting Portland</a><br>
         
 
