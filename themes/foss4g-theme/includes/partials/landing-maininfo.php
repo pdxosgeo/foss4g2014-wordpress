@@ -13,6 +13,7 @@
         <a href="https://2014.foss4g.org/schedule/calendar/" class="btn block">Conference Schedule Overview</a><br>
         <a href="https://2014.foss4g.org/schedule/workshops/" style="margin-top: 5px" class="btn block">Workshops</a><br>
         <a href="https://2014.foss4g.org/schedule/sessions/" style="margin-top: 5px" class="btn block">General Sessions</a>
+        <a href="https://2014.foss4g.org/schedule/gala/" style="margin-top: 5px" class="btn block">Gala Night</a>
       </div>
       <div class="col-sm-6 block accomodations">
         <span class="glyphicon glyphicon-plane"></span>
