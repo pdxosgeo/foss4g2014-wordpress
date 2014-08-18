@@ -813,6 +813,7 @@ section {
   font-family: "Helvetica Neue", arial, sans-serif;
   font-weight: 200;
   font-size: 1.1em;
+  letter-spacing: .7px;
 }
 #landing-posts h1,
 #landing-posts h2,
@@ -1003,6 +1004,7 @@ body {
   font-family: "Helvetica Neue", arial, sans-serif;
   font-weight: 200;
   font-size: 1.1em;
+  letter-spacing: .7px;
 }
 .content h1,
 .content h2,
@@ -1163,7 +1165,7 @@ article h1 {
   font-family: "Helvetica Neue", arial, sans-serif;
   font-weight: 400;
 }
-#d1t1 {
+#d1s1 {
   display: block;
 }
 /* News / Blog Roll */
