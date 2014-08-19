@@ -109,6 +109,8 @@ function get_schedule() {
             echo '</span>';
             $collapse =  $track == 0 ? '' : 'collapse';
             echo '<div id="'.$session_id.'-content" class="post-content ' .  $collapse . '">';
+            $photo=get_post_custom_values('highlight_photo');
+            if ($photo[0]) {echo '<div style="float: left; margin-right: 1em;margin-bottom: 1em;"><img src="' . $photo[0] . '"></div>';}
             echo the_content().'</div>';
             echo '</div>'; //single-session
           } //while
