@@ -1,6 +1,6 @@
 <?php
 define("ZDAPIKEY", "E1pjHWn9hlDb44miyxbM9KP4p18uDM224MemOqT8");
-define("ZDUSER", "darrell@garnix.org");
+define("ZDUSER", "foss4g-program@garnix.org");
 define("ZDURL", "https://foss4g.zendesk.com/api/v2");
 
 function curlWrap($url, $json)
