@@ -16,21 +16,6 @@ jQuery(document).ready(function ($) {
 		        'marker-symbol': 'star'
 		    }
 		},
-      {
-          type: 'Feature',
-          geometry: {
-              type: 'Point',
-              coordinates: [-122.68584, 45.51836]
-          },  
-          properties: {
-              title: 'Eliot Center',
-              description: 'Code Sprint will be held here.<br><a href="https://2014.foss4g.org/schedule/code-sprint/">Details</a>',
-              type: 'main',
-              'marker-size': 'medium',
-              'marker-color': '#4682B4',
-              'marker-symbol': 'star'
-          }
-      },
 		{
 			type: 'Feature',
 		    geometry: {
@@ -39,13 +24,58 @@ jQuery(document).ready(function ($) {
 		    },
 		    properties: {
 		        title: 'Portland State University',
-		        description: 'Workshops will be held here.<br><a href="https://2014.foss4g.org/schedule/workshops/">Schedule</a>',
+		        description: 'Workshops will be held here.<br><a href="https://2014.foss4g.org/schedule/workshops/">Details</a>',
 		        type: 'main',
 		        'marker-size': 'medium',
 		        'marker-color': '#4682B4',
 		        'marker-symbol': 'star'
 		    }
 		},
+		{
+			type: 'Feature',
+		    geometry: {
+		        type: 'Point',
+		        coordinates: [-122.680609, 45.528249],
+		    },
+		    properties: {
+		        title: 'Ecotrust',
+		        description: 'The opening party will be held here.',
+		        type: 'main',
+		        'marker-size': 'medium',
+		        'marker-color': '#4682B4',
+		        'marker-symbol': 'star'
+		    }
+		},		
+		{
+			type: 'Feature',
+		    geometry: {
+		        type: 'Point',
+		        coordinates: [-122.718320, 45.510823],
+		    },
+		    properties: {
+		        title: 'World Forestry Center',
+		        description: 'Gala night will be held here.<br><a href="http://2014.foss4g.org/schedule/gala/">Details</a>',
+		        type: 'main',
+		        'marker-size': 'medium',
+		        'marker-color': '#4682B4',
+		        'marker-symbol': 'star'
+		    }
+		},			
+      	{
+          	type: 'Feature',
+          	geometry: {
+              	type: 'Point',
+              	coordinates: [-122.68584, 45.51836]
+          	},  
+          	properties: {
+              	title: 'Eliot Center',
+              	description: 'Code Sprint will be held here.<br><a href="https://2014.foss4g.org/schedule/code-sprint/">Details</a>',
+              	type: 'main',
+              	'marker-size': 'medium',
+              	'marker-color': '#4682B4',
+              	'marker-symbol': 'star'
+          	}
+      	},		
 		{
 			type: 'Feature',
 		    geometry: {
@@ -75,7 +105,7 @@ jQuery(document).ready(function ($) {
 		        'marker-color': '#E32028',
 		        'marker-symbol': 'lodging'
 		    }
-		},
+		}
 	];
 
 	//map on homepage
