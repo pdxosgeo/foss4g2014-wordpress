@@ -11,39 +11,58 @@ error_reporting(-1);
 <section class="page-header">
     <div class="container">
         <?php while ( have_posts() ) : the_post(); ?>
-        <h1><?php the_title(); ?></h1>
-        
-        
+        <h1><?php the_title(); ?></h1> 
+        <?php endwhile; // end of the loop. ?>       
+        <?php the_content(); ?>
     </div>
 </section>
+
 <section class="page-content">
 <div class="container">
-    <div class="row">
-        <div class="col-md-6 content">
-            <?php the_content();
-            $subs = ninja_forms_get_all_subs( 3 );
-            foreach ($subs as $sub_text) {
-              echo("<br/><br/>");
-              $sub = unserialize($sub_text['data']);
-            ?>
-              <table width=600>
-              <tr><td>Name</td><td>Title</td><td>Description></td><td>Twitter</td></tr>
-              <tr>
-                <td><?php print($sub[1]['user_value']); ?></td>
-                <td><?php print($sub[4]['user_value']); ?></td>
-                <td><?php print($sub[6]['user_value']); ?></td>
-                <td><?php print($sub[3]['user_value']); ?></td>
-              </tr>
-              </table>
-            <?php              
-              echo("<br/><br/>");
-              print("<pre>".print_r($sub,true)."</pre>");
-            }
-            ?>
-        <?php endwhile; // end of the loop. ?>
-        </div>
+  <div class="row">
+    <div class="col-md-4">
+      <a href="#" class="thumbnail">
+        <img src="http://placehold.it/500x500"/>
+      </a>
+      <h3>Author</h3>
+      <p>Description</p>
+    </div>    
+    <div class="col-md-4">
+      <a href="#" class="thumbnail">
+        <img src="http://placehold.it/500x500"/>
+      </a>
+      <h3>Author</h3>
+      <p>Description</p>      
     </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <a href="#" class="thumbnail">
+        <img src="http://placehold.it/500x500"/>
+      </a>
+      <h3>Author</h3>
+      <p>Description</p>      
+    </div>    
+    <div class="col-md-4">
+      <a href="#" class="thumbnail">
+        <img src="http://placehold.it/500x500"/>
+      </a>
+      <h3>Author</h3>
+      <p>Description</p>      
+    </div>
+  </div>
 </div>
+</section>
+
+<script type="text/javascript">
+subs = {};
+jQuery.ajax({
+  dataType: "json",
+  url: "/map-gallery/map-gallery-feed/",
+  success: function(data){subs = data;}
+});
+</script>
 
 <?php get_footer(); ?>
 
