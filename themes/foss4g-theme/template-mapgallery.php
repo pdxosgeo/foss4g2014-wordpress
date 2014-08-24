@@ -4,8 +4,9 @@ Template Name: Map Gallery
 */
 ?>
 
-<?php get_header(); ?>
+<!----- Wordpress header code ---->
 
+<?php get_header(); ?>
 <section class="page-header">
     <div class="container">
         <?php while ( have_posts() ) : the_post(); ?>
@@ -15,13 +16,16 @@ Template Name: Map Gallery
     </div>
 </section>
 
+<!----- Grid we will insert images into ---->
+
 <section class="page-content">
 <div class="container">
   <div id='thumb-grid' class="row">               
   </div>
 </section>
 
-<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<!----- Bootstrap Image Gallery lightbox loads onclick ---->
+
 <div id="blueimp-gallery" class="blueimp-gallery">
     <!-- The container for the modal slides -->
     <div class="slides"></div>
@@ -38,7 +42,7 @@ Template Name: Map Gallery
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"></h4>
+                    <h4 id="modal-title" class="modal-title"></h4>
                 </div>
                 <div class="modal-body next"></div>
                 <div class="modal-footer">
@@ -60,6 +64,8 @@ Template Name: Map Gallery
     </div>
 </div>
 
+<!----- Load the thumbnails ---->
+
 <script type="text/javascript">
   //Bring back the $ shortcut but just for this page
   var $ = jQuery.noConflict();
@@ -79,7 +85,7 @@ Template Name: Map Gallery
   function loadThumb(sub) {
     console.log(sub);
     var grid = jQuery('#thumb-grid');
-    grid.append("<div class='item col-md-4 col-sm-6 col-lg-3'><a href='"+sub.large+"' class='thumbnail' data-gallery><img src='"+sub.small+"'/></a><p>"+sub.slug+"</p></div>");  
+    grid.append("<div class='item col-md-4 col-sm-6 col-lg-3'><a href='"+sub.large+"' class='thumbnail' data-gallery><img src='"+sub.small+"'/></a><p>This is the map title</p></div>");  
   }
 
   jQuery.ajax({
