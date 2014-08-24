@@ -12,6 +12,13 @@ function foss4g_queue() {
   if(is_page_template('template-schedule.php')) {
     wp_enqueue_script( 'schedule-js', get_template_directory_uri() . '/js/schedule.js', array('jquery') );
   }
+  if(is_page_template('template-mapgallery.php')) {
+    wp_enqueue_style( 'blueimp-gallery-css', get_template_directory_uri() . '/css/blueimp-gallery.min.css' );
+    wp_enqueue_style( 'bootstrap-image-gallery-css', get_template_directory_uri() . '/css/bootstrap-image-gallery.min.css' );
+    wp_enqueue_style( 'mapgallery-css', get_template_directory_uri() . '/css/mapgallery.css' );    
+    wp_enqueue_script( 'blueimp-gallery-js', get_template_directory_uri() . '/js/jquery.blueimp-gallery.min.js', array('jquery') );    
+    wp_enqueue_script( 'bootstrap-image-gallery-js', get_template_directory_uri() . '/js/bootstrap-image-gallery.min.js', array('jquery', 'blueimp-gallery-js') );    
+  }
 }
 add_action( 'wp_enqueue_scripts', 'foss4g_queue' );
 add_action( 'widgets_init', 'foss4g2014_widgets_init' );

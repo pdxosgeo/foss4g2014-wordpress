@@ -30,9 +30,9 @@ foreach ($subs as $sub_text) {
         'other_url' => $sub[10]['user_value'],
         'license' => $sub[11]['user_value'],
         'slug' => $slug,
-        'small' => $folder."/small/".$slug.".jpg?dl=1",
-        'med' => $folder."/med/".$slug.".jpg?dl=1",
-        'large' => $folder."/large/".$slug.".jpg?dl=1"
+        'small' => $folder."small/".$slug.".jpg?dl=1",
+        'med' => $folder."med/".$slug.".jpg?dl=1",
+        'large' => $folder."large/".$slug.".jpg?dl=1"
     );    
     $clean_subs[] = $cs;
     $num++;
