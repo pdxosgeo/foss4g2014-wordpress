@@ -41,7 +41,7 @@ Template Name: Map Gallery
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn btn-default pull-left">
+                    <button type="button" class="btn btn-default pull-left popover-dismiss modal-desc" data-toggle="popover" data-placement="bottom" data-content="test">
                         <i class="glyphicon glyphicon-info-sign"></i>
                     </button>
                     <button type="button" class="close" aria-hidden="true">&times;</button>
@@ -70,19 +70,26 @@ Template Name: Map Gallery
 <!----- Load the thumbnails ---->
 
 <script type="text/javascript">
-  //Bring back the $ shortcut but just for this page
-  var $ = jQuery.noConflict();
 
+//Bring back the $ shortcut but just for this page
+var $ = jQuery.noConflict();
+
+//Global variable used by bootstrap-image-gallery.js to lookup map attributes using title as the ID and set other attributes in the modal.  Make the loose assumption that title is unique.  Shameless hack
+maps = null;
+
+jQuery(document).ready(function ($) {  
   jQuery.ajax({
     dataType: "json",
     url: "/map-gallery/map-gallery-feed/",
   }).done(function (result) {
-      var grid = jQuery('#thumb-grid');
-      // Add images to grid with attributes to drive modal gallery
-      $.each(result, function (index, sub) {
-        grid.append("<div class='item col-md-4 col-sm-6 col-lg-3'><a href='"+sub.medium+"' class='thumbnail' data-gallery title='"+sub.title+"'><img src='"+sub.small+"'/></a><p>"+sub.title+"</p></div>");  
-      });
+    maps = result;
+    var grid = jQuery('#thumb-grid');
+    // Add images to grid with attributes to drive modal gallery
+    $.each(result, function (index, sub) {
+      grid.append("<div class='item col-md-4 col-sm-6 col-lg-3'><a id='img"+sub.id+"' href='"+sub.medium+"' class='thumbnail' data-gallery title='"+sub.title+"' desc='"+sub.desc+"'><img src='"+sub.small+"'/></a><p>"+sub.title+"</p></div>");  
+    });           
   });
+});
 
 </script>
 
