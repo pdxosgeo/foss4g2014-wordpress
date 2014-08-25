@@ -41,6 +41,9 @@ Template Name: Map Gallery
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
+                    <button type="button" class="btn btn-default pull-left">
+                        <i class="glyphicon glyphicon-info-sign"></i>
+                    </button>
                     <button type="button" class="close" aria-hidden="true">&times;</button>
                     <h4 id="modal-title" class="modal-title"></h4>
                 </div>
@@ -50,7 +53,7 @@ Template Name: Map Gallery
                         <i class="glyphicon glyphicon-chevron-left"></i>
                         Previous
                     </button>
-                    <button type="button" class="btn next">
+                    <button type="button" class="btn btn-default">
                         Vote
                         <i class="glyphicon glyphicon-thumbs-up"></i>
                     </button>
@@ -70,29 +73,17 @@ Template Name: Map Gallery
   //Bring back the $ shortcut but just for this page
   var $ = jQuery.noConflict();
 
-  function loadThumbs(subs) {
-    subs.forEach(loadThumb);
-    $.getScript('//cdn.jsdelivr.net/isotope/1.5.25/jquery.isotope.min.js',function(){
-      //
-      $('#thumb-grid').imagesLoaded( function(){
-        $('#thumb-grid').isotope({
-          itemSelector : '.item'
-        });
-      });      
-    });     
-  }
-
-  function loadThumb(sub) {
-    console.log(sub);
-    var grid = jQuery('#thumb-grid');
-    grid.append("<div class='item col-md-4 col-sm-6 col-lg-3'><a href='"+sub.large+"' class='thumbnail' data-gallery><img src='"+sub.small+"'/></a><p>This is the map title</p></div>");  
-  }
-
   jQuery.ajax({
     dataType: "json",
     url: "/map-gallery/map-gallery-feed/",
-    success: function(data){loadThumbs(data);}
+  }).done(function (result) {
+      var grid = jQuery('#thumb-grid');
+      // Add images to grid with attributes to drive modal gallery
+      $.each(result, function (index, sub) {
+        grid.append("<div class='item col-md-4 col-sm-6 col-lg-3'><a href='"+sub.medium+"' class='thumbnail' data-gallery title='"+sub.title+"'><img src='"+sub.small+"'/></a><p>"+sub.title+"</p></div>");  
+      });
   });
+
 </script>
 
 <?php get_footer(); ?>

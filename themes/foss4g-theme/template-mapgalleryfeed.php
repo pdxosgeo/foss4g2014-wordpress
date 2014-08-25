@@ -13,12 +13,14 @@ foreach ($subs as $sub_text) {
     $sub_id = $sub_text['id'];  //Unique ID from database
     $sub_ser = $sub_text['data'];
     $sub = unserialize($sub_ser);
+
     //Image path
     $imgpath = "/wp-content/uploads/mapgallery/";
     //Pull out just the fields we need for the public gallery    
 
     $cs = array(
         'id' => $sub_id,
+        'title' => $sub[13]['user_value'],
         'name' => $sub[1]['user_value'],
         'twitter' => $sub[3]['user_value'],
         'org' => $sub[4]['user_value'],
@@ -29,9 +31,9 @@ foreach ($subs as $sub_text) {
         'map_url' => $sub[9]['user_value'],
         'other_url' => $sub[10]['user_value'],
         'license' => $sub[11]['user_value'],
-        'small' => $imgpath."small/".$sub_id.".jpg?dl=1",
-        'med' => $imgpath."med/".$sub_id.".jpg?dl=1",
-        'large' => $imgpath."large/".$sub_id.".jpg?dl=1"
+        'small' => $imgpath."small/".$sub_id,
+        'medium' => $imgpath."medium/".$sub_id,
+        'large' => $imgpath."large/".$sub_id
     );    
     $clean_subs[] = $cs;
 }
