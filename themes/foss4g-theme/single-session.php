@@ -25,7 +25,7 @@
               $session = get_post_custom_values('schedule_session');
               $slot = get_post_custom_values('schedule_slot');
               $track = get_post_custom_values('schedule_track');
-              switch($day) {
+              switch($day[0]) {
                 case 1:
                   $dayNice = 'Wednesday';
                   break;
@@ -40,13 +40,13 @@
               }
               echo '<br>';
               echo '<strong>' . $dayNice . '</strong> ';
-              if ($track == 0) {
-                echo time_for_presentation($day,$session,$slot, 60);
+              if ($track[0] == 0) {
+                echo time_for_presentation($day[0],$session[0],$slot[0], 60);
               } else {
-                echo time_for_presentation($day,$session,$slot);
+                echo time_for_presentation($day[0],$session[0],$slot[0]);
               }
               echo '<br>';
-              echo '<em>Session ' . $session .', Track ' . $track . ', Slot ' . $slot . '</em>';
+              echo '<em>Session ' . $session[0] .', Track ' . $track[0] . ', Slot ' . $slot[0] . '</em>';
             ?>
           </div>
           <div class="content">

@@ -111,7 +111,7 @@ function get_schedule() {
             echo '<div id="'.$session_id.'-content" class="post-content ' .  $collapse . '">';
             $photo=get_post_custom_values('highlight_photo');
             if ($photo[0]) {echo '<div style="float: left; margin-right: 1em;margin-bottom: 1em;"><img src="' . $photo[0] . '"></div>';}
-            echo the_content().'<br><a href="'.the_permalink().'">Permalink</a></div>';
+            echo the_content().'<br><a href="'.get_the_permalink().'">Permalink</a></div>';
             echo '</div>'; //single-session
           } //while
         } //for each slot
