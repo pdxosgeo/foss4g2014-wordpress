@@ -88,7 +88,14 @@ jQuery(document).ready(function ($) {
     $.each(result, function (index, sub) {
       grid.append("<div class='item col-md-4 col-sm-6 col-lg-3'><a id='img"+sub.id+"' href='"+sub.medium+"' class='thumbnail' data-gallery title='"+sub.title+"' desc='"+sub.desc+"'><img src='"+sub.small+"'/></a><p>"+sub.title+"</p></div>");  
     });           
-  });
+    $.getScript('http:////cdn.jsdelivr.net/isotope/1.5.25/jquery.isotope.min.js',function(){
+      $('#thumb-grid').imagesLoaded( function(){
+        $('#thumb-grid').isotope({
+          itemSelector : '.item'
+        });
+      });      
+    });     
+  }); 
 });
 
 </script>
