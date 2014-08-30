@@ -1,3 +1,8 @@
 .DS_Store
 upgrade/
 themes/foss4g-theme/src/node_modules/
+.vagrant
+Vagrantfile
+uploads/mapgallery/small/
+uploads/mapgallery/medium/
+uploads/mapgallery/large/
