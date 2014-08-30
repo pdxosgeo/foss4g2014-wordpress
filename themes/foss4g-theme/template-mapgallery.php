@@ -41,23 +41,26 @@ Template Name: Map Gallery
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn btn-default pull-left popover-dismiss modal-desc" data-toggle="popover" data-placement="bottom" data-content="test">
-                        <i class="glyphicon glyphicon-info-sign"></i>
+                    <button type="button" class="btn btn-info pull-left popover-dismiss modal-desc" data-toggle="popover" data-placement="bottom" data-content="test">                                                
+                        Info
+                        <span class="caret"></span>
                     </button>
                     <button type="button" class="close" aria-hidden="true">&times;</button>
                     <h4 id="modal-title" class="modal-title"></h4>
                 </div>
                 <div class="modal-body next"></div>
-                <div class="modal-footer">
+                <div class="modal-footer text-center">
                     <button type="button" class="btn btn-default pull-left prev">
                         <i class="glyphicon glyphicon-chevron-left"></i>
                         Previous
                     </button>
+                    <!--
                     <button type="button" class="btn btn-default">
                         Vote
                         <i class="glyphicon glyphicon-thumbs-up"></i>
-                    </button>
-                    <button type="button" class="btn btn-primary next">
+                    </button>                        
+                    -->                    
+                    <button type="button" class="btn btn-default next">
                         Next
                         <i class="glyphicon glyphicon-chevron-right"></i>
                     </button>
@@ -82,19 +85,18 @@ jQuery(document).ready(function ($) {
     dataType: "json",
     url: "/map-gallery/map-gallery-feed/",
   }).done(function (result) {
+    //Set global maps variable to result
     maps = result;
     var grid = jQuery('#thumb-grid');
     // Add images to grid with attributes to drive modal gallery
     $.each(result, function (index, sub) {
-      grid.append("<div class='item col-md-4 col-sm-6 col-lg-3'><a id='img"+sub.id+"' href='"+sub.medium+"' class='thumbnail' data-gallery title='"+sub.title+"' desc='"+sub.desc+"'><img src='"+sub.small+"'/></a><p>"+sub.title+"</p></div>");  
+      grid.append("<div class='item col-md-4 col-sm-6 col-lg-3'><a id='img"+sub.id+"' href='"+sub.medium+"' class='thumbnail' data-gallery title='"+sub.title+"'><img src='"+sub.small+"'/></a><p class='small-title'>"+sub.title+"</p></div>");  
     });           
-    $.getScript('http:////cdn.jsdelivr.net/isotope/1.5.25/jquery.isotope.min.js',function(){
-      $('#thumb-grid').imagesLoaded( function(){
-        $('#thumb-grid').isotope({
-          itemSelector : '.item'
-        });
-      });      
-    });     
+    $('#thumb-grid').imagesLoaded( function(){
+      $('#thumb-grid').isotope({
+        itemSelector : '.item'
+      });
+    });      
   }); 
 });
 

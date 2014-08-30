@@ -3,7 +3,6 @@
    margin-right:0;
 }
 
-/* make the well swell */
 .well {
   border-color:#eee;
 }
@@ -22,7 +21,23 @@
 }
 
 .thumbnail {
-  margin-bottom: 5px;
+  margin-bottom: 1px;
+}
+
+.popover-content {
+  /*max-width: 310px;*/
+  max-height: 500px;
+  /* Allow for scrollbar for long popovers */
+  overflow-y:scroll;
+}
+
+.auth-tweet {
+  height: 20px;
+  width: 20px;
+}
+
+.small-title {
+  padding-bottom: 5px;
 }
 
 /* Isotope Transitions */
