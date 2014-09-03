@@ -29,8 +29,6 @@
 
     $.extend(Gallery.prototype.options, {
         useBootstrapModal: true,
-        descSrcProperty: 'desc',
-        descDstProperty: 'h3',
         onopened: function(){console.log('open!')}
     });
 
@@ -73,8 +71,10 @@
             //Initialize popover
             desc.popover({html:true});
             //Hack: Lookup map info by title, maps is a global variable set in the root mapgallery template file
+            var cur_map = null;
             $.each(maps, function (index, map) {
                 if (map.title.replace(/["']/g, "&#39;") == element.title) {
+                    cur_map = map;
                     var pophtml = "";
                     pophtml += "<p><i>Category</i>: "+map.category+"</p>";
                     pophtml += "<p><a href='"+map.map_url+"' class='btn btn-default' target='_window'>View map</a> ";
@@ -93,10 +93,15 @@
                         map.license = "<a href='http://creativecommons.org/licenses/by-nc-nd/4.0/'>"+map.license+"</a>";
                     }
                     pophtml += "<p><i>License</i>: "+map.license+"</p>";
+
                     desc.attr("data-content", pophtml);
+
                     return false;
                 }            
             });
+
+            var vote_button = modal.find('.modal-vote')
+            vote_button.on('click', cur_map, doVote);
 
             return modal[0];
         },
