@@ -19,6 +19,7 @@ function foss4g_queue() {
     wp_enqueue_script( 'jquery-blueimp-gallery-js', get_template_directory_uri() . '/js/jquery.blueimp-gallery.min.js', array('jquery') );        
     wp_enqueue_script( 'bootstrap-image-gallery-js', get_template_directory_uri() . '/js/bootstrap-image-gallery.js', array('jquery', 'jquery-blueimp-gallery-js') );    
     wp_enqueue_script( 'isotope-js', get_template_directory_uri() . '/js/jquery.isotope.min.js', array('jquery') );        
+    wp_enqueue_script( 'jquery-cookie-js', get_template_directory_uri() . '/js/jquery.cookie.js', array('jquery') );
   }
 }
 add_action( 'wp_enqueue_scripts', 'foss4g_queue' );
