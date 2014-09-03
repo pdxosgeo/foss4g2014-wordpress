@@ -64,7 +64,7 @@
                     });
                     modal.addClass('in');
                 }, factoryInterface);
-            modal.find('.modal-title').text(element.title || String.fromCharCode(160));
+            modal.find('.modal-title').html(element.title || String.fromCharCode(160));
             modal.find('.modal-body').append(element);
             
             /****  Load gallery specific additions ****/
@@ -74,11 +74,12 @@
             desc.popover({html:true});
             //Hack: Lookup map info by title, maps is a global variable set in the root mapgallery template file
             $.each(maps, function (index, map) {
-                if (map.title == element.title) {
+                if (map.title.replace(/["']/g, "&#39;") == element.title) {
                     var pophtml = "";
                     pophtml += "<p><i>Category</i>: "+map.category+"</p>";
-                    pophtml += "<p><a href='"+map.map_url+"' class='btn btn-default' target='_window'>Go to map</a> ";
-                    pophtml += "<a href='"+map.large+"' class='btn btn-default' target='_window'>View high res</a></p>";
+                    pophtml += "<p><a href='"+map.map_url+"' class='btn btn-default' target='_window'>View map</a> ";
+                    pophtml += "<a href='"+map.large+"' class='btn btn-default' target='_window'>jpeg</a> ";
+                    pophtml += "<a href='"+map.orig+"' class='btn btn-default' target='_window'>png</a></p>";
                     pophtml += "<p><i>Description</i>: "+map.desc+"</p>";
                     pophtml += "<p><i>Author</i>: "+map.name;
                     if (map.twitter) {
@@ -92,7 +93,6 @@
                         map.license = "<a href='http://creativecommons.org/licenses/by-nc-nd/4.0/'>"+map.license+"</a>";
                     }
                     pophtml += "<p><i>License</i>: "+map.license+"</p>";
-                    pophtml += "</p>"
                     desc.attr("data-content", pophtml);
                     return false;
                 }            

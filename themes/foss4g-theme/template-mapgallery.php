@@ -118,7 +118,11 @@ jQuery(document).ready(function ($) {
     var grid = jQuery('#thumb-grid');
     // Add images to grid with attributes to drive modal gallery
     $.each(result, function (index, sub) {
-      grid.append("<div class='item col-md-4 col-sm-6 col-lg-3'><a id='img"+sub.id+"' href='"+sub.medium+"' class='thumbnail' data-gallery title='"+sub.title+"'><img src='"+sub.small+"'/></a><p class='small-title'>"+sub.title+"</p></div>");  
+      var griditem = jQuery.parseHTML("<div class='item col-md-4 col-sm-6 col-lg-3'><a id='img"+sub.id+"' href='"+sub.medium+"' class='thumbnail' data-gallery title=''><img src='"+sub.small+"'/></a><p class='small-title'>"+sub.title+"</p></div>");
+      var esctitle = sub.title.replace(/["']/g, "&#39;");
+      var aelement = $(griditem).find("#img"+sub.id.toString());
+      aelement.attr('title', esctitle);
+      grid.append(griditem);      
     });           
     $('#thumb-grid').imagesLoaded( function(){
       $('#thumb-grid').isotope({

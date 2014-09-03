@@ -27,6 +27,7 @@ foreach ($subs as $sub_text) {
         $pubsub['small'] = $imgpath."small/".$sub_id.'.jpg';
         $pubsub['medium'] = $imgpath."medium/".$sub_id.'.jpg';
         $pubsub['large'] = $imgpath."large/".$sub_id.'.jpg';
+        $pubsub['orig'] = $imgpath."orig/".$sub_id.'.png';
 
         /*
         $pubsub['title'] = null;
