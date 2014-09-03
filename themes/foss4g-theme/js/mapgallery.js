@@ -23,6 +23,9 @@ function shuffle(sourceArray) {
 }
 
 function doVote(event) {
+    //Disable the button
+    $(event.currentTarget).prop('disabled', true);
+            
     var map = event.data;
     if (!map) {
         alert("map data not found during vote event");
