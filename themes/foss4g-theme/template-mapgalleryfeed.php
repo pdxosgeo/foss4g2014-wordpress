@@ -29,26 +29,16 @@ foreach ($subs as $sub_text) {
         $pubsub['large'] = $imgpath."large/".$sub_id.'.jpg';
         $pubsub['orig'] = $imgpath."orig/".$sub_id.'.png';
 
-        /*
-        $pubsub['title'] = null;
-        $pubsub['category'] = null;
-        $pubsub['format'] = null;
-        $pubsub['name'] = null;
-        $pubsub['org'] = null;
-        $pubsub['name2'] = null;
-        $pubsub['desc'] = null;
-        $pubsub['map_url'] = null;
-        $pubsub['twitter'] = null;
-        $pubsub['license'] = null;
-        $pubsub['other_url'] = null;
-        */
-
         switch ($sub_value['field_id']) {
             case 30:
                 $pubsub['title'] = $sub_value['user_value'];
                 break;
             case 17:
                 $pubsub['category'] = $sub_value['user_value'];
+                foreach ($pubsub['category'] as &$cat) {
+                    //Trim extra white space
+                    $cat = trim($cat);
+                }
                 break;
             case 18:
                 $pubsub['format'] = $sub_value['user_value'];
@@ -79,25 +69,7 @@ foreach ($subs as $sub_text) {
                 break; 
         }
     }
-    /*
-    $cs = array(
-        'id' => $sub_id,
-        'title' => $sub[13]['user_value'],
-        'name' => $sub[1]['user_value'],
-        'twitter' => $sub[3]['user_value'],
-        'org' => $sub[4]['user_value'],
-        'name2' => $sub[5]['user_value'],
-        'desc' => $sub[6]['user_value'],
-        'category' => $sub[7]['user_value'],
-        'format' => $sub[8]['user_value'],
-        'map_url' => $sub[9]['user_value'],
-        'other_url' => $sub[10]['user_value'],
-        'license' => $sub[11]['user_value'],
-        'small' => $imgpath."small/".$sub_id,
-        'medium' => $imgpath."medium/".$sub_id,
-        'large' => $imgpath."large/".$sub_id
-    );    
-    */
+ 
     $clean_subs[] = $pubsub;
 }
 
