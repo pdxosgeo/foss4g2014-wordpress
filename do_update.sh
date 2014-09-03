@@ -64,6 +64,8 @@ for dir in $save_dirs; do
   fi
 done
 
+$rsync -rq /home/foss4g/mapgallery/ ${wpdir}/uploads/mapgallery/
+
 if [ -e ${localrepo}/sitemap.xml ]; then
   /bin/cp  ${localrepo}/sitemap.xml ${wpdir}/../sitemap.xml
 fi
