@@ -93,6 +93,13 @@
                         map.license = "<a href='http://creativecommons.org/licenses/by-nc-nd/4.0/'>"+map.license+"</a>";
                     }
                     pophtml += "<p><i>License</i>: "+map.license+"</p>";
+
+                    if (map.other_url) {
+                        pophtml += "<p><a href='"+map.other_url+"' class='btn btn-default' target='_window'>View sources</a></p>";                        
+                    }
+
+
+
                     desc.attr("data-content", pophtml);
                     return false;
                 }            
