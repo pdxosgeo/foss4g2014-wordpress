@@ -1154,6 +1154,7 @@ article h1 {
 .sched-block .session .single-session .session-title {
   font-family: 'Arvo', serif;
   color: #5E3A22;
+  cursor: pointer;
 }
 .sched-block .session .single-session .session-time {
   color: steelblue;
