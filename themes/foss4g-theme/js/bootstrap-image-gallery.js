@@ -29,8 +29,6 @@
 
     $.extend(Gallery.prototype.options, {
         useBootstrapModal: true,
-        descSrcProperty: 'desc',
-        descDstProperty: 'h3',
         onopened: function(){console.log('open!')}
     });
 
@@ -73,8 +71,10 @@
             //Initialize popover
             desc.popover({html:true});
             //Hack: Lookup map info by title, maps is a global variable set in the root mapgallery template file
-            $.each(maps, function (index, map) {
+            var cur_map = null;
+            $.each(globals.maps, function (index, map) {
                 if (map.title.replace(/["']/g, "&#39;") == element.title) {
+                    cur_map = map;
                     var pophtml = "";
 
                     pophtml += "<p><i>View</i>:</p>";
@@ -119,9 +119,22 @@
                         pophtml += "<p><a href='"+map.other_url+"' class='btn btn-default' target='_window'>View sources</a></p>";                        
                     }
 
-
-
                     desc.attr("data-content", pophtml);
+
+                    //Check if already voted for this map and set accordingly
+                    var vote_button = modal.find('.modal-vote')
+                    if (globals.votes && globals.votes[map.id.toString()]) {
+                        //Set to voted state
+                        vote_button.addClass('btn-success');
+                        vote_button.addClass('disabled');
+                        var voteicon = $(vote_button).find('.voteglyph');
+                        voteicon.removeClass('glyphicon-thumbs-up');
+                        voteicon.addClass('glyphicon-ok');
+                    } else {
+                        //Set click handler
+                        vote_button.on('click', cur_map, doVote);
+                    }
+
                     return false;
                 }            
             });
