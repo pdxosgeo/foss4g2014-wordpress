@@ -72,7 +72,7 @@
             desc.popover({html:true});
             //Hack: Lookup map info by title, maps is a global variable set in the root mapgallery template file
             var cur_map = null;
-            $.each(maps, function (index, map) {
+            $.each(globals.maps, function (index, map) {
                 if (map.title.replace(/["']/g, "&#39;") == element.title) {
                     cur_map = map;
                     var pophtml = "";
