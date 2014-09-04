@@ -76,23 +76,48 @@
                 if (map.title.replace(/["']/g, "&#39;") == element.title) {
                     cur_map = map;
                     var pophtml = "";
-                    pophtml += "<p><i>Category</i>: "+map.category+"</p>";
-                    pophtml += "<p><a href='"+map.map_url+"' class='btn btn-default' target='_window'>View map</a> ";
+
+                    pophtml += "<p><i>View</i>:</p>";
+                    pophtml += "<p><a href='"+map.map_url+"' class='btn btn-default' target='_window'>map</a> ";
                     pophtml += "<a href='"+map.large+"' class='btn btn-default' target='_window'>jpeg</a> ";
                     pophtml += "<a href='"+map.orig+"' class='btn btn-default' target='_window'>png</a></p>";
+
+                    pophtml += "<p><i>Categories</i>:</p>";
+                    pophtml += "<p>";
+                    $.each(map.category, function (index, cat) {
+                        if (cat == "Open Source software integration") { cat = "open software"; }
+                        if (cat == "Open Source data integration") { cat = "open data"; }
+                        if (cat == "Web Map Application") { cat = "web map"; }
+                        if (cat == "Static Map") { cat = "static map"; }
+                        pophtml += "<span class='badge'>" + cat + "</span> ";
+                    });
+                    pophtml += "</p>";
+
                     pophtml += "<p><i>Description</i>: "+map.desc+"</p>";
                     pophtml += "<p><i>Author</i>: "+map.name;
+                    
                     if (map.twitter) {
                         pophtml += " <a href='http://twitter.com/"+map.twitter+"' target='_window'><img class='auth-tweet' src='https://2014.foss4g.org/wp-content/themes/foss4g-theme/img/social-twitter.svg' alt='Twitter'></a></p>";
                     }
-                    pophtml += "<p><i>Other contributors</i>: "+map.name2+"</p>";
-                    pophtml += "<p><i>Organization</i>: "+map.org+"</p>";
+                    
+                    if (map.name2) {
+                        pophtml += "<p><i>Other contributors</i>: "+map.name2+"</p>";
+                    }
+
+                    if (map.org) {
+                        pophtml += "<p><i>Organization</i>: "+map.org+"</p>";
+                    }
+                    
                     if (map.license == "Prefer not to specify license") {
                         map.license = "All imagery and files are copyrighted by their owners, used here with permission";
                     } else {
                         map.license = "<a href='http://creativecommons.org/licenses/by-nc-nd/4.0/'>"+map.license+"</a>";
                     }
                     pophtml += "<p><i>License</i>: "+map.license+"</p>";
+
+                    if (map.other_url) {
+                        pophtml += "<p><a href='"+map.other_url+"' class='btn btn-default' target='_window'>View sources</a></p>";                        
+                    }
 
                     desc.attr("data-content", pophtml);
 
