@@ -23,7 +23,23 @@ function shuffle(sourceArray) {
 }
 
 function fetchVotes() {
-  //Fetch votes
+  //Check if cookies enabled
+  $.cookie('test_cookie', 'cookie_value', { path: '/' });
+  if ($.cookie('test_cookie') == 'cookie_value') {
+    globals.cookies_allowed = true;
+    //Fetch votes from cookie
+    globals.votes = $.cookie('votes');
+  }
+
+  //Initialize votes if none in cookie
+  if (!globals.votes) {    
+    globals.votes = {};
+    if (globals.cookies_allowed) {
+        $.cookie('votes', {}, { expires: 7 });        
+    }
+  }
+
+  //Fetch votes from server
   jQuery.ajax({
     dataType: "json",
     url: "/map-gallery/vote-api/?action=fetch",
@@ -31,8 +47,9 @@ function fetchVotes() {
     if (!result.ip || !result.votes) {
         alert('fetch failed');
     }
-    globals.ip = result.ip;
-    globals.votes = result.votes;
+    globals.curip = result.ip;
+    globals.nonce = result.nonce;
+    //globals.votes = result.votes;
     fetchMaps();
   });
 }
@@ -45,7 +62,6 @@ function fetchMaps() {
   }).done(function (result) {
     //Set global maps variable to result
     globals.maps = result;
-    console.log(globals);
 
     //fetch URL parameters
     params = getUrlParams();
@@ -79,24 +95,43 @@ function doVote(event) {
         alert("map data not found during vote event");
     }
 
+    var curtime = $.now();
     $.post("/wp-admin/admin-ajax.php?action=ninja_forms_ajax_submit",
         {
-            _wpnonce: "8bf1243cb4",
-            _wp_http_referer: "%2Fvote-api%2F",
+            _wpnonce: globals.nonce,
+            _wp_http_referer: "%2Fvote-api%2F?action=fetch",
             _ninja_forms_display_submit: 1,
             _form_id: 4,
             ninja_forms_field_31: map.id,
-            ninja_forms_field_32: $.now(),
-            ninja_forms_field_33: globals.ip
+            ninja_forms_field_32: curtime,
+            ninja_forms_field_33: globals.curip
         },
+
+        //Success function
         function(data, textStatus, jqXHR) {
             //Turn button green to indicate success
-            $(event.currentTarget).addClass('btn-success')
+            $(event.currentTarget).addClass('btn-success');
+            $(event.currentTarget).addClass('disabled');
             var voteicon = $(event.currentTarget).find('.voteglyph');
             voteicon.removeClass('glyphicon-thumbs-up');
             voteicon.addClass('glyphicon-ok');
+
+            //Store vote locally
+            var vote_obj = {
+                ip: globals.curip,
+                mapid: map.id,
+                timestamp: curtime
+            };
+            
+            //Add vote locally
+            globals.votes[map.id.toString()] = vote_obj;            
+            //Update cookie
+            if (globals.cookies_allowed) {
+                $.cookie('votes', globals.votes);
+            }
         }
     ).fail(function(jqXHR, textStatus, errorThrown) {
         alert(textStatus);
+        $(event.currentTarget).prop('disabled', false);
     });
 }    

@@ -72,16 +72,18 @@ Template Name: Map Gallery
 
 //Bring back the $ shortcut but just for this page
 var $ = jQuery.noConflict();
+//Enable auto storage of JSON objects
+$.cookie.json = true;
 
 //Global variables. Used by mapgallery.js and bootstrap-image-gallery.js
 globals = {
     maps: null,
     votes: null,
-    ip: null
+    curip: null
 }
 
 jQuery(document).ready(function ($) {  
-fetchVotes();
+    fetchVotes();
 });
 
 </script>

@@ -121,12 +121,23 @@
 
                     desc.attr("data-content", pophtml);
 
+                    //Check if already voted for this map and set accordingly
+                    var vote_button = modal.find('.modal-vote')
+                    if (globals.votes && globals.votes[map.id.toString()]) {
+                        //Set to voted state
+                        vote_button.addClass('btn-success');
+                        vote_button.addClass('disabled');
+                        var voteicon = $(vote_button).find('.voteglyph');
+                        voteicon.removeClass('glyphicon-thumbs-up');
+                        voteicon.addClass('glyphicon-ok');
+                    } else {
+                        //Set click handler
+                        vote_button.on('click', cur_map, doVote);
+                    }
+
                     return false;
                 }            
             });
-
-            var vote_button = modal.find('.modal-vote')
-            vote_button.on('click', cur_map, doVote);
 
             return modal[0];
         },
