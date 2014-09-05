@@ -123,9 +123,9 @@
                     $.each(globals.ip_votes, function (index, ip_vote) {
                         if (map.id == ip_vote.mapid) {
                             var since = $.now() - ip_vote.timestamp;
-                            //if vote is less than an hour old, assume from this client
+                            //if vote is less than 10 minutes old, assume from this client
                             //just from a different browser or they dont allow cookies
-                            if (since < 1800000) {
+                            if (since < 600000) {
                                 voted = true;
                             }
                         }

@@ -20,6 +20,7 @@ Template Name: Map Gallery
 <div class="container">
   <div id='thumb-grid' class="row">               
   </div>
+</div>
 </section>
 
 <!-- Bootstrap Image Gallery lightbox loads onclick -->
