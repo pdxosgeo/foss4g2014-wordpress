@@ -82,8 +82,20 @@ function fetchMaps() {
       $('#thumb-grid').isotope({
         itemSelector : '.item'
       });
+      checkLoad();
     });          
   });    
+}
+
+function checkLoad() {
+    //fetch URL parameters
+    params = getUrlParams();
+    if (params.id) {
+        var map_ele = $('#img'+params.id);
+        if (map_ele) {
+            map_ele.click();
+        }
+    }
 }
 
 function doVote(event) {
