@@ -40,6 +40,12 @@
   padding-bottom: 5px;
 }
 
+.btn-more {
+  padding: 5px 8px;
+  margin: 0px 2px;
+  font-size: 14px;
+}
+
 /* Isotope Transitions */
 
 .isotope,

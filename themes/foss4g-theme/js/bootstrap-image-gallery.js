@@ -75,9 +75,14 @@
                     cur_map = map;
 
                     pophtml += "<p><i>View</i>:</p>";
-                    pophtml += "<p><a href='"+map.map_url+"' class='btn btn-default' target='_window'>map</a> ";
-                    pophtml += "<a href='"+map.large+"' class='btn btn-default' target='_window'>jpeg</a> ";
-                    pophtml += "<a href='"+map.orig+"' class='btn btn-default' target='_window'>png</a></p>";
+                    pophtml += "<p><a href='"+map.map_url+"' class='btn btn-default btn-more' target='_window'>map</a> ";
+                    pophtml += "<a href='"+map.large+"' class='btn btn-default btn-more' target='_window'>jpg</a> ";
+                    pophtml += "<a href='"+map.orig+"' class='btn btn-default btn-more' target='_window'>png</a> ";
+                    pophtml += "<a href='"+map.orig+"' class='btn btn-default btn-more' target='_window'>sources</a>";
+                    if (map.other_url) {
+                        pophtml += "<a href='"+map.other_url+"' class='btn btn-default btn-more' target='_window'>View sources</a>";                        
+                    }
+                    pophtml += "</p>";
 
                     pophtml += "<p><i>Categories</i>:</p>";
                     pophtml += "<p>";
@@ -113,10 +118,6 @@
                     }
                     pophtml += "<p><i>License</i>: "+map.license+"</p>";
 
-                    if (map.other_url) {
-                        pophtml += "<p><a href='"+map.other_url+"' class='btn btn-default' target='_window'>View sources</a></p>";                        
-                    }
-
                     //Check if already voted for this map and set accordingly
                     var vote_button = modal.find('.modal-vote')
                     if (globals.votes && globals.votes[map.id.toString()]) {
@@ -141,7 +142,6 @@
             //Wait until popover elements load into DOM, then adjust
             desc.on('mouseup',function() {                
                 setTimeout(function() {
-                    console.log('expand!');
                     $('.expandable').expander({'slicePoint': 150});
                 }, 500);
             });            
