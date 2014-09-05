@@ -203,12 +203,13 @@ jwplayer('playlist1').setup({
   }]
 });
 function prepButtons(){
-  jQuery('.btn-player btn-block').each(function(i){
+  jQuery('.btn-player').each(function(i){
    jQuery(this).click(function(){
-     jQuery('.active.btn-player btn-block').removeClass('active')
+     jQuery('.active.btn-player').removeClass('active')
      var btn = jQuery(this);
      btn.addClass('active');
-     jwplayer().playlistItem(this.dataset.playlist)
+     jwplayer().playlistItem(this.dataset.playlist);
+     console.log('click');
    });
   });
 };
