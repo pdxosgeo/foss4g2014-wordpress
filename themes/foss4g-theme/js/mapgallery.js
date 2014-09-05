@@ -2,12 +2,13 @@
 function getUrlParams() {
     var result = {};
     var params = window.location.search.split(/\?|\&/);
-    params.forEach( function(it) {
+    for (var i=0; i<params.length; i++) {
+        it = params[i];
         if (it) {
             var param = it.split("=");
             result[param[0]] = param[1];
         }
-    });
+    };
     return result;
 }
 
