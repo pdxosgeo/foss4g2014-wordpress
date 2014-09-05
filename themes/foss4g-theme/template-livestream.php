@@ -10,6 +10,7 @@ Template Name: Live Streams
 <section class="page">
   <div class="container">
     <?php the_title('<h1 class="title">','</h1>',true); ?>
+    <?php the_content(); ?>
     <div id="playlist1">
       Loading video...
     </div>
