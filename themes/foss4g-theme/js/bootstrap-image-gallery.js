@@ -117,10 +117,28 @@
                     }
                     pophtml += "<p><i>License</i>: "+map.license+"</p>";
 
-                    //Check if already voted for this map and set accordingly
-                    var vote_button = modal.find('.modal-vote')
+                    //Check if server already has vote for this map from this IP
+                    //in the last hour
+                    var voted = false;
+                    $.each(globals.ip_votes, function (index, ip_vote) {
+                        if (map.id == ip_vote.mapid) {
+                            var since = $.now() - ip_vote.timestamp;
+                            console.log(since);
+                            //if vote is less than an hour old, assume from this client
+                            //just from a different browser or they dont allow cookies
+                            if (since < 3600000) {
+                                voted = true;
+                            }
+                        }
+                    });
+
+                    //Check if client cookie already has vote for this map
+                    var vote_button = modal.find('.modal-vote');
                     if (globals.votes && globals.votes[map.id.toString()]) {
-                        //Set to voted state
+                        voted = true;
+                    }
+
+                    if (voted) {
                         vote_button.addClass('btn-success');
                         vote_button.addClass('disabled');
                         var voteicon = $(vote_button).find('.voteglyph');
@@ -142,7 +160,7 @@
             desc.on('mouseup',function() {                
                 setTimeout(function() {
                     $('.expandable').expander({'slicePoint': 150});
-                }, 500);
+                }, 400);
             });            
 
             desc.popover({

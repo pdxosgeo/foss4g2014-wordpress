@@ -49,7 +49,7 @@ function fetchVotes() {
     }
     globals.curip = result.ip;
     globals.nonce = result.nonce;
-    //globals.votes = result.votes;
+    globals.ip_votes = result.votes;
     fetchMaps();
   });
 }

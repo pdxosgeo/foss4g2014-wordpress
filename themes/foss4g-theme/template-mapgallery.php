@@ -77,9 +77,10 @@ $.cookie.json = true;
 
 //Global variables. Used by mapgallery.js and bootstrap-image-gallery.js
 globals = {
-    maps: null,
-    votes: null,
-    curip: null
+    votes: null,    //Votes by this client from cookie
+    maps: null,     //Map objects from server
+    ip_votes: null, //Votes at this IP address from server
+    curip: null     //IP address of this client from server
 }
 
 jQuery(document).ready(function ($) {  
