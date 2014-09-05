@@ -29,14 +29,14 @@ function fetchVotes() {
   if ($.cookie('test_cookie') == 'cookie_value') {
     globals.cookies_allowed = true;
     //Fetch votes from cookie
-    globals.votes = $.cookie('votes2');
+    globals.votes = $.cookie('mapvotes');
   }
 
   //Initialize votes if none in cookie
   if (!globals.votes) {    
     globals.votes = {};
     if (globals.cookies_allowed) {
-        $.cookie('votes2', {}, { expires: 7 });        
+        $.cookie('mapvotes', {}, { expires: 7 });        
     }
   }
 
@@ -140,7 +140,7 @@ function doVote(event) {
             globals.votes[map.id.toString()] = vote_obj;            
             //Update cookie
             if (globals.cookies_allowed) {
-                $.cookie('votes2', globals.votes);
+                $.cookie('mapvotes', globals.votes);
             }
         }
     ).fail(function(jqXHR, textStatus, errorThrown) {
