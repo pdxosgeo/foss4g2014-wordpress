@@ -125,7 +125,7 @@
                             var since = $.now() - ip_vote.timestamp;
                             //if vote is less than an hour old, assume from this client
                             //just from a different browser or they dont allow cookies
-                            if (since < 3600000) {
+                            if (since < 1800000) {
                                 voted = true;
                             }
                         }
