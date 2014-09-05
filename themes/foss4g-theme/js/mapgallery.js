@@ -42,7 +42,7 @@ function fetchVotes() {
   //Fetch votes from server
   jQuery.ajax({
     dataType: "json",
-    url: "/map-gallery/vote-api/?action=fetch",
+    url: "/map-gallery/vote-api/?action=fetch"
   }).done(function (result) {
     if (!result.ip || !result.votes) {
         alert('fetch failed');
