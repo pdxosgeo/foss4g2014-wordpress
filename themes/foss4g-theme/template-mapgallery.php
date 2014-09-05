@@ -4,8 +4,6 @@ Template Name: Map Gallery
 */
 ?>
 
-<!----- Wordpress header code ---->
-
 <?php get_header(); ?>
 <section class="page-header">
     <div class="container">
@@ -16,7 +14,7 @@ Template Name: Map Gallery
     </div>
 </section>
 
-<!----- Grid we will insert images into ---->
+<!-- Grid we will insert images into -->
 
 <section class="page-content">
 <div class="container">
@@ -24,7 +22,7 @@ Template Name: Map Gallery
   </div>
 </section>
 
-<!----- Bootstrap Image Gallery lightbox loads onclick ---->
+<!-- Bootstrap Image Gallery lightbox loads onclick -->
 
 <div id="blueimp-gallery" class="blueimp-gallery">
     <!-- The container for the modal slides -->
