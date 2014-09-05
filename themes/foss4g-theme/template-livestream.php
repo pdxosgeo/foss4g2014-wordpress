@@ -18,7 +18,7 @@ Template Name: Live Streams
   jwplayer('playlist1').setup  ({'flashplayer':'<?php bloginfo('template_url'); ?>/video/player.swf','id':'playlist1','width':'860','height':'360',
         'playlist.position':'right','playlist.size':'240','repeat':'none','autostart':'false',
         'controlbar':'bottom','dock':'false','stretching':'fill',
-        'modes':[{type:'flash',src:'/player.swf',
+        'modes':[{type:'flash',src:'<?php bloginfo('template_url'); ?>/video/player.swf',
             config:{'provider':'rtmp','playlist':[
                {'file':'FOSS4G2014KEY','title':'Keynotes','description':'And Invited Talks',
                'image':'http://e3webcasting.com/wp-content/uploads/2014/09/FOSS4G-640x360k.jpg',
