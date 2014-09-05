@@ -67,15 +67,12 @@
             
             /****  Load gallery specific additions ****/
 
-            var desc = modal.find('.modal-desc');            
-            //Initialize popover
-            desc.popover({html:true});
             //Hack: Lookup map info by title, maps is a global variable set in the root mapgallery template file
             var cur_map = null;
+            var pophtml = "";
             $.each(globals.maps, function (index, map) {
                 if (map.title.replace(/["']/g, "&#39;") == element.title) {
                     cur_map = map;
-                    var pophtml = "";
 
                     pophtml += "<p><i>View</i>:</p>";
                     pophtml += "<p><a href='"+map.map_url+"' class='btn btn-default' target='_window'>map</a> ";
@@ -93,23 +90,24 @@
                     });
                     pophtml += "</p>";
 
-                    pophtml += "<p><i>Description</i>: "+map.desc+"</p>";
+                    pophtml += "<p class='descp expandable'><i>Description</i>: "+map.desc+"</p>";
                     pophtml += "<p><i>Author</i>: "+map.name;
                     
                     if (map.twitter) {
-                        pophtml += " <a href='http://twitter.com/"+map.twitter+"' target='_window'><img class='auth-tweet' src='https://2014.foss4g.org/wp-content/themes/foss4g-theme/img/social-twitter.svg' alt='Twitter'></a></p>";
+                        pophtml += " <a href='http://twitter.com/"+map.twitter+"' target='_window'><img class='auth-tweet' src='https://2014.foss4g.org/wp-content/themes/foss4g-theme/img/social-twitter.svg' alt='Twitter'></a>";
                     }
                     
                     if (map.name2) {
-                        pophtml += "<p><i>Other contributors</i>: "+map.name2+"</p>";
+                        pophtml += ", "+map.name2;
                     }
+                    pophtml += "</p>";
 
                     if (map.org) {
                         pophtml += "<p><i>Organization</i>: "+map.org+"</p>";
                     }
                     
                     if (map.license == "Prefer not to specify license") {
-                        map.license = "All imagery and files are copyrighted by their owners, used here with permission";
+                        map.license = "All imagery and files copyrighted unless otherwise stated";
                     } else {
                         map.license = "<a href='http://creativecommons.org/licenses/by-nc-nd/4.0/'>"+map.license+"</a>";
                     }
@@ -118,8 +116,6 @@
                     if (map.other_url) {
                         pophtml += "<p><a href='"+map.other_url+"' class='btn btn-default' target='_window'>View sources</a></p>";                        
                     }
-
-                    desc.attr("data-content", pophtml);
 
                     //Check if already voted for this map and set accordingly
                     var vote_button = modal.find('.modal-vote')
@@ -138,6 +134,22 @@
                     return false;
                 }            
             });
+
+            //Initialize popover
+            var desc = modal.find('.modal-desc');
+
+            //Wait until popover elements load into DOM, then adjust
+            desc.on('mouseup',function() {                
+                setTimeout(function() {
+                    console.log('expand!');
+                    $('.expandable').expander({'slicePoint': 150});
+                }, 500);
+            });            
+
+            desc.popover({
+                html:true,
+                content: pophtml
+            });            
 
             return modal[0];
         },

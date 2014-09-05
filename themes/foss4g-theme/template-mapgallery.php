@@ -41,8 +41,8 @@ Template Name: Map Gallery
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn btn-info pull-left popover-dismiss modal-desc" data-toggle="popover" data-placement="bottom" data-content="test">                                                
-                        Info
+                    <button type="button" class="btn btn-info pull-left popover-dismiss modal-desc" data-toggle="popover" data-placement="bottom">                                                
+                        More
                         <span class="caret"></span>
                     </button>
                     <button type="button" class="close" aria-hidden="true">&times;</button>
