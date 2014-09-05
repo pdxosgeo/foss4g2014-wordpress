@@ -78,9 +78,8 @@
                     pophtml += "<p><a href='"+map.map_url+"' class='btn btn-default btn-more' target='_window'>map</a> ";
                     pophtml += "<a href='"+map.large+"' class='btn btn-default btn-more' target='_window'>jpg</a> ";
                     pophtml += "<a href='"+map.orig+"' class='btn btn-default btn-more' target='_window'>png</a> ";
-                    pophtml += "<a href='"+map.orig+"' class='btn btn-default btn-more' target='_window'>sources</a>";
                     if (map.other_url) {
-                        pophtml += "<a href='"+map.other_url+"' class='btn btn-default btn-more' target='_window'>View sources</a>";                        
+                        pophtml += "<a href='"+map.other_url+"' class='btn btn-default btn-more' target='_window'>sources</a>";                        
                     }
                     pophtml += "</p>";
 
