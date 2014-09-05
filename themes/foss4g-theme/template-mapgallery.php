@@ -8,7 +8,7 @@ Template Name: Map Gallery
 <section class="page-header">
     <div class="container">
         <?php while ( have_posts() ) : the_post(); ?>
-        <h1><?php the_title(); ?></h1> 
+        <h1 class="title"><?php the_title(); ?></h1> 
         <?php endwhile; // end of the loop. ?>       
         <?php the_content(); ?>
     </div>
