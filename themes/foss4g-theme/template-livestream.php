@@ -5,6 +5,8 @@ Template Name: Live Streams
 ?>
 <?php get_header(); ?>
 
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/video/jwplayer.js"></script>
+
 <section class="page">
   <div class="container">
     <?php the_title('<h1 class="title">','</h1>',true); ?>
@@ -13,7 +15,7 @@ Template Name: Live Streams
   Loading video...
 </div>
 <script type="text/javascript">
-  jwplayer('playlist1').setup  ({'flashplayer':'/player.swf','id':'playlist1','width':'860','height':'360',
+  jwplayer('playlist1').setup  ({'flashplayer':'<?php bloginfo('template_url'); ?>/video/player.swf','id':'playlist1','width':'860','height':'360',
         'playlist.position':'right','playlist.size':'240','repeat':'none','autostart':'false',
         'controlbar':'bottom','dock':'false','stretching':'fill',
         'modes':[{type:'flash',src:'/player.swf',
