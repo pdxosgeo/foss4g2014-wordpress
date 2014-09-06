@@ -128,6 +128,9 @@ function doVote(event) {
             var voteicon = $(event.currentTarget).find('.voteglyph');
             voteicon.removeClass('glyphicon-thumbs-up');
             voteicon.addClass('glyphicon-ok');
+            var votecancel = $(event.currentTarget.parentNode).find('#vote-cancel');
+            votecancel.removeClass('cancel-vote-hide');
+            votecancel.addClass('cancel-vote-visible');
 
             //Store vote locally
             var vote_obj = {
@@ -147,4 +150,8 @@ function doVote(event) {
         alert(textStatus);
         $(event.currentTarget).prop('disabled', false);
     });
-}    
+}   
+
+function undoVote(event) {
+    console.log('Undo! '+event.data.id);
+} 

@@ -46,6 +46,20 @@
   font-size: 14px;
 }
 
+#vote-cancel {
+  text-decoration: none;
+  font-size: 13px;
+  padding-right: 10px;  
+}
+
+.cancel-vote-hide {
+  visibility:hidden;
+}
+
+.cancel-vote-visible {
+  visibility:visible;
+}
+
 /* Isotope Transitions */
 
 .isotope,

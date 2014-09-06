@@ -133,9 +133,15 @@
 
                     //Check if client cookie already has vote for this map
                     var vote_button = modal.find('.modal-vote');
+                    var cancel_button = modal.find('#vote-cancel');
+
                     if (globals.votes && globals.votes[map.id.toString()]) {
                         voted = true;
                     }
+
+                    //Set click handlers
+                    cancel_button.on('click', cur_map, undoVote);
+                    vote_button.on('click', cur_map, doVote);
 
                     if (voted) {
                         vote_button.addClass('btn-success');
@@ -143,9 +149,8 @@
                         var voteicon = $(vote_button).find('.voteglyph');
                         voteicon.removeClass('glyphicon-thumbs-up');
                         voteicon.addClass('glyphicon-ok');
-                    } else {
-                        //Set click handler
-                        vote_button.on('click', cur_map, doVote);
+                        cancel_button.removeClass('cancel-vote-hide');
+                        cancel_button.addClass('cancel-vote-visible');                        
                     }
 
                     return false;

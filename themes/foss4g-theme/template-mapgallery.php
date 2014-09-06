@@ -53,6 +53,7 @@ Template Name: Map Gallery
                         <i class="glyphicon glyphicon-chevron-left"></i>
                         Previous
                     </button>
+                    <a class='cancel-vote-hide' id='vote-cancel' href="#">Cancel</a>
                     <button type="button" class="modal-vote btn btn-default">
                         Vote
                         <i class="voteglyph glyphicon glyphicon-thumbs-up"></i>
