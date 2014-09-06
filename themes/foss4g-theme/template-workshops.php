@@ -75,6 +75,14 @@ Template Name: Workshops
                          <?php the_title(); ?>
                         </a>
                     </h2>
+                    <?php 
+                      $where=get_post_custom_values('location_info');
+                      if ($where[0]) {
+                        echo '<h3 style="color: rgb(94, 58, 34)"><span class="glyphicon glyphicon-info-sign"></span>
+                           <a style="color: rgb(94, 58, 34)" href="'. $where[0] .'">Location Information</a>
+                        </h3>';
+                      }
+                    ?>
                     <h3 data-toggle="popover" data-content="<?php the_author_meta('description'); ?>">
                       <span class="glyphicon glyphicon-user"></span><?php the_author_meta('first_name'); ?> <?php the_author_meta('last_name'); ?>
                       <?php if (get_the_author_meta('organization')){echo ', ';the_author_meta('organization');};?>
