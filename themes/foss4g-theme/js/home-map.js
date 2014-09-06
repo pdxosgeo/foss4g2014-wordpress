@@ -9,7 +9,7 @@ jQuery(document).ready(function ($) {
 		    },
 		    properties: {
 		        title: 'Oregon Convention Center',
-		        description: '<strong>Address:</strong> 777 NE Martin Luther King Jr Blvd, Portland, OR 97232<br><a href="https://2014.foss4g.org/attending/accommodations/">Accommodations</a>',
+		        description: 'Main conference venue Wed-Fri.  777 NE Martin Luther King Jr Blvd, Portland, OR 97232',
 		        type: 'main',
 		        'marker-size': 'large',
 		        'marker-color': '#4682B4',
@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
 		    },
 		    properties: {
 		        title: 'Portland State University',
-		        description: 'Workshops will be held here.<br><a href="https://2014.foss4g.org/schedule/workshops/">Details</a>',
+		        description: 'Workshop venue, Mon-Tue.<br><a href="https://2014.foss4g.org/schedule/workshops/" target="_window">Learn more</a>',
 		        type: 'main',
 		        'marker-size': 'medium',
 		        'marker-color': '#4682B4',
@@ -38,8 +38,8 @@ jQuery(document).ready(function ($) {
 		        coordinates: [-122.680609, 45.528249],
 		    },
 		    properties: {
-		        title: 'Ecotrust',
-		        description: 'The opening party will be held here.',
+		        title: 'Natural Capital Center',
+		        description: 'Opening party hosted by Ecotrust and Point 97 Tue. night. <a href="http://youareherereception.eventbrite.com/" target="_window">Learn more</a>',
 		        type: 'main',
 		        'marker-size': 'medium',
 		        'marker-color': '#4682B4',
@@ -54,7 +54,7 @@ jQuery(document).ready(function ($) {
 		    },
 		    properties: {
 		        title: 'World Forestry Center',
-		        description: 'Gala night will be held here.<br><a href="http://2014.foss4g.org/schedule/gala/">Details</a>',
+		        description: 'Gala venue Thur. night<br><a href="http://2014.foss4g.org/schedule/social-events/" target="_window">Learn more</a>',
 		        type: 'main',
 		        'marker-size': 'medium',
 		        'marker-color': '#4682B4',
@@ -69,7 +69,7 @@ jQuery(document).ready(function ($) {
           	},  
           	properties: {
               	title: 'Eliot Center',
-              	description: 'Code Sprint will be held here.<br><a href="https://2014.foss4g.org/schedule/code-sprint/">Details</a>',
+              	description: 'Code Sprint and WhereCamp venue, Sat. 13th.<br><a href="https://2014.foss4g.org/schedule/code-sprint/" target="_window">Learn more</a>',
               	type: 'main',
               	'marker-size': 'medium',
               	'marker-color': '#4682B4',
@@ -84,22 +84,7 @@ jQuery(document).ready(function ($) {
 		    },
 		    properties: {
 		        title: 'Double Tree by Hilton Portland',
-		        description: '<strong>Address:</strong> 1000 NE Multnomah Street, Portland, Oregon, 97232, USA<br><a href="http://doubletree3.hilton.com/en/hotels/oregon/doubletree-by-hilton-hotel-portland-RLLC-DT/index.html">Book Now</a>',
-		        type: 'hotel',
-		        'marker-size': 'large',
-		        'marker-color': '#E32028',
-		        'marker-symbol': 'lodging'
-		    }
-		},
-		{
-			type: 'Feature',
-		    geometry: {
-		        type: 'Point',
-		        coordinates: [-122.540932, 45.568492]
-		    },
-		    properties: {
-		        title: 'Staybridge Suites Portland Airport Hotel',
-		        description: '<strong>Address:</strong> 11936 NE Glenn Widing Drive Portland, Oregon 97220, USA<br><a href="http://www.ihg.com/staybridge/hotels/us/en/portland/pdxgw/hoteldetail">Book Now</a>',
+		        description: 'Main conference hotel.  Address - 1000 NE Multnomah Street, Portland, Oregon, 97232, USA<br><a href="http://doubletree3.hilton.com/en/hotels/oregon/doubletree-by-hilton-hotel-portland-RLLC-DT/index.html">Book Now</a>',
 		        type: 'hotel',
 		        'marker-size': 'large',
 		        'marker-color': '#E32028',
