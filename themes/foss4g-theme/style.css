@@ -1307,3 +1307,22 @@ footer #footer-content #footer-icons a img:hover {
   position: relative;
   top: -5px;
 }
+
+/*#playlist1_wrapper {
+  height:400px !important;
+}*/
+@media (max-width: 400px) {
+  #playlist1_wrapper {
+    height:205px !important;
+  }
+}
+@media (min-width: 650px) {
+  #playlist1_wrapper {
+    height:350px !important;
+  }
+}
+@media (min-width: 992px) {
+  #playlist1_wrapper {
+    height:363px !important;
+  }
+}
