@@ -73,12 +73,44 @@ function get_schedule() {
       for($track = 0; $track<=8; $track++) {
         if ($j % 3 == 1) {echo '<div class="row">';}
         echo '<div class="col-sm-4 session "><h2>';
-            if ($track == 0) {
-              echo 'Invited Talk';
-            } else {
-              echo 'Track '. $track ;
+          if ($track == 0) {
+            echo 'Invited Talk';
+          } else {
+            echo 'Track '. $track ;
           }
         echo '</h2>';
+        switch($track){
+            case 0:
+              echo '<p class="room-number">Portland Ballroom</p>';
+              break;
+            case 1:
+              echo '<p class="room-number">Room D137-138';
+              break;
+            case 2:
+              echo '<p class="room-number">Room D139-140';
+              break;
+            case 3:
+              echo '<p class="room-number">Room D133-134';
+              break;
+            case 4:
+              echo '<p class="room-number">Room D135';
+              break;
+            case 5:
+              echo '<p class="room-number">Room D136';
+              break;
+            case 6:
+              echo '<p class="room-number">Room E141-142';
+              break;
+            case 7:
+              echo '<p class="room-number">Room E143-144';
+              break;
+            case 8:
+              echo '<p class="room-number">Room E145';
+              break;
+            default:
+              echo 'Unknown room';
+              break;
+          }
         for($slot = 1; $slot<=3; $slot++) {
           $session_id = "d".$day."t".$track."s".$session."l".$slot;
           $the_query = new WP_Query( args_for_post($day, $session, $track, $slot) );
