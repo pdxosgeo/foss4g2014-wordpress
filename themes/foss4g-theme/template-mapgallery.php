@@ -53,10 +53,10 @@ Template Name: Map Gallery
                         <i class="glyphicon glyphicon-chevron-left"></i>
                         Previous
                     </button>
-                    <button type="button" class="modal-vote btn btn-default">
+                    <!--<button type="button" class="modal-vote btn btn-default">
                         Vote
                         <i class="voteglyph glyphicon glyphicon-thumbs-up"></i>
-                    </button>                                      
+                    </button>-->                                      
                     <button type="button" class="btn btn-default next">
                         Next
                         <i class="glyphicon glyphicon-chevron-right"></i>
