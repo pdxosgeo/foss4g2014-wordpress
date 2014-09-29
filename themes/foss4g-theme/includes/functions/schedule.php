@@ -139,6 +139,10 @@ function get_schedule() {
             if ($p2[0]) {echo '<br>'.$p2[0]; if ($p2org[0] ) {echo ', '.$p2org[0];}}
             if ($p3[0]) {echo '<br>'.$p3[0]; if ($p3org[0] ) {echo ', '.$p3org[0];}}
             echo '</span>';
+            $v=get_post_custom_values('video_url');
+            if ($v[0]) {
+              echo '<p><span class="video-link"><a href="'.$v[0].'">Watch this Presentation</a><p>';
+            }
             $collapse =  $track == 0 ? '' : 'collapse';
             echo '<div id="'.$session_id.'-content" class="post-content ' .  $collapse . '">';
             $photo=get_post_custom_values('highlight_photo');
